@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PlanetCollectionViewCell : UICollectionViewCell
 
+@property (strong, nonatomic) IBOutlet UIImageView *planetImageView;
+@property (strong, nonatomic) IBOutlet UILabel *planetLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END

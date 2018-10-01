@@ -10,4 +10,13 @@
 
 @implementation CGAPlanet
 
+- (instancetype)initWithPlanet:(NSString *)name planetImage:(UIImage *)planetImage {
+    self = [super init];
+    if (self != nil) {
+        _name = name;
+        _planetImage = planetImage;
+    }
+    return self;
+}
+
 @end

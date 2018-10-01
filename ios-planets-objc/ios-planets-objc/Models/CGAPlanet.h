@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CGAPlanet : NSObject
 
-- (instancetype)initWithPlanet:(NSString *)name image:(UIImage *)image;
+- (instancetype)initWithPlanet:(NSString *)name planetImage:(UIImage *)planetImage;
 
 @property NSString *name;
-@property UIImage *image;
+@property UIImage *planetImage;
 
 @end
 

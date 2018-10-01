@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class CGAPlanetController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PlanetsCollectionViewController : UICollectionViewController
+
+@property CGAPlanetController *planetController;
 
 @end
 

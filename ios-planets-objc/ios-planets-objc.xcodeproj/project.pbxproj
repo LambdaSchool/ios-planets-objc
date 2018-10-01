@@ -74,8 +74,8 @@
 				135524702162A7FE0022B493 /* AppDelegate.m */,
 				135524882162B66F0022B493 /* View Controllers */,
 				1355248A2162B70B0022B493 /* Views */,
-				135524912162B94D0022B493 /* Models */,
 				135524952162BA650022B493 /* Model Controllers */,
+				135524912162B94D0022B493 /* Models */,
 				135524892162B6870022B493 /* Resources */,
 			);
 			path = "ios-planets-objc";
