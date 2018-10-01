@@ -22,6 +22,7 @@
 - (IBAction)plutoSwitch:(id)sender
 {
     [[NSUserDefaults standardUserDefaults] setBool:[sender isOn] forKey:@"shouldShowPlutoKey"];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"hi" object:nil];
 }
     
 - (IBAction)doneButton:(id)sender

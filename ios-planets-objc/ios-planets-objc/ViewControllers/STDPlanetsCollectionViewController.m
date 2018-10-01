@@ -17,6 +17,10 @@
 
 @implementation STDPlanetsCollectionViewController
     
+- (NSArray*) planets {
+    BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"shouldShowPlutoKey"];
+    return shouldShowPluto ? _planetController.planetsWithPluto : _planetController.planetsWithoutPluto;
+}
     
 static NSString * const reuseIdentifier = @"PlanetCell";
     
@@ -24,9 +28,7 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        STDPlanetController *planetController = [[STDPlanetController alloc] init];
-        BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"shouldShowPlutoKey"];
-        _planets = shouldShowPluto ? planetController.planetsWithPluto : planetController.planetsWithoutPluto;
+        _planetController = [[STDPlanetController alloc] init];
     }
     return self;
 }
@@ -35,20 +37,23 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     {
         self = [super initWithCoder:coder];
         if (self) {
-            STDPlanetController *planetController = [[STDPlanetController alloc] init];
-            BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"shouldShowPlutoKey"];
-            _planets = shouldShowPluto ? planetController.planetsWithPluto : planetController.planetsWithoutPluto;
+            _planetController = [[STDPlanetController alloc] init];
         }
         return self;
     }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [[self collectionView] reloadData];
+    [self.collectionView reloadData];
 }
     
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receivePlutoMessage) name:@"hi" object:nil];
+}
+    
+- (void)receivePlutoMessage {
+    [self.collectionView reloadData];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -59,13 +64,13 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [_planets count];
+    return [self.planets count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     STDPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     
-    STDPlanet *planet = [_planets objectAtIndex:[indexPath row]];
+    STDPlanet *planet = [self.planets objectAtIndex:[indexPath row]];
     cell.planet = planet;
     [cell updateViews];
     
@@ -74,33 +79,5 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
 #pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

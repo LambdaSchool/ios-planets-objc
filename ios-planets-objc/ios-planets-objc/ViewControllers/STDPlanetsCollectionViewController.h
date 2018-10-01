@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface STDPlanetsCollectionViewController : UICollectionViewController
 
-    @property (readonly) NSArray *planets;
+    @property STDPlanetController *planetController;
+    @property (strong, nonatomic) NSArray *planets;
+    - (void)receivePlutoMessage;
     
 @end
 
