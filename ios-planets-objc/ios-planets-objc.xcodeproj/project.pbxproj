@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		135524712162A7FE0022B493 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 135524702162A7FE0022B493 /* AppDelegate.m */; };
-		135524742162A7FE0022B493 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135524732162A7FE0022B493 /* ViewController.m */; };
 		135524772162A7FE0022B493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135524752162A7FE0022B493 /* Main.storyboard */; };
 		135524792162A7FF0022B493 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135524782162A7FF0022B493 /* Assets.xcassets */; };
 		1355247C2162A7FF0022B493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1355247A2162A7FF0022B493 /* LaunchScreen.storyboard */; };
 		1355247F2162A7FF0022B493 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355247E2162A7FF0022B493 /* main.m */; };
+		135524872162B2CE0022B493 /* PlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135524862162B2CE0022B493 /* PlanetsCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1355246C2162A7FE0022B493 /* ios-planets-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-planets-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1355246F2162A7FE0022B493 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		135524702162A7FE0022B493 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		135524722162A7FE0022B493 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		135524732162A7FE0022B493 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		135524762162A7FE0022B493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		135524782162A7FF0022B493 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1355247B2162A7FF0022B493 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1355247D2162A7FF0022B493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1355247E2162A7FF0022B493 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		135524852162B2CE0022B493 /* PlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		135524862162B2CE0022B493 /* PlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +60,31 @@
 			children = (
 				1355246F2162A7FE0022B493 /* AppDelegate.h */,
 				135524702162A7FE0022B493 /* AppDelegate.m */,
-				135524722162A7FE0022B493 /* ViewController.h */,
-				135524732162A7FE0022B493 /* ViewController.m */,
+				135524882162B66F0022B493 /* View Controllers */,
+				135524892162B6870022B493 /* Resources */,
+			);
+			path = "ios-planets-objc";
+			sourceTree = "<group>";
+		};
+		135524882162B66F0022B493 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				135524852162B2CE0022B493 /* PlanetsCollectionViewController.h */,
+				135524862162B2CE0022B493 /* PlanetsCollectionViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		135524892162B6870022B493 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				135524752162A7FE0022B493 /* Main.storyboard */,
 				135524782162A7FF0022B493 /* Assets.xcassets */,
 				1355247A2162A7FF0022B493 /* LaunchScreen.storyboard */,
 				1355247D2162A7FF0022B493 /* Info.plist */,
 				1355247E2162A7FF0022B493 /* main.m */,
 			);
-			path = "ios-planets-objc";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				135524742162A7FE0022B493 /* ViewController.m in Sources */,
 				1355247F2162A7FF0022B493 /* main.m in Sources */,
+				135524872162B2CE0022B493 /* PlanetsCollectionViewController.m in Sources */,
 				135524712162A7FE0022B493 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +302,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "ios-planets-objc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-planets-objc/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "ios-planets-objc/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-planets-objc/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

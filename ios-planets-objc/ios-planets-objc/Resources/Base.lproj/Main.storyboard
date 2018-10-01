@@ -24,28 +24,50 @@
             </objects>
             <point key="canvasLocation" x="-852" y="90"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Planets Collection View Controller-->
         <scene sceneID="HMy-pP-13E">
             <objects>
-                <collectionViewController id="T98-56-vHl" sceneMemberID="viewController">
+                <collectionViewController id="T98-56-vHl" customClass="PlanetsCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jyH-YC-1B4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2mZ-Rs-Dt1">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="180" height="175"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RgR-oh-GMF">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="180" height="175"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w63-4f-Rye">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="175"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CXc-Yc-8ZJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="154.5"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCu-ds-HOq">
+                                                    <rect key="frame" x="0.0" y="154.5" width="180" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="w63-4f-Rye" firstAttribute="leading" secondItem="RgR-oh-GMF" secondAttribute="leading" id="2GL-uq-Jha"/>
+                                    <constraint firstAttribute="bottom" secondItem="w63-4f-Rye" secondAttribute="bottom" id="Mgr-6r-NgF"/>
+                                    <constraint firstAttribute="trailing" secondItem="w63-4f-Rye" secondAttribute="trailing" id="j7P-tc-D5l"/>
+                                    <constraint firstItem="w63-4f-Rye" firstAttribute="top" secondItem="RgR-oh-GMF" secondAttribute="top" id="oyV-Gb-AtC"/>
+                                </constraints>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -57,7 +79,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Fg-VZ-RlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="90"/>
+            <point key="canvasLocation" x="-28" y="89.505247376311857"/>
         </scene>
     </scenes>
 </document>
