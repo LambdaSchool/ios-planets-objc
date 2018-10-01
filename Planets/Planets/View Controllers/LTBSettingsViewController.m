@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // make sure switch follows the user defaults
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    _shouldShowPlutoSwitch.on = [userDefaults boolForKey:@"ShouldShowPluto"];
 }
 
 /*
@@ -29,9 +32,15 @@
 }
 */
 
-- (IBAction)changeShouldShowPluto:(id)sender {
+- (IBAction)changeShouldShowPluto:(id)sender
+{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:_shouldShowPlutoSwitch.on forKey:@"ShouldShowPluto"];
 }
 
-- (IBAction)done:(id)sender {
+- (IBAction)done:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 @end

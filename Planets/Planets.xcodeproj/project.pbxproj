@@ -15,6 +15,8 @@
 		39034E7A2162B36500A249E3 /* LTBPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034E792162B36500A249E3 /* LTBPlanetsCollectionViewController.m */; };
 		39034E802162B69000A249E3 /* LTBPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034E7F2162B69000A249E3 /* LTBPlanetCollectionViewCell.m */; };
 		39034E832162BA8E00A249E3 /* LTBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034E822162BA8E00A249E3 /* LTBSettingsViewController.m */; };
+		39034E882162BDCE00A249E3 /* LTBPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034E872162BDCE00A249E3 /* LTBPlanet.m */; };
+		39034E8B2162BFB500A249E3 /* LTBPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39034E8A2162BFB500A249E3 /* LTBPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		39034E7F2162B69000A249E3 /* LTBPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 		39034E812162BA8E00A249E3 /* LTBSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBSettingsViewController.h; sourceTree = "<group>"; };
 		39034E822162BA8E00A249E3 /* LTBSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBSettingsViewController.m; sourceTree = "<group>"; };
+		39034E862162BDCE00A249E3 /* LTBPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBPlanet.h; sourceTree = "<group>"; };
+		39034E872162BDCE00A249E3 /* LTBPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBPlanet.m; sourceTree = "<group>"; };
+		39034E892162BFB500A249E3 /* LTBPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTBPlanetController.h; sourceTree = "<group>"; };
+		39034E8A2162BFB500A249E3 /* LTBPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTBPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				39034E7D2162B64C00A249E3 /* App Lifecycle */,
+				39034E842162BDA000A249E3 /* Model */,
+				39034E852162BDAC00A249E3 /* Model Controller */,
 				39034E7B2162B5DE00A249E3 /* Views */,
 				39034E762162B29A00A249E3 /* View Controllers */,
 				39034E772162B2A200A249E3 /* Resources */,
@@ -111,6 +119,24 @@
 				39034E602162B27B00A249E3 /* AppDelegate.m */,
 			);
 			path = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		39034E842162BDA000A249E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39034E862162BDCE00A249E3 /* LTBPlanet.h */,
+				39034E872162BDCE00A249E3 /* LTBPlanet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39034E852162BDAC00A249E3 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39034E892162BFB500A249E3 /* LTBPlanetController.h */,
+				39034E8A2162BFB500A249E3 /* LTBPlanetController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +214,8 @@
 				39034E7A2162B36500A249E3 /* LTBPlanetsCollectionViewController.m in Sources */,
 				39034E802162B69000A249E3 /* LTBPlanetCollectionViewCell.m in Sources */,
 				39034E6F2162B27C00A249E3 /* main.m in Sources */,
+				39034E882162BDCE00A249E3 /* LTBPlanet.m in Sources */,
+				39034E8B2162BFB500A249E3 /* LTBPlanetController.m in Sources */,
 				39034E612162B27B00A249E3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
