@@ -10,4 +10,17 @@
 
 @implementation CLSPlanet
 
+-(instancetype)initWithPlanetName:(NSString *)planetName planetImageView:(NSString *)planetImageName
+{
+    self = [super init];
+    
+    if (self != nil)
+    {
+        _planetName = planetName;
+        _planetImageName = planetImageName;
+    }
+    
+    return self;
+}
+
 @end

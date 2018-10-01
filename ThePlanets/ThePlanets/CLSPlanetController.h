@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CLSPlanetController : NSObject
 
+@property NSMutableArray *planetsWithoutPluto;
+
+@property BOOL *doesIncludePluto;
+
 @end
 
 NS_ASSUME_NONNULL_END
