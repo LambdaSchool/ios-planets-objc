@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CGAPlanetController : NSObject
 
-@property (readonly) NSArray *planets;
+@property (readonly) NSArray *planetsWithoutPluto;
+@property (readonly) NSArray *planetsWithPluto;
 
 @end
 
