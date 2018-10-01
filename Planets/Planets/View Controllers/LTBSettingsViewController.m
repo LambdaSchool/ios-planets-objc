@@ -29,6 +29,9 @@
 }
 */
 
+- (IBAction)changeShouldShowPluto:(id)sender {
+}
+
 - (IBAction)done:(id)sender {
 }
 @end
