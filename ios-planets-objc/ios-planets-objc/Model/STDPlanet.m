@@ -16,7 +16,7 @@
         self = [super init];
         if (self) {
             _name = name;
-            _image = [UIImage imageNamed:imageName inBundle:NSBundle.mainBundle compatibleWithTraitCollection:nil];
+            _image = [UIImage imageNamed:imageName];
         }
         return self;
     }

@@ -7,56 +7,67 @@
 //
 
 #import "STDPlanetsCollectionViewController.h"
+#import "STDPlanetController.h"
+#import "STDPlanetCollectionViewCell.h"
+#import "STDPlanet.h"
 
 @interface STDPlanetsCollectionViewController ()
 
 @end
 
 @implementation STDPlanetsCollectionViewController
-
     
-
+    
 static NSString * const reuseIdentifier = @"PlanetCell";
+    
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        STDPlanetController *planetController = [[STDPlanetController alloc] init];
+        BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"shouldShowPlutoKey"];
+        _planets = shouldShowPluto ? planetController.planetsWithPluto : planetController.planetsWithoutPluto;
+    }
+    return self;
+}
+    
+- (instancetype)initWithCoder:(NSCoder *)coder
+    {
+        self = [super initWithCoder:coder];
+        if (self) {
+            STDPlanetController *planetController = [[STDPlanetController alloc] init];
+            BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"shouldShowPlutoKey"];
+            _planets = shouldShowPluto ? planetController.planetsWithPluto : planetController.planetsWithoutPluto;
+        }
+        return self;
+    }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[self collectionView] reloadData];
+}
+    
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
-
+    
+    
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    return [_planets count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    STDPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     
-    // Configure the cell
+    STDPlanet *planet = [_planets objectAtIndex:[indexPath row]];
+    cell.planet = planet;
+    [cell updateViews];
     
     return cell;
 }

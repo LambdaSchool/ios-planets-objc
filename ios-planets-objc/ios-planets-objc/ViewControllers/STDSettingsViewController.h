@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface STDSettingsViewController : UIViewController
 
-
+    @property (weak, nonatomic) IBOutlet UISwitch *plutoSwitchIsOn;
+    
+    
 - (IBAction)plutoSwitch:(id)sender;
 - (IBAction)doneButton:(id)sender;
     

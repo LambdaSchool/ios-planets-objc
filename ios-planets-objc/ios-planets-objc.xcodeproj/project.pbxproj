@@ -14,10 +14,10 @@
 		3DE8EB5A2162AEB80037F7AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8EB592162AEB80037F7AA /* main.m */; };
 		3DE8EB642162AEB80037F7AA /* ios_planets_objcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8EB632162AEB80037F7AA /* ios_planets_objcTests.m */; };
 		3DE8EB752162AFA30037F7AA /* STDPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8EB742162AFA30037F7AA /* STDPlanetsCollectionViewController.m */; };
-		3DE8EB782162B0DD0037F7AA /* STDPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8EB772162B0DD0037F7AA /* STDPlanetsCollectionViewCell.m */; };
 		3DE8EB7B2162B30E0037F7AA /* STDSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8EB7A2162B30E0037F7AA /* STDSettingsViewController.m */; };
 		3DE8EB7E2162B3F60037F7AA /* STDPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8EB7D2162B3F60037F7AA /* STDPlanet.m */; };
 		3DE8EB812162B5460037F7AA /* STDPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8EB802162B5460037F7AA /* STDPlanetController.m */; };
+		3DE8EB842162CEF90037F7AA /* STDPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE8EB832162CEF90037F7AA /* STDPlanetCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +44,14 @@
 		3DE8EB652162AEB80037F7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE8EB732162AFA30037F7AA /* STDPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDPlanetsCollectionViewController.h; sourceTree = "<group>"; };
 		3DE8EB742162AFA30037F7AA /* STDPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDPlanetsCollectionViewController.m; sourceTree = "<group>"; };
-		3DE8EB762162B0DD0037F7AA /* STDPlanetsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDPlanetsCollectionViewCell.h; sourceTree = "<group>"; };
-		3DE8EB772162B0DD0037F7AA /* STDPlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDPlanetsCollectionViewCell.m; sourceTree = "<group>"; };
 		3DE8EB792162B30E0037F7AA /* STDSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDSettingsViewController.h; sourceTree = "<group>"; };
 		3DE8EB7A2162B30E0037F7AA /* STDSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDSettingsViewController.m; sourceTree = "<group>"; };
 		3DE8EB7C2162B3F60037F7AA /* STDPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDPlanet.h; sourceTree = "<group>"; };
 		3DE8EB7D2162B3F60037F7AA /* STDPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDPlanet.m; sourceTree = "<group>"; };
 		3DE8EB7F2162B5460037F7AA /* STDPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDPlanetController.h; sourceTree = "<group>"; };
 		3DE8EB802162B5460037F7AA /* STDPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDPlanetController.m; sourceTree = "<group>"; };
+		3DE8EB822162CEF90037F7AA /* STDPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STDPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		3DE8EB832162CEF90037F7AA /* STDPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STDPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +145,8 @@
 		3DE8EB712162AEE70037F7AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3DE8EB762162B0DD0037F7AA /* STDPlanetsCollectionViewCell.h */,
-				3DE8EB772162B0DD0037F7AA /* STDPlanetsCollectionViewCell.m */,
+				3DE8EB822162CEF90037F7AA /* STDPlanetCollectionViewCell.h */,
+				3DE8EB832162CEF90037F7AA /* STDPlanetCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,8 +268,8 @@
 				3DE8EB812162B5460037F7AA /* STDPlanetController.m in Sources */,
 				3DE8EB5A2162AEB80037F7AA /* main.m in Sources */,
 				3DE8EB7B2162B30E0037F7AA /* STDSettingsViewController.m in Sources */,
-				3DE8EB782162B0DD0037F7AA /* STDPlanetsCollectionViewCell.m in Sources */,
 				3DE8EB4C2162AEB70037F7AA /* AppDelegate.m in Sources */,
+				3DE8EB842162CEF90037F7AA /* STDPlanetCollectionViewCell.m in Sources */,
 				3DE8EB7E2162B3F60037F7AA /* STDPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

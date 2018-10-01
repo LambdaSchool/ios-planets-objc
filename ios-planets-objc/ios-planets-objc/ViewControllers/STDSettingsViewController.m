@@ -16,22 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [_plutoSwitchIsOn setOn:[[NSUserDefaults standardUserDefaults] boolForKey:@"shouldShowPlutoKey"]];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-- (IBAction)plutoSwitch:(id)sender {
+- (IBAction)plutoSwitch:(id)sender
+{
+    [[NSUserDefaults standardUserDefaults] setBool:[sender isOn] forKey:@"shouldShowPlutoKey"];
 }
     
-- (IBAction)doneButton:(id)sender {
+- (IBAction)doneButton:(id)sender
+{
+    //[[self navigationController] popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
     @end

@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "STDPlanetController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface STDPlanetsCollectionViewController : UICollectionViewController
 
+    @property (readonly) NSArray *planets;
+    
 @end
 
 NS_ASSUME_NONNULL_END

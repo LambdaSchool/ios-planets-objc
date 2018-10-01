@@ -22,19 +22,19 @@
                                  [[STDPlanet alloc] initWithName:@"Mars" imageName:@"mars"],
                                  [[STDPlanet alloc] initWithName:@"Jupiter" imageName:@"jupiter"],
                                  [[STDPlanet alloc] initWithName:@"Saturn" imageName:@"saturn"],
-                                 [[STDPlanet alloc] initWithName:@"Urans" imageName:@"urans"],
+                                 [[STDPlanet alloc] initWithName:@"Uranus" imageName:@"uranus"],
                                  [[STDPlanet alloc] initWithName:@"Neptune" imageName:@"neptune"],
                                  [[STDPlanet alloc] initWithName:@"Pluto" imageName:@"pluto"],
                                  nil];
             
-            _planetsWithPluto = [[NSArray alloc] initWithObjects:
+            _planetsWithoutPluto = [[NSArray alloc] initWithObjects:
                                  [[STDPlanet alloc] initWithName:@"Mercury" imageName:@"mercury"],
                                  [[STDPlanet alloc] initWithName:@"Venus" imageName:@"venus"],
                                  [[STDPlanet alloc] initWithName:@"Earth" imageName:@"earth"],
                                  [[STDPlanet alloc] initWithName:@"Mars" imageName:@"mars"],
                                  [[STDPlanet alloc] initWithName:@"Jupiter" imageName:@"jupiter"],
                                  [[STDPlanet alloc] initWithName:@"Saturn" imageName:@"saturn"],
-                                 [[STDPlanet alloc] initWithName:@"Urans" imageName:@"urans"],
+                                 [[STDPlanet alloc] initWithName:@"Uranus" imageName:@"uranus"],
                                  [[STDPlanet alloc] initWithName:@"Neptune" imageName:@"neptune"],
                                  nil];
         }
