@@ -30,7 +30,11 @@
 
 - (instancetype)initWithCollectionViewLayout:(UICollectionViewLayout *)layout
 {
-    
+    self = [super initWithCollectionViewLayout:layout];
+    if (self) {
+        _planetController = [[LTBPlanetController alloc] init];
+    }
+    return self;
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
