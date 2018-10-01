@@ -15,6 +15,8 @@
 		135524872162B2CE0022B493 /* PlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135524862162B2CE0022B493 /* PlanetsCollectionViewController.m */; };
 		1355248D2162B7290022B493 /* PlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355248C2162B7290022B493 /* PlanetCollectionViewCell.m */; };
 		135524902162B80E0022B493 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355248F2162B80E0022B493 /* SettingsViewController.m */; };
+		135524942162B9730022B493 /* CGAPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 135524932162B9730022B493 /* CGAPlanet.m */; };
+		135524982162BA840022B493 /* CGAPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135524972162BA840022B493 /* CGAPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		1355248C2162B7290022B493 /* PlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetCollectionViewCell.m; sourceTree = "<group>"; };
 		1355248E2162B80E0022B493 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		1355248F2162B80E0022B493 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		135524922162B9730022B493 /* CGAPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGAPlanet.h; sourceTree = "<group>"; };
+		135524932162B9730022B493 /* CGAPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGAPlanet.m; sourceTree = "<group>"; };
+		135524962162BA840022B493 /* CGAPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGAPlanetController.h; sourceTree = "<group>"; };
+		135524972162BA840022B493 /* CGAPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGAPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,8 @@
 				135524702162A7FE0022B493 /* AppDelegate.m */,
 				135524882162B66F0022B493 /* View Controllers */,
 				1355248A2162B70B0022B493 /* Views */,
+				135524912162B94D0022B493 /* Models */,
+				135524952162BA650022B493 /* Model Controllers */,
 				135524892162B6870022B493 /* Resources */,
 			);
 			path = "ios-planets-objc";
@@ -103,6 +111,24 @@
 				1355248C2162B7290022B493 /* PlanetCollectionViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		135524912162B94D0022B493 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				135524922162B9730022B493 /* CGAPlanet.h */,
+				135524932162B9730022B493 /* CGAPlanet.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		135524952162BA650022B493 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				135524962162BA840022B493 /* CGAPlanetController.h */,
+				135524972162BA840022B493 /* CGAPlanetController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +204,10 @@
 				1355248D2162B7290022B493 /* PlanetCollectionViewCell.m in Sources */,
 				1355247F2162A7FF0022B493 /* main.m in Sources */,
 				135524902162B80E0022B493 /* SettingsViewController.m in Sources */,
+				135524982162BA840022B493 /* CGAPlanetController.m in Sources */,
 				135524872162B2CE0022B493 /* PlanetsCollectionViewController.m in Sources */,
 				135524712162A7FE0022B493 /* AppDelegate.m in Sources */,
+				135524942162B9730022B493 /* CGAPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
