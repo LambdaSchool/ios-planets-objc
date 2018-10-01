@@ -10,7 +10,7 @@
 
 @implementation CLSPlanet
 
--(instancetype)initWithPlanetName:(NSString *)planetName planetImageView:(NSString *)planetImageName
+-(instancetype)initWithPlanetName:(NSString *)planetName planetImageName:(NSString *)planetImageName
 {
     self = [super init];
     

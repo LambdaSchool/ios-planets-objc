@@ -7,12 +7,38 @@
 //
 
 #import "CLSPlanetsCollectionViewController.h"
+#import "CLSPlanetController.h"
+#import "CLSPlanet.h"
+#import "CLSPlanetCollectionViewCell.h"
 
 @interface CLSPlanetsCollectionViewController ()
+
+@property CLSPlanet *planet;
 
 @end
 
 @implementation CLSPlanetsCollectionViewController
+
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    
+    if(self)
+    {
+        _planetController = [[CLSPlanetController alloc] init];
+    }
+    return self;
+}
+
+-(instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if(self)
+    {
+        _planetController = [[CLSPlanetController alloc] init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -38,14 +64,18 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 0;
+    return _planetController.planetsWithoutPluto.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
+    CLSPlanetCollectionViewCell *cell = (CLSPlanetCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     
-    // Configure the cell
+    _planet = [[CLSPlanet alloc] init];
+    _planet = [_planetController.planetsWithoutPluto objectAtIndex:indexPath.row];
+    cell.planetImageView.image = [UIImage imageNamed:_planet.planetImageName];
+    cell.planetNameLabel.text = _planet.planetName;
+    
     
     return cell;
 }

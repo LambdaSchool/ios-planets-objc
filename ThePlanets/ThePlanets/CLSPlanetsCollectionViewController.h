@@ -10,7 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class CLSPlanetController;
 @interface CLSPlanetsCollectionViewController : UICollectionViewController
+
+@property CLSPlanetController *planetController;
 
 @end
 
