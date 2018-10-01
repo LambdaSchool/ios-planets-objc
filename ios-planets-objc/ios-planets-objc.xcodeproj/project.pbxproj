@@ -13,6 +13,7 @@
 		1355247C2162A7FF0022B493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1355247A2162A7FF0022B493 /* LaunchScreen.storyboard */; };
 		1355247F2162A7FF0022B493 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355247E2162A7FF0022B493 /* main.m */; };
 		135524872162B2CE0022B493 /* PlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 135524862162B2CE0022B493 /* PlanetsCollectionViewController.m */; };
+		1355248D2162B7290022B493 /* PlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1355248C2162B7290022B493 /* PlanetCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		1355247E2162A7FF0022B493 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		135524852162B2CE0022B493 /* PlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetsCollectionViewController.h; sourceTree = "<group>"; };
 		135524862162B2CE0022B493 /* PlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		1355248B2162B7290022B493 /* PlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		1355248C2162B7290022B493 /* PlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 				1355246F2162A7FE0022B493 /* AppDelegate.h */,
 				135524702162A7FE0022B493 /* AppDelegate.m */,
 				135524882162B66F0022B493 /* View Controllers */,
+				1355248A2162B70B0022B493 /* Views */,
 				135524892162B6870022B493 /* Resources */,
 			);
 			path = "ios-planets-objc";
@@ -85,6 +89,15 @@
 				1355247E2162A7FF0022B493 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1355248A2162B70B0022B493 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1355248B2162B7290022B493 /* PlanetCollectionViewCell.h */,
+				1355248C2162B7290022B493 /* PlanetCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1355248D2162B7290022B493 /* PlanetCollectionViewCell.m in Sources */,
 				1355247F2162A7FF0022B493 /* main.m in Sources */,
 				135524872162B2CE0022B493 /* PlanetsCollectionViewController.m in Sources */,
 				135524712162A7FE0022B493 /* AppDelegate.m in Sources */,
