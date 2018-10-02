@@ -13,6 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CLSSettingsViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UISwitch *plutoSwitch;
+@property BOOL shouldAddPluto;
+
+- (IBAction)togglePlutoSwitch:(id)sender;
 
 @end
 

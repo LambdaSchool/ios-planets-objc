@@ -101,8 +101,11 @@
                                     <action selector="done:" destination="OEf-Tq-QIQ" eventType="touchUpInside" id="GUv-N5-jWg"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DjQ-O0-zVc">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DjQ-O0-zVc">
                                 <rect key="frame" x="310" y="146" width="51" height="31"/>
+                                <connections>
+                                    <action selector="togglePlutoSwitch:" destination="OEf-Tq-QIQ" eventType="valueChanged" id="hLM-et-Pdj"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jbt-KC-Tqf">
                                 <rect key="frame" x="26" y="146" width="276" height="31"/>

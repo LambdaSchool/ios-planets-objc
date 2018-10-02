@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CLSPlanetsCollectionViewController : UICollectionViewController
 
 @property CLSPlanetController *planetController;
-
+@property BOOL shouldPlutoBeAdded;
 @end
 
 NS_ASSUME_NONNULL_END

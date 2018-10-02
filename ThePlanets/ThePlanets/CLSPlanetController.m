@@ -30,15 +30,6 @@
     return self;
 }
 
--(void)addPluto
-{
-    *_doesIncludePluto = [[NSUserDefaults standardUserDefaults] boolForKey:@""];
-    
-    if (_doesIncludePluto)
-    {
-        CLSPlanet *pluto = [[CLSPlanet alloc] initWithPlanetName:@"Pluto" planetImageName:@"pluto"];
-        [_planetsWithoutPluto addObject: pluto];
-    }
-}
+
 
 @end
