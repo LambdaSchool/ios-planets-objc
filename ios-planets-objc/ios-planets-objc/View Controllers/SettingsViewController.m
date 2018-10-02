@@ -14,10 +14,20 @@
 
 @implementation SettingsViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self updateViews];
 }
+
 - (IBAction)changeShouldShowPluto:(id)sender {
+    [[NSUserDefaults standardUserDefaults] setBool:[sender isOn] forKey:@"ShouldShowPluto"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
+
+- (void)updateViews {
+    BOOL isOn = [[NSUserDefaults standardUserDefaults]
+                            boolForKey:@"ShouldShowPluto"];
+    [[self shouldShowPlutoSwitch] setOn:isOn];
+}
+
 @end

@@ -19,10 +19,9 @@
 
 static NSString * const reuseIdentifier = @"PlanetCell";
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-//    [self.collectionView registerClass:[PlanetCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[self collectionView] reloadData];
 }
 
 - (IBAction)unwindToPlanetsCollectionViewController:(UIStoryboardSegue *)segue { }
@@ -46,7 +45,10 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [[[self planetController] planetsWithoutPluto] count];
+    BOOL isOn = [[NSUserDefaults standardUserDefaults]
+                 boolForKey:@"ShouldShowPluto"];
+    NSArray *planets = isOn ? [[self planetController] planetsWithPluto] : [[self planetController] planetsWithoutPluto];
+    return [planets count];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
@@ -55,7 +57,10 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    NSArray *planets = [[self planetController] planetsWithoutPluto];
+    BOOL isOn = [[NSUserDefaults standardUserDefaults]
+                 boolForKey:@"ShouldShowPluto"];
+    
+    NSArray *planets = isOn ? [[self planetController] planetsWithPluto] : [[self planetController] planetsWithoutPluto];
     
     [[cell planetLabel] setText:[[planets objectAtIndex:[indexPath row]] name]];
     [[cell planetImageView] setImage:[[planets objectAtIndex:[indexPath row]] planetImage]];
