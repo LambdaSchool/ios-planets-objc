@@ -28,8 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _planetController = [[CLSPlanetController alloc] init];
-    _pluto = [[CLSPlanet alloc] initWithPlanetName:@"Pluto" planetImageName:@"pluto"];
+//    _planetController = [[CLSPlanetController alloc] init];
+//    _pluto = [[CLSPlanet alloc] initWithPlanetName:@"Pluto" planetImageName:@"pluto"];
 }
 
 - (IBAction)done:(id)sender
