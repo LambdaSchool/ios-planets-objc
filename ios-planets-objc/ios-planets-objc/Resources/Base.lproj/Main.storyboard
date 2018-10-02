@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="-28" y="89.505247376311857"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="gZj-Bl-TSB">
             <objects>
-                <viewController id="xWr-0c-xwO" sceneMemberID="viewController">
+                <viewController id="xWr-0c-xwO" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IYb-tb-TLh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,12 +102,18 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mdr-19-C9Z">
                                         <rect key="frame" x="294" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeShouldShowPluto:" destination="xWr-0c-xwO" eventType="valueChanged" id="O2Z-GL-uGQ"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOJ-la-8Mw">
                                 <rect key="frame" x="322" y="20" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <segue destination="sBh-lW-E5P" kind="unwind" unwindAction="unwindToPlanetsCollectionViewController:" id="DBJ-aE-6Yz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -121,10 +127,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vki-3M-FWV"/>
                     </view>
+                    <connections>
+                        <outlet property="shouldShowPlutoSwitch" destination="mdr-19-C9Z" id="hLT-GO-ed8"/>
+                        <segue destination="sBh-lW-E5P" kind="unwind" identifier="unwindToPlanets" unwindAction="unwindToPlanetsCollectionViewController:" id="m3n-24-pdZ"/>
+                        <segue destination="sBh-lW-E5P" kind="unwind" unwindAction="unwindToPlanetsCollectionViewController:" id="2r0-Kp-Ee4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBd-KB-Xrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="sBh-lW-E5P" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="846" y="90"/>
+            <point key="canvasLocation" x="845.60000000000002" y="89.505247376311857"/>
         </scene>
     </scenes>
 </document>

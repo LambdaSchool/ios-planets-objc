@@ -25,6 +25,8 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 //    [self.collectionView registerClass:[PlanetCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
 }
 
+- (IBAction)unwindToPlanetsCollectionViewController:(UIStoryboardSegue *)segue { }
+
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
@@ -60,5 +62,4 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     
     return cell;
 }
-
 @end

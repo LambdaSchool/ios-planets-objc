@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SettingsViewController : UIViewController
 
+- (IBAction)changeShouldShowPluto:(id)sender;
+@property (strong, nonatomic) IBOutlet UISwitch *shouldShowPlutoSwitch;
+
 @end
 
 NS_ASSUME_NONNULL_END
