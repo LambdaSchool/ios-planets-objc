@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MUSettingsViewController.h
 //  Planets
 //
 //  Created by Moin Uddin on 11/11/18.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface MUSettingsViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

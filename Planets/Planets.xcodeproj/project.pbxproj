@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A1B25E772198EED00087A06A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E762198EED00087A06A /* AppDelegate.m */; };
-		A1B25E7A2198EED00087A06A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E792198EED00087A06A /* ViewController.m */; };
 		A1B25E7D2198EED00087A06A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B25E7B2198EED00087A06A /* Main.storyboard */; };
 		A1B25E7F2198EED10087A06A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B25E7E2198EED10087A06A /* Assets.xcassets */; };
 		A1B25E822198EED10087A06A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1B25E802198EED10087A06A /* LaunchScreen.storyboard */; };
@@ -17,14 +16,13 @@
 		A1B25E902198EF520087A06A /* PlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E8F2198EF520087A06A /* PlanetController.m */; };
 		A1B25E932198F0450087A06A /* MUPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E922198F0450087A06A /* MUPlanetsCollectionViewController.m */; };
 		A1B25E962198F3450087A06A /* MUPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E952198F3450087A06A /* MUPlanetCollectionViewCell.m */; };
+		A1B25E992198F6150087A06A /* MUSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E982198F6150087A06A /* MUSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A1B25E722198EED00087A06A /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B25E752198EED00087A06A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A1B25E762198EED00087A06A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A1B25E782198EED00087A06A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A1B25E792198EED00087A06A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A1B25E7C2198EED00087A06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1B25E7E2198EED10087A06A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1B25E812198EED10087A06A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +36,8 @@
 		A1B25E922198F0450087A06A /* MUPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUPlanetsCollectionViewController.m; sourceTree = "<group>"; };
 		A1B25E942198F3450087A06A /* MUPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUPlanetCollectionViewCell.h; sourceTree = "<group>"; };
 		A1B25E952198F3450087A06A /* MUPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		A1B25E972198F6150087A06A /* MUSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUSettingsViewController.h; sourceTree = "<group>"; };
+		A1B25E982198F6150087A06A /* MUSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +72,6 @@
 			children = (
 				A1B25E752198EED00087A06A /* AppDelegate.h */,
 				A1B25E762198EED00087A06A /* AppDelegate.m */,
-				A1B25E782198EED00087A06A /* ViewController.h */,
-				A1B25E792198EED00087A06A /* ViewController.m */,
 				A1B25E8B2198EF460087A06A /* Planet.h */,
 				A1B25E8C2198EF460087A06A /* Planet.m */,
 				A1B25E8E2198EF520087A06A /* PlanetController.h */,
@@ -81,6 +79,8 @@
 				A1B25E952198F3450087A06A /* MUPlanetCollectionViewCell.m */,
 				A1B25E8F2198EF520087A06A /* PlanetController.m */,
 				A1B25E7B2198EED00087A06A /* Main.storyboard */,
+				A1B25E972198F6150087A06A /* MUSettingsViewController.h */,
+				A1B25E982198F6150087A06A /* MUSettingsViewController.m */,
 				A1B25E912198F0450087A06A /* MUPlanetsCollectionViewController.h */,
 				A1B25E922198F0450087A06A /* MUPlanetsCollectionViewController.m */,
 				A1B25E7E2198EED10087A06A /* Assets.xcassets */,
@@ -161,13 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B25E7A2198EED00087A06A /* ViewController.m in Sources */,
 				A1B25E902198EF520087A06A /* PlanetController.m in Sources */,
 				A1B25E852198EED10087A06A /* main.m in Sources */,
 				A1B25E772198EED00087A06A /* AppDelegate.m in Sources */,
 				A1B25E932198F0450087A06A /* MUPlanetsCollectionViewController.m in Sources */,
 				A1B25E8D2198EF460087A06A /* Planet.m in Sources */,
 				A1B25E962198F3450087A06A /* MUPlanetCollectionViewCell.m in Sources */,
+				A1B25E992198F6150087A06A /* MUSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
