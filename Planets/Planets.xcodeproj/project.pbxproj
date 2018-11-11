@@ -16,6 +16,7 @@
 		A1B25E8D2198EF460087A06A /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E8C2198EF460087A06A /* Planet.m */; };
 		A1B25E902198EF520087A06A /* PlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E8F2198EF520087A06A /* PlanetController.m */; };
 		A1B25E932198F0450087A06A /* MUPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E922198F0450087A06A /* MUPlanetsCollectionViewController.m */; };
+		A1B25E962198F3450087A06A /* MUPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B25E952198F3450087A06A /* MUPlanetCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		A1B25E8F2198EF520087A06A /* PlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetController.m; sourceTree = "<group>"; };
 		A1B25E912198F0450087A06A /* MUPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUPlanetsCollectionViewController.h; sourceTree = "<group>"; };
 		A1B25E922198F0450087A06A /* MUPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		A1B25E942198F3450087A06A /* MUPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MUPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		A1B25E952198F3450087A06A /* MUPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MUPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				A1B25E8B2198EF460087A06A /* Planet.h */,
 				A1B25E8C2198EF460087A06A /* Planet.m */,
 				A1B25E8E2198EF520087A06A /* PlanetController.h */,
+				A1B25E942198F3450087A06A /* MUPlanetCollectionViewCell.h */,
+				A1B25E952198F3450087A06A /* MUPlanetCollectionViewCell.m */,
 				A1B25E8F2198EF520087A06A /* PlanetController.m */,
 				A1B25E7B2198EED00087A06A /* Main.storyboard */,
 				A1B25E912198F0450087A06A /* MUPlanetsCollectionViewController.h */,
@@ -162,6 +167,7 @@
 				A1B25E772198EED00087A06A /* AppDelegate.m in Sources */,
 				A1B25E932198F0450087A06A /* MUPlanetsCollectionViewController.m in Sources */,
 				A1B25E8D2198EF460087A06A /* Planet.m in Sources */,
+				A1B25E962198F3450087A06A /* MUPlanetCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
