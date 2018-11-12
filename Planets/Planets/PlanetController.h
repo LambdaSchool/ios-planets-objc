@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PlanetController : NSObject
 
+@property (readonly) NSArray *planets;
+@property (readonly) NSArray *planetsWithPluto;
+
 @end
 
 NS_ASSUME_NONNULL_END

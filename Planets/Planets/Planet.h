@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Planet : NSObject
 
+-(instancetype) initWithName:(NSString*)name imageName:(NSString*)imageName;
+
+
+@property NSString* name;
+@property NSString* imageName;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -10,4 +10,14 @@
 
 @implementation Planet
 
+- (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName
+{
+    self = [super init];
+    if (self) {
+        _name = name;
+        _imageName = imageName;
+    }
+    return self;
+}
+
 @end
