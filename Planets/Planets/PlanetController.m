@@ -26,7 +26,7 @@
                     , nil];
         
         _planetsWithPluto = [[NSArray alloc] initWithObjects:
-                    [[Planet alloc] initWithName:@"Pluto" image: [UIImage imageNamed:@"pluto]"]],
+                    [[Planet alloc] initWithName:@"Pluto" image: [UIImage imageNamed:@"pluto"]],
                     [[Planet alloc] initWithName:@"Mercury" image: [UIImage imageNamed:@"mercury"]],
                     [[Planet alloc] initWithName:@"Venus" image: [UIImage imageNamed:@"venus"]],
                     [[Planet alloc] initWithName:@"Earth" image: [UIImage imageNamed:@"earth"]],

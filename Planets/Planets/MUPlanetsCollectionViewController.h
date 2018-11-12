@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MUPlanetsCollectionViewController : UICollectionViewController
 
 @property PlanetController *planetController;
-@property NSArray *planets;
+@property NSMutableArray *planets;
 
 @end
 
