@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self updateViews];
     // Do any additional setup after loading the view.
 }
 
@@ -29,4 +30,17 @@
 }
 */
 
+- (IBAction)dismissSettings:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)shouldSwitchPluto:(id)sender {
+    [[NSUserDefaults standardUserDefaults] setBool: [[self plutoSwitch ] isOn] forKey:@"ShouldShowPlutoKey"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (void)updateViews {
+    BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPlutoKey"];
+    [[self plutoSwitch] setOn:shouldShowPluto animated:true];
+}
 @end

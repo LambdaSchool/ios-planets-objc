@@ -7,27 +7,46 @@
 //
 
 #import "MUPlanetsCollectionViewController.h"
-
+#import "MUPlanetCollectionViewCell.h"
+#import "PlanetController.h"
+#import "Planet.h"
 @interface MUPlanetsCollectionViewController ()
 
 @end
 
 @implementation MUPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"PlanetCell";
+
+
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        _planetController = [[PlanetController alloc ] init];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _planetController = [[PlanetController alloc ] init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    //[self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
 }
-
 /*
 #pragma mark - Navigation
 
@@ -40,24 +59,37 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    return [_planets count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
+    MUPlanetCollectionViewCell *cell = (MUPlanetCollectionViewCell *) [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    //NSArray *planets = [[self planetController ] planets ];
+    Planet *planet = [_planets objectAtIndex:[indexPath row]];
+//
+//    cell.planet = planet;
+    [[cell imageView] setImage: [planet image]];
+    [[cell planetLabel] setText: [planet name]];
     
     return cell;
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    BOOL shouldShouldPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPlutoKey"];
+    if (shouldShouldPluto) {
+        _planets = [_planetController planetsWithPluto];
+    } else {
+        _planets = [_planetController planets];
+    }
+    
+    [[self collectionView] reloadData];
+}
+
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:   (UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+//    return CGSizeMake(40 * [indexPath item], 40 *  [indexPath item]);
+//}
 
 #pragma mark <UICollectionViewDelegate>
 

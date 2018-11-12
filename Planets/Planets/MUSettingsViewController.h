@@ -11,6 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MUSettingsViewController : UIViewController
+- (IBAction)dismissSettings:(id)sender;
+@property (weak, nonatomic) IBOutlet UISwitch *plutoSwitch;
+- (IBAction)shouldSwitchPluto:(id)sender;
+
+
+-(void) updateViews;
 
 @end
 
