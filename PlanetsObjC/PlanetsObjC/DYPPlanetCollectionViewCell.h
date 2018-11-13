@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class DYPPlanet;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DYPPlanetCollectionViewCell : UICollectionViewCell

@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class DYPPlanetController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DYPPlanetsCollectionViewController : UICollectionViewController
+
+@property DYPPlanetController *planetController;
 
 @end
 

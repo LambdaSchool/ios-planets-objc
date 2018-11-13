@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (IBAction)didUpdatePluto:(id)sender;
 
+- (void)updateViews;
+
 @property (weak, nonatomic) IBOutlet UISwitch *isPlutoAPlanetSwitch;
 
 @end

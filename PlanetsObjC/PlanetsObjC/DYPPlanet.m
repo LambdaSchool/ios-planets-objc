@@ -11,5 +11,13 @@
 
 @implementation DYPPlanet
 
-
+- (instancetype)initWithName:(NSString *)name image:(UIImage *)image
+{
+    self = [super init];
+    if (self) {
+        _name = name;
+        _image = image;
+    }
+    return self;
+}
 @end

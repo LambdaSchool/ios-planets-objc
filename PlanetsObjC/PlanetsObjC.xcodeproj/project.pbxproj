@@ -76,6 +76,12 @@
 				7BF751362197223000DBCD73 /* DYPPlanetController.m */,
 				7BF751062197199400DBCD73 /* AppDelegate.h */,
 				7BF751072197199400DBCD73 /* AppDelegate.m */,
+				7BF7512E2197202600DBCD73 /* DYPSettingsViewController.h */,
+				7BF7512F2197202600DBCD73 /* DYPSettingsViewController.m */,
+				7BF7512B21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.h */,
+				7BF7512C21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.m */,
+				7BF7511C21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.h */,
+				7BF7511D21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.m */,
 				7BF7510C2197199400DBCD73 /* Main.storyboard */,
 				7BF75131219720B800DBCD73 /* View Controllers */,
 				7BF7510F2197199F00DBCD73 /* Assets.xcassets */,
@@ -89,12 +95,6 @@
 		7BF75131219720B800DBCD73 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7BF7512E2197202600DBCD73 /* DYPSettingsViewController.h */,
-				7BF7512F2197202600DBCD73 /* DYPSettingsViewController.m */,
-				7BF7512B21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.h */,
-				7BF7512C21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.m */,
-				7BF7511C21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.h */,
-				7BF7511D21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
