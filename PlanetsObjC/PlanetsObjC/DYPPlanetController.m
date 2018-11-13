@@ -18,7 +18,7 @@
     if (self) {
         _planetsWithoutPluto = [[NSArray alloc] initWithObjects:
                                 [[DYPPlanet alloc] initWithName:@"Earth" image:[UIImage imageNamed:@"earth"]],
-                                [[DYPPlanet alloc] initWithName:@"Juniper" image:[UIImage imageNamed:@"juniper"]],
+                                [[DYPPlanet alloc] initWithName:@"Jupiter" image:[UIImage imageNamed:@"jupiter"]],
                                 [[DYPPlanet alloc] initWithName:@"Mars" image:[UIImage imageNamed:@"mars"]],
                                 [[DYPPlanet alloc] initWithName:@"Mercury" image:[UIImage imageNamed:@"mercury"]],
                                 [[DYPPlanet alloc] initWithName:@"Neptune" image:[UIImage imageNamed:@"neptune"]],
@@ -28,7 +28,7 @@
                                 nil];
         _planetsWithPluto = [[NSArray alloc] initWithObjects:
                              [[DYPPlanet alloc] initWithName:@"Earth" image:[UIImage imageNamed:@"earth"]],
-                             [[DYPPlanet alloc] initWithName:@"Juniper" image:[UIImage imageNamed:@"juniper"]],
+                             [[DYPPlanet alloc] initWithName:@"Jupiter" image:[UIImage imageNamed:@"jupiter"]],
                              [[DYPPlanet alloc] initWithName:@"Mars" image:[UIImage imageNamed:@"mars"]],
                              [[DYPPlanet alloc] initWithName:@"Mercury" image:[UIImage imageNamed:@"mercury"]],
                              [[DYPPlanet alloc] initWithName:@"Neptune" image:[UIImage imageNamed:@"neptune"]],

@@ -7,7 +7,8 @@
 //
 
 #import "DYPPlanetsCollectionViewController.h"
-#import "DYPPlanetController.m"
+#import "DYPPlanet.h"
+#import "DYPPlanetController.h"
 #import "DYPPlanetCollectionViewCell.h"
 
 @interface DYPPlanetsCollectionViewController ()
@@ -39,14 +40,15 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView reloadData];
+    [self.collectionView setDelegate:self];
 }
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    Boolean shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPluto"];
+    BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPluto"];
     
     if (shouldShowPluto)
     {

@@ -22,13 +22,14 @@
 
 - (void)updateViews
 {
-    Boolean shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPluto"];
+    BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPluto"];
     
     [_isPlutoAPlanetSwitch setOn:shouldShowPluto];
 }
 
 - (IBAction)didUpdatePluto:(id)sender {
     [[NSUserDefaults standardUserDefaults] setBool:[_isPlutoAPlanetSwitch isOn] forKey:@"ShouldShowPluto"];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
