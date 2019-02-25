@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFB24BD222248C940096E395 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BD122248C940096E395 /* AppDelegate.m */; };
+		FFB24BD822248C940096E395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB24BD622248C940096E395 /* Main.storyboard */; };
+		FFB24BDA22248C950096E395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB24BD922248C950096E395 /* Assets.xcassets */; };
+		FFB24BDD22248C950096E395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB24BDB22248C950096E395 /* LaunchScreen.storyboard */; };
+		FFB24BE022248C950096E395 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BDF22248C950096E395 /* main.m */; };
+		FFB24BE8222493D70096E395 /* LMSPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BE7222493D70096E395 /* LMSPlanetsCollectionViewController.m */; };
+		FFB24BEF222498B20096E395 /* LMSPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BEE222498B20096E395 /* LMSPlanetsCollectionViewCell.m */; };
+		FFB24BF222249A250096E395 /* LMSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BF122249A250096E395 /* LMSSettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FFB24BCD22248C940096E395 /* PlanetsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB24BD022248C940096E395 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFB24BD122248C940096E395 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFB24BD722248C940096E395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFB24BD922248C950096E395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFB24BDC22248C950096E395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFB24BDE22248C950096E395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB24BDF22248C950096E395 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFB24BE6222493D70096E395 /* LMSPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		FFB24BE7222493D70096E395 /* LMSPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		FFB24BED222498B20096E395 /* LMSPlanetsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSPlanetsCollectionViewCell.h; sourceTree = "<group>"; };
+		FFB24BEE222498B20096E395 /* LMSPlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSPlanetsCollectionViewCell.m; sourceTree = "<group>"; };
+		FFB24BF022249A250096E395 /* LMSSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSSettingsViewController.h; sourceTree = "<group>"; };
+		FFB24BF122249A250096E395 /* LMSSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSSettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFB24BCA22248C940096E395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFB24BC422248C940096E395 = {
+			isa = PBXGroup;
+			children = (
+				FFB24BCF22248C940096E395 /* PlanetsObjC */,
+				FFB24BCE22248C940096E395 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFB24BCE22248C940096E395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24BCD22248C940096E395 /* PlanetsObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFB24BCF22248C940096E395 /* PlanetsObjC */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24BEA222494080096E395 /* View Controllers */,
+				FFB24BEC2224987B0096E395 /* Views */,
+				FFB24BE9222493EF0096E395 /* Storyboards */,
+				FFB24BEB222494240096E395 /* Resources */,
+			);
+			path = PlanetsObjC;
+			sourceTree = "<group>";
+		};
+		FFB24BE9222493EF0096E395 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24BD622248C940096E395 /* Main.storyboard */,
+				FFB24BDB22248C950096E395 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFB24BEA222494080096E395 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24BE6222493D70096E395 /* LMSPlanetsCollectionViewController.h */,
+				FFB24BE7222493D70096E395 /* LMSPlanetsCollectionViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FFB24BEB222494240096E395 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24BD022248C940096E395 /* AppDelegate.h */,
+				FFB24BD122248C940096E395 /* AppDelegate.m */,
+				FFB24BD922248C950096E395 /* Assets.xcassets */,
+				FFB24BDE22248C950096E395 /* Info.plist */,
+				FFB24BDF22248C950096E395 /* main.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FFB24BEC2224987B0096E395 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24BED222498B20096E395 /* LMSPlanetsCollectionViewCell.h */,
+				FFB24BEE222498B20096E395 /* LMSPlanetsCollectionViewCell.m */,
+				FFB24BF022249A250096E395 /* LMSSettingsViewController.h */,
+				FFB24BF122249A250096E395 /* LMSSettingsViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFB24BCC22248C940096E395 /* PlanetsObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB24BE322248C950096E395 /* Build configuration list for PBXNativeTarget "PlanetsObjC" */;
+			buildPhases = (
+				FFB24BC922248C940096E395 /* Sources */,
+				FFB24BCA22248C940096E395 /* Frameworks */,
+				FFB24BCB22248C940096E395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanetsObjC;
+			productName = PlanetsObjC;
+			productReference = FFB24BCD22248C940096E395 /* PlanetsObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFB24BC522248C940096E395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Lisa M Sampson";
+				TargetAttributes = {
+					FFB24BCC22248C940096E395 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = FFB24BC822248C940096E395 /* Build configuration list for PBXProject "PlanetsObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFB24BC422248C940096E395;
+			productRefGroup = FFB24BCE22248C940096E395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFB24BCC22248C940096E395 /* PlanetsObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFB24BCB22248C940096E395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB24BDD22248C950096E395 /* LaunchScreen.storyboard in Resources */,
+				FFB24BDA22248C950096E395 /* Assets.xcassets in Resources */,
+				FFB24BD822248C940096E395 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFB24BC922248C940096E395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB24BE8222493D70096E395 /* LMSPlanetsCollectionViewController.m in Sources */,
+				FFB24BF222249A250096E395 /* LMSSettingsViewController.m in Sources */,
+				FFB24BE022248C950096E395 /* main.m in Sources */,
+				FFB24BD222248C940096E395 /* AppDelegate.m in Sources */,
+				FFB24BEF222498B20096E395 /* LMSPlanetsCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFB24BD622248C940096E395 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB24BD722248C940096E395 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFB24BDB22248C950096E395 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB24BDC22248C950096E395 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFB24BE122248C950096E395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFB24BE222248C950096E395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFB24BE422248C950096E395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LA5UAXN45;
+				INFOPLIST_FILE = "$(SRCROOT)/PlanetsObjC/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisamsampson.PlanetsObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFB24BE522248C950096E395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2LA5UAXN45;
+				INFOPLIST_FILE = "$(SRCROOT)/PlanetsObjC/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lisamsampson.PlanetsObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFB24BC822248C940096E395 /* Build configuration list for PBXProject "PlanetsObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB24BE122248C950096E395 /* Debug */,
+				FFB24BE222248C950096E395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB24BE322248C950096E395 /* Build configuration list for PBXNativeTarget "PlanetsObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB24BE422248C950096E395 /* Debug */,
+				FFB24BE522248C950096E395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFB24BC522248C940096E395 /* Project object */;
+}
