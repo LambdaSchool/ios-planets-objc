@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		84169DBF22248C82007F7A33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169DBE22248C82007F7A33 /* AppDelegate.m */; };
-		84169DC222248C82007F7A33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169DC122248C82007F7A33 /* ViewController.m */; };
 		84169DC522248C82007F7A33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84169DC322248C82007F7A33 /* Main.storyboard */; };
 		84169DC722248C83007F7A33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84169DC622248C83007F7A33 /* Assets.xcassets */; };
 		84169DCA22248C83007F7A33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84169DC822248C83007F7A33 /* LaunchScreen.storyboard */; };
 		84169DCD22248C83007F7A33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169DCC22248C83007F7A33 /* main.m */; };
+		84169DD5222491D6007F7A33 /* ALWPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169DD4222491D6007F7A33 /* ALWPlanetsCollectionViewController.m */; };
+		84169DD82224947D007F7A33 /* ALWPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169DD72224947D007F7A33 /* ALWPlanetCollectionViewCell.m */; };
+		84169DDB222496A0007F7A33 /* ALWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84169DDA222496A0007F7A33 /* ALWSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84169DBA22248C82007F7A33 /* Planets Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84169DBD22248C82007F7A33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84169DBE22248C82007F7A33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84169DC022248C82007F7A33 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		84169DC122248C82007F7A33 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		84169DC422248C82007F7A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84169DC622248C83007F7A33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84169DC922248C83007F7A33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84169DCB22248C83007F7A33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84169DCC22248C83007F7A33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84169DD3222491D6007F7A33 /* ALWPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		84169DD4222491D6007F7A33 /* ALWPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		84169DD62224947D007F7A33 /* ALWPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		84169DD72224947D007F7A33 /* ALWPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		84169DD9222496A0007F7A33 /* ALWSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWSettingsViewController.h; sourceTree = "<group>"; };
+		84169DDA222496A0007F7A33 /* ALWSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,12 @@
 			children = (
 				84169DBD22248C82007F7A33 /* AppDelegate.h */,
 				84169DBE22248C82007F7A33 /* AppDelegate.m */,
-				84169DC022248C82007F7A33 /* ViewController.h */,
-				84169DC122248C82007F7A33 /* ViewController.m */,
+				84169DD3222491D6007F7A33 /* ALWPlanetsCollectionViewController.h */,
+				84169DD4222491D6007F7A33 /* ALWPlanetsCollectionViewController.m */,
+				84169DD62224947D007F7A33 /* ALWPlanetCollectionViewCell.h */,
+				84169DD72224947D007F7A33 /* ALWPlanetCollectionViewCell.m */,
+				84169DD9222496A0007F7A33 /* ALWSettingsViewController.h */,
+				84169DDA222496A0007F7A33 /* ALWSettingsViewController.m */,
 				84169DC322248C82007F7A33 /* Main.storyboard */,
 				84169DC622248C83007F7A33 /* Assets.xcassets */,
 				84169DC822248C83007F7A33 /* LaunchScreen.storyboard */,
@@ -141,9 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84169DC222248C82007F7A33 /* ViewController.m in Sources */,
+				84169DD82224947D007F7A33 /* ALWPlanetCollectionViewCell.m in Sources */,
+				84169DD5222491D6007F7A33 /* ALWPlanetsCollectionViewController.m in Sources */,
 				84169DCD22248C83007F7A33 /* main.m in Sources */,
 				84169DBF22248C82007F7A33 /* AppDelegate.m in Sources */,
+				84169DDB222496A0007F7A33 /* ALWSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
