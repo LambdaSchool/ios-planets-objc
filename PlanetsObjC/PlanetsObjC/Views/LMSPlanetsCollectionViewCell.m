@@ -8,6 +8,13 @@
 
 #import "LMSPlanetsCollectionViewCell.h"
 
+@interface LMSPlanetsCollectionViewCell ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UILabel *planetLabel;
+
+@end
+
 @implementation LMSPlanetsCollectionViewCell
 
 @end

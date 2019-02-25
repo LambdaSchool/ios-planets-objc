@@ -15,6 +15,8 @@
 		FFB24BE8222493D70096E395 /* LMSPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BE7222493D70096E395 /* LMSPlanetsCollectionViewController.m */; };
 		FFB24BEF222498B20096E395 /* LMSPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BEE222498B20096E395 /* LMSPlanetsCollectionViewCell.m */; };
 		FFB24BF222249A250096E395 /* LMSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BF122249A250096E395 /* LMSSettingsViewController.m */; };
+		FFB24BF62224A41D0096E395 /* LMSPlanets.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BF52224A41D0096E395 /* LMSPlanets.m */; };
+		FFB24BFA2224A4670096E395 /* LMSPlanetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB24BF92224A4670096E395 /* LMSPlanetsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		FFB24BEE222498B20096E395 /* LMSPlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSPlanetsCollectionViewCell.m; sourceTree = "<group>"; };
 		FFB24BF022249A250096E395 /* LMSSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSSettingsViewController.h; sourceTree = "<group>"; };
 		FFB24BF122249A250096E395 /* LMSSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSSettingsViewController.m; sourceTree = "<group>"; };
+		FFB24BF42224A41D0096E395 /* LMSPlanets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSPlanets.h; sourceTree = "<group>"; };
+		FFB24BF52224A41D0096E395 /* LMSPlanets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSPlanets.m; sourceTree = "<group>"; };
+		FFB24BF82224A4670096E395 /* LMSPlanetsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMSPlanetsController.h; sourceTree = "<group>"; };
+		FFB24BF92224A4670096E395 /* LMSPlanetsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMSPlanetsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,8 @@
 		FFB24BCF22248C940096E395 /* PlanetsObjC */ = {
 			isa = PBXGroup;
 			children = (
+				FFB24BF32224A3B30096E395 /* Models */,
+				FFB24BF72224A42B0096E395 /* Model Controllers */,
 				FFB24BEA222494080096E395 /* View Controllers */,
 				FFB24BEC2224987B0096E395 /* Views */,
 				FFB24BE9222493EF0096E395 /* Storyboards */,
@@ -86,6 +94,8 @@
 			children = (
 				FFB24BE6222493D70096E395 /* LMSPlanetsCollectionViewController.h */,
 				FFB24BE7222493D70096E395 /* LMSPlanetsCollectionViewController.m */,
+				FFB24BF022249A250096E395 /* LMSSettingsViewController.h */,
+				FFB24BF122249A250096E395 /* LMSSettingsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -107,10 +117,26 @@
 			children = (
 				FFB24BED222498B20096E395 /* LMSPlanetsCollectionViewCell.h */,
 				FFB24BEE222498B20096E395 /* LMSPlanetsCollectionViewCell.m */,
-				FFB24BF022249A250096E395 /* LMSSettingsViewController.h */,
-				FFB24BF122249A250096E395 /* LMSSettingsViewController.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		FFB24BF32224A3B30096E395 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24BF42224A41D0096E395 /* LMSPlanets.h */,
+				FFB24BF52224A41D0096E395 /* LMSPlanets.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFB24BF72224A42B0096E395 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFB24BF82224A4670096E395 /* LMSPlanetsController.h */,
+				FFB24BF92224A4670096E395 /* LMSPlanetsController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFB24BF62224A41D0096E395 /* LMSPlanets.m in Sources */,
+				FFB24BFA2224A4670096E395 /* LMSPlanetsController.m in Sources */,
 				FFB24BE8222493D70096E395 /* LMSPlanetsCollectionViewController.m in Sources */,
 				FFB24BF222249A250096E395 /* LMSSettingsViewController.m in Sources */,
 				FFB24BE022248C950096E395 /* main.m in Sources */,

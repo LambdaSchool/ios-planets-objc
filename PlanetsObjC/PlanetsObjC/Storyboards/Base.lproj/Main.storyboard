@@ -55,6 +55,10 @@
                                     <constraint firstItem="L9Q-hV-yKI" firstAttribute="top" secondItem="Q82-jd-hKx" secondAttribute="top" id="ic6-Rd-VjQ"/>
                                 </constraints>
                                 <size key="customSize" width="120" height="140"/>
+                                <connections>
+                                    <outlet property="imageView" destination="mk4-Se-PmM" id="xoo-zB-Hes"/>
+                                    <outlet property="planetLabel" destination="Fdn-KH-4vp" id="bCc-Ts-1AG"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -97,6 +101,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8M-dU-zv7">
                                         <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="toggleShowPluto:" destination="kbQ-LX-YDs" eventType="valueChanged" id="wcH-s4-eLJ"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -111,6 +118,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="acn-mg-qHH"/>
                     </view>
+                    <connections>
+                        <outlet property="showPlutoSwitch" destination="t8M-dU-zv7" id="M8P-nu-7gl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eeb-gS-Rpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,8 @@
 
 @interface LMSSettingsViewController ()
 
+@property (weak, nonatomic) IBOutlet UISwitch *showPlutoSwitch;
+
 @end
 
 @implementation LMSSettingsViewController
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+
+- (IBAction)toggleShowPluto:(id)sender {
+    
 }
 
 /*
