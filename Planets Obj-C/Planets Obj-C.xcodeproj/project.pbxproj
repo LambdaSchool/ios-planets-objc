@@ -16,6 +16,7 @@
 		2CA27B7E222487D200E88012 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27B7D222487D200E88012 /* main.m */; };
 		2CA27B88222487D300E88012 /* Planets_Obj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27B87222487D300E88012 /* Planets_Obj_CTests.m */; };
 		2CA27B93222487D300E88012 /* Planets_Obj_CUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27B92222487D300E88012 /* Planets_Obj_CUITests.m */; };
+		2CA27BA222248EA000E88012 /* PlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27BA122248EA000E88012 /* PlanetsCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2CA27B8E222487D300E88012 /* Planets Obj-CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Planets Obj-CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA27B92222487D300E88012 /* Planets_Obj_CUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Planets_Obj_CUITests.m; sourceTree = "<group>"; };
 		2CA27B94222487D300E88012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CA27BA022248EA000E88012 /* PlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		2CA27BA122248EA000E88012 /* PlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				2CA27B6E222487C600E88012 /* ViewController.h */,
 				2CA27B6F222487C600E88012 /* ViewController.m */,
 				2CA27B71222487C600E88012 /* Main.storyboard */,
+				2CA27BA022248EA000E88012 /* PlanetsCollectionViewController.h */,
+				2CA27BA122248EA000E88012 /* PlanetsCollectionViewController.m */,
 				2CA27B77222487D200E88012 /* Assets.xcassets */,
 				2CA27B79222487D200E88012 /* LaunchScreen.storyboard */,
 				2CA27B7C222487D200E88012 /* Info.plist */,
@@ -269,6 +274,7 @@
 				2CA27B70222487C600E88012 /* ViewController.m in Sources */,
 				2CA27B7E222487D200E88012 /* main.m in Sources */,
 				2CA27B6D222487C600E88012 /* AppDelegate.m in Sources */,
+				2CA27BA222248EA000E88012 /* PlanetsCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
