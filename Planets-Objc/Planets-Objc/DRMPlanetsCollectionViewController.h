@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DRMPlanetController.h"
+#import "DRMPlanet.h"
+#import "DRMPlanetCollectionViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DRMPlanetsCollectionViewController : UICollectionViewController
+@interface DRMPlanetsCollectionViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
+
+@property DRMPlanetController *planetController;
 
 @end
 

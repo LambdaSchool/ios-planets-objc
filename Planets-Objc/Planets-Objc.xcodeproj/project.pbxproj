@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		3450B65D22248C9C00195660 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450B65C22248C9C00195660 /* AppDelegate.m */; };
 		3450B66322248C9C00195660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3450B66122248C9C00195660 /* Main.storyboard */; };
-		3450B66522248C9D00195660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3450B66422248C9D00195660 /* Assets.xcassets */; };
 		3450B66822248C9D00195660 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3450B66622248C9D00195660 /* LaunchScreen.storyboard */; };
 		3450B66B22248C9D00195660 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450B66A22248C9D00195660 /* main.m */; };
 		3450B67522248C9D00195660 /* Planets_ObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450B67422248C9D00195660 /* Planets_ObjcTests.m */; };
 		3450B68122248DCB00195660 /* DRMPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450B68022248DCB00195660 /* DRMPlanetsCollectionViewController.m */; };
+		3450B6842224902B00195660 /* DRMPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450B6832224902B00195660 /* DRMPlanetCollectionViewCell.m */; };
+		3450B687222491EC00195660 /* DRMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450B686222491EC00195660 /* DRMSettingsViewController.m */; };
+		3450B689222493DA00195660 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3450B688222493DA00195660 /* Assets.xcassets */; };
+		3450B68C2224948600195660 /* DRMPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450B68B2224948600195660 /* DRMPlanet.m */; };
+		3450B68F222496C800195660 /* DRMPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3450B68E222496C800195660 /* DRMPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +35,6 @@
 		3450B65B22248C9C00195660 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3450B65C22248C9C00195660 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3450B66222248C9C00195660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3450B66422248C9D00195660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3450B66722248C9D00195660 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3450B66922248C9D00195660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3450B66A22248C9D00195660 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,15 @@
 		3450B67622248C9D00195660 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3450B67F22248DCB00195660 /* DRMPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMPlanetsCollectionViewController.h; sourceTree = "<group>"; };
 		3450B68022248DCB00195660 /* DRMPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		3450B6822224902B00195660 /* DRMPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		3450B6832224902B00195660 /* DRMPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		3450B685222491EC00195660 /* DRMSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMSettingsViewController.h; sourceTree = "<group>"; };
+		3450B686222491EC00195660 /* DRMSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMSettingsViewController.m; sourceTree = "<group>"; };
+		3450B688222493DA00195660 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../LS iOS2/Wk 2 iOS Fundamentals II/Planets-Starter/Planets/Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		3450B68A2224948600195660 /* DRMPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMPlanet.h; sourceTree = "<group>"; };
+		3450B68B2224948600195660 /* DRMPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMPlanet.m; sourceTree = "<group>"; };
+		3450B68D222496C800195660 /* DRMPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMPlanetController.h; sourceTree = "<group>"; };
+		3450B68E222496C800195660 /* DRMPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRMPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +98,15 @@
 				3450B66122248C9C00195660 /* Main.storyboard */,
 				3450B67F22248DCB00195660 /* DRMPlanetsCollectionViewController.h */,
 				3450B68022248DCB00195660 /* DRMPlanetsCollectionViewController.m */,
-				3450B66422248C9D00195660 /* Assets.xcassets */,
+				3450B6822224902B00195660 /* DRMPlanetCollectionViewCell.h */,
+				3450B6832224902B00195660 /* DRMPlanetCollectionViewCell.m */,
+				3450B685222491EC00195660 /* DRMSettingsViewController.h */,
+				3450B686222491EC00195660 /* DRMSettingsViewController.m */,
+				3450B68A2224948600195660 /* DRMPlanet.h */,
+				3450B68B2224948600195660 /* DRMPlanet.m */,
+				3450B68D222496C800195660 /* DRMPlanetController.h */,
+				3450B68E222496C800195660 /* DRMPlanetController.m */,
+				3450B688222493DA00195660 /* Assets.xcassets */,
 				3450B66622248C9D00195660 /* LaunchScreen.storyboard */,
 				3450B66922248C9D00195660 /* Info.plist */,
 				3450B66A22248C9D00195660 /* main.m */,
@@ -184,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3450B66822248C9D00195660 /* LaunchScreen.storyboard in Resources */,
-				3450B66522248C9D00195660 /* Assets.xcassets in Resources */,
+				3450B689222493DA00195660 /* Assets.xcassets in Resources */,
 				3450B66322248C9C00195660 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,9 +223,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3450B687222491EC00195660 /* DRMSettingsViewController.m in Sources */,
+				3450B68F222496C800195660 /* DRMPlanetController.m in Sources */,
 				3450B66B22248C9D00195660 /* main.m in Sources */,
 				3450B68122248DCB00195660 /* DRMPlanetsCollectionViewController.m in Sources */,
+				3450B6842224902B00195660 /* DRMPlanetCollectionViewCell.m in Sources */,
 				3450B65D22248C9C00195660 /* AppDelegate.m in Sources */,
+				3450B68C2224948600195660 /* DRMPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
