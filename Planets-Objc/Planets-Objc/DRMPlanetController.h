@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSArray *planetsWithPluto;
 @property NSArray *planetsWithoutPluto;
+@property (readonly) NSArray *planets;
+@property BOOL shouldShowPluto;
+
 
 - (id)init;
 

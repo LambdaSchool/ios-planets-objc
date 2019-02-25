@@ -29,6 +29,12 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     [[self collectionView] reloadData];
 }
 
+#pragma mark Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    DRMSettingsViewController *destinationVC = segue.destinationViewController;
+    destinationVC.planetController = self.planetController;
+}
+
 #pragma mark <UICollectionViewDataSource>
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     return 1;
@@ -36,12 +42,12 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [[_planetController planetsWithPluto] count];
+    return [[_planetController planets] count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     DRMPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    DRMPlanet *planet = [[_planetController planetsWithPluto] objectAtIndex:[indexPath row]];
+    DRMPlanet *planet = [[_planetController planets] objectAtIndex:[indexPath row]];
 
     [[cell planetLabel] setText:[planet name]];
     [[cell planetImageView] setImage:[planet image]];

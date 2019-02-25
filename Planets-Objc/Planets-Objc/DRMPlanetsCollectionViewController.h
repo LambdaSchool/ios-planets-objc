@@ -10,6 +10,7 @@
 #import "DRMPlanetController.h"
 #import "DRMPlanet.h"
 #import "DRMPlanetCollectionViewCell.h"
+#import "DRMSettingsViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
