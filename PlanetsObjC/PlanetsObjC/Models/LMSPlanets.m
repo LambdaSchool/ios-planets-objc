@@ -10,4 +10,14 @@
 
 @implementation LMSPlanets
 
+- (id)initFromString:(NSString *)name andImageName:(NSString *)imageName {
+    self = [super init];
+    
+    if(self != nil) {
+        _name = [name copy];
+        _image = [UIImage imageNamed:imageName];
+    }
+    return self;
+}
+
 @end

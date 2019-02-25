@@ -25,6 +25,10 @@
     
 }
 
+- (IBAction)finishPlutoUpdate:(id)sender {
+    [self performSegueWithIdentifier:@"unwindFromPlutoSettings" sender:self];
+}
+
 /*
 #pragma mark - Navigation
 

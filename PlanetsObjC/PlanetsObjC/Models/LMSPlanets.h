@@ -6,11 +6,16 @@
 //  Copyright © 2019 Lisa M Sampson. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LMSPlanets : NSObject
+
+@property (nonatomic, copy, readonly) NSString *name;
+@property (nonatomic, copy, readonly) UIImage *image;
+
+- (id)initFromString: (NSString *)name andImageName: (NSString *)imageName;
 
 @end
 

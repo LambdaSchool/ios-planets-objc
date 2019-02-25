@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LMSPlanetsController : NSObject
 
+@property (nonatomic, copy, readonly) NSArray *planetsWithoutPluto;
+@property (nonatomic, copy, readonly) NSArray *planetsWithPluto;
+
+- (id)init;
+
 @end
 
 NS_ASSUME_NONNULL_END

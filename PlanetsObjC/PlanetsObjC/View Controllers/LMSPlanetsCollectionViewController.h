@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LMSPlanetsCollectionViewController : UICollectionViewController
 
+- (IBAction)unwindFromPlutoSettings:(UIStoryboardSegue *)segue;
+
 @end
 
 NS_ASSUME_NONNULL_END

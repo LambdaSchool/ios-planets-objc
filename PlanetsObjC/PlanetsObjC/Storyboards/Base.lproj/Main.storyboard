@@ -89,6 +89,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eE-G8-h69">
                                 <rect key="frame" x="322" y="28" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="finishPlutoUpdate:" destination="kbQ-LX-YDs" eventType="touchUpInside" id="86a-Dj-jJN"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Fti-Lr-LrG">
                                 <rect key="frame" x="20" y="120" width="335" height="31"/>
@@ -120,9 +123,11 @@
                     </view>
                     <connections>
                         <outlet property="showPlutoSwitch" destination="t8M-dU-zv7" id="M8P-nu-7gl"/>
+                        <segue destination="Rwl-dd-ozk" kind="unwind" identifier="unwindFromPlutoSettings" unwindAction="unwindFromPlutoSettings:" id="dYu-Tk-nnm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eeb-gS-Rpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Rwl-dd-ozk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1588" y="56"/>
         </scene>
