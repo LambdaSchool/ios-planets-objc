@@ -16,6 +16,7 @@
 		A57CB44D2224980A004F0927 /* OSIPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB44C2224980A004F0927 /* OSIPlanetsCollectionViewCell.m */; };
 		A57CB4542224AABD004F0927 /* OSIPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB4532224AABD004F0927 /* OSIPlanet.m */; };
 		A57CB4582224BC93004F0927 /* OSIPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB4572224BC93004F0927 /* OSIPlanetController.m */; };
+		A57CB45E2225172D004F0927 /* OSISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB45D2225172D004F0927 /* OSISettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		A57CB4532224AABD004F0927 /* OSIPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSIPlanet.m; sourceTree = "<group>"; };
 		A57CB4562224BC93004F0927 /* OSIPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSIPlanetController.h; sourceTree = "<group>"; };
 		A57CB4572224BC93004F0927 /* OSIPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSIPlanetController.m; sourceTree = "<group>"; };
+		A57CB45C2225172D004F0927 /* OSISettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSISettingsViewController.h; sourceTree = "<group>"; };
+		A57CB45D2225172D004F0927 /* OSISettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSISettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 			children = (
 				A57CB447222497B3004F0927 /* OSIPlanetsCollectionViewController.h */,
 				A57CB448222497B3004F0927 /* OSIPlanetsCollectionViewController.m */,
+				A57CB45C2225172D004F0927 /* OSISettingsViewController.h */,
+				A57CB45D2225172D004F0927 /* OSISettingsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				A57CB44D2224980A004F0927 /* OSIPlanetsCollectionViewCell.m in Sources */,
 				A57CB4582224BC93004F0927 /* OSIPlanetController.m in Sources */,
 				A57CB449222497B3004F0927 /* OSIPlanetsCollectionViewController.m in Sources */,
+				A57CB45E2225172D004F0927 /* OSISettingsViewController.m in Sources */,
 				A57CB4542224AABD004F0927 /* OSIPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

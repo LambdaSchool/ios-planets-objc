@@ -55,8 +55,8 @@
                                     <constraint firstItem="c8J-Y7-XIl" firstAttribute="top" secondItem="a4G-sA-aEG" secondAttribute="top" id="fTu-MW-DeU"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="imageView" destination="aoi-6W-4cC" id="ahg-5C-Url"/>
-                                    <outlet property="planetName" destination="C04-fe-fXN" id="chN-rf-gPw"/>
+                                    <outlet property="imageView" destination="aoi-6W-4cC" id="nDb-F2-6bn"/>
+                                    <outlet property="planetName" destination="C04-fe-fXN" id="H9b-nh-Trw"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -77,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="1617" y="144"/>
         </scene>
-        <!--Setting Collection View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="OQH-aS-hbo">
             <objects>
-                <viewController id="hqn-W9-F3k" customClass="OSISettingCollectionViewController" sceneMemberID="viewController">
+                <viewController id="hqn-W9-F3k" customClass="OSISettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cvx-Pu-XnE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,7 +97,7 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4iQ-9S-wpn">
                                         <rect key="frame" x="155" y="0.0" width="51" height="31"/>
                                         <connections>
-                                            <action selector="switchAction:" destination="hqn-W9-F3k" eventType="valueChanged" id="Rxa-nV-AVS"/>
+                                            <action selector="shouldAddPlutoAction:" destination="hqn-W9-F3k" eventType="valueChanged" id="Oim-Zk-W5h"/>
                                         </connections>
                                     </switch>
                                 </subviews>
@@ -106,7 +106,7 @@
                                 <rect key="frame" x="313" y="20" width="46" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <action selector="saveButton:" destination="hqn-W9-F3k" eventType="touchUpInside" id="dJT-QB-F1g"/>
+                                    <action selector="doneButton:" destination="hqn-W9-F3k" eventType="touchUpInside" id="YZv-Jh-oKy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,7 +122,7 @@
                         <viewLayoutGuide key="safeArea" id="R5y-QK-MnZ"/>
                     </view>
                     <connections>
-                        <outlet property="switchOutlet" destination="4iQ-9S-wpn" id="bh0-Ij-wSB"/>
+                        <outlet property="shouldAddPluto" destination="4iQ-9S-wpn" id="Vl8-lD-oXa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9B-ts-7vg" userLabel="First Responder" sceneMemberID="firstResponder"/>

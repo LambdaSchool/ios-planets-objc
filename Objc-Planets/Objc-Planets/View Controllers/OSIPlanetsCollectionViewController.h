@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class OSIPlanetController;
-@class OSIPlanetsCollectionViewCell;
+
 
 NS_ASSUME_NONNULL_BEGIN
 

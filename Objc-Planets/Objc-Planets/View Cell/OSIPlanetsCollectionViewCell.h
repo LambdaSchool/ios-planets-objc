@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class OSIPlanet;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OSIPlanetsCollectionViewCell : UICollectionViewCell
+
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *planetName;

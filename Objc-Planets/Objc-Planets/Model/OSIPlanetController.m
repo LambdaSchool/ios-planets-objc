@@ -21,7 +21,12 @@
         _planets = [[NSArray alloc] initWithObjects:
                     [[OSIPlanet alloc] initWithName:@"Mercury" imageName:@"mercury"],
                     [[OSIPlanet alloc] initWithName:@"Venus" imageName:@"venus"],
-                    [[OSIPlanet alloc] initWithName:@"Earth" imageName:@"@earth"],
+                    [[OSIPlanet alloc] initWithName:@"Earth" imageName:@"earth"],
+                    [[OSIPlanet alloc] initWithName:@"Mars" imageName:@"mars"],
+                    [[OSIPlanet alloc] initWithName:@"Jupiter" imageName:@"jupiter"],
+                    [[OSIPlanet alloc] initWithName:@"Saturn" imageName:@"saturn"],
+                    [[OSIPlanet alloc] initWithName:@"Uranus" imageName:@"uranus"],
+                    [[OSIPlanet alloc] initWithName:@"Neptune" imageName:@"neptune"],
                     nil];
     }
     return self;

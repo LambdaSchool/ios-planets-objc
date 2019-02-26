@@ -12,13 +12,12 @@
 @implementation OSIPlanet
 
 - (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName
-
 {
-    NSLog(@"self: %@", self);
+   
     self = [super init];
     if (self != nil) {
-        imageName = imageName;
-        name = name;
+        _name = name;
+        _imageName = imageName;
     }
     return self;
 }

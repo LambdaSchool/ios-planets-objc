@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OSIPlanet : NSObject
 
-- (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName;
-
+//
 
 @property NSString *name;
 @property NSString *imageName;
 @property UIImage *image;
 
+- (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName;
 
 
 

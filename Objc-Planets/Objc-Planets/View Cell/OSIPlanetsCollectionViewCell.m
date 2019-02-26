@@ -7,7 +7,9 @@
 //
 
 #import "OSIPlanetsCollectionViewCell.h"
+#import "OSIPlanet.h"
 
 @implementation OSIPlanetsCollectionViewCell
+
 
 @end
