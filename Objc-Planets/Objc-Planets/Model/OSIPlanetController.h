@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface OSIPlanetController : NSObject
 
-@property (readonly) NSArray *planets;
+@property (nonatomic, copy, readonly) NSArray *planets;
+@property BOOL *shouldShowPluto;
 
 @end
 

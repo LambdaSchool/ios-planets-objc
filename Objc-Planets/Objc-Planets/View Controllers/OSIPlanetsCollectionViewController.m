@@ -27,30 +27,39 @@
     return self;
 }
 
-//- (instancetype)initWithCoder:(NSCoder *)coder
-//{
-//    self = [super initWithCoder:coder];
-//    if (self) {
-//        _planetController = [[OSIPlanetController alloc] init];
-//    }
-//    return self;
-//}
+
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _planetController = [[OSIPlanetController alloc] init];
+    }
+    return self;
+}
 
 static NSString * const reuseIdentifier = @"PlanetCell";
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:true];
+    [self.collectionView reloadData];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    _planetController = [[OSIPlanetController alloc] init];
    // [[self collectionView] reloadData];
     // Register cell classes
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
 }
-
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
+
     return [[[self planetController] planets] count];
 }
 
@@ -59,8 +68,9 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     
     NSArray *planets = [[self planetController] planets];
     OSIPlanet *planet = [planets objectAtIndex:[indexPath row]];
-    cell.planetName.text = planet.name;
-    cell.imageView.image = [UIImage imageNamed:planet.imageName];
+   
+//    [[cell planetName] setText:[planet name]];
+//    [[cell imageView] setImage:[UIImage imageNamed:[planet imageName]]];
     return cell;
 }
 

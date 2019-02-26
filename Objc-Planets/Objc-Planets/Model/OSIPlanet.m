@@ -16,8 +16,8 @@
    
     self = [super init];
     if (self != nil) {
-        _name = name;
-        _imageName = imageName;
+        [self setName:name];
+        [self setImageName:imageName];
     }
     return self;
 }

@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OSISettingsViewController.h"
+#import "OSIPlanetsCollectionViewCell.h"
+#import "OSIPlanet.h"
+#import "OSIPlanetController.h"
 
 @class OSIPlanetController;
 
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OSIPlanetsCollectionViewController : UICollectionViewController
+@interface OSIPlanetsCollectionViewController : UICollectionViewController <UICollectionViewDataSource>
 
 @property OSIPlanetController * planetController;
 
