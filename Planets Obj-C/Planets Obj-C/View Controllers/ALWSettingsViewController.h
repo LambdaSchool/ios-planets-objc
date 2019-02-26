@@ -8,7 +8,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ALWSettingsViewController : UIViewController
 
-    @property (weak, nonatomic) IBOutlet UISwitch *shouldShowPlutoSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *shouldShowPlutoSwitch;
+    
+- (IBAction)done:(UIButton *)sender;
     
 - (IBAction)changeShouldShowPluto:(UISwitch *)sender;
     
