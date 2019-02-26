@@ -8,9 +8,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ALWPlanetController : NSObject
     
-    @property (readonly) NSArray *planetsWithoutPluto;
+@property (nonatomic, readonly) NSArray *planetsWithPluto;
     
-    @property (readonly) NSArray *planetsWithPluto;
+@property (nonatomic, readonly) NSArray *planetsWithoutPluto;
 
 @end
 

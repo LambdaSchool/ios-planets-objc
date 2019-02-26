@@ -2,7 +2,6 @@
 //  ALWPlanet.h
 //  
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -14,13 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
     
 @property NSString *name;
 @property NSString *imageName;
-//@property UIImage *image = [UIImage imageNamed:@""];
+@property (nonatomic, readonly, nullable) UIImage *image;
 
 
+// init(name: String)
+- (instancetype)initWithName:(NSString *)name;
 
-// init(name: String, image: UIImage)
-- (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName;
-//+ (UIIMage *)imageNamed:(NSString *)name
 
 @end
 

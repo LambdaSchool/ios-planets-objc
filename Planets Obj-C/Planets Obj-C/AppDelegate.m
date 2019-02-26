@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+ 
+    // Register the key-value pairs. If they don't exist, set these values.
+    // Specify the boolean as an object by saying @NO -> turn this bool into an object (b/c arrays/dictionaries can only hold objects)
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"PlutoStatus": @NO }];
+    
     return YES;
 }
 
