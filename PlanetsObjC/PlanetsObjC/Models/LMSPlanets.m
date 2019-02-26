@@ -14,7 +14,7 @@
     self = [super init];
     
     if(self != nil) {
-        _name = [name copy];
+        _name = [name.capitalizedString copy];
         _image = [UIImage imageNamed:imageName];
     }
     return self;
