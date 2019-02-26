@@ -18,25 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateViews];
+}
+
+- (void)updateViews {
+    [self.showPlutoSwitch setOn:[[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPluto"]];
+    
 }
 
 - (IBAction)toggleShowPluto:(id)sender {
+    BOOL shouldShowPluto = self.showPlutoSwitch.isOn;
     
+    [[NSUserDefaults standardUserDefaults] setBool:shouldShowPluto forKey:@"ShouldShowPluto"];
 }
 
 - (IBAction)finishPlutoUpdate:(id)sender {
     [self performSegueWithIdentifier:@"unwindFromPlutoSettings" sender:self];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

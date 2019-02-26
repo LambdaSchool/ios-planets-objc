@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class LMSPlanets;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LMSSettingsViewController : UIViewController

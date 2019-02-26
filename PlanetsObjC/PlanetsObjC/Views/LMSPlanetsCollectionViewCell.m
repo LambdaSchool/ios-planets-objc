@@ -7,6 +7,7 @@
 //
 
 #import "LMSPlanetsCollectionViewCell.h"
+#import "LMSPlanets.h"
 
 @interface LMSPlanetsCollectionViewCell ()
 
@@ -16,5 +17,12 @@
 @end
 
 @implementation LMSPlanetsCollectionViewCell
+
+- (void)updateViews {
+    if (self.planet) {
+        self.imageView.image = self.planet.image;
+        self.planetLabel.text = self.planet.name;
+    }
+}
 
 @end
