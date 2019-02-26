@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Planets Collection View Controller-->
+        <!--Planets-->
         <scene sceneID="rsD-ia-U9G">
             <objects>
                 <collectionViewController id="Dsr-f2-h8Q" customClass="OSIPlanetsCollectionViewController" sceneMemberID="viewController">
@@ -19,44 +19,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="r1j-yU-vh6">
-                            <size key="itemSize" width="209" height="205"/>
+                            <size key="itemSize" width="165" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="a4G-sA-aEG" customClass="OSIPlanetsCollectionViewCell" customModule="Objc_Planets" customModuleProvider="target">
-                                <rect key="frame" x="83" y="0.0" width="209" height="205"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="kVz-ky-05O" customClass="OSIPlanetsCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="165" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="209" height="205"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="165" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4aM-Xa-cAj">
-                                            <rect key="frame" x="-10.5" y="20" width="229" height="195"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkX-0l-l2E">
-                                                    <rect key="frame" x="0.0" y="0.0" width="209" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5k9-I2-o9m">
-                                                    <rect key="frame" x="0.0" y="28.5" width="209" height="176.5"/>
-                                                </imageView>
-                                            </subviews>
-                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omv-YP-caZ">
+                                            <rect key="frame" x="8" y="121.5" width="149" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cCn-tY-ghP">
+                                            <rect key="frame" x="8" y="20" width="149" height="105"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="cCn-tY-ghP" secondAttribute="height" multiplier="1:1" constant="44" id="dkI-Ab-54e"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="4aM-Xa-cAj" secondAttribute="trailing" id="5gQ-3I-NNS"/>
-                                    <constraint firstItem="4aM-Xa-cAj" firstAttribute="leading" secondItem="a4G-sA-aEG" secondAttribute="leading" id="Hbi-92-kes"/>
-                                    <constraint firstItem="4aM-Xa-cAj" firstAttribute="top" secondItem="a4G-sA-aEG" secondAttribute="top" id="sxL-TO-xP0"/>
-                                    <constraint firstAttribute="bottom" secondItem="4aM-Xa-cAj" secondAttribute="bottom" id="u05-iE-s67"/>
+                                    <constraint firstItem="cCn-tY-ghP" firstAttribute="leading" secondItem="kVz-ky-05O" secondAttribute="leadingMargin" id="4Gg-JV-4zG"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="omv-YP-caZ" secondAttribute="trailing" id="FxH-BW-eND"/>
+                                    <constraint firstItem="cCn-tY-ghP" firstAttribute="top" secondItem="kVz-ky-05O" secondAttribute="topMargin" id="JTI-nT-OyU"/>
+                                    <constraint firstItem="omv-YP-caZ" firstAttribute="leading" secondItem="kVz-ky-05O" secondAttribute="leadingMargin" id="QD3-M2-O25"/>
+                                    <constraint firstItem="cCn-tY-ghP" firstAttribute="trailing" secondItem="kVz-ky-05O" secondAttribute="trailingMargin" id="pOf-ME-z6p"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="omv-YP-caZ" secondAttribute="bottom" id="yxY-Ep-78a"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="imageView" destination="5k9-I2-o9m" id="cKh-fI-zrD"/>
-                                    <outlet property="planetName" destination="CkX-0l-l2E" id="bzv-ww-N4R"/>
+                                    <outlet property="imageView" destination="cCn-tY-ghP" id="jBL-YK-3dG"/>
+                                    <outlet property="planetName" destination="omv-YP-caZ" id="Nie-a3-yVE"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -65,10 +65,10 @@
                             <outlet property="delegate" destination="Dsr-f2-h8Q" id="vfR-Yv-kPU"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="Vif-lE-WsO">
+                    <navigationItem key="navigationItem" title="Planets" id="Vif-lE-WsO">
                         <barButtonItem key="rightBarButtonItem" title="Setting" id="T7O-8R-oqT">
                             <connections>
-                                <segue destination="hqn-W9-F3k" kind="presentation" id="GMc-TQ-zyn"/>
+                                <segue destination="hqn-W9-F3k" kind="show" id="cfX-mU-uGi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -97,32 +97,21 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4iQ-9S-wpn">
                                         <rect key="frame" x="155" y="0.0" width="51" height="31"/>
                                         <connections>
-                                            <action selector="shouldAddPlutoAction:" destination="hqn-W9-F3k" eventType="valueChanged" id="Oim-Zk-W5h"/>
+                                            <action selector="switchAction:" destination="hqn-W9-F3k" eventType="valueChanged" id="uWD-BR-NMy"/>
                                         </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9X-G2-Lvg">
-                                <rect key="frame" x="313" y="20" width="46" height="30"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <action selector="doneButton:" destination="hqn-W9-F3k" eventType="touchUpInside" id="YZv-Jh-oKy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="f9X-G2-Lvg" firstAttribute="leading" secondItem="R5y-QK-MnZ" secondAttribute="leading" constant="313" id="YAj-Yx-F8k"/>
                             <constraint firstItem="rUP-Qb-qaX" firstAttribute="centerY" secondItem="cvx-Pu-XnE" secondAttribute="centerY" id="YFS-2F-CJX"/>
                             <constraint firstItem="rUP-Qb-qaX" firstAttribute="centerX" secondItem="cvx-Pu-XnE" secondAttribute="centerX" id="bCV-vj-RWl"/>
-                            <constraint firstItem="f9X-G2-Lvg" firstAttribute="top" secondItem="R5y-QK-MnZ" secondAttribute="top" id="fCr-kO-p15"/>
-                            <constraint firstItem="R5y-QK-MnZ" firstAttribute="bottom" secondItem="f9X-G2-Lvg" secondAttribute="bottom" constant="617" id="qUo-jN-oZC"/>
-                            <constraint firstItem="R5y-QK-MnZ" firstAttribute="trailing" secondItem="f9X-G2-Lvg" secondAttribute="trailing" constant="16" id="u7l-7B-qkA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R5y-QK-MnZ"/>
                     </view>
                     <connections>
-                        <outlet property="shouldAddPluto" destination="4iQ-9S-wpn" id="Vl8-lD-oXa"/>
+                        <outlet property="switchOutlet" destination="4iQ-9S-wpn" id="1ws-YV-mYg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9B-ts-7vg" userLabel="First Responder" sceneMemberID="firstResponder"/>

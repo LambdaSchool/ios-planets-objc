@@ -18,57 +18,49 @@
 
 @implementation OSIPlanetsCollectionViewController
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        _planetController = [[OSIPlanetController alloc] init];
-    }
-    return self;
-}
-
-
-
-- (instancetype)initWithCoder:(NSCoder *)coder
-{
-    self = [super initWithCoder:coder];
-    if (self) {
-        _planetController = [[OSIPlanetController alloc] init];
-    }
-    return self;
-}
-
 static NSString * const reuseIdentifier = @"PlanetCell";
 
+//-(void)viewDidAppear:(BOOL)animated {
+//    [super viewDidAppear:animated];
+//    [self.collectionView reloadData];
+//}
+
 - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:true];
-    [self.collectionView reloadData];
+    [super viewWillAppear:animated];
+    [[self collectionView] reloadData];
+   // [self.collectionView reloadData];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     _planetController = [[OSIPlanetController alloc] init];
-   // [[self collectionView] reloadData];
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Do any additional setup after loading the view.
 }
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+
+
+- (NSArray *)currentPlanets {
+    BOOL shouldIncludPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"PlutoStatus"];
+    if (shouldIncludPluto == YES) {
+        return _planetController.planetsWithPluto;
+        
+    } else {
+        return _planetController.planetsWithoutPluto;
+    }
 }
+
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 
-    return [[[self planetController] planets] count];
+    return [self currentPlanets].count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     OSIPlanetsCollectionViewCell *cell = (OSIPlanetsCollectionViewCell *) [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    NSArray *planets = [[self planetController] planets];
-    OSIPlanet *planet = [planets objectAtIndex:[indexPath row]];
-   
+   // NSArray *planets = [[self planetController] planets];
+    OSIPlanet *planet = [[self currentPlanets] objectAtIndex:indexPath.row];
+    cell.planetName.text = planet.name;
+    cell.imageView.image = [UIImage imageNamed:[planet imageName]];
 //    [[cell planetName] setText:[planet name]];
 //    [[cell imageView] setImage:[UIImage imageNamed:[planet imageName]]];
     return cell;

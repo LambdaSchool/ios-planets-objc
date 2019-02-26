@@ -10,27 +10,28 @@
 
 @interface OSISettingsViewController ()
 
+@property (weak, nonatomic) IBOutlet UISwitch *switchOutlet;
+- (IBAction)switchAction:(id)sender;
+- (IBAction)doneButton:(id)sender;
+
 @end
 
 @implementation OSISettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.switchOutlet.on = [defaults boolForKey:@"PlutoStatus"];
 }
--(IBAction)doneButton:(UIButton*)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+
+
+- (IBAction)switchAction:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool:self.switchOutlet.isOn forKey:@"PlutoStatus"];
 }
 
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)doneButton:(id)sender {
+     [self dismissViewControllerAnimated:YES completion:nil];
 }
-*/
-
 @end
