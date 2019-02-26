@@ -14,13 +14,13 @@ NS_ASSUME_NONNULL_BEGIN
     
 @property NSString *name;
 @property NSString *imageName;
-//@property UIImage *image;
+//@property UIImage *image = [UIImage imageNamed:@""];
 
 
 
 // init(name: String, image: UIImage)
 - (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName;
-
+//+ (UIIMage *)imageNamed:(NSString *)name
 
 @end
 

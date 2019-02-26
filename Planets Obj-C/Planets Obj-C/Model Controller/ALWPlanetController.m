@@ -12,6 +12,11 @@
     {
         self = [super init];
         if (self) {
+            
+            // var planetsWithoutPluto = [
+            //      Planet(name: "Mercury", imageName: "mercury"), ...
+            //]
+            
             _planetsWithoutPluto = [[NSArray alloc] initWithObjects:
                                     [[ALWPlanet alloc] initWithName:@"Mercury" imageName:@"mercury"],
                                     [[ALWPlanet alloc] initWithName:@"Venus" imageName:@"venus"],
@@ -38,8 +43,6 @@
         return self;
     }
     
-    // var planetsWithoutPluto = [
-    //      Planet(name: "Mercury", imageName: "mercury"), ...
-    //]
+
     
 @end
