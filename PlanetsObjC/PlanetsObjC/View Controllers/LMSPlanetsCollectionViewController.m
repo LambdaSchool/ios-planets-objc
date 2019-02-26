@@ -33,10 +33,14 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     [self.collectionView reloadData];
 }
 
+// String Literals in ObjC are @"your string here"
+// can also do const char *raw = "Hello, World!";
+// char *, or c star, is a pointer
+
 -(NSArray *)planets {
     BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPluto"];
     
-    if (shouldShowPluto) {
+    if (shouldShowPluto) { // if statements in ObjC must have parens
         return _planetController.planetsWithPluto;
     } else {
         return _planetController.planetsWithoutPluto;

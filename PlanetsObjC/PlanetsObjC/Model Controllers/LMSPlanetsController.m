@@ -26,6 +26,10 @@
         
         _planetsWithPluto = [NSArray arrayWithObjects:mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, pluto, nil];
         _planetsWithoutPluto = [NSArray arrayWithObjects:mercury, venus, earth, mars, jupiter, saturn, uranus, neptune, nil];
+        
+        // Array Literal - @[your array here]
+        // Dictionary Literal - @ { your dictionaries here }
+        // Boolean Literal - @YES, @NO
     }
     
     return self;

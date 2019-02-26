@@ -17,6 +17,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSDictionary *defaults = @{ @"PlutoStatus": @NO,
+                                @"BestPlanet": @"Earth",
+                                @"PlanetsToVisit": @[@"Mars"],
+                                @"LightMinutesToEarth": @8,
+                                @"IsEarthTheBest": @YES
+                                };
+    
+    NSJSONWritingOptions options = NSJSONWritingSortedKeys | NSJSONWritingPrettyPrinted;
+    NSData *data = [NSJSONSerialization dataWithJSONObject:defaults options:options error:nil];
+    
+    NSString *dataAsText = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSLog(@"encoded to: %@", dataAsText);
+    
+    id decoded = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    // id ===== "Any" in swift
+    
+    [[NSNotificationCenter defaultCenter] addObserverForName:nil object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        
+    }];
+    // Block is closure
+    
     return YES;
 }
 
