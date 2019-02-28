@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PlanetsCollectionViewController : UICollectionViewController
+@interface IACPlanetsCollectionViewController : UICollectionViewController
 
 @end
 

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C8CA2362225E6B200FD35BF /* IACPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CA2352225E6B200FD35BF /* IACPlanetController.m */; };
 		2CA27B6D222487C600E88012 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27B6C222487C600E88012 /* AppDelegate.m */; };
-		2CA27B70222487C600E88012 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27B6F222487C600E88012 /* ViewController.m */; };
 		2CA27B73222487C600E88012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CA27B71222487C600E88012 /* Main.storyboard */; };
 		2CA27B76222487C600E88012 /* Planets_Obj_C.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27B74222487C600E88012 /* Planets_Obj_C.xcdatamodeld */; };
 		2CA27B78222487D200E88012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CA27B77222487D200E88012 /* Assets.xcassets */; };
@@ -16,7 +16,10 @@
 		2CA27B7E222487D200E88012 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27B7D222487D200E88012 /* main.m */; };
 		2CA27B88222487D300E88012 /* Planets_Obj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27B87222487D300E88012 /* Planets_Obj_CTests.m */; };
 		2CA27B93222487D300E88012 /* Planets_Obj_CUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27B92222487D300E88012 /* Planets_Obj_CUITests.m */; };
-		2CA27BA222248EA000E88012 /* PlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27BA122248EA000E88012 /* PlanetsCollectionViewController.m */; };
+		2CA27BA222248EA000E88012 /* IACPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27BA122248EA000E88012 /* IACPlanetsCollectionViewController.m */; };
+		2CA27BA52224988700E88012 /* PlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27BA42224988700E88012 /* PlanetsCollectionViewCell.m */; };
+		2CA27BA82224A81A00E88012 /* IACSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27BA72224A81A00E88012 /* IACSettingsViewController.m */; };
+		2CA27BAB2224AB0F00E88012 /* IACPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA27BAA2224AB0F00E88012 /* IACPlanet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C8CA2342225E6B200FD35BF /* IACPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IACPlanetController.h; sourceTree = "<group>"; };
+		2C8CA2352225E6B200FD35BF /* IACPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IACPlanetController.m; sourceTree = "<group>"; };
 		2CA27B68222487C600E88012 /* Planets Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA27B6B222487C600E88012 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CA27B6C222487C600E88012 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2CA27B6E222487C600E88012 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2CA27B6F222487C600E88012 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2CA27B72222487C600E88012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CA27B75222487C600E88012 /* Planets_Obj_C.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planets_Obj_C.xcdatamodel; sourceTree = "<group>"; };
 		2CA27B77222487D200E88012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,8 +57,14 @@
 		2CA27B8E222487D300E88012 /* Planets Obj-CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Planets Obj-CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA27B92222487D300E88012 /* Planets_Obj_CUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Planets_Obj_CUITests.m; sourceTree = "<group>"; };
 		2CA27B94222487D300E88012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CA27BA022248EA000E88012 /* PlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetsCollectionViewController.h; sourceTree = "<group>"; };
-		2CA27BA122248EA000E88012 /* PlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		2CA27BA022248EA000E88012 /* IACPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IACPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		2CA27BA122248EA000E88012 /* IACPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IACPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		2CA27BA32224988700E88012 /* IACPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IACPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		2CA27BA42224988700E88012 /* PlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsCollectionViewCell.m; sourceTree = "<group>"; };
+		2CA27BA62224A81A00E88012 /* IACSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IACSettingsViewController.h; sourceTree = "<group>"; };
+		2CA27BA72224A81A00E88012 /* IACSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IACSettingsViewController.m; sourceTree = "<group>"; };
+		2CA27BA92224AB0F00E88012 /* IACPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IACPlanet.h; sourceTree = "<group>"; };
+		2CA27BAA2224AB0F00E88012 /* IACPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IACPlanet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +92,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8CA2282225A9EE00FD35BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CA27B71222487C600E88012 /* Main.storyboard */,
+				2CA27B79222487D200E88012 /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2C8CA2292225AA0C00FD35BF /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				2CA27B74222487C600E88012 /* Planets_Obj_C.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		2C8CA22D2225AE6C00FD35BF /* Planet Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C8CA2342225E6B200FD35BF /* IACPlanetController.h */,
+				2C8CA2352225E6B200FD35BF /* IACPlanetController.m */,
+			);
+			path = "Planet Controller";
+			sourceTree = "<group>";
+		};
 		2CA27B5F222487C600E88012 = {
 			isa = PBXGroup;
 			children = (
@@ -106,18 +142,14 @@
 		2CA27B6A222487C600E88012 /* Planets Obj-C */ = {
 			isa = PBXGroup;
 			children = (
-				2CA27B6B222487C600E88012 /* AppDelegate.h */,
-				2CA27B6C222487C600E88012 /* AppDelegate.m */,
-				2CA27B6E222487C600E88012 /* ViewController.h */,
-				2CA27B6F222487C600E88012 /* ViewController.m */,
-				2CA27B71222487C600E88012 /* Main.storyboard */,
-				2CA27BA022248EA000E88012 /* PlanetsCollectionViewController.h */,
-				2CA27BA122248EA000E88012 /* PlanetsCollectionViewController.m */,
-				2CA27B77222487D200E88012 /* Assets.xcassets */,
-				2CA27B79222487D200E88012 /* LaunchScreen.storyboard */,
-				2CA27B7C222487D200E88012 /* Info.plist */,
 				2CA27B7D222487D200E88012 /* main.m */,
-				2CA27B74222487C600E88012 /* Planets_Obj_C.xcdatamodeld */,
+				2C8CA22D2225AE6C00FD35BF /* Planet Controller */,
+				2CA27BAC2224AB7100E88012 /* Model */,
+				2CA27BAE2224ADD800E88012 /* Views */,
+				2CA27BAD2224ADBA00E88012 /* View Controllers */,
+				2CA27BAF2224B3C800E88012 /* Resources */,
+				2C8CA2282225A9EE00FD35BF /* Views */,
+				2C8CA2292225AA0C00FD35BF /* Core Data */,
 			);
 			path = "Planets Obj-C";
 			sourceTree = "<group>";
@@ -138,6 +170,46 @@
 				2CA27B94222487D300E88012 /* Info.plist */,
 			);
 			path = "Planets Obj-CUITests";
+			sourceTree = "<group>";
+		};
+		2CA27BAC2224AB7100E88012 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CA27BA92224AB0F00E88012 /* IACPlanet.h */,
+				2CA27BAA2224AB0F00E88012 /* IACPlanet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CA27BAD2224ADBA00E88012 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2CA27BA62224A81A00E88012 /* IACSettingsViewController.h */,
+				2CA27BA72224A81A00E88012 /* IACSettingsViewController.m */,
+				2CA27BA022248EA000E88012 /* IACPlanetsCollectionViewController.h */,
+				2CA27BA122248EA000E88012 /* IACPlanetsCollectionViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2CA27BAE2224ADD800E88012 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2CA27BA32224988700E88012 /* IACPlanetCollectionViewCell.h */,
+				2CA27BA42224988700E88012 /* PlanetsCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2CA27BAF2224B3C800E88012 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2CA27B77222487D200E88012 /* Assets.xcassets */,
+				2CA27B6B222487C600E88012 /* AppDelegate.h */,
+				2CA27B6C222487C600E88012 /* AppDelegate.m */,
+				2CA27B7C222487D200E88012 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +274,7 @@
 		2CA27B60222487C600E88012 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = IAC;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Ivan Caldwell";
 				TargetAttributes = {
@@ -271,10 +344,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA27B76222487C600E88012 /* Planets_Obj_C.xcdatamodeld in Sources */,
-				2CA27B70222487C600E88012 /* ViewController.m in Sources */,
+				2CA27BA52224988700E88012 /* PlanetsCollectionViewCell.m in Sources */,
 				2CA27B7E222487D200E88012 /* main.m in Sources */,
+				2CA27BA82224A81A00E88012 /* IACSettingsViewController.m in Sources */,
 				2CA27B6D222487C600E88012 /* AppDelegate.m in Sources */,
-				2CA27BA222248EA000E88012 /* PlanetsCollectionViewController.m in Sources */,
+				2C8CA2362225E6B200FD35BF /* IACPlanetController.m in Sources */,
+				2CA27BA222248EA000E88012 /* IACPlanetsCollectionViewController.m in Sources */,
+				2CA27BAB2224AB0F00E88012 /* IACPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Planets Obj-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Planets Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Planets Obj-C/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Planets Obj-C/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

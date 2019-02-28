@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    // Arrays and dictionary are only allow to contain objects
+    // This how we set up (register) a default setting for our PlutoStatus
+    [[NSUserDefaults standardUserDefaults] registerDefaults:@{ @"PlutoStatus": @NO }];
+    // Testing @false instead of @NO || @false
     return YES;
 }
 

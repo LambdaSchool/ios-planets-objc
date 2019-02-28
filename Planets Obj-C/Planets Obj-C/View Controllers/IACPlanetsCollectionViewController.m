@@ -6,15 +6,23 @@
 //  Copyright © 2019 Ivan Caldwell. All rights reserved.
 //
 
-#import "PlanetsCollectionViewController.h"
+#import "IACPlanetsCollectionViewController.h"
+#import "IACPlanet.h"
+#import "IACPlanetController.h"
+#import "IACPlanetCollectionViewCell.h"
 
-@interface PlanetsCollectionViewController ()
+@interface IACPlanetsCollectionViewController ()
 
 @end
 
-@implementation PlanetsCollectionViewController
+@implementation IACPlanetsCollectionViewController {
+    // Creating an instance variable.
+    // Objective-C does not have properties.
+    // Creating a planetController()
+    IACPlanetController *_planetController;
+}
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,9 +31,21 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    //[self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
     // Do any additional setup after loading the view.
+    _planetController = [[IACPlanetController alloc] init];
+}
+
+
+// Convenience method
+- (NSArray *)currentPlanets {
+    BOOL shouldIncludePluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"PlutoStatus"];
+    if (shouldIncludePluto == YES) {
+        return _planetController.planetsWithPluto;
+    } else {
+        return _planetController.planetsWithoutPluto;
+    }
 }
 
 /*
@@ -41,22 +61,30 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+//#warning Incomplete implementation, return the number of sections
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+//#warning Incomplete implementation, return the number of items
+    return [self currentPlanets].count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    IACPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
-    
+    IACPlanet *planet = [[self currentPlanets] objectAtIndex:indexPath.row];
+    cell.textLabel.text = planet.name;
+    cell.imageView.image = planet.image;
     return cell;
+}
+
+// Place the prepareForUnwind method where I want the view
+// controller to segue to.
+// https://spin.atomicobject.com/2014/10/25/ios-unwind-segues/
+-(IBAction)prepareForUnwind:(UIStoryboardSegue *)segue {
+    [self.collectionView reloadData];
 }
 
 #pragma mark <UICollectionViewDelegate>
