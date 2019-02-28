@@ -37,7 +37,6 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     _planetController = [[IACPlanetController alloc] init];
 }
 
-
 // Convenience method
 - (NSArray *)currentPlanets {
     BOOL shouldIncludePluto = [[NSUserDefaults standardUserDefaults] boolForKey:@"PlutoStatus"];
@@ -114,7 +113,6 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 }
 
 - (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
 }
 */
 
