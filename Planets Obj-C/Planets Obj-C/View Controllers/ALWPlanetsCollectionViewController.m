@@ -14,8 +14,8 @@
 
 @implementation ALWPlanetsCollectionViewController
     
-    // Create an instance variable directly (not a property)
-    ALWPlanetController *_planetController;
+// Create an instance variable directly (not a property)
+ALWPlanetController *_planetController;
 
 static NSString * const reuseIdentifier = @"PlanetCell";
 
