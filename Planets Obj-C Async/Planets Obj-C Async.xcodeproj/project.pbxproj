@@ -8,24 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		8423AE5D222C553B0061AF2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423AE5C222C553B0061AF2F /* AppDelegate.m */; };
-		8423AE60222C553B0061AF2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423AE5F222C553B0061AF2F /* ViewController.m */; };
 		8423AE63222C553B0061AF2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8423AE61222C553B0061AF2F /* Main.storyboard */; };
-		8423AE65222C553C0061AF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8423AE64222C553C0061AF2F /* Assets.xcassets */; };
 		8423AE68222C553C0061AF2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8423AE66222C553C0061AF2F /* LaunchScreen.storyboard */; };
 		8423AE6B222C553C0061AF2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423AE6A222C553C0061AF2F /* main.m */; };
+		8423AE77222C568A0061AF2F /* ALWPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423AE76222C568A0061AF2F /* ALWPlanetsCollectionViewController.m */; };
+		8423AE7B222C57AF0061AF2F /* ALWPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423AE7A222C57AF0061AF2F /* ALWPlanetCollectionViewCell.m */; };
+		8423AE7E222C58EA0061AF2F /* ALWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423AE7D222C58EA0061AF2F /* ALWSettingsViewController.m */; };
+		8423AE81222C827B0061AF2F /* ALWPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423AE80222C827B0061AF2F /* ALWPlanet.m */; };
+		8423AE84222C85090061AF2F /* ALWPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423AE83222C85090061AF2F /* ALWPlanetController.m */; };
+		8423AE88222C9C460061AF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8423AE87222C9C460061AF2F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8423AE58222C553B0061AF2F /* Planets Obj-C Async.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets Obj-C Async.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8423AE5B222C553B0061AF2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8423AE5C222C553B0061AF2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8423AE5E222C553B0061AF2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8423AE5F222C553B0061AF2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8423AE62222C553B0061AF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8423AE64222C553C0061AF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8423AE67222C553C0061AF2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8423AE69222C553C0061AF2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8423AE6A222C553C0061AF2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8423AE75222C568A0061AF2F /* ALWPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		8423AE76222C568A0061AF2F /* ALWPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		8423AE79222C57AF0061AF2F /* ALWPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		8423AE7A222C57AF0061AF2F /* ALWPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		8423AE7C222C58EA0061AF2F /* ALWSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWSettingsViewController.h; sourceTree = "<group>"; };
+		8423AE7D222C58EA0061AF2F /* ALWSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWSettingsViewController.m; sourceTree = "<group>"; };
+		8423AE7F222C827B0061AF2F /* ALWPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWPlanet.h; sourceTree = "<group>"; };
+		8423AE80222C827B0061AF2F /* ALWPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWPlanet.m; sourceTree = "<group>"; };
+		8423AE82222C85090061AF2F /* ALWPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWPlanetController.h; sourceTree = "<group>"; };
+		8423AE83222C85090061AF2F /* ALWPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALWPlanetController.m; sourceTree = "<group>"; };
+		8423AE87222C9C460061AF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +70,65 @@
 		8423AE5A222C553B0061AF2F /* Planets Obj-C Async */ = {
 			isa = PBXGroup;
 			children = (
-				8423AE5B222C553B0061AF2F /* AppDelegate.h */,
-				8423AE5C222C553B0061AF2F /* AppDelegate.m */,
-				8423AE5E222C553B0061AF2F /* ViewController.h */,
-				8423AE5F222C553B0061AF2F /* ViewController.m */,
-				8423AE61222C553B0061AF2F /* Main.storyboard */,
-				8423AE64222C553C0061AF2F /* Assets.xcassets */,
-				8423AE66222C553C0061AF2F /* LaunchScreen.storyboard */,
 				8423AE69222C553C0061AF2F /* Info.plist */,
-				8423AE6A222C553C0061AF2F /* main.m */,
+				8423AE72222C56400061AF2F /* Model */,
+				8423AE78222C57920061AF2F /* Views */,
+				8423AE71222C56360061AF2F /* View Controllers */,
+				8423AE73222C56460061AF2F /* Storyboards */,
+				8423AE74222C564D0061AF2F /* Resources */,
 			);
 			path = "Planets Obj-C Async";
+			sourceTree = "<group>";
+		};
+		8423AE71222C56360061AF2F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8423AE75222C568A0061AF2F /* ALWPlanetsCollectionViewController.h */,
+				8423AE76222C568A0061AF2F /* ALWPlanetsCollectionViewController.m */,
+				8423AE7C222C58EA0061AF2F /* ALWSettingsViewController.h */,
+				8423AE7D222C58EA0061AF2F /* ALWSettingsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8423AE72222C56400061AF2F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8423AE7F222C827B0061AF2F /* ALWPlanet.h */,
+				8423AE80222C827B0061AF2F /* ALWPlanet.m */,
+				8423AE82222C85090061AF2F /* ALWPlanetController.h */,
+				8423AE83222C85090061AF2F /* ALWPlanetController.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8423AE73222C56460061AF2F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8423AE61222C553B0061AF2F /* Main.storyboard */,
+				8423AE66222C553C0061AF2F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8423AE74222C564D0061AF2F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8423AE5B222C553B0061AF2F /* AppDelegate.h */,
+				8423AE5C222C553B0061AF2F /* AppDelegate.m */,
+				8423AE6A222C553C0061AF2F /* main.m */,
+				8423AE87222C9C460061AF2F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8423AE78222C57920061AF2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8423AE79222C57AF0061AF2F /* ALWPlanetCollectionViewCell.h */,
+				8423AE7A222C57AF0061AF2F /* ALWPlanetCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8423AE68222C553C0061AF2F /* LaunchScreen.storyboard in Resources */,
-				8423AE65222C553C0061AF2F /* Assets.xcassets in Resources */,
+				8423AE88222C9C460061AF2F /* Assets.xcassets in Resources */,
 				8423AE63222C553B0061AF2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,9 +201,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8423AE60222C553B0061AF2F /* ViewController.m in Sources */,
+				8423AE81222C827B0061AF2F /* ALWPlanet.m in Sources */,
+				8423AE84222C85090061AF2F /* ALWPlanetController.m in Sources */,
 				8423AE6B222C553C0061AF2F /* main.m in Sources */,
 				8423AE5D222C553B0061AF2F /* AppDelegate.m in Sources */,
+				8423AE77222C568A0061AF2F /* ALWPlanetsCollectionViewController.m in Sources */,
+				8423AE7B222C57AF0061AF2F /* ALWPlanetCollectionViewCell.m in Sources */,
+				8423AE7E222C58EA0061AF2F /* ALWSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
