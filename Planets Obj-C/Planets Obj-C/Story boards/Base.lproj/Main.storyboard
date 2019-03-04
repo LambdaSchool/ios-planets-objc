@@ -26,35 +26,38 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="krK-X6-lSP" customClass="JDBPlanetsCollectionViewCell">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="150" height="170"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aRj-oJ-99K">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WqN-Vj-th4">
-                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="92"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61t-r8-FfQ">
-                                                    <rect key="frame" x="29" y="92" width="42" height="28"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WqN-Vj-th4">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="140"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="140" id="OYa-tS-J6t"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="246" verticalHuggingPriority="246" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61t-r8-FfQ">
+                                            <rect key="frame" x="0.0" y="149.5" width="150" height="20.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="JJJ-Iz-H16"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="aRj-oJ-99K" firstAttribute="leading" secondItem="krK-X6-lSP" secondAttribute="leading" id="8BA-ei-F6i"/>
-                                    <constraint firstAttribute="bottom" secondItem="aRj-oJ-99K" secondAttribute="bottom" id="XGf-KW-KBn"/>
-                                    <constraint firstItem="aRj-oJ-99K" firstAttribute="top" secondItem="krK-X6-lSP" secondAttribute="top" id="e8m-if-uNh"/>
-                                    <constraint firstAttribute="trailing" secondItem="aRj-oJ-99K" secondAttribute="trailing" id="rbQ-Uz-naT"/>
+                                    <constraint firstAttribute="trailing" secondItem="WqN-Vj-th4" secondAttribute="trailing" id="AYH-6r-98i"/>
+                                    <constraint firstAttribute="bottom" secondItem="61t-r8-FfQ" secondAttribute="bottom" id="SJC-SO-R81"/>
+                                    <constraint firstItem="WqN-Vj-th4" firstAttribute="leading" secondItem="krK-X6-lSP" secondAttribute="leading" id="WOt-ja-1fk"/>
+                                    <constraint firstItem="WqN-Vj-th4" firstAttribute="top" secondItem="krK-X6-lSP" secondAttribute="top" id="mOz-dy-clz"/>
+                                    <constraint firstItem="61t-r8-FfQ" firstAttribute="leading" secondItem="krK-X6-lSP" secondAttribute="leading" id="nu2-HT-Pva"/>
+                                    <constraint firstAttribute="trailing" secondItem="61t-r8-FfQ" secondAttribute="trailing" id="uso-aJ-zPY"/>
                                 </constraints>
-                                <size key="customSize" width="100" height="120"/>
+                                <size key="customSize" width="150" height="170"/>
                                 <connections>
                                     <outlet property="planetImageView" destination="WqN-Vj-th4" id="HGK-dk-Y1x"/>
                                     <outlet property="planetLabel" destination="61t-r8-FfQ" id="q6y-C2-KCg"/>
@@ -87,17 +90,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ipy-3m-FP3">
-                                <rect key="frame" x="164" y="28" width="195" height="77"/>
+                                <rect key="frame" x="148" y="28" width="211" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLh-g4-48k">
-                                        <rect key="frame" x="158" y="0.0" width="37" height="30"/>
+                                        <rect key="frame" x="174" y="0.0" width="37" height="30"/>
                                         <state key="normal" title="Done"/>
                                         <connections>
-                                            <action selector="doneButton:" destination="d2R-4b-uYo" eventType="touchUpInside" id="McU-jz-ScX"/>
+                                            <action selector="doneButton:" destination="d2R-4b-uYo" eventType="touchUpInside" id="8vU-p5-def"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g8P-3c-sgX">
-                                        <rect key="frame" x="0.0" y="46" width="195" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="g8P-3c-sgX">
+                                        <rect key="frame" x="0.0" y="46" width="211" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkF-6n-XGz">
                                                 <rect key="frame" x="0.0" y="0.0" width="130" height="31"/>
@@ -106,9 +109,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E5L-2T-yrA">
-                                                <rect key="frame" x="146" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="162" y="0.0" width="51" height="31"/>
                                                 <connections>
-                                                    <action selector="plutoSwitch:" destination="d2R-4b-uYo" eventType="valueChanged" id="gp7-K5-hzM"/>
+                                                    <action selector="plutoSwitch:" destination="d2R-4b-uYo" eventType="valueChanged" id="NOa-5J-tHo"/>
                                                 </connections>
                                             </switch>
                                         </subviews>
@@ -124,7 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="mo8-Bt-oRS"/>
                     </view>
                     <connections>
-                        <outlet property="showPlutoSwitch" destination="E5L-2T-yrA" id="UCe-EO-0ws"/>
+                        <outlet property="showPlutoSwitch" destination="E5L-2T-yrA" id="rCw-x5-I7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Au3-rI-sko" userLabel="First Responder" sceneMemberID="firstResponder"/>

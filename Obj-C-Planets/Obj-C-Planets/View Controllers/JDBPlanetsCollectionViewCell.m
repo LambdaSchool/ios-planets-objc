@@ -1,13 +1,15 @@
 //
 //  JDBPlanetsCollectionViewCell.m
-//  Planets Obj-C
+//  Obj-C-Planets
 //
-//  Created by Madison Waters on 2/25/19.
+//  Created by Madison Waters on 3/4/19.
 //  Copyright © 2019 Jonah Bergevin. All rights reserved.
 //
 
 #import "JDBPlanetsCollectionViewCell.h"
 
 @implementation JDBPlanetsCollectionViewCell
+
+
 
 @end

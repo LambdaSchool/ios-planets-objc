@@ -10,6 +10,11 @@
 
 @interface JDBSettingsViewController ()
 
+@property (weak, nonatomic) IBOutlet UISwitch *showPlutoSwitch;
+
+- (IBAction)doneButton:(id)sender;
+- (IBAction)plutoSwitch:(id)sender;
+
 @end
 
 @implementation JDBSettingsViewController
@@ -18,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    _showPlutoSwitch.on = [userDefaults boolForKey:@"ShouldShowPluto"];
+    self.showPlutoSwitch.on = [userDefaults boolForKey:@"ShouldShowPluto"];
 }
 
 -(IBAction)doneButton:(UIButton*)sender {
@@ -27,7 +32,7 @@
 
 -(IBAction)plutoSwitch:(id)sender {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setBool:_showPlutoSwitch.on forKey:@"ShouldShowPluto"];
+    [userDefaults setBool:self.showPlutoSwitch.isOn forKey:@"ShouldShowPluto"];
 }
 /*
 #pragma mark - Navigation

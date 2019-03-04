@@ -1,12 +1,12 @@
 //
-//  SettingsViewController.h
-//  Planets Obj-C
+//  JDBSettingsViewController.h
+//  Obj-C-Planets
 //
-//  Created by Madison Waters on 2/25/19.
+//  Created by Madison Waters on 3/4/19.
 //  Copyright © 2019 Jonah Bergevin. All rights reserved.
 //
 
-#import<UIKit/UIKit.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

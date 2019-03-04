@@ -1,23 +1,22 @@
 //
 //  JDBPlanetsCollectionViewController.h
-//  Planets Obj-C
+//  Obj-C-Planets
 //
-//  Created by Madison Waters on 2/25/19.
+//  Created by Madison Waters on 3/4/19.
 //  Copyright © 2019 Jonah Bergevin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-// Only works in a header file - Do not need to import the class IF using it as a type: a property/a method return type/or an argument
-@class JDBPlanetController;
 @class JDBSettingsViewController;
+@class JDBPlanetController;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JDBPlanetsCollectionViewController : UICollectionViewController
 
-@property JDBPlanetController *planetController;
 @property JDBSettingsViewController *settingsViewController;
+@property JDBPlanetController *planetController;
 
 @end
 
