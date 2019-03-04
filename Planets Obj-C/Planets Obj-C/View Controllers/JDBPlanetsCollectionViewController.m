@@ -66,6 +66,11 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     }
 }
 
+// Array of current planets
+// a bool value for sholdShowPluto using userdefaults to store the value
+// if pluto should show return planets with pluto
+// if not return the other
+
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
