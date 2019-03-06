@@ -28,9 +28,11 @@
     _planetNames = @[@"Mercury", @"Venus", @"Earth", @"Mars", @"Jupiter", @"Saturn", @"Uranus", @"Neptune", @"Pluto"];
     
     for (planet) in _planetNames {
+        let planetImage = UIImage(named: planet)
+        _planetNames[addobject planetImage]
         
     }
-        
+    
 }
 
 //Assigns reuseidentifier to avoid spelling errors.
@@ -45,7 +47,8 @@ static NSString * const reuseIdentifier = @"planetCell";
     // Register cell classes
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Do any additional setup after loading the view.
+    // Call function to create planet images.
+    buildPlanets();
 }
 
 /*
@@ -60,22 +63,15 @@ static NSString * const reuseIdentifier = @"planetCell";
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    return _planets.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
-    
+        
     return cell;
 }
 
