@@ -25,11 +25,11 @@
     //Initialise with an empty array
     _planets = [NSMutableArray array];
     _planetNames = [NSMutableArray array];
-    _planetNames = @[@"Mercury", @"Venus", @"Earth", @"Mars", @"Jupiter", @"Saturn", @"Uranus", @"Neptune", @"Pluto"];
+    _planetNames = @[@"mercury", @"venus", @"earth", @"mars", @"jupiter", @"saturn", @"uranus", @"neptune", @"pluto"];
     
-    for (planet) in _planetNames {
+    for (NSString *planet in _planetNames) {
         let planetImage = UIImage(named: planet)
-        _planetNames[addobject planetImage]
+        [self.planetNames addobject: planetImage]
         
     }
     
@@ -71,7 +71,7 @@ static NSString * const reuseIdentifier = @"planetCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-        
+    
     return cell;
 }
 
