@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		4C0546CD2224C291002AEBB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0546CC2224C291002AEBB8 /* AppDelegate.m */; };
-		4C0546D02224C291002AEBB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0546CF2224C291002AEBB8 /* ViewController.m */; };
 		4C0546D32224C291002AEBB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0546D12224C291002AEBB8 /* Main.storyboard */; };
 		4C0546D52224C293002AEBB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0546D42224C293002AEBB8 /* Assets.xcassets */; };
 		4C0546D82224C293002AEBB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0546D62224C293002AEBB8 /* LaunchScreen.storyboard */; };
 		4C0546DB2224C293002AEBB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0546DA2224C293002AEBB8 /* main.m */; };
+		4C2FD1BF2230268400AC5B44 /* PlanetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FD1BE2230268400AC5B44 /* PlanetsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C0546C82224C291002AEBB8 /* Planets C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0546CB2224C291002AEBB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4C0546CC2224C291002AEBB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4C0546CE2224C291002AEBB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4C0546CF2224C291002AEBB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4C0546D22224C291002AEBB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C0546D42224C293002AEBB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0546D72224C293002AEBB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0546D92224C293002AEBB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0546DA2224C293002AEBB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C2FD1BD2230268400AC5B44 /* PlanetsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetsViewController.h; sourceTree = "<group>"; };
+		4C2FD1BE2230268400AC5B44 /* PlanetsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			children = (
 				4C0546CB2224C291002AEBB8 /* AppDelegate.h */,
 				4C0546CC2224C291002AEBB8 /* AppDelegate.m */,
-				4C0546CE2224C291002AEBB8 /* ViewController.h */,
-				4C0546CF2224C291002AEBB8 /* ViewController.m */,
+				4C2FD1BD2230268400AC5B44 /* PlanetsViewController.h */,
+				4C2FD1BE2230268400AC5B44 /* PlanetsViewController.m */,
 				4C0546D12224C291002AEBB8 /* Main.storyboard */,
 				4C0546D42224C293002AEBB8 /* Assets.xcassets */,
 				4C0546D62224C293002AEBB8 /* LaunchScreen.storyboard */,
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0546D02224C291002AEBB8 /* ViewController.m in Sources */,
+				4C2FD1BF2230268400AC5B44 /* PlanetsViewController.m in Sources */,
 				4C0546DB2224C293002AEBB8 /* main.m in Sources */,
 				4C0546CD2224C291002AEBB8 /* AppDelegate.m in Sources */,
 			);
