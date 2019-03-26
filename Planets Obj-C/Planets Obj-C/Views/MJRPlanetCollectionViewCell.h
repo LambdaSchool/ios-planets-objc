@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MJRPlanetCollectionViewCell : UICollectionViewCell
 
+
+
+
+@property (strong, nonatomic) IBOutlet UIImageView *planetImage;
+@property (strong, nonatomic) IBOutlet UILabel *planetLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -29,4 +29,9 @@
 }
 */
 
+- (IBAction)plutoSwitched:(id)sender {
+}
+
+- (IBAction)doneTapped:(id)sender {
+}
 @end
