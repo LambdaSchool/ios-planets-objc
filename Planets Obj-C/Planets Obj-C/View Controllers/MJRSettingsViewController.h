@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MJRSettingsViewController : UIViewController
 
+- (void)updateViews;
+
 - (IBAction)plutoSwitched:(id)sender;
 - (IBAction)doneTapped:(id)sender;
 
