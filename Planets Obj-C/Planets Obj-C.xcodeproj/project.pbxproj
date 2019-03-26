@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39E88D9C2249E9A70018366D /* MJRSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E88D9B2249E9A70018366D /* MJRSettingsViewController.m */; };
+		39E88D9F2249E9BB0018366D /* MJRPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E88D9E2249E9BB0018366D /* MJRPlanet.m */; };
+		39E88DA22249E9EF0018366D /* MJRPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E88DA12249E9EF0018366D /* MJRPlanetController.m */; };
+		39E88DA52249EA100018366D /* MJRPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E88DA42249EA100018366D /* MJRPlanetCollectionViewCell.m */; };
+		39E88DA82249EA3A0018366D /* MJRPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E88DA72249EA3A0018366D /* MJRPlanetsCollectionViewController.m */; };
 		39EA0B712249895E007E5DAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EA0B702249895E007E5DAF /* AppDelegate.m */; };
 		39EA0B772249895E007E5DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EA0B752249895E007E5DAF /* Main.storyboard */; };
 		39EA0B792249895F007E5DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EA0B782249895F007E5DAF /* Assets.xcassets */; };
@@ -15,6 +20,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39E88D9A2249E9A70018366D /* MJRSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRSettingsViewController.h; sourceTree = "<group>"; };
+		39E88D9B2249E9A70018366D /* MJRSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRSettingsViewController.m; sourceTree = "<group>"; };
+		39E88D9D2249E9BB0018366D /* MJRPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRPlanet.h; sourceTree = "<group>"; };
+		39E88D9E2249E9BB0018366D /* MJRPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRPlanet.m; sourceTree = "<group>"; };
+		39E88DA02249E9EF0018366D /* MJRPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRPlanetController.h; sourceTree = "<group>"; };
+		39E88DA12249E9EF0018366D /* MJRPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRPlanetController.m; sourceTree = "<group>"; };
+		39E88DA32249EA100018366D /* MJRPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		39E88DA42249EA100018366D /* MJRPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		39E88DA62249EA3A0018366D /* MJRPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJRPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		39E88DA72249EA3A0018366D /* MJRPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJRPlanetsCollectionViewController.m; sourceTree = "<group>"; };
 		39EA0B6C2249895E007E5DAF /* Planets Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EA0B6F2249895E007E5DAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39EA0B702249895E007E5DAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +51,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39E88D932249E9150018366D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39E88D9D2249E9BB0018366D /* MJRPlanet.h */,
+				39E88D9E2249E9BB0018366D /* MJRPlanet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39E88D942249E91C0018366D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				39E88DA62249EA3A0018366D /* MJRPlanetsCollectionViewController.h */,
+				39E88DA72249EA3A0018366D /* MJRPlanetsCollectionViewController.m */,
+				39E88D9A2249E9A70018366D /* MJRSettingsViewController.h */,
+				39E88D9B2249E9A70018366D /* MJRSettingsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		39E88D952249E9240018366D /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39E88DA02249E9EF0018366D /* MJRPlanetController.h */,
+				39E88DA12249E9EF0018366D /* MJRPlanetController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		39E88D962249E9480018366D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39E88DA32249EA100018366D /* MJRPlanetCollectionViewCell.h */,
+				39E88DA42249EA100018366D /* MJRPlanetCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		39EA0B632249895E007E5DAF = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +109,10 @@
 			isa = PBXGroup;
 			children = (
 				39EA0B752249895E007E5DAF /* Main.storyboard */,
+				39E88D932249E9150018366D /* Model */,
+				39E88D952249E9240018366D /* Model Controller */,
+				39E88D942249E91C0018366D /* View Controllers */,
+				39E88D962249E9480018366D /* Views */,
 				39EA0B8522498973007E5DAF /* Resources */,
 				39EA0B7D2249895F007E5DAF /* Info.plist */,
 			);
@@ -100,6 +157,7 @@
 		39EA0B642249895E007E5DAF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MJR;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Moses Robinson";
 				TargetAttributes = {
@@ -145,7 +203,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				39EA0B7F2249895F007E5DAF /* main.m in Sources */,
+				39E88DA22249E9EF0018366D /* MJRPlanetController.m in Sources */,
+				39E88DA82249EA3A0018366D /* MJRPlanetsCollectionViewController.m in Sources */,
+				39E88D9F2249E9BB0018366D /* MJRPlanet.m in Sources */,
 				39EA0B712249895E007E5DAF /* AppDelegate.m in Sources */,
+				39E88DA52249EA100018366D /* MJRPlanetCollectionViewCell.m in Sources */,
+				39E88D9C2249E9A70018366D /* MJRSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
