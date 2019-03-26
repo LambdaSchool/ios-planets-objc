@@ -36,28 +36,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xaU-56-Xx4">
-                            <size key="itemSize" width="190" height="190"/>
+                            <size key="itemSize" width="120" height="140"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="15k-GM-5FX" customClass="MJRPlanetCollectionViewCell">
-                                <rect key="frame" x="92.666666666666671" y="0.0" width="190" height="190"/>
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kdg-cq-p38">
-                                            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="140"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zOR-y9-fuU">
-                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="164.66666666666666"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="104.66666666666667"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjS-2g-sKN">
-                                                    <rect key="frame" x="0.0" y="164.66666666666666" width="190" height="25.333333333333343"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <rect key="frame" x="0.0" y="104.66666666666667" width="120" height="35.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -71,7 +71,7 @@
                                     <constraint firstItem="Kdg-cq-p38" firstAttribute="leading" secondItem="15k-GM-5FX" secondAttribute="leading" id="fQC-Dh-Esf"/>
                                     <constraint firstAttribute="bottom" secondItem="Kdg-cq-p38" secondAttribute="bottom" id="wZI-mQ-ke3"/>
                                 </constraints>
-                                <size key="customSize" width="190" height="190"/>
+                                <size key="customSize" width="120" height="140"/>
                                 <connections>
                                     <outlet property="planetImage" destination="zOR-y9-fuU" id="dOq-If-lsb"/>
                                     <outlet property="planetLabel" destination="jjS-2g-sKN" id="kfx-rx-mAQ"/>

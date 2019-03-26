@@ -19,11 +19,9 @@
 
 static NSString * const reuseIdentifier = @"PlanetCell";
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    // Register cell classes
-//    [self.collectionView registerClass:[MJRPlanetCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear: animated];
+    [[self collectionView] reloadData];
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder

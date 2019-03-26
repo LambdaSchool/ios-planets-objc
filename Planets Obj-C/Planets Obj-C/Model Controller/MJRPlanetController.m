@@ -22,7 +22,7 @@
                               [[MJRPlanet alloc] initWithName: @"Venus" image: [UIImage imageNamed: @"venus"]],
                               [[MJRPlanet alloc] initWithName: @"Earth" image: [UIImage imageNamed: @"earth"]],
                               [[MJRPlanet alloc] initWithName: @"Mars" image: [UIImage imageNamed: @"mars"]],
-                              [[MJRPlanet alloc] initWithName: @"Jupiter" image: [UIImage imageNamed: @"Jupiter"]],
+                              [[MJRPlanet alloc] initWithName: @"Jupiter" image: [UIImage imageNamed: @"jupiter"]],
                               [[MJRPlanet alloc] initWithName: @"Saturn" image: [UIImage imageNamed: @"saturn"]],
                               [[MJRPlanet alloc] initWithName: @"Uranus" image: [UIImage imageNamed: @"uranus"]],
                               [[MJRPlanet alloc] initWithName: @"Neptune" image: [UIImage imageNamed: @"neptune"]], nil];
@@ -32,7 +32,7 @@
                              [[MJRPlanet alloc] initWithName: @"Venus" image: [UIImage imageNamed: @"venus"]],
                              [[MJRPlanet alloc] initWithName: @"Earth" image: [UIImage imageNamed: @"earth"]],
                              [[MJRPlanet alloc] initWithName: @"Mars" image: [UIImage imageNamed: @"mars"]],
-                             [[MJRPlanet alloc] initWithName: @"Jupiter" image: [UIImage imageNamed: @"Jupiter"]],
+                             [[MJRPlanet alloc] initWithName: @"Jupiter" image: [UIImage imageNamed: @"jupiter"]],
                              [[MJRPlanet alloc] initWithName: @"Saturn" image: [UIImage imageNamed: @"saturn"]],
                              [[MJRPlanet alloc] initWithName: @"Uranus" image: [UIImage imageNamed: @"uranus"]],
                              [[MJRPlanet alloc] initWithName: @"Neptune" image: [UIImage imageNamed: @"neptune"]],
