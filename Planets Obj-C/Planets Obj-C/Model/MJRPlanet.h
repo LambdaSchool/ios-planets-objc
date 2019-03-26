@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MJRPlanet : NSObject
 
-- (instancetype)initWIthName:(NSString *)name image:(UIImage *)image;
+- (instancetype)initWithName:(NSString *)name image:(UIImage *)image;
 
 @property NSString *name;
 @property UIImage *image;

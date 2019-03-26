@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MJRPlanetController : NSObject
 
+@property NSArray *planetsPlusPluto;
+@property NSArray *planetsMinusPluto;
+
 @end
 
 NS_ASSUME_NONNULL_END
