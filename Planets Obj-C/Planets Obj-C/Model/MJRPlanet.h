@@ -6,11 +6,16 @@
 //  Copyright © 2019 Moses Robinson. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MJRPlanet : NSObject
+
+- (instancetype)initWIthName:(NSString *)name image:(UIImage *)image;
+
+@property NSString *name;
+@property UIImage *image;
 
 @end
 
