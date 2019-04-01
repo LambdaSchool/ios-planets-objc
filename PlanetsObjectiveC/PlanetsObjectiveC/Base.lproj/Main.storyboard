@@ -25,34 +25,40 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="vz6-Ei-vM2" customClass="NYCPlanetCollectionViewCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="PlanetCell" id="vz6-Ei-vM2" customClass="NYCPlanetCollectionViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="185" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                     <rect key="frame" x="0.0" y="0.0" width="185" height="186"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZMh-ZD-3Le">
-                                            <rect key="frame" x="-20" y="0.0" width="225" height="215"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XeK-kj-NpW">
+                                            <rect key="frame" x="0.0" y="0.0" width="225" height="226"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uas-3H-k1U">
-                                                    <rect key="frame" x="0.0" y="0.0" width="185" height="148"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="148"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="uas-3H-k1U" secondAttribute="height" multiplier="93:74" id="b1M-hq-QV8"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGQ-rE-3Tr">
-                                                    <rect key="frame" x="0.0" y="156" width="185" height="30"/>
+                                                    <rect key="frame" x="0.0" y="156" width="186" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="XeK-kj-NpW" secondAttribute="height" multiplier="1:1" id="tYt-wW-YBy"/>
+                                            </constraints>
                                         </stackView>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="ZMh-ZD-3Le" secondAttribute="trailing" id="HxN-iZ-nIn"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZMh-ZD-3Le" secondAttribute="bottom" id="aCO-zB-Oqy"/>
-                                    <constraint firstItem="ZMh-ZD-3Le" firstAttribute="top" secondItem="vz6-Ei-vM2" secondAttribute="top" id="ahk-3y-qK9"/>
-                                    <constraint firstItem="ZMh-ZD-3Le" firstAttribute="leading" secondItem="vz6-Ei-vM2" secondAttribute="leading" id="tWk-tt-Twj"/>
+                                    <constraint firstItem="XeK-kj-NpW" firstAttribute="leading" secondItem="vz6-Ei-vM2" secondAttribute="leading" id="1P7-lk-ahh"/>
+                                    <constraint firstAttribute="trailing" secondItem="XeK-kj-NpW" secondAttribute="trailing" id="EvY-zQ-DJV"/>
+                                    <constraint firstAttribute="bottom" secondItem="XeK-kj-NpW" secondAttribute="bottom" id="pNM-FK-tLP"/>
+                                    <constraint firstItem="XeK-kj-NpW" firstAttribute="top" secondItem="vz6-Ei-vM2" secondAttribute="top" id="tDF-iK-otE"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="planetImageView" destination="uas-3H-k1U" id="csy-1e-wsn"/>
