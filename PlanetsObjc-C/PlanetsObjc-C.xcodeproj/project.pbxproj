@@ -1,0 +1,363 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B5427022252BDBB00DDBC9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5427012252BDBB00DDBC9D /* AppDelegate.m */; };
+		4B5427082252BDBB00DDBC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5427062252BDBB00DDBC9D /* Main.storyboard */; };
+		4B54270D2252BDBD00DDBC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B54270B2252BDBD00DDBC9D /* LaunchScreen.storyboard */; };
+		4B5427102252BDBD00DDBC9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B54270F2252BDBD00DDBC9D /* main.m */; };
+		4B5427182252C0E200DDBC9D /* PCYPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5427172252C0E200DDBC9D /* PCYPlanetsCollectionViewController.m */; };
+		4B54271B2252C4F900DDBC9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B54271A2252C4F900DDBC9D /* Assets.xcassets */; };
+		4B54271E2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B54271D2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.m */; };
+		4B5427212252CA1900DDBC9D /* PCYSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5427202252CA1900DDBC9D /* PCYSettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4B5426FD2252BDBB00DDBC9D /* PlanetsObjc-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlanetsObjc-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5427002252BDBB00DDBC9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4B5427012252BDBB00DDBC9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4B5427072252BDBB00DDBC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B54270C2252BDBD00DDBC9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B54270E2252BDBD00DDBC9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B54270F2252BDBD00DDBC9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B5427162252C0E200DDBC9D /* PCYPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCYPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		4B5427172252C0E200DDBC9D /* PCYPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCYPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		4B54271A2252C4F900DDBC9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B54271C2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCYPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		4B54271D2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCYPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		4B54271F2252CA1900DDBC9D /* PCYSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PCYSettingsViewController.h; path = ../PCYSettingsViewController.h; sourceTree = "<group>"; };
+		4B5427202252CA1900DDBC9D /* PCYSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PCYSettingsViewController.m; path = ../PCYSettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B5426FA2252BDBB00DDBC9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B5426F42252BDBB00DDBC9D = {
+			isa = PBXGroup;
+			children = (
+				4B5426FF2252BDBB00DDBC9D /* PlanetsObjc-C */,
+				4B5426FE2252BDBB00DDBC9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B5426FE2252BDBB00DDBC9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B5426FD2252BDBB00DDBC9D /* PlanetsObjc-C.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B5426FF2252BDBB00DDBC9D /* PlanetsObjc-C */ = {
+			isa = PBXGroup;
+			children = (
+				4B5427002252BDBB00DDBC9D /* AppDelegate.h */,
+				4B5427012252BDBB00DDBC9D /* AppDelegate.m */,
+				4B5427062252BDBB00DDBC9D /* Main.storyboard */,
+				4B5427192252C0E900DDBC9D /* View Controllers */,
+				4B54271A2252C4F900DDBC9D /* Assets.xcassets */,
+				4B54270B2252BDBD00DDBC9D /* LaunchScreen.storyboard */,
+				4B54270E2252BDBD00DDBC9D /* Info.plist */,
+				4B54270F2252BDBD00DDBC9D /* main.m */,
+			);
+			path = "PlanetsObjc-C";
+			sourceTree = "<group>";
+		};
+		4B5427192252C0E900DDBC9D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B5427162252C0E200DDBC9D /* PCYPlanetsCollectionViewController.h */,
+				4B5427172252C0E200DDBC9D /* PCYPlanetsCollectionViewController.m */,
+				4B54271C2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.h */,
+				4B54271D2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.m */,
+				4B54271F2252CA1900DDBC9D /* PCYSettingsViewController.h */,
+				4B5427202252CA1900DDBC9D /* PCYSettingsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B5426FC2252BDBB00DDBC9D /* PlanetsObjc-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B5427132252BDBD00DDBC9D /* Build configuration list for PBXNativeTarget "PlanetsObjc-C" */;
+			buildPhases = (
+				4B5426F92252BDBB00DDBC9D /* Sources */,
+				4B5426FA2252BDBB00DDBC9D /* Frameworks */,
+				4B5426FB2252BDBB00DDBC9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PlanetsObjc-C";
+			productName = "PlanetsObjc-C";
+			productReference = 4B5426FD2252BDBB00DDBC9D /* PlanetsObjc-C.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B5426F52252BDBB00DDBC9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PCY;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Paul Yi";
+				TargetAttributes = {
+					4B5426FC2252BDBB00DDBC9D = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 4B5426F82252BDBB00DDBC9D /* Build configuration list for PBXProject "PlanetsObjc-C" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B5426F42252BDBB00DDBC9D;
+			productRefGroup = 4B5426FE2252BDBB00DDBC9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B5426FC2252BDBB00DDBC9D /* PlanetsObjc-C */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B5426FB2252BDBB00DDBC9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B54270D2252BDBD00DDBC9D /* LaunchScreen.storyboard in Resources */,
+				4B54271B2252C4F900DDBC9D /* Assets.xcassets in Resources */,
+				4B5427082252BDBB00DDBC9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B5426F92252BDBB00DDBC9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B54271E2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.m in Sources */,
+				4B5427212252CA1900DDBC9D /* PCYSettingsViewController.m in Sources */,
+				4B5427182252C0E200DDBC9D /* PCYPlanetsCollectionViewController.m in Sources */,
+				4B5427102252BDBD00DDBC9D /* main.m in Sources */,
+				4B5427022252BDBB00DDBC9D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4B5427062252BDBB00DDBC9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B5427072252BDBB00DDBC9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B54270B2252BDBD00DDBC9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B54270C2252BDBD00DDBC9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B5427112252BDBD00DDBC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B5427122252BDBD00DDBC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B5427142252BDBD00DDBC9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Z7SV6KDUH;
+				INFOPLIST_FILE = "PlanetsObjc-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulyi.PlanetsObjc-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B5427152252BDBD00DDBC9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6Z7SV6KDUH;
+				INFOPLIST_FILE = "PlanetsObjc-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulyi.PlanetsObjc-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B5426F82252BDBB00DDBC9D /* Build configuration list for PBXProject "PlanetsObjc-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B5427112252BDBD00DDBC9D /* Debug */,
+				4B5427122252BDBD00DDBC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B5427132252BDBD00DDBC9D /* Build configuration list for PBXNativeTarget "PlanetsObjc-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B5427142252BDBD00DDBC9D /* Debug */,
+				4B5427152252BDBD00DDBC9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B5426F52252BDBB00DDBC9D /* Project object */;
+}
