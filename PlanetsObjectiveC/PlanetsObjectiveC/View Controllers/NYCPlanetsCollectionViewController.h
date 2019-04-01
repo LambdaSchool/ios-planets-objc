@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class NYCPlanetController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NYCPlanetsCollectionViewController : UICollectionViewController<UICollectionViewDelegateFlowLayout>
+
+@property NYCPlanetController *planetController;
 
 @end
 
