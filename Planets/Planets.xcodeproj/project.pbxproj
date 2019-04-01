@@ -10,13 +10,14 @@
 		4835BF632252A9F1004F19CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF622252A9F1004F19CC /* AppDelegate.m */; };
 		4835BF662252A9F1004F19CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF652252A9F1004F19CC /* ViewController.m */; };
 		4835BF692252A9F1004F19CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4835BF672252A9F1004F19CC /* Main.storyboard */; };
-		4835BF6B2252A9F2004F19CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4835BF6A2252A9F2004F19CC /* Assets.xcassets */; };
 		4835BF6E2252A9F2004F19CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4835BF6C2252A9F2004F19CC /* LaunchScreen.storyboard */; };
 		4835BF712252A9F2004F19CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF702252A9F2004F19CC /* main.m */; };
 		4835BF792252B08D004F19CC /* FCCPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF782252B08D004F19CC /* FCCPlanetsCollectionViewController.m */; };
 		4835BF7C2252B562004F19CC /* FCCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF7B2252B562004F19CC /* FCCCollectionViewCell.m */; };
 		4835BF7F2252B7B5004F19CC /* FCCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF7E2252B7B5004F19CC /* FCCSettingsViewController.m */; };
 		4835BF842252BA32004F19CC /* FCCPlanets.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF832252BA32004F19CC /* FCCPlanets.m */; };
+		4835BF872252C1D4004F19CC /* FCCPlanetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF862252C1D4004F19CC /* FCCPlanetsController.m */; };
+		4835BF892252C7A1004F19CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4835BF882252C7A1004F19CC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,6 @@
 		4835BF642252A9F1004F19CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4835BF652252A9F1004F19CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4835BF682252A9F1004F19CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4835BF6A2252A9F2004F19CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4835BF6D2252A9F2004F19CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4835BF6F2252A9F2004F19CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4835BF702252A9F2004F19CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +38,9 @@
 		4835BF7E2252B7B5004F19CC /* FCCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCSettingsViewController.m; sourceTree = "<group>"; };
 		4835BF822252BA32004F19CC /* FCCPlanets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCPlanets.h; sourceTree = "<group>"; };
 		4835BF832252BA32004F19CC /* FCCPlanets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCPlanets.m; sourceTree = "<group>"; };
+		4835BF852252C1D4004F19CC /* FCCPlanetsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCPlanetsController.h; sourceTree = "<group>"; };
+		4835BF862252C1D4004F19CC /* FCCPlanetsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCPlanetsController.m; sourceTree = "<group>"; };
+		4835BF882252C7A1004F19CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../../Downloads/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +80,7 @@
 				4835BF7A2252B562004F19CC /* FCCCollectionViewCell.h */,
 				4835BF7B2252B562004F19CC /* FCCCollectionViewCell.m */,
 				4835BF672252A9F1004F19CC /* Main.storyboard */,
-				4835BF6A2252A9F2004F19CC /* Assets.xcassets */,
+				4835BF882252C7A1004F19CC /* Assets.xcassets */,
 				4835BF6C2252A9F2004F19CC /* LaunchScreen.storyboard */,
 				4835BF6F2252A9F2004F19CC /* Info.plist */,
 				4835BF702252A9F2004F19CC /* main.m */,
@@ -103,6 +106,8 @@
 			children = (
 				4835BF822252BA32004F19CC /* FCCPlanets.h */,
 				4835BF832252BA32004F19CC /* FCCPlanets.m */,
+				4835BF852252C1D4004F19CC /* FCCPlanetsController.h */,
+				4835BF862252C1D4004F19CC /* FCCPlanetsController.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4835BF6E2252A9F2004F19CC /* LaunchScreen.storyboard in Resources */,
-				4835BF6B2252A9F2004F19CC /* Assets.xcassets in Resources */,
+				4835BF892252C7A1004F19CC /* Assets.xcassets in Resources */,
 				4835BF692252A9F1004F19CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4835BF872252C1D4004F19CC /* FCCPlanetsController.m in Sources */,
 				4835BF662252A9F1004F19CC /* ViewController.m in Sources */,
 				4835BF792252B08D004F19CC /* FCCPlanetsCollectionViewController.m in Sources */,
 				4835BF712252A9F2004F19CC /* main.m in Sources */,
