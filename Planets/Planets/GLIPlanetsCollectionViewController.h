@@ -1,5 +1,5 @@
 //
-//  GLICollectionViewController.h
+//  GLIPlanetsCollectionViewController.h
 //  Planets
 //
 //  Created by Julian A. Fordyce on 4/1/19.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GLICollectionViewController : UICollectionViewController
+@interface GLIPlanetsCollectionViewController : UICollectionViewController
 
 @end
 

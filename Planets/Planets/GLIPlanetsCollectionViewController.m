@@ -1,18 +1,18 @@
 //
-//  GLICollectionViewController.m
+//  GLIPlanetsCollectionViewController.m
 //  Planets
 //
 //  Created by Julian A. Fordyce on 4/1/19.
 //  Copyright © 2019 Julian A. Fordyce. All rights reserved.
 //
 
-#import "GLICollectionViewController.h"
+#import "GLIPlanetsCollectionViewController.h"
 
-@interface GLICollectionViewController ()
+@interface GLIPlanetsCollectionViewController ()
 
 @end
 
-@implementation GLICollectionViewController
+@implementation GLIPlanetsCollectionViewController
 
 static NSString * const reuseIdentifier = @"Cell";
 
