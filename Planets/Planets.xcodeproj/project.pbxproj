@@ -16,6 +16,7 @@
 		4835BF792252B08D004F19CC /* FCCPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF782252B08D004F19CC /* FCCPlanetsCollectionViewController.m */; };
 		4835BF7C2252B562004F19CC /* FCCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF7B2252B562004F19CC /* FCCCollectionViewCell.m */; };
 		4835BF7F2252B7B5004F19CC /* FCCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF7E2252B7B5004F19CC /* FCCSettingsViewController.m */; };
+		4835BF842252BA32004F19CC /* FCCPlanets.m in Sources */ = {isa = PBXBuildFile; fileRef = 4835BF832252BA32004F19CC /* FCCPlanets.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		4835BF7B2252B562004F19CC /* FCCCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCCollectionViewCell.m; sourceTree = "<group>"; };
 		4835BF7D2252B7B5004F19CC /* FCCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCSettingsViewController.h; sourceTree = "<group>"; };
 		4835BF7E2252B7B5004F19CC /* FCCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCSettingsViewController.m; sourceTree = "<group>"; };
+		4835BF822252BA32004F19CC /* FCCPlanets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCCPlanets.h; sourceTree = "<group>"; };
+		4835BF832252BA32004F19CC /* FCCPlanets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCCPlanets.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 		4835BF812252B7D9004F19CC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4835BF822252BA32004F19CC /* FCCPlanets.h */,
+				4835BF832252BA32004F19CC /* FCCPlanets.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				4835BF632252A9F1004F19CC /* AppDelegate.m in Sources */,
 				4835BF7F2252B7B5004F19CC /* FCCSettingsViewController.m in Sources */,
 				4835BF7C2252B562004F19CC /* FCCCollectionViewCell.m in Sources */,
+				4835BF842252BA32004F19CC /* FCCPlanets.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
