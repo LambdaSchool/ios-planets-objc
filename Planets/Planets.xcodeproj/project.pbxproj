@@ -15,6 +15,7 @@
 		C44A4C6622528C5300A975DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C44A4C6522528C5300A975DA /* main.m */; };
 		C44A4C712252941400A975DA /* GLIPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44A4C702252941400A975DA /* GLIPlanetsCollectionViewController.m */; };
 		C44A4C74225297ED00A975DA /* GLIPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C44A4C73225297ED00A975DA /* GLIPlanetsCollectionViewCell.m */; };
+		C4ED21422252DBE500909481 /* GLISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ED21412252DBE500909481 /* GLISettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		C44A4C702252941400A975DA /* GLIPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLIPlanetsCollectionViewController.m; sourceTree = "<group>"; };
 		C44A4C72225297EC00A975DA /* GLIPlanetsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLIPlanetsCollectionViewCell.h; sourceTree = "<group>"; };
 		C44A4C73225297ED00A975DA /* GLIPlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLIPlanetsCollectionViewCell.m; sourceTree = "<group>"; };
+		C4ED21402252DBE500909481 /* GLISettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLISettingsViewController.h; sourceTree = "<group>"; };
+		C4ED21412252DBE500909481 /* GLISettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLISettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				C44A4C5A22528C5200A975DA /* ViewController.m */,
 				C44A4C5C22528C5200A975DA /* Main.storyboard */,
 				C44A4C72225297EC00A975DA /* GLIPlanetsCollectionViewCell.h */,
+				C4ED21402252DBE500909481 /* GLISettingsViewController.h */,
+				C4ED21412252DBE500909481 /* GLISettingsViewController.m */,
 				C44A4C73225297ED00A975DA /* GLIPlanetsCollectionViewCell.m */,
 				C44A4C5F22528C5300A975DA /* Assets.xcassets */,
 				C44A4C6122528C5300A975DA /* LaunchScreen.storyboard */,
@@ -153,6 +158,7 @@
 			files = (
 				C44A4C5B22528C5200A975DA /* ViewController.m in Sources */,
 				C44A4C712252941400A975DA /* GLIPlanetsCollectionViewController.m in Sources */,
+				C4ED21422252DBE500909481 /* GLISettingsViewController.m in Sources */,
 				C44A4C6622528C5300A975DA /* main.m in Sources */,
 				C44A4C5822528C5200A975DA /* AppDelegate.m in Sources */,
 				C44A4C74225297ED00A975DA /* GLIPlanetsCollectionViewCell.m in Sources */,
