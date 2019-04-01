@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		A2910CF22252B33A005AEB72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2910CF12252B33A005AEB72 /* AppDelegate.m */; };
-		A2910CF52252B33A005AEB72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2910CF42252B33A005AEB72 /* ViewController.m */; };
 		A2910CF82252B33A005AEB72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2910CF62252B33A005AEB72 /* Main.storyboard */; };
 		A2910CFA2252B33C005AEB72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2910CF92252B33C005AEB72 /* Assets.xcassets */; };
 		A2910CFD2252B33C005AEB72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2910CFB2252B33C005AEB72 /* LaunchScreen.storyboard */; };
 		A2910D002252B33C005AEB72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2910CFF2252B33C005AEB72 /* main.m */; };
+		A2910D082252B3E3005AEB72 /* LAPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2910D072252B3E3005AEB72 /* LAPlanetsCollectionViewController.m */; };
+		A2910D0C2252B626005AEB72 /* LAPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2910D0B2252B626005AEB72 /* LAPlanetCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A2910CED2252B33A005AEB72 /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2910CF02252B33A005AEB72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2910CF12252B33A005AEB72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A2910CF32252B33A005AEB72 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A2910CF42252B33A005AEB72 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A2910CF72252B33A005AEB72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2910CF92252B33C005AEB72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2910CFC2252B33C005AEB72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2910CFE2252B33C005AEB72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2910CFF2252B33C005AEB72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2910D062252B3E3005AEB72 /* LAPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		A2910D072252B3E3005AEB72 /* LAPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		A2910D0A2252B626005AEB72 /* LAPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		A2910D0B2252B626005AEB72 /* LAPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +63,33 @@
 			children = (
 				A2910CF02252B33A005AEB72 /* AppDelegate.h */,
 				A2910CF12252B33A005AEB72 /* AppDelegate.m */,
-				A2910CF32252B33A005AEB72 /* ViewController.h */,
-				A2910CF42252B33A005AEB72 /* ViewController.m */,
 				A2910CF62252B33A005AEB72 /* Main.storyboard */,
+				A2910D0D2252B62F005AEB72 /* Views */,
+				A2910D092252B3ED005AEB72 /* View Controllers */,
 				A2910CF92252B33C005AEB72 /* Assets.xcassets */,
 				A2910CFB2252B33C005AEB72 /* LaunchScreen.storyboard */,
 				A2910CFE2252B33C005AEB72 /* Info.plist */,
 				A2910CFF2252B33C005AEB72 /* main.m */,
 			);
 			path = Planets;
+			sourceTree = "<group>";
+		};
+		A2910D092252B3ED005AEB72 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2910D062252B3E3005AEB72 /* LAPlanetsCollectionViewController.h */,
+				A2910D072252B3E3005AEB72 /* LAPlanetsCollectionViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A2910D0D2252B62F005AEB72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2910D0A2252B626005AEB72 /* LAPlanetCollectionViewCell.h */,
+				A2910D0B2252B626005AEB72 /* LAPlanetCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2910CF52252B33A005AEB72 /* ViewController.m in Sources */,
+				A2910D082252B3E3005AEB72 /* LAPlanetsCollectionViewController.m in Sources */,
 				A2910D002252B33C005AEB72 /* main.m in Sources */,
 				A2910CF22252B33A005AEB72 /* AppDelegate.m in Sources */,
+				A2910D0C2252B626005AEB72 /* LAPlanetCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
