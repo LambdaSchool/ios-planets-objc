@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         _planetName = name;
-        _planetImage = [[UIImage alloc] initWithContentsOfFile: image];
+        _planetImage = [UIImage imageNamed: image];
     }
     return self;
 }

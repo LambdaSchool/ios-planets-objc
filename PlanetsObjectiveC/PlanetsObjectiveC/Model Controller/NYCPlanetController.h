@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NYCPlanetController : NSObject
 
+- (instancetype)initWithPluto;
+- (instancetype)initWithoutPluto;
+
 @property NSArray *planets;
 
 @end

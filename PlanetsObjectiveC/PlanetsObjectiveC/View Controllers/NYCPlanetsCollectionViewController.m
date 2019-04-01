@@ -45,9 +45,14 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    double width = collectionView.frame.size.width / 2;
+    double halfViewWidth = collectionView.frame.size.width / 2 ;
+    double usableWidth = halfViewWidth - 20.0;
     
-    return CGSizeMake(width, width);
+    return CGSizeMake(usableWidth, halfViewWidth);
+}
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(0, 10.0, 0, 10.0);
 }
 
 @end
