@@ -15,6 +15,8 @@
 		777491D322529C6C000693F6 /* NYCPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777491D222529C6C000693F6 /* NYCPlanetsCollectionViewController.m */; };
 		777491D722529DD0000693F6 /* NYCPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 777491D622529DD0000693F6 /* NYCPlanetCollectionViewCell.m */; };
 		777491DB22529FC1000693F6 /* NYCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777491DA22529FC1000693F6 /* NYCSettingsViewController.m */; };
+		777491DE2252A8F2000693F6 /* NYCPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 777491DD2252A8F2000693F6 /* NYCPlanet.m */; };
+		777491E22252A9E9000693F6 /* NYCPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777491E12252A9E9000693F6 /* NYCPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		777491D622529DD0000693F6 /* NYCPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 		777491D922529FC1000693F6 /* NYCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYCSettingsViewController.h; sourceTree = "<group>"; };
 		777491DA22529FC1000693F6 /* NYCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCSettingsViewController.m; sourceTree = "<group>"; };
+		777491DC2252A8F2000693F6 /* NYCPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYCPlanet.h; sourceTree = "<group>"; };
+		777491DD2252A8F2000693F6 /* NYCPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCPlanet.m; sourceTree = "<group>"; };
+		777491E02252A9E9000693F6 /* NYCPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NYCPlanetController.h; sourceTree = "<group>"; };
+		777491E12252A9E9000693F6 /* NYCPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NYCPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,8 @@
 				777491CA22529BD3000693F6 /* main.m */,
 				777491D422529CB4000693F6 /* View Controllers */,
 				777491D822529E7A000693F6 /* Views */,
+				777491DF2252A8F7000693F6 /* Model */,
+				777491E32252A9EE000693F6 /* Model Controller */,
 			);
 			path = PlanetsObjectiveC;
 			sourceTree = "<group>";
@@ -95,6 +103,24 @@
 				777491D622529DD0000693F6 /* NYCPlanetCollectionViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		777491DF2252A8F7000693F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				777491DC2252A8F2000693F6 /* NYCPlanet.h */,
+				777491DD2252A8F2000693F6 /* NYCPlanet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		777491E32252A9EE000693F6 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				777491E02252A9E9000693F6 /* NYCPlanetController.h */,
+				777491E12252A9E9000693F6 /* NYCPlanetController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777491DE2252A8F2000693F6 /* NYCPlanet.m in Sources */,
 				777491DB22529FC1000693F6 /* NYCSettingsViewController.m in Sources */,
 				777491CB22529BD3000693F6 /* main.m in Sources */,
 				777491D722529DD0000693F6 /* NYCPlanetCollectionViewCell.m in Sources */,
+				777491E22252A9E9000693F6 /* NYCPlanetController.m in Sources */,
 				777491BD22529BD3000693F6 /* AppDelegate.m in Sources */,
 				777491D322529C6C000693F6 /* NYCPlanetsCollectionViewController.m in Sources */,
 			);
