@@ -70,6 +70,10 @@
                                     <constraint firstItem="FzN-mb-Ooi" firstAttribute="width" secondItem="zJ4-s2-Qh4" secondAttribute="width" id="N3Y-uR-LAC"/>
                                     <constraint firstItem="FzN-mb-Ooi" firstAttribute="centerY" secondItem="zJ4-s2-Qh4" secondAttribute="centerY" id="QOr-3o-QeL"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="aEB-Uo-pj5" id="gMH-9f-ijx"/>
+                                    <outlet property="nameLabel" destination="SrP-vh-HaG" id="0sE-rg-iJ5"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

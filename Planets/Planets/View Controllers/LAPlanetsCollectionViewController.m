@@ -8,17 +8,25 @@
 
 #import "LAPlanetsCollectionViewController.h"
 
+
 @interface LAPlanetsCollectionViewController ()
+
+    
+@property NSArray *planets;
+@property NSArray *planetsPlusPluto;
 
 @end
 
 @implementation LAPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    _planets = @[@"Mercury", @"Mars", @"Venus", @"Earth", @""]
+    _planets = [[NSArray alloc] initWithObjects:@"Mercury", @"Venus", @"Earth", @"Mars", @"Jupiter", @"Saturn", @"Uranus", @"Neptune", nil];
+    _planetsPlusPluto = [[NSArray alloc] initWithObjects:@"Mercury", @"Venus", @"Earth", @"Mars", @"Jupiter", @"Saturn", @"Uranus", @"Neptune", @"Pluto", nil];
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -40,21 +48,17 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+
+    return _planets.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     
     // Configure the cell
+    
+    
     
     return cell;
 }

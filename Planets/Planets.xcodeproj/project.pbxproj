@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A27186AD2252D787007300B0 /* LAPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = A27186AC2252D787007300B0 /* LAPlanet.m */; };
 		A2910CF22252B33A005AEB72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2910CF12252B33A005AEB72 /* AppDelegate.m */; };
 		A2910CF82252B33A005AEB72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2910CF62252B33A005AEB72 /* Main.storyboard */; };
 		A2910CFA2252B33C005AEB72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2910CF92252B33C005AEB72 /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A27186AB2252D787007300B0 /* LAPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAPlanet.h; sourceTree = "<group>"; };
+		A27186AC2252D787007300B0 /* LAPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAPlanet.m; sourceTree = "<group>"; };
 		A2910CED2252B33A005AEB72 /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2910CF02252B33A005AEB72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A2910CF12252B33A005AEB72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A27186AE2252D78E007300B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A27186AB2252D787007300B0 /* LAPlanet.h */,
+				A27186AC2252D787007300B0 /* LAPlanet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A2910CE42252B33A005AEB72 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +76,7 @@
 				A2910CF02252B33A005AEB72 /* AppDelegate.h */,
 				A2910CF12252B33A005AEB72 /* AppDelegate.m */,
 				A2910CF62252B33A005AEB72 /* Main.storyboard */,
+				A27186AE2252D78E007300B0 /* Model */,
 				A2910D0D2252B62F005AEB72 /* Views */,
 				A2910D092252B3ED005AEB72 /* View Controllers */,
 				A2910CF92252B33C005AEB72 /* Assets.xcassets */,
@@ -163,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27186AD2252D787007300B0 /* LAPlanet.m in Sources */,
 				A2910D082252B3E3005AEB72 /* LAPlanetsCollectionViewController.m in Sources */,
 				A2910D002252B33C005AEB72 /* main.m in Sources */,
 				A2910CF22252B33A005AEB72 /* AppDelegate.m in Sources */,
