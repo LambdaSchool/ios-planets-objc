@@ -57,6 +57,7 @@
                                 </constraints>
                                 <connections>
                                     <outlet property="planetImage" destination="TgH-5O-Ppa" id="zpO-CQ-3tN"/>
+                                    <outlet property="planetName" destination="hTK-HY-QrI" id="Zek-LA-bvd"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

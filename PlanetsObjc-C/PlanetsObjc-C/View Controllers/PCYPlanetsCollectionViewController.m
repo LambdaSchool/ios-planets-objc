@@ -8,6 +8,7 @@
 
 #import "PCYPlanetsCollectionViewController.h"
 #import "PCYPlanetCollectionViewCell.h"
+#import "PCYPlanet.h"
 
 @interface PCYPlanetsCollectionViewController () {
     NSArray *planetImages;
@@ -55,7 +56,11 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PCYPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     
+    
+    
     cell.planetImage.image = [UIImage imageNamed:planetImages[indexPath.row]];
+    
+    
     
     return cell;
 }
