@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B26D9B92253372D00851C94 /* PCYPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B26D9B82253372D00851C94 /* PCYPlanet.m */; };
 		4B5427022252BDBB00DDBC9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5427012252BDBB00DDBC9D /* AppDelegate.m */; };
 		4B5427082252BDBB00DDBC9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5427062252BDBB00DDBC9D /* Main.storyboard */; };
 		4B54270D2252BDBD00DDBC9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B54270B2252BDBD00DDBC9D /* LaunchScreen.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B26D9B72253372D00851C94 /* PCYPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCYPlanet.h; sourceTree = "<group>"; };
+		4B26D9B82253372D00851C94 /* PCYPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCYPlanet.m; sourceTree = "<group>"; };
 		4B5426FD2252BDBB00DDBC9D /* PlanetsObjc-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlanetsObjc-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5427002252BDBB00DDBC9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4B5427012252BDBB00DDBC9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B26D9BA2253373500851C94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B26D9B72253372D00851C94 /* PCYPlanet.h */,
+				4B26D9B82253372D00851C94 /* PCYPlanet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4B5426F42252BDBB00DDBC9D = {
 			isa = PBXGroup;
 			children = (
@@ -66,10 +78,10 @@
 			children = (
 				4B5427002252BDBB00DDBC9D /* AppDelegate.h */,
 				4B5427012252BDBB00DDBC9D /* AppDelegate.m */,
+				4B26D9BA2253373500851C94 /* Model */,
 				4B5427222252DD7900DDBC9D /* Storyboard */,
 				4B5427192252C0E900DDBC9D /* View Controllers */,
 				4B54271A2252C4F900DDBC9D /* Assets.xcassets */,
-				4B54270B2252BDBD00DDBC9D /* LaunchScreen.storyboard */,
 				4B54270E2252BDBD00DDBC9D /* Info.plist */,
 				4B54270F2252BDBD00DDBC9D /* main.m */,
 			);
@@ -92,6 +104,7 @@
 		4B5427222252DD7900DDBC9D /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				4B54270B2252BDBD00DDBC9D /* LaunchScreen.storyboard */,
 				4B5427062252BDBB00DDBC9D /* Main.storyboard */,
 			);
 			path = Storyboard;
@@ -170,6 +183,7 @@
 			files = (
 				4B54271E2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.m in Sources */,
 				4B5427212252CA1900DDBC9D /* PCYSettingsViewController.m in Sources */,
+				4B26D9B92253372D00851C94 /* PCYPlanet.m in Sources */,
 				4B5427182252C0E200DDBC9D /* PCYPlanetsCollectionViewController.m in Sources */,
 				4B5427102252BDBD00DDBC9D /* main.m in Sources */,
 				4B5427022252BDBB00DDBC9D /* AppDelegate.m in Sources */,

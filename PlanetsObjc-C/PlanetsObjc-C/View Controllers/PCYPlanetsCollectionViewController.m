@@ -23,11 +23,8 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     
     planetImages = @[@"Earth", @"Jupiter", @"Mars", @"Mercury", @"Neptune", @"Pluto", @"Saturn", @"Uranus", @"Venus"];
     
-    UINavigationBar *bar = [self.navigationController navigationBar];
-    [bar setTintColor:[UIColor blackColor]];
-
     
-    // Do any additional setup after loading the view.
+
 }
 
 
