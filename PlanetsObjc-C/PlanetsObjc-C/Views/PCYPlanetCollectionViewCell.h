@@ -14,7 +14,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *planetName;
 
 
-
-
 @end
 
