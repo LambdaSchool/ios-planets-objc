@@ -69,6 +69,15 @@
 			path = "Model Controller";
 			sourceTree = "<group>";
 		};
+		4B26D9BF2253615900851C94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B54271C2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.h */,
+				4B54271D2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4B5426F42252BDBB00DDBC9D = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +103,7 @@
 				4B26D9BE2253397700851C94 /* Model Controller */,
 				4B5427222252DD7900DDBC9D /* Storyboards */,
 				4B5427192252C0E900DDBC9D /* View Controllers */,
+				4B26D9BF2253615900851C94 /* Views */,
 				4B54271A2252C4F900DDBC9D /* Assets.xcassets */,
 				4B54270E2252BDBD00DDBC9D /* Info.plist */,
 				4B54270F2252BDBD00DDBC9D /* main.m */,
@@ -106,8 +116,6 @@
 			children = (
 				4B5427162252C0E200DDBC9D /* PCYPlanetsCollectionViewController.h */,
 				4B5427172252C0E200DDBC9D /* PCYPlanetsCollectionViewController.m */,
-				4B54271C2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.h */,
-				4B54271D2252C99A00DDBC9D /* PCYPlanetCollectionViewCell.m */,
 				4B54271F2252CA1900DDBC9D /* PCYSettingsViewController.h */,
 				4B5427202252CA1900DDBC9D /* PCYSettingsViewController.m */,
 			);

@@ -80,10 +80,10 @@
             </objects>
             <point key="canvasLocation" x="205.79710144927537" y="89.732142857142847"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="Atw-Cm-oEF">
             <objects>
-                <viewController id="zpJ-wI-qFu" sceneMemberID="viewController">
+                <viewController id="zpJ-wI-qFu" customClass="PCYSettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k9o-o4-cAA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +93,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="done:" destination="zpJ-wI-qFu" eventType="touchUpInside" id="cqu-hV-wLY"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="mFZ-LS-oKB">
                                 <rect key="frame" x="20" y="168" width="380" height="31"/>
@@ -106,6 +109,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHD-Kn-SYX">
                                         <rect key="frame" x="331" y="0.0" width="51" height="31"/>
                                         <color key="onTintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="toggleShowPluto:" destination="zpJ-wI-qFu" eventType="valueChanged" id="jGu-PV-iug"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -129,6 +135,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ReN-kE-I6c"/>
                     </view>
+                    <connections>
+                        <outlet property="showPluto" destination="uHD-Kn-SYX" id="QHz-W8-uAv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JC9-mK-qR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

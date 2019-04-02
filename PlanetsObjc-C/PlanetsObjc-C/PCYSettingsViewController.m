@@ -10,14 +10,33 @@
 
 @interface PCYSettingsViewController ()
 
+    @property (weak, nonatomic) IBOutlet UISwitch *showPluto;
+
 @end
 
 @implementation PCYSettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateViews];
 }
+
+- (void)updateViews {
+    [self.showPluto setOn:[[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPluto"]];
+    
+}
+
+- (IBAction)toggleShowPluto:(id)sender {
+    BOOL shouldShowPluto = self.showPluto.isOn;
+}
+
+
+- (IBAction)done:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
 
 /*
 #pragma mark - Navigation

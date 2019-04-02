@@ -12,13 +12,13 @@
 
 - (instancetype)initWithPlanet:(NSString *)planet planetImage:(NSString *)planetImage {
     
-    self = [super init];
-    if (self != nil) {
-        
-        _planet = planet;
-        _planetImage = planetImage;
-    }
+self = [super init];
+if (self != nil) {
     
+    _planet = planet;
+    _planetImage = planetImage;
+}
+
     return self;
 }
 
