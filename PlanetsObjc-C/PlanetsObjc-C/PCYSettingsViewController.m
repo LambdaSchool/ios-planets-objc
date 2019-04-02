@@ -18,16 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self updateViews];
-}
-
-- (void)updateViews {
-    [self.showPluto setOn:[[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPluto"]];
     
 }
 
 - (IBAction)toggleShowPluto:(id)sender {
-    BOOL shouldShowPluto = self.showPluto.isOn;
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:_showPluto.on forKey:@"ShouldShowPluto"];
 }
 
 

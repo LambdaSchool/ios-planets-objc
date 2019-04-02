@@ -7,9 +7,9 @@
 //
 
 #import "PCYPlanetCollectionViewCell.h"
+#import "PCYPlanet.h"
 
 @implementation PCYPlanetCollectionViewCell
-
 
 
 @end

@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PCYPlanet : NSObject
 
-- (instancetype)initWithPlanet:(NSString *)planet planetImage:(NSString *)planetImage;
+- (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName;
 
-@property NSString *planet;
-@property NSData *planetImage;
+@property NSString *name;
+@property NSString *imageName;
 
 @end
 

@@ -97,16 +97,12 @@
 		4B5426FF2252BDBB00DDBC9D /* PlanetsObjc-C */ = {
 			isa = PBXGroup;
 			children = (
-				4B5427002252BDBB00DDBC9D /* AppDelegate.h */,
-				4B5427012252BDBB00DDBC9D /* AppDelegate.m */,
 				4B26D9BA2253373500851C94 /* Model */,
 				4B26D9BE2253397700851C94 /* Model Controller */,
-				4B5427222252DD7900DDBC9D /* Storyboards */,
 				4B5427192252C0E900DDBC9D /* View Controllers */,
 				4B26D9BF2253615900851C94 /* Views */,
-				4B54271A2252C4F900DDBC9D /* Assets.xcassets */,
+				4B5427222252DD7900DDBC9D /* Supporting FIles */,
 				4B54270E2252BDBD00DDBC9D /* Info.plist */,
-				4B54270F2252BDBD00DDBC9D /* main.m */,
 			);
 			path = "PlanetsObjc-C";
 			sourceTree = "<group>";
@@ -122,13 +118,17 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		4B5427222252DD7900DDBC9D /* Storyboards */ = {
+		4B5427222252DD7900DDBC9D /* Supporting FIles */ = {
 			isa = PBXGroup;
 			children = (
+				4B5427002252BDBB00DDBC9D /* AppDelegate.h */,
+				4B5427012252BDBB00DDBC9D /* AppDelegate.m */,
 				4B54270B2252BDBD00DDBC9D /* LaunchScreen.storyboard */,
 				4B5427062252BDBB00DDBC9D /* Main.storyboard */,
+				4B54271A2252C4F900DDBC9D /* Assets.xcassets */,
+				4B54270F2252BDBD00DDBC9D /* main.m */,
 			);
-			path = Storyboards;
+			path = "Supporting FIles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -13,5 +13,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *planetImage;
 @property (weak, nonatomic) IBOutlet UILabel *planetName;
 
+
+
+
 @end
 

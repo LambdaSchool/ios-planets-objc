@@ -10,13 +10,13 @@
 
 @implementation PCYPlanet
 
-- (instancetype)initWithPlanet:(NSString *)planet planetImage:(NSString *)planetImage {
+- (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName {
     
 self = [super init];
 if (self != nil) {
     
-    _planet = planet;
-    _planetImage = planetImage;
+    _name = name;
+    _imageName = imageName;
 }
 
     return self;

@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PCYPlanetController : NSObject
 
-@property NSArray *planetsIncludingPluto;
-@property NSArray *planetsExcludingPluto;
+@property (nonatomic) NSArray *planets;
+@property (readonly) NSArray *planetsIncludingPluto;
+@property (readonly) NSArray *planetsExcludingPluto;
 
 @end
 

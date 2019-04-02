@@ -9,59 +9,59 @@
 #import "PCYPlanetsCollectionViewController.h"
 #import "PCYPlanetCollectionViewCell.h"
 #import "PCYPlanet.h"
+#import "PCYPlanetController.h"
 
-@interface PCYPlanetsCollectionViewController () {
-    NSArray *planetImages;
-}
+@interface PCYPlanetsCollectionViewController ()
+
+@property PCYPlanetController *planetController;
+
 @end
 
 @implementation PCYPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"PlanetCell";
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    planetImages = @[@"Earth", @"Jupiter", @"Mars", @"Mercury", @"Neptune", @"Pluto", @"Saturn", @"Uranus", @"Venus"];
-    
-    
-
+- (instancetype)initWithCollectionViewLayout:(UICollectionViewLayout *)layout {
+    self = [super initWithCollectionViewLayout:layout];
+    if (self) {
+        _planetController = [[PCYPlanetController alloc] init];
+    }
+    return self;
 }
 
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        _planetController = [[PCYPlanetController alloc] init];
+    }
+    return self;
 }
-*/
+
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    if (self) {
+        _planetController = [[PCYPlanetController alloc] init];
+    }
+    return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.collectionView reloadData];
+}
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-
-    return 1;
-}
-
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 
-    return planetImages.count;
+    return _planetController.planets.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     PCYPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     
-    
-    
-    cell.planetImage.image = [UIImage imageNamed:planetImages[indexPath.row]];
-    
-    
-    
+    PCYPlanet *planet = [_planetController.planets objectAtIndex:indexPath.row];
+    cell.planetName.text = planet.name;
+    cell.planetImage.image = [UIImage imageNamed:planet.imageName];
+
     return cell;
 }
 

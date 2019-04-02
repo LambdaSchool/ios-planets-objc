@@ -15,23 +15,43 @@
 - (instancetype)init {
     self = [super init];
     if (self != nil) {
-        PCYPlanet *Earth = [[PCYPlanet alloc] initWithPlanet:@"Earth" planetImage: @"Earth" ];
-        PCYPlanet *Jupiter = [[PCYPlanet alloc] initWithPlanet:@"Jupiter" planetImage:@"Jupiter"];
-        PCYPlanet *Mars = [[PCYPlanet alloc] initWithPlanet:@"Mars" planetImage:@"Mars"];
-        PCYPlanet *Mercury = [[PCYPlanet alloc] initWithPlanet:@"Mercury" planetImage:@"Mercury"];
-        PCYPlanet *Neptune = [[PCYPlanet alloc] initWithPlanet:@"Neptune" planetImage:@"Neptune"];
-        PCYPlanet *Pluto = [[PCYPlanet alloc] initWithPlanet:@"Pluto" planetImage:@"Pluto"];
-        PCYPlanet *Saturn = [[PCYPlanet alloc] initWithPlanet:@"Saturn" planetImage:@"Saturn"];
-        PCYPlanet *Uranus = [[PCYPlanet alloc] initWithPlanet:@"Uranus" planetImage:@"Uranus"];
-        PCYPlanet *Venus = [[PCYPlanet alloc] initWithPlanet:@"Venus" planetImage:@"Venus"];
+        _planetsExcludingPluto = [[NSArray alloc] initWithObjects:
+                                    [[PCYPlanet alloc] initWithName:@"Earth" imageName: @"Earth" ],
+                                    [[PCYPlanet alloc] initWithName:@"Jupiter" imageName:@"Jupiter"],
+                                    [[PCYPlanet alloc] initWithName:@"Mars" imageName:@"Mars"],
+                                    [[PCYPlanet alloc] initWithName:@"Mercury" imageName:@"Mercury"],
+                                    [[PCYPlanet alloc] initWithName:@"Neptune" imageName:@"Neptune"],
+                                    [[PCYPlanet alloc] initWithName:@"Saturn" imageName:@"Saturn"],
+                                    [[PCYPlanet alloc] initWithName:@"Uranus" imageName:@"Uranus"],
+                                    [[PCYPlanet alloc] initWithName:@"Venus" imageName:@"Venus"],
+                                  nil];
         
-        _planetsIncludingPluto = [NSArray arrayWithObjects:Earth, Jupiter, Mars, Mercury, Neptune, Pluto, Saturn, Uranus, Venus, nil];
-        _planetsExcludingPluto = [NSArray arrayWithObjects:Earth, Jupiter, Mars, Mercury, Neptune, Saturn, Uranus, nil];
+        _planetsIncludingPluto =[[NSArray alloc] initWithObjects:
+                                 [[PCYPlanet alloc] initWithName:@"Earth" imageName: @"Earth" ],
+                                 [[PCYPlanet alloc] initWithName:@"Jupiter" imageName:@"Jupiter"],
+                                 [[PCYPlanet alloc] initWithName:@"Mars" imageName:@"Mars"],
+                                 [[PCYPlanet alloc] initWithName:@"Mercury" imageName:@"Mercury"],
+                                 [[PCYPlanet alloc] initWithName:@"Neptune" imageName:@"Neptune"],
+                                 [[PCYPlanet alloc] initWithName:@"Pluto" imageName:@"Pluto"],
+                                 [[PCYPlanet alloc] initWithName:@"Saturn" imageName:@"Saturn"],
+                                 [[PCYPlanet alloc] initWithName:@"Uranus" imageName:@"Uranus"],
+                                 [[PCYPlanet alloc] initWithName:@"Venus" imageName:@"Venus"],
+                                 nil];
         
         
     }
     
     return self;
 }
+
+- (NSArray *)planets {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([userDefaults boolForKey:@"ShouldShowPluto"]) {
+        return _planetsIncludingPluto;
+    }
+    return _planetsExcludingPluto;
+
+}
+
 
 @end

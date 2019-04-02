@@ -56,8 +56,8 @@
                                     <constraint firstItem="hTK-HY-QrI" firstAttribute="top" secondItem="TgH-5O-Ppa" secondAttribute="bottom" constant="8" symbolic="YES" id="yhO-ei-IUt"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="planetImage" destination="TgH-5O-Ppa" id="zpO-CQ-3tN"/>
-                                    <outlet property="planetName" destination="hTK-HY-QrI" id="Zek-LA-bvd"/>
+                                    <outlet property="planetImage" destination="TgH-5O-Ppa" id="bfg-0M-Wzw"/>
+                                    <outlet property="planetName" destination="hTK-HY-QrI" id="zf0-AF-Lw4"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
