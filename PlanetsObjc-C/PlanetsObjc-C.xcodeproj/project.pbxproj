@@ -66,7 +66,7 @@
 			children = (
 				4B5427002252BDBB00DDBC9D /* AppDelegate.h */,
 				4B5427012252BDBB00DDBC9D /* AppDelegate.m */,
-				4B5427062252BDBB00DDBC9D /* Main.storyboard */,
+				4B5427222252DD7900DDBC9D /* Storyboard */,
 				4B5427192252C0E900DDBC9D /* View Controllers */,
 				4B54271A2252C4F900DDBC9D /* Assets.xcassets */,
 				4B54270B2252BDBD00DDBC9D /* LaunchScreen.storyboard */,
@@ -87,6 +87,14 @@
 				4B5427202252CA1900DDBC9D /* PCYSettingsViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4B5427222252DD7900DDBC9D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4B5427062252BDBB00DDBC9D /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

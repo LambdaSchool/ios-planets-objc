@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface PCYPlanetCollectionViewCell : UICollectionViewCell
+
+@property (weak, nonatomic) IBOutlet UIImageView *planetImage;
 
 @end
 
-NS_ASSUME_NONNULL_END
