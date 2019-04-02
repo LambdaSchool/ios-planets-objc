@@ -121,7 +121,7 @@
                                     <constraint firstAttribute="width" constant="212" id="6TF-yU-Gdd"/>
                                     <constraint firstAttribute="height" constant="76" id="SnU-xA-9AS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
