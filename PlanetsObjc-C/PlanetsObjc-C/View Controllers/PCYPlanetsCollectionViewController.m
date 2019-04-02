@@ -16,16 +16,16 @@
 
 @implementation PCYPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     planetImages = @[@"Earth", @"Jupiter", @"Mars", @"Mercury", @"Neptune", @"Pluto", @"Saturn", @"Uranus", @"Venus"];
     
-    
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    UINavigationBar *bar = [self.navigationController navigationBar];
+    [bar setTintColor:[UIColor blackColor]];
+
     
     // Do any additional setup after loading the view.
 }
@@ -56,7 +56,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    PCYPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    PCYPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     
     cell.planetImage.image = [UIImage imageNamed:planetImages[indexPath.row]];
     
