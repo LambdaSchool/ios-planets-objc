@@ -15,6 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *planetName;
 @property NSString *imageName;
 
+
+//create the initializer. Remember we want to declare the functions we want to use later, and initializers are included in that
+- (instancetype)initWithPlanetName:(NSString *)planetName
+                         imageName:(NSString *)imageName;
 @end
 
 NS_ASSUME_NONNULL_END

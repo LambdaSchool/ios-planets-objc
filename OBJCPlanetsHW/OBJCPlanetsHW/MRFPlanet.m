@@ -13,13 +13,15 @@
 
 //this is where you initalize your model, init()
 - (instancetype)initWithPlanetName:(NSString *)planetName imageName:(NSString *)imageName {
-    
     self = [super init];
-    if (self != nil) {
+    
+    if (self != nil){
+        //setup our properties
         //self.planetName = planetName
         _planetName = planetName;
         _imageName = imageName;
     }
     return self;
 }
+
 @end

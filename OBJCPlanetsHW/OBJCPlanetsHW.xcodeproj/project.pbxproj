@@ -16,6 +16,7 @@
 		1B27414422DD180000AFE31F /* MRFPlanetCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B27414322DD180000AFE31F /* MRFPlanetCellCollectionViewCell.m */; };
 		1B27414822DD1AED00AFE31F /* MRFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B27414722DD1AED00AFE31F /* MRFViewController.m */; };
 		1B27414C22DD1C4A00AFE31F /* MRFPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B27414B22DD1C4A00AFE31F /* MRFPlanet.m */; };
+		1B27415122DD1E2F00AFE31F /* MRFPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B27415022DD1E2F00AFE31F /* MRFPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		1B27414722DD1AED00AFE31F /* MRFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFViewController.m; sourceTree = "<group>"; };
 		1B27414A22DD1C4A00AFE31F /* MRFPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFPlanet.h; sourceTree = "<group>"; };
 		1B27414B22DD1C4A00AFE31F /* MRFPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFPlanet.m; sourceTree = "<group>"; };
+		1B27414F22DD1E2F00AFE31F /* MRFPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFPlanetController.h; sourceTree = "<group>"; };
+		1B27415022DD1E2F00AFE31F /* MRFPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,7 @@
 		1B27412522DD153400AFE31F /* OBJCPlanetsHW */ = {
 			isa = PBXGroup;
 			children = (
+				1B27414E22DD1E1500AFE31F /* Model Controller */,
 				1B27414D22DD1C5300AFE31F /* Model */,
 				1B27413F22DD166E00AFE31F /* Storyboard */,
 				1B27414122DD16AB00AFE31F /* Collection view controllers */,
@@ -132,6 +136,15 @@
 				1B27414B22DD1C4A00AFE31F /* MRFPlanet.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		1B27414E22DD1E1500AFE31F /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B27414F22DD1E2F00AFE31F /* MRFPlanetController.h */,
+				1B27415022DD1E2F00AFE31F /* MRFPlanetController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +221,7 @@
 				1B27414C22DD1C4A00AFE31F /* MRFPlanet.m in Sources */,
 				1B27414822DD1AED00AFE31F /* MRFViewController.m in Sources */,
 				1B27413622DD153400AFE31F /* main.m in Sources */,
+				1B27415122DD1E2F00AFE31F /* MRFPlanetController.m in Sources */,
 				1B27413E22DD165F00AFE31F /* MRFPlanetsCollectionViewController.m in Sources */,
 				1B27412822DD153400AFE31F /* AppDelegate.m in Sources */,
 			);
