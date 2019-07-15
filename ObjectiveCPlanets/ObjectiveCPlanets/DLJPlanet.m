@@ -10,4 +10,15 @@
 
 @implementation DLJPlanet
 
+- (instancetype)initWithPlanetName:(NSString *)planetName imageName:(NSString *)imageName {
+
+    self = [super init];
+    if (self != nil) {
+
+        _planetName = planetName;
+        _imageName = imageName;
+    }
+    return self;
+}
+
 @end

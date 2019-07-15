@@ -1,5 +1,5 @@
 //
-//  DLJPlanet.h
+//  DLJPlanetController.h
 //  ObjectiveCPlanets
 //
 //  Created by Diante Lewis-Jolley on 7/15/19.
@@ -10,14 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DLJPlanet : NSObject
-
-// Create Properties
-
-@property NSString *planetName;
-@property NSString *imageName;
-
-- (instancetype)initWithPlanetName:(NSString *)planetName imageName:(NSString *)imageName;
+@interface DLJPlanetController : NSObject
 
 @end
 

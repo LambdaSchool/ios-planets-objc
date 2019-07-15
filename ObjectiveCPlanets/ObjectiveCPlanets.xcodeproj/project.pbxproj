@@ -15,6 +15,7 @@
 		9E291DD122DD13400016C6AC /* DLJPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E291DD022DD13400016C6AC /* DLJPlanetsCollectionViewController.m */; };
 		9E291DD422DD174F0016C6AC /* DLJSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E291DD322DD174F0016C6AC /* DLJSettingsViewController.m */; };
 		9E291DD922DD18F00016C6AC /* DLJPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E291DD822DD18F00016C6AC /* DLJPlanet.m */; };
+		9E291DDD22DD1BC80016C6AC /* DLJPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E291DDC22DD1BC80016C6AC /* DLJPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		9E291DD322DD174F0016C6AC /* DLJSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLJSettingsViewController.m; sourceTree = "<group>"; };
 		9E291DD722DD18F00016C6AC /* DLJPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLJPlanet.h; sourceTree = "<group>"; };
 		9E291DD822DD18F00016C6AC /* DLJPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLJPlanet.m; sourceTree = "<group>"; };
+		9E291DDB22DD1BC80016C6AC /* DLJPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLJPlanetController.h; sourceTree = "<group>"; };
+		9E291DDC22DD1BC80016C6AC /* DLJPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLJPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +76,7 @@
 				9E291DC822DD0FDB0016C6AC /* main.m */,
 				9E291DD622DD18120016C6AC /* View Controllers */,
 				9E291DDA22DD18F50016C6AC /* Model */,
-				9E291DD822DD18F00016C6AC /* DLJPlanet.m */,
+				9E291DDE22DD1BD40016C6AC /* Model Controllers */,
 			);
 			path = ObjectiveCPlanets;
 			sourceTree = "<group>";
@@ -92,9 +95,19 @@
 		9E291DDA22DD18F50016C6AC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9E291DD822DD18F00016C6AC /* DLJPlanet.m */,
 				9E291DD722DD18F00016C6AC /* DLJPlanet.h */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		9E291DDE22DD1BD40016C6AC /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E291DDB22DD1BC80016C6AC /* DLJPlanetController.h */,
+				9E291DDC22DD1BC80016C6AC /* DLJPlanetController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E291DDD22DD1BC80016C6AC /* DLJPlanetController.m in Sources */,
 				9E291DD422DD174F0016C6AC /* DLJSettingsViewController.m in Sources */,
 				9E291DC922DD0FDB0016C6AC /* main.m in Sources */,
 				9E291DBB22DD0FBC0016C6AC /* AppDelegate.m in Sources */,
