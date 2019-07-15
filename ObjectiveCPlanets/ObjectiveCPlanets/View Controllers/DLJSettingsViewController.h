@@ -11,6 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DLJSettingsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISwitch *plutoSwitch;
+
+- (IBAction)doneButtonTapped:(id)sender;
+- (IBAction)shouldShowPlutoChanged:(id)sender;
+
 
 @end
 

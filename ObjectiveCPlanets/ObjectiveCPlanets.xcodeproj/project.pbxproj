@@ -16,6 +16,7 @@
 		9E291DD422DD174F0016C6AC /* DLJSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E291DD322DD174F0016C6AC /* DLJSettingsViewController.m */; };
 		9E291DD922DD18F00016C6AC /* DLJPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E291DD822DD18F00016C6AC /* DLJPlanet.m */; };
 		9E291DDD22DD1BC80016C6AC /* DLJPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E291DDC22DD1BC80016C6AC /* DLJPlanetController.m */; };
+		9E291DE122DD2B180016C6AC /* DLJPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E291DE022DD2B180016C6AC /* DLJPlanetCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		9E291DD822DD18F00016C6AC /* DLJPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLJPlanet.m; sourceTree = "<group>"; };
 		9E291DDB22DD1BC80016C6AC /* DLJPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLJPlanetController.h; sourceTree = "<group>"; };
 		9E291DDC22DD1BC80016C6AC /* DLJPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLJPlanetController.m; sourceTree = "<group>"; };
+		9E291DDF22DD2B180016C6AC /* DLJPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLJPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		9E291DE022DD2B180016C6AC /* DLJPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLJPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				9E291DD222DD174F0016C6AC /* DLJSettingsViewController.h */,
 				9E291DD022DD13400016C6AC /* DLJPlanetsCollectionViewController.m */,
 				9E291DCF22DD13400016C6AC /* DLJPlanetsCollectionViewController.h */,
+				9E291DDF22DD2B180016C6AC /* DLJPlanetCollectionViewCell.h */,
+				9E291DE022DD2B180016C6AC /* DLJPlanetCollectionViewCell.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 			files = (
 				9E291DDD22DD1BC80016C6AC /* DLJPlanetController.m in Sources */,
 				9E291DD422DD174F0016C6AC /* DLJSettingsViewController.m in Sources */,
+				9E291DE122DD2B180016C6AC /* DLJPlanetCollectionViewCell.m in Sources */,
 				9E291DC922DD0FDB0016C6AC /* main.m in Sources */,
 				9E291DBB22DD0FBC0016C6AC /* AppDelegate.m in Sources */,
 				9E291DD922DD18F00016C6AC /* DLJPlanet.m in Sources */,

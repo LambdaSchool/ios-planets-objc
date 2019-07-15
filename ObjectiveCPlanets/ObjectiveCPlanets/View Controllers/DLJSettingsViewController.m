@@ -10,13 +10,19 @@
 
 @interface DLJSettingsViewController ()
 
+
+
+
 @end
 
 @implementation DLJSettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    self.plutoSwitch.on = [defaults boolForKey:@"PlanetPluto"];
+
 }
 
 /*
@@ -29,4 +35,14 @@
 }
 */
 
+- (IBAction)doneButtonTapped:(id)sender {
+
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)shouldShowPlutoChanged:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool: self.plutoSwitch.isOn forKey:@"PlanetPluto"];
+
+}
 @end

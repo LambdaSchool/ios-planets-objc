@@ -8,15 +8,20 @@
 
 #import "DLJPlanet.h"
 
+
 @implementation DLJPlanet
 
-- (instancetype)initWithPlanetName:(NSString *)planetName imageName:(NSString *)imageName {
+- (UIImage *)image {
+    return [UIImage imageNamed:self.imageName];
+}
+
+- (instancetype)initWithPlanetName:(NSString *)planetName {
 
     self = [super init];
     if (self != nil) {
 
         _planetName = planetName;
-        _imageName = imageName;
+        _imageName = [planetName lowercaseString];
     }
     return self;
 }

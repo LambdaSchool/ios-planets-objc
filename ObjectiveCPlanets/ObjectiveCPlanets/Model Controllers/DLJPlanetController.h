@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DLJPlanetController : NSObject
 
+@property NSArray *planets;
+@property NSArray *plutoPlanets;
+
 @end
 
 NS_ASSUME_NONNULL_END

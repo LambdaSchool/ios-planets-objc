@@ -8,9 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class DLJPlanetController;
+@class DLJSettingsViewController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DLJPlanetsCollectionViewController : UICollectionViewController
+
+@property DLJPlanetController *planetController;
+
+@property DLJSettingsViewController *settingsViewController;
+
+
+
 
 @end
 
