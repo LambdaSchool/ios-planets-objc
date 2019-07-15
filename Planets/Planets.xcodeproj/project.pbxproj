@@ -12,6 +12,9 @@
 		ECE43AF022DD09A300565A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECE43AEF22DD09A300565A16 /* Assets.xcassets */; };
 		ECE43AF322DD09A300565A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE43AF122DD09A300565A16 /* LaunchScreen.storyboard */; };
 		ECE43AF622DD09A300565A16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE43AF522DD09A300565A16 /* main.m */; };
+		ECE43B0122DD0D2700565A16 /* KRCPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE43B0022DD0D2700565A16 /* KRCPlanetsCollectionViewController.m */; };
+		ECE43B0522DD0F3E00565A16 /* KRCPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE43B0422DD0F3E00565A16 /* KRCPlanetCollectionViewCell.m */; };
+		ECE43B0822DD13C600565A16 /* KRCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE43B0722DD13C600565A16 /* KRCSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,12 @@
 		ECE43AF222DD09A300565A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECE43AF422DD09A300565A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECE43AF522DD09A300565A16 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECE43AFF22DD0D2700565A16 /* KRCPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRCPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		ECE43B0022DD0D2700565A16 /* KRCPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRCPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		ECE43B0322DD0F3E00565A16 /* KRCPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRCPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		ECE43B0422DD0F3E00565A16 /* KRCPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRCPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		ECE43B0622DD13C600565A16 /* KRCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRCSettingsViewController.h; sourceTree = "<group>"; };
+		ECE43B0722DD13C600565A16 /* KRCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRCSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +64,8 @@
 		ECE43AE522DD09A100565A16 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				ECE43B0222DD0F1100565A16 /* Views */,
+				ECE43AFE22DD0D1200565A16 /* View Contollers */,
 				ECE43AFC22DD0B9600565A16 /* Storyboards */,
 				ECE43AFD22DD0BB000565A16 /* Resources */,
 			);
@@ -80,6 +91,26 @@
 				ECE43AF522DD09A300565A16 /* main.m */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		ECE43AFE22DD0D1200565A16 /* View Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				ECE43B0622DD13C600565A16 /* KRCSettingsViewController.h */,
+				ECE43B0722DD13C600565A16 /* KRCSettingsViewController.m */,
+				ECE43AFF22DD0D2700565A16 /* KRCPlanetsCollectionViewController.h */,
+				ECE43B0022DD0D2700565A16 /* KRCPlanetsCollectionViewController.m */,
+			);
+			path = "View Contollers";
+			sourceTree = "<group>";
+		};
+		ECE43B0222DD0F1100565A16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECE43B0322DD0F3E00565A16 /* KRCPlanetCollectionViewCell.h */,
+				ECE43B0422DD0F3E00565A16 /* KRCPlanetCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +139,7 @@
 		ECE43ADB22DD09A100565A16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KRC;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Christopher Aronson";
 				TargetAttributes = {
@@ -153,7 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE43AF622DD09A300565A16 /* main.m in Sources */,
+				ECE43B0122DD0D2700565A16 /* KRCPlanetsCollectionViewController.m in Sources */,
 				ECE43AE822DD09A200565A16 /* AppDelegate.m in Sources */,
+				ECE43B0822DD13C600565A16 /* KRCSettingsViewController.m in Sources */,
+				ECE43B0522DD0F3E00565A16 /* KRCPlanetCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
