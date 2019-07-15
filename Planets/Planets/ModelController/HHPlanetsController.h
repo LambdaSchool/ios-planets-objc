@@ -12,7 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HHPlanetsController : NSObject
 
-@property NSArray *planets;
+@property (readonly) NSArray *planets;
+@property NSArray *planetsWithoutPluto;
+@property NSArray *planetsWithPluto;
 
 @end
 

@@ -11,11 +11,10 @@
 
 @implementation HHPlanetsController
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
-    if (self != nil) {
-        _planets = @[
+    if (self) {
+        _planetsWithoutPluto = @[
                      [[HHPlanets alloc] initWithName:@"Mercury" image:@"mercury"],
                      [[HHPlanets alloc] initWithName:@"Venus" image:@"venus"],
                      [[HHPlanets alloc] initWithName:@"Earth" image:@"earth"],
@@ -23,10 +22,31 @@
                      [[HHPlanets alloc] initWithName:@"Jupiter" image:@"jupiter"],
                      [[HHPlanets alloc] initWithName:@"Saturn" image:@"saturn"],
                      [[HHPlanets alloc] initWithName:@"Uranus" image:@"uranus"],
-                     [[HHPlanets alloc] initWithName:@"Neptune" image:@"nepture"]
+                     [[HHPlanets alloc] initWithName:@"Neptune" image:@"neptune"]
+                     ];
+                     
+       _planetsWithPluto = @[
+                     [[HHPlanets alloc] initWithName:@"Mercury" image:@"mercury"],
+                     [[HHPlanets alloc] initWithName:@"Venus" image:@"venus"],
+                     [[HHPlanets alloc] initWithName:@"Earth" image:@"earth"],
+                     [[HHPlanets alloc] initWithName:@"Mars" image:@"mars"],
+                     [[HHPlanets alloc] initWithName:@"Jupiter" image:@"jupiter"],
+                     [[HHPlanets alloc] initWithName:@"Saturn" image:@"saturn"],
+                     [[HHPlanets alloc] initWithName:@"Uranus" image:@"uranus"],
+                     [[HHPlanets alloc] initWithName:@"Neptune" image:@"neptune"],
+                     [[HHPlanets alloc] initWithName:@"Pluto" image:@"pluto"]
+                     
                      ];
     }
     return self;
+}
+
+- (NSArray *)planets {
+    NSUserDefaults *userDefaluts = [NSUserDefaults standardUserDefaults];
+    if ([userDefaluts boolForKey:@"shouldShowPluto"]) {
+        return _planetsWithPluto;
+    }
+    return _planetsWithoutPluto;
 }
 
 @end

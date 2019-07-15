@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HHPlanets : NSObject
 
 @property NSString *name;
-@property UIImage *image;
+@property NSString *image;
 
 - (instancetype)initWithName:(NSString *)name
                        image:(NSString *)image;

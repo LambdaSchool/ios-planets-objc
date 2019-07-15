@@ -104,8 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				EF1A6BF022DD0CFA00AB04E0 /* HHPlanetsCollectionViewController.h */,
-				EF1A6BF122DD0CFA00AB04E0 /* HHPlanetsCollectionViewController.m */,
 				EF1A6BF622DD107700AB04E0 /* HHSettingsViewController.h */,
+				EF1A6BF122DD0CFA00AB04E0 /* HHPlanetsCollectionViewController.m */,
 				EF1A6BF722DD107700AB04E0 /* HHSettingsViewController.m */,
 				EF1A6BF322DD0DC000AB04E0 /* HHPlanetsCollectionViewCell.h */,
 				EF1A6BF422DD0DC000AB04E0 /* HHPlanetsCollectionViewCell.m */,
