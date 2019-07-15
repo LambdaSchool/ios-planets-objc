@@ -73,7 +73,7 @@
 				E8ABE52E22DD1660008AC64B /* AppDelegate.h */,
 				E8ABE52F22DD1660008AC64B /* AppDelegate.m */,
 				E8ABE55D22DD3BB7008AC64B /* Model */,
-				E8ABE55622DD39AE008AC64B /* Controller */,
+				E8ABE55622DD39AE008AC64B /* Model Controller */,
 				E8ABE54C22DD1DE6008AC64B /* Cells */,
 				E8ABE54822DD180B008AC64B /* View Controllers */,
 				E8ABE54422DD17AE008AC64B /* StoryBoards */,
@@ -113,13 +113,13 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		E8ABE55622DD39AE008AC64B /* Controller */ = {
+		E8ABE55622DD39AE008AC64B /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
 				E8ABE55322DD39A7008AC64B /* LSIPlanetController.h */,
 				E8ABE55422DD39A7008AC64B /* LSIPlanetController.m */,
 			);
-			path = Controller;
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 		E8ABE55D22DD3BB7008AC64B /* Model */ = {
