@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4222A94C22DD13170050B404 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222A94B22DD13170050B404 /* AppDelegate.m */; };
-		4222A94F22DD13170050B404 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222A94E22DD13170050B404 /* ViewController.m */; };
 		4222A95222DD13170050B404 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4222A95022DD13170050B404 /* Main.storyboard */; };
 		4222A95422DD13190050B404 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4222A95322DD13190050B404 /* Assets.xcassets */; };
 		4222A95722DD13190050B404 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4222A95522DD13190050B404 /* LaunchScreen.storyboard */; };
@@ -16,14 +15,14 @@
 		4222A96222DD13B30050B404 /* TXCPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222A96122DD13B30050B404 /* TXCPlanetsCollectionViewController.m */; };
 		4222A96522DD13E00050B404 /* TXCPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222A96422DD13E00050B404 /* TXCPlanetCollectionViewCell.m */; };
 		4222A96822DD19060050B404 /* TXCSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222A96722DD19060050B404 /* TXCSettingsViewController.m */; };
+		4222A96C22DD1B9C0050B404 /* TXCPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222A96B22DD1B9C0050B404 /* TXCPlanet.m */; };
+		4222A97022DD1E8A0050B404 /* TXCPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4222A96F22DD1E8A0050B404 /* TXCPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4222A94722DD13170050B404 /* PlanetsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4222A94A22DD13170050B404 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4222A94B22DD13170050B404 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4222A94D22DD13170050B404 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4222A94E22DD13170050B404 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4222A95122DD13170050B404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4222A95322DD13190050B404 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4222A95622DD13190050B404 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +34,10 @@
 		4222A96422DD13E00050B404 /* TXCPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXCPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 		4222A96622DD19060050B404 /* TXCSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXCSettingsViewController.h; sourceTree = "<group>"; };
 		4222A96722DD19060050B404 /* TXCSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXCSettingsViewController.m; sourceTree = "<group>"; };
+		4222A96A22DD1B9C0050B404 /* TXCPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXCPlanet.h; sourceTree = "<group>"; };
+		4222A96B22DD1B9C0050B404 /* TXCPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXCPlanet.m; sourceTree = "<group>"; };
+		4222A96E22DD1E8A0050B404 /* TXCPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXCPlanetController.h; sourceTree = "<group>"; };
+		4222A96F22DD1E8A0050B404 /* TXCPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXCPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +72,10 @@
 			children = (
 				4222A94A22DD13170050B404 /* AppDelegate.h */,
 				4222A94B22DD13170050B404 /* AppDelegate.m */,
-				4222A94D22DD13170050B404 /* ViewController.h */,
-				4222A94E22DD13170050B404 /* ViewController.m */,
+				4222A96A22DD1B9C0050B404 /* TXCPlanet.h */,
+				4222A96B22DD1B9C0050B404 /* TXCPlanet.m */,
+				4222A96E22DD1E8A0050B404 /* TXCPlanetController.h */,
+				4222A96F22DD1E8A0050B404 /* TXCPlanetController.m */,
 				4222A96022DD13B30050B404 /* TXCPlanetsCollectionViewController.h */,
 				4222A96122DD13B30050B404 /* TXCPlanetsCollectionViewController.m */,
 				4222A96322DD13E00050B404 /* TXCPlanetCollectionViewCell.h */,
@@ -158,8 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4222A96522DD13E00050B404 /* TXCPlanetCollectionViewCell.m in Sources */,
+				4222A97022DD1E8A0050B404 /* TXCPlanetController.m in Sources */,
+				4222A96C22DD1B9C0050B404 /* TXCPlanet.m in Sources */,
 				4222A96222DD13B30050B404 /* TXCPlanetsCollectionViewController.m in Sources */,
-				4222A94F22DD13170050B404 /* ViewController.m in Sources */,
 				4222A95A22DD13190050B404 /* main.m in Sources */,
 				4222A94C22DD13170050B404 /* AppDelegate.m in Sources */,
 				4222A96822DD19060050B404 /* TXCSettingsViewController.m in Sources */,
