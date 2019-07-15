@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		1B27412822DD153400AFE31F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B27412722DD153400AFE31F /* AppDelegate.m */; };
-		1B27412B22DD153400AFE31F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B27412A22DD153400AFE31F /* ViewController.m */; };
 		1B27412E22DD153400AFE31F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B27412C22DD153400AFE31F /* Main.storyboard */; };
 		1B27413022DD153400AFE31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B27412F22DD153400AFE31F /* Assets.xcassets */; };
 		1B27413322DD153400AFE31F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B27413122DD153400AFE31F /* LaunchScreen.storyboard */; };
 		1B27413622DD153400AFE31F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B27413522DD153400AFE31F /* main.m */; };
+		1B27413E22DD165F00AFE31F /* MRFPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B27413D22DD165F00AFE31F /* MRFPlanetsCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B27412322DD153400AFE31F /* OBJCPlanetsHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBJCPlanetsHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B27412622DD153400AFE31F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1B27412722DD153400AFE31F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1B27412922DD153400AFE31F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1B27412A22DD153400AFE31F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1B27412D22DD153400AFE31F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B27412F22DD153400AFE31F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B27413222DD153400AFE31F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B27413422DD153400AFE31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B27413522DD153400AFE31F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B27413C22DD165F00AFE31F /* MRFPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRFPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		1B27413D22DD165F00AFE31F /* MRFPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRFPlanetsCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +58,41 @@
 		1B27412522DD153400AFE31F /* OBJCPlanetsHW */ = {
 			isa = PBXGroup;
 			children = (
+				1B27413F22DD166E00AFE31F /* Storyboard */,
+				1B27414122DD16AB00AFE31F /* Collection view controllers */,
+				1B27414022DD168500AFE31F /* Resources */,
+			);
+			path = OBJCPlanetsHW;
+			sourceTree = "<group>";
+		};
+		1B27413F22DD166E00AFE31F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1B27412C22DD153400AFE31F /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1B27414022DD168500AFE31F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B27412F22DD153400AFE31F /* Assets.xcassets */,
 				1B27412622DD153400AFE31F /* AppDelegate.h */,
 				1B27412722DD153400AFE31F /* AppDelegate.m */,
-				1B27412922DD153400AFE31F /* ViewController.h */,
-				1B27412A22DD153400AFE31F /* ViewController.m */,
-				1B27412C22DD153400AFE31F /* Main.storyboard */,
-				1B27412F22DD153400AFE31F /* Assets.xcassets */,
 				1B27413122DD153400AFE31F /* LaunchScreen.storyboard */,
 				1B27413422DD153400AFE31F /* Info.plist */,
 				1B27413522DD153400AFE31F /* main.m */,
 			);
-			path = OBJCPlanetsHW;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B27414122DD16AB00AFE31F /* Collection view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B27413C22DD165F00AFE31F /* MRFPlanetsCollectionViewController.h */,
+				1B27413D22DD165F00AFE31F /* MRFPlanetsCollectionViewController.m */,
+			);
+			path = "Collection view controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B27412B22DD153400AFE31F /* ViewController.m in Sources */,
 				1B27413622DD153400AFE31F /* main.m in Sources */,
+				1B27413E22DD165F00AFE31F /* MRFPlanetsCollectionViewController.m in Sources */,
 				1B27412822DD153400AFE31F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4W7EQ4E4R;
-				INFOPLIST_FILE = OBJCPlanetsHW/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OBJCPlanetsHW/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X4W7EQ4E4R;
-				INFOPLIST_FILE = OBJCPlanetsHW/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OBJCPlanetsHW/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
