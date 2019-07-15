@@ -37,6 +37,8 @@
                                  [[KRCPlanets alloc] initWithImage:[UIImage imageNamed:@"venus"] planetName:@"Venus"],
                                  [[KRCPlanets alloc] initWithImage:[UIImage imageNamed:@"pluto"] planetName:@"Pluto"]
                                  ];
+        
+        _selectedPlanets = _planetsWithoutPluto;
     }
     
     return self;

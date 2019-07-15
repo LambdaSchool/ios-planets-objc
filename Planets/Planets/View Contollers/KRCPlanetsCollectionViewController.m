@@ -7,6 +7,9 @@
 //
 
 #import "KRCPlanetsCollectionViewController.h"
+#import "KRCPlanetsController.h"
+#import "KRCPlanetCollectionViewCell.h"
+#import "KRCPlanets.h"
 
 @interface KRCPlanetsCollectionViewController ()
 
@@ -16,16 +19,19 @@
 
 static NSString * const reuseIdentifier = @"Cell";
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        _planetController = [[KRCPlanetsController alloc] init];
+    }
+    
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 }
 
 /*
@@ -40,21 +46,18 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    return [[[self planetController] selectedPlanets] count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
+    KRCPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
+    
+    KRCPlanets *planet = [[[self planetController] selectedPlanets] objectAtIndex:[indexPath row]];
+    
+    [[cell planetImageView] setImage:[planet planetImage]];
+    [[cell planetLabel] setText:[planet planetName]];
     
     return cell;
 }

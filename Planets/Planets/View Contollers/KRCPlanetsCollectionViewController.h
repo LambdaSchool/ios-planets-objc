@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class KRCPlanetsController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KRCPlanetsCollectionViewController : UICollectionViewController
+
+@property KRCPlanetsController *planetController;
 
 @end
 
