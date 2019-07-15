@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JDFSettingsViewController.h
 //  PlanetsObjC
 //
 //  Created by Jonathan Ferrer on 7/15/19.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface JDFSettingsViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

@@ -8,24 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		D1FC60F822DD18AF006DF530 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC60F722DD18AF006DF530 /* AppDelegate.m */; };
-		D1FC60FB22DD18AF006DF530 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC60FA22DD18AF006DF530 /* ViewController.m */; };
 		D1FC60FE22DD18AF006DF530 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FC60FC22DD18AF006DF530 /* Main.storyboard */; };
 		D1FC610022DD18B0006DF530 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1FC60FF22DD18B0006DF530 /* Assets.xcassets */; };
 		D1FC610322DD18B0006DF530 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FC610122DD18B0006DF530 /* LaunchScreen.storyboard */; };
 		D1FC610622DD18B0006DF530 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC610522DD18B0006DF530 /* main.m */; };
+		D1FC611722DD2526006DF530 /* JDFPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC611622DD2526006DF530 /* JDFPlanetsCollectionViewController.m */; };
+		D1FC611A22DD254A006DF530 /* JDFPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC611922DD254A006DF530 /* JDFPlanetCollectionViewCell.m */; };
+		D1FC611D22DD2560006DF530 /* JDFSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC611C22DD2560006DF530 /* JDFSettingsViewController.m */; };
+		D1FC612222DD2BD2006DF530 /* JDFPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC612122DD2BD2006DF530 /* JDFPlanet.m */; };
+		D1FC612522DD2D45006DF530 /* JDFPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FC612422DD2D45006DF530 /* JDFPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1FC60F322DD18AF006DF530 /* PlanetsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FC60F622DD18AF006DF530 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D1FC60F722DD18AF006DF530 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D1FC60F922DD18AF006DF530 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D1FC60FA22DD18AF006DF530 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D1FC60FD22DD18AF006DF530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D1FC60FF22DD18B0006DF530 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1FC610222DD18B0006DF530 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1FC610422DD18B0006DF530 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1FC610522DD18B0006DF530 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1FC611522DD2526006DF530 /* JDFPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		D1FC611622DD2526006DF530 /* JDFPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		D1FC611822DD254A006DF530 /* JDFPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		D1FC611922DD254A006DF530 /* JDFPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		D1FC611B22DD2560006DF530 /* JDFSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFSettingsViewController.h; sourceTree = "<group>"; };
+		D1FC611C22DD2560006DF530 /* JDFSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFSettingsViewController.m; sourceTree = "<group>"; };
+		D1FC612022DD2BD2006DF530 /* JDFPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFPlanet.h; sourceTree = "<group>"; };
+		D1FC612122DD2BD2006DF530 /* JDFPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFPlanet.m; sourceTree = "<group>"; };
+		D1FC612322DD2D45006DF530 /* JDFPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JDFPlanetController.h; sourceTree = "<group>"; };
+		D1FC612422DD2D45006DF530 /* JDFPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JDFPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +70,41 @@
 		D1FC60F522DD18AF006DF530 /* PlanetsObjC */ = {
 			isa = PBXGroup;
 			children = (
+				D1FC612022DD2BD2006DF530 /* JDFPlanet.h */,
+				D1FC612122DD2BD2006DF530 /* JDFPlanet.m */,
+				D1FC612322DD2D45006DF530 /* JDFPlanetController.h */,
+				D1FC612422DD2D45006DF530 /* JDFPlanetController.m */,
 				D1FC60F622DD18AF006DF530 /* AppDelegate.h */,
 				D1FC60F722DD18AF006DF530 /* AppDelegate.m */,
-				D1FC60F922DD18AF006DF530 /* ViewController.h */,
-				D1FC60FA22DD18AF006DF530 /* ViewController.m */,
 				D1FC60FC22DD18AF006DF530 /* Main.storyboard */,
+				D1FC611E22DD2848006DF530 /* ViewControllers */,
+				D1FC611F22DD2854006DF530 /* Views */,
 				D1FC60FF22DD18B0006DF530 /* Assets.xcassets */,
 				D1FC610122DD18B0006DF530 /* LaunchScreen.storyboard */,
 				D1FC610422DD18B0006DF530 /* Info.plist */,
 				D1FC610522DD18B0006DF530 /* main.m */,
 			);
 			path = PlanetsObjC;
+			sourceTree = "<group>";
+		};
+		D1FC611E22DD2848006DF530 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1FC611B22DD2560006DF530 /* JDFSettingsViewController.h */,
+				D1FC611C22DD2560006DF530 /* JDFSettingsViewController.m */,
+				D1FC611522DD2526006DF530 /* JDFPlanetsCollectionViewController.h */,
+				D1FC611622DD2526006DF530 /* JDFPlanetsCollectionViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D1FC611F22DD2854006DF530 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1FC611822DD254A006DF530 /* JDFPlanetCollectionViewCell.h */,
+				D1FC611922DD254A006DF530 /* JDFPlanetCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +133,7 @@
 		D1FC60EB22DD18AF006DF530 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JDF;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Jonathan Ferrer";
 				TargetAttributes = {
@@ -141,9 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1FC60FB22DD18AF006DF530 /* ViewController.m in Sources */,
+				D1FC611D22DD2560006DF530 /* JDFSettingsViewController.m in Sources */,
 				D1FC610622DD18B0006DF530 /* main.m in Sources */,
+				D1FC612222DD2BD2006DF530 /* JDFPlanet.m in Sources */,
+				D1FC611722DD2526006DF530 /* JDFPlanetsCollectionViewController.m in Sources */,
 				D1FC60F822DD18AF006DF530 /* AppDelegate.m in Sources */,
+				D1FC612522DD2D45006DF530 /* JDFPlanetController.m in Sources */,
+				D1FC611A22DD254A006DF530 /* JDFPlanetCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
