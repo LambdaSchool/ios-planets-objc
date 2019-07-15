@@ -81,6 +81,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="NX2-LB-n3E">
                             <connections>
                                 <action selector="settingsButton:" destination="SRg-zL-sgM" id="i17-VK-XxX"/>
+                                <segue destination="hHp-Ym-gBD" kind="presentation" identifier="ToSettings" id="mMb-iR-qZp"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
