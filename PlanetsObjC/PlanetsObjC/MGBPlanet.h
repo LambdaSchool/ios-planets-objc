@@ -14,11 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MGBPlanet : NSObject
 
 @property NSString *name;
-@property UIImage *image;
+@property NSString *image;
 
 - (instancetype)initWithName:(NSString *)name
-                     image:(UIImage *)image;
+                       image:(NSString *)image;
 
 @end
 
 NS_ASSUME_NONNULL_END
+;

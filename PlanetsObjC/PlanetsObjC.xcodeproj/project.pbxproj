@@ -16,6 +16,7 @@
 		3D34957422DD165100953A4D /* MGBPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34957322DD165100953A4D /* MGBPlanetCollectionViewCell.m */; };
 		3D34957722DD182A00953A4D /* MGBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34957622DD182A00953A4D /* MGBSettingsViewController.m */; };
 		3D34957F22DD1B0100953A4D /* MGBPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34957E22DD1B0100953A4D /* MGBPlanet.m */; };
+		3D34958322DD21D900953A4D /* MGBPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34958222DD21D900953A4D /* MGBPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		3D34957622DD182A00953A4D /* MGBSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGBSettingsViewController.m; sourceTree = "<group>"; };
 		3D34957D22DD1B0100953A4D /* MGBPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGBPlanet.h; sourceTree = "<group>"; };
 		3D34957E22DD1B0100953A4D /* MGBPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGBPlanet.m; sourceTree = "<group>"; };
+		3D34958122DD21D900953A4D /* MGBPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGBPlanetController.h; sourceTree = "<group>"; };
+		3D34958222DD21D900953A4D /* MGBPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGBPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +70,11 @@
 		3D34955822DD13F600953A4D /* PlanetsObjC */ = {
 			isa = PBXGroup;
 			children = (
+				3D34958122DD21D900953A4D /* MGBPlanetController.h */,
+				3D34958222DD21D900953A4D /* MGBPlanetController.m */,
 				3D34957D22DD1B0100953A4D /* MGBPlanet.h */,
 				3D34957E22DD1B0100953A4D /* MGBPlanet.m */,
+				3D34958022DD213800953A4D /* Model */,
 				3D34957A22DD1A9700953A4D /* View Controllers */,
 				3D34957922DD1A7700953A4D /* Storyboards */,
 				3D34957822DD1A6600953A4D /* Resources */,
@@ -108,6 +114,13 @@
 				3D34957622DD182A00953A4D /* MGBSettingsViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3D34958022DD213800953A4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D34957422DD165100953A4D /* MGBPlanetCollectionViewCell.m in Sources */,
+				3D34958322DD21D900953A4D /* MGBPlanetController.m in Sources */,
 				3D34956922DD13F700953A4D /* main.m in Sources */,
 				3D34955B22DD13F600953A4D /* AppDelegate.m in Sources */,
 				3D34957122DD14A100953A4D /* MGBPlanetsCollectionViewController.m in Sources */,

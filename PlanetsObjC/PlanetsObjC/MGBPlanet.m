@@ -11,11 +11,11 @@
 @implementation MGBPlanet
 
 - (instancetype)initWithName:(NSString *)name
-                       image:(UIImage *)image {
+                       image:(NSString *)image {
     self = [super init];
     if (self != nil) {
         _name = [[NSString alloc] init];
-        _image = [UIImage imageNamed:_name];
+        _image = [[NSString alloc] init];
     }
     return self;
 }
