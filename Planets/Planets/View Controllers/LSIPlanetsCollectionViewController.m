@@ -15,16 +15,13 @@
 
 @implementation LSIPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"PlanetCell"];
+	
 	
     // Do any additional setup after loading the view.
 	
@@ -51,7 +48,10 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LSIPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
-    
+	
+	NSString *str = [[NSString alloc] initWithFormat: @"%ld", indexPath.row];
+	
+	cell.planetLabel.text = str;
     return cell;
 }
 
@@ -64,12 +64,14 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
-/*
+
 // Uncomment this method to specify if the specified item should be selected
 - (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
+	NSLog(@"%ld \n", indexPath.row);
+	
+	return YES;
 }
-*/
+
 
 /*
 // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
