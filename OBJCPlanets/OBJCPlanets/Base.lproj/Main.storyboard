@@ -119,6 +119,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Klg-Wt-JwQ"/>
                     </view>
+                    <connections>
+                        <outlet property="plutoSwitch" destination="EwA-3l-7H3" id="rFq-Mr-i87"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsz-MX-Psd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
