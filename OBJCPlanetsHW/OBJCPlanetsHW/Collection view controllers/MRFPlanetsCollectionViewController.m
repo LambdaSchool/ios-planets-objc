@@ -90,4 +90,6 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 */
 
+- (IBAction)settingsButton:(UIBarButtonItem *)sender {
+}
 @end
