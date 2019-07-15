@@ -14,8 +14,8 @@
                        image:(NSString *)image {
     self = [super init];
     if (self != nil) {
-        _name = [[NSString alloc] init];
-        _image = [[NSString alloc] init];
+        _name = name;
+        _image = image;
     }
     return self;
 }

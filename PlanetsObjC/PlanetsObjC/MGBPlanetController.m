@@ -16,32 +16,40 @@
     self = [super init];
     if (self) {
         
-        _planets =
+        _planetsWithPluto =
                     @[
-                      [[MGBPlanet alloc] initWithName:@"Mercury" image:@"Mercury"],
-                      [[MGBPlanet alloc] initWithName:@"Venus" image:@"Venus"],
-                      [[MGBPlanet alloc] initWithName:@"Earth" image:@"Earth"],
-                      [[MGBPlanet alloc] initWithName:@"Mars" image:@"Mars"],
-                      [[MGBPlanet alloc] initWithName:@"Jupiter" image:@"Jupiter"],
-                      [[MGBPlanet alloc] initWithName:@"Saturn" image:@"Saturn"],
-                      [[MGBPlanet alloc] initWithName:@"Uranus" image:@"Uranus"],
-                      [[MGBPlanet alloc] initWithName:@"Neptune" image:@"Neptune"],
-                      [[MGBPlanet alloc] initWithName:@"Pluto" image:@"Pluto"]
+                      [[MGBPlanet alloc] initWithName:@"Mercury" image:@"mercury"],
+                      [[MGBPlanet alloc] initWithName:@"Venus" image:@"venus"],
+                      [[MGBPlanet alloc] initWithName:@"Earth" image:@"earth"],
+                      [[MGBPlanet alloc] initWithName:@"Mars" image:@"mars"],
+                      [[MGBPlanet alloc] initWithName:@"Jupiter" image:@"jupiter"],
+                      [[MGBPlanet alloc] initWithName:@"Saturn" image:@"saturn"],
+                      [[MGBPlanet alloc] initWithName:@"Uranus" image:@"uranus"],
+                      [[MGBPlanet alloc] initWithName:@"Neptune" image:@"neptune"],
+                      [[MGBPlanet alloc] initWithName:@"Pluto" image:@"pluto"]
                       ];
         
         _planetsWithoutPluto =
                     @[
-                      [[MGBPlanet alloc] initWithName:@"Mercury" image:@"Mercury"],
-                      [[MGBPlanet alloc] initWithName:@"Venus" image:@"Venus"],
-                      [[MGBPlanet alloc] initWithName:@"Earth" image:@"Earth"],
-                      [[MGBPlanet alloc] initWithName:@"Mars" image:@"Mars"],
-                      [[MGBPlanet alloc] initWithName:@"Jupiter" image:@"Jupiter"],
-                      [[MGBPlanet alloc] initWithName:@"Saturn" image:@"Saturn"],
-                      [[MGBPlanet alloc] initWithName:@"Uranus" image:@"Uranus"],
-                      [[MGBPlanet alloc] initWithName:@"Neptune" image:@"Neptune"]
+                      [[MGBPlanet alloc] initWithName:@"Mercury" image:@"mercury"],
+                      [[MGBPlanet alloc] initWithName:@"Venus" image:@"venus"],
+                      [[MGBPlanet alloc] initWithName:@"Earth" image:@"earth"],
+                      [[MGBPlanet alloc] initWithName:@"Mars" image:@"mars"],
+                      [[MGBPlanet alloc] initWithName:@"Jupiter" image:@"jupiter"],
+                      [[MGBPlanet alloc] initWithName:@"Saturn" image:@"saturn"],
+                      [[MGBPlanet alloc] initWithName:@"Uranus" image:@"uranus"],
+                      [[MGBPlanet alloc] initWithName:@"Neptune" image:@"neptune"]
                       ];
     }
     return self;
+}
+
+- (NSArray *)planets {
+    NSUserDefaults *userDefaluts = [NSUserDefaults standardUserDefaults];
+    if ([userDefaluts boolForKey:@"shouldShowPluto"]) {
+        return _planetsWithPluto;
+    }
+    return _planetsWithoutPluto;
 }
 
 @end

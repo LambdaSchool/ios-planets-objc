@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "jupiter.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "neptune.png",
       "scale" : "2x"
     },
     {

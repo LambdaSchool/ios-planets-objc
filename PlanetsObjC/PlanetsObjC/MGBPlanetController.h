@@ -12,8 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MGBPlanetController : NSObject
 
-@property NSArray *planets;
+@property (nonatomic) NSArray *planets;
 @property NSArray *planetsWithoutPluto;
+@property NSArray *planetsWithPluto;
 
 @end
 

@@ -13,7 +13,7 @@
         <!--Planets-->
         <scene sceneID="3Es-fz-OAO">
             <objects>
-                <collectionViewController id="KUP-Nr-avo" sceneMemberID="viewController">
+                <collectionViewController id="KUP-Nr-avo" customClass="MGBPlanetsCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="1ah-0Q-fbv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5U6-2p-8fC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69.565217391304358" y="150.66964285714286"/>
+            <point key="canvasLocation" x="291" y="151"/>
         </scene>
     </scenes>
 </document>

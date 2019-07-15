@@ -16,22 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    _changeShouldShowPlutoSwitch.on = [userDefaults boolForKey:@"shouldShowPluto"];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)changeShouldShowPluto:(id)sender {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:_changeShouldShowPlutoSwitch.on forKey:@"shouldShowPluto"];
 }
 
 - (IBAction)doneButtonPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
