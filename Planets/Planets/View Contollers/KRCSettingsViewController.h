@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class KRCPlanetsController;
+
 @interface KRCSettingsViewController : UIViewController
+
+@property KRCPlanetsController *planetsController;
 
 - (IBAction)switchValueChanged:(UISwitch *)sender;
 

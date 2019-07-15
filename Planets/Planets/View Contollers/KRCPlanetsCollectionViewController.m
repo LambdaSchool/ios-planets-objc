@@ -10,6 +10,7 @@
 #import "KRCPlanetsController.h"
 #import "KRCPlanetCollectionViewCell.h"
 #import "KRCPlanets.h"
+#import "KRCSettingsViewController.h"
 
 @interface KRCPlanetsCollectionViewController ()
 
@@ -29,20 +30,20 @@ static NSString * const reuseIdentifier = @"Cell";
     return self;
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL isPlutoAPlanet = [defaults boolForKey:@"isPlutoAPlanet"];
+    
+    [[self planetController] isPlutoAPlanet:isPlutoAPlanet];
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 

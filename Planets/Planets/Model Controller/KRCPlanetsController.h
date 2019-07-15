@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSArray *planetsWithPluto;
 @property NSArray *selectedPlanets;
 
-- (void)isPlutoAPlanet:(BOOL *)isPlutoAPlanet;
+- (void)isPlutoAPlanet:(BOOL)isPlutoAPlanet;
 
 @end
 

@@ -44,7 +44,7 @@
     return self;
 }
 
-- (void)isPlutoAPlanet:(BOOL *)isPlutoAPlanet {
+- (void)isPlutoAPlanet:(BOOL)isPlutoAPlanet {
     
     if (isPlutoAPlanet) {
         self.selectedPlanets = self.planetsWithPluto;
