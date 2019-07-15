@@ -7,6 +7,7 @@
 //
 
 #import "TXCSettingsViewController.h"
+#import <UIKit/UIKit.h>
 
 @interface TXCSettingsViewController ()
 
@@ -14,24 +15,25 @@
 
 @implementation TXCSettingsViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self updateViews];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)updateViews {
+    [self.shouldShowPlutoSwitch setOn: [[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPlutoKey"]];
 }
-*/
 
 - (IBAction)plutoSwitchToggled:(id)sender {
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool: _shouldShowPlutoSwitch.isOn forKey:@"ShouldShowPlutoKey"];
+    [userDefaults synchronize];
+    
+    NSLog(@"User Default Value is: %d", [userDefaults boolForKey:@"ShouldShowPlutoKey"]);
 }
 
 - (IBAction)doneButtonTapped:(id)sender {
+    // Dismiss view controller
 }
 @end

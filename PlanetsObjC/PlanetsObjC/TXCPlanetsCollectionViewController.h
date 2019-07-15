@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class TXCPlanetController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TXCPlanetsCollectionViewController : UICollectionViewController
+
+@property TXCPlanetController *planetController;
 
 @end
 

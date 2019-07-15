@@ -7,6 +7,10 @@
 //
 
 #import "TXCPlanetsCollectionViewController.h"
+#import "TXCPlanet.h"
+#import "TXCPlanetController.h"
+#import "TXCSettingsViewController.h"
+#import "TXCPlanetCollectionViewCell.h"
 
 @interface TXCPlanetsCollectionViewController ()
 
@@ -14,7 +18,15 @@
 
 @implementation TXCPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"PlanetCell";
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self != nil) {
+        _planetController = [[TXCPlanetController alloc] init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,54 +52,37 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of items
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    BOOL *shouldShowPluto = [defaults boolForKey:@"ShouldShowPlutoKey"];
+//    if (shouldShowPluto) {
+//        return self.planetController.planetsWithPluto.count;
+//    } else {
+//        return self.planetController.planets.count;
+//    }
     return 0;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    
-    return cell;
-}
+//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    UICollectionViewCell *cell = (TXCPlanetCollectionViewCell*)cell;
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    BOOL *shouldShowPluto = [defaults boolForKey:@"ShouldShowPlutoKey"];
+//    if (shouldShowPluto) {
+//        TXCPlanet *planet = self.planetController.planetsWithPluto[indexPath.row];
+//    //cell name label = planet name
+//    //cell image = planet image
+//    } else {
+//        TXCPlanet *planet = self.planetController.planets[indexPath.row];
+//        //cell name label = planet name
+//        //cell image = planet image
+//    }
+//    return cell;
+//}
 
 #pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

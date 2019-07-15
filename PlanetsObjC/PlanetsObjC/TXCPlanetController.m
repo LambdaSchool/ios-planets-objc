@@ -16,6 +16,7 @@
 {
     self = [super init];
     if (self) {
+        
         _planets = @[
                      [[TXCPlanet alloc] initWithName:@"Mercury" imageNamed:@"mercury"],
                      [[TXCPlanet alloc] initWithName:@"Venus" imageNamed:@"venus"],

@@ -132,6 +132,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uSr-eA-wjH"/>
                     </view>
+                    <connections>
+                        <outlet property="shouldShowPlutoSwitch" destination="8d0-uW-Ptc" id="mry-XU-dIZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTg-Hb-9mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
