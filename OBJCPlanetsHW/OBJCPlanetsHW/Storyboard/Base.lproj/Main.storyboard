@@ -24,7 +24,7 @@
                             <inset key="sectionInset" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="CUe-NF-QX6">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="CUe-NF-QX6" customClass="MRFPlanetCellCollectionViewCell">
                                 <rect key="frame" x="16" y="0.0" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -65,6 +65,10 @@
                                     <constraint firstAttribute="trailing" secondItem="SeW-q6-SBO" secondAttribute="trailing" id="Yzu-G9-Z51"/>
                                     <constraint firstItem="SeW-q6-SBO" firstAttribute="leading" secondItem="CUe-NF-QX6" secondAttribute="leading" id="g7C-87-jF7"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageViewInCell" destination="TGK-wm-UTq" id="fGL-Ji-jW2"/>
+                                    <outlet property="labelInCell" destination="n5G-Ze-gCj" id="TRC-Mu-RM2"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
