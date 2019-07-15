@@ -15,6 +15,7 @@
 		C46B214222DD06F300BAD07E /* OBJCPlanetsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B214122DD06F300BAD07E /* OBJCPlanetsTests.m */; };
 		C46B214E22DD08F300BAD07E /* KTMPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B214D22DD08F300BAD07E /* KTMPlanetsCollectionViewController.m */; };
 		C46B215122DD0CAD00BAD07E /* KTMPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B215022DD0CAD00BAD07E /* KTMPlanetCollectionViewCell.m */; };
+		C46B215A22DD148400BAD07E /* KTMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46B215922DD148400BAD07E /* KTMSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		C46B214D22DD08F300BAD07E /* KTMPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMPlanetsCollectionViewController.m; sourceTree = "<group>"; };
 		C46B214F22DD0CAD00BAD07E /* KTMPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMPlanetCollectionViewCell.h; sourceTree = "<group>"; };
 		C46B215022DD0CAD00BAD07E /* KTMPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		C46B215822DD148400BAD07E /* KTMSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTMSettingsViewController.h; sourceTree = "<group>"; };
+		C46B215922DD148400BAD07E /* KTMSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTMSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				C46B214D22DD08F300BAD07E /* KTMPlanetsCollectionViewController.m */,
 				C46B214F22DD0CAD00BAD07E /* KTMPlanetCollectionViewCell.h */,
 				C46B215022DD0CAD00BAD07E /* KTMPlanetCollectionViewCell.m */,
+				C46B215822DD148400BAD07E /* KTMSettingsViewController.h */,
+				C46B215922DD148400BAD07E /* KTMSettingsViewController.m */,
 				C46B212E22DD06F300BAD07E /* Main.storyboard */,
 				C46B213122DD06F300BAD07E /* Assets.xcassets */,
 				C46B213322DD06F300BAD07E /* LaunchScreen.storyboard */,
@@ -212,6 +217,7 @@
 				C46B213822DD06F300BAD07E /* main.m in Sources */,
 				C46B212A22DD06F300BAD07E /* AppDelegate.m in Sources */,
 				C46B214E22DD08F300BAD07E /* KTMPlanetsCollectionViewController.m in Sources */,
+				C46B215A22DD148400BAD07E /* KTMSettingsViewController.m in Sources */,
 				C46B215122DD0CAD00BAD07E /* KTMPlanetCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
