@@ -39,7 +39,7 @@
                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="phq-F9-ic5">
                                                     <rect key="frame" x="0.0" y="0.0" width="212" height="237"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvT-8a-1fS">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvT-8a-1fS">
                                                             <rect key="frame" x="0.0" y="0.0" width="204" height="208"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
@@ -88,10 +88,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Of Course Pluto is a Planet:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUZ-O3-vXM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Of Course Pluto is a Planet:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUZ-O3-vXM">
                                 <rect key="frame" x="18" y="126" width="209" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="JUZ-O3-vXM" secondAttribute="height" multiplier="68:7" id="xSI-ht-c9R"/>
+                                    <constraint firstAttribute="width" secondItem="JUZ-O3-vXM" secondAttribute="height" multiplier="209:21" id="vXj-Qm-zzV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -108,6 +108,8 @@
                         <constraints>
                             <constraint firstItem="LLb-rI-RqS" firstAttribute="leading" secondItem="JUZ-O3-vXM" secondAttribute="trailing" constant="95" id="0iS-E9-NaP"/>
                             <constraint firstItem="LLb-rI-RqS" firstAttribute="top" secondItem="OfV-Sb-NWt" secondAttribute="top" constant="33" id="MY9-mJ-nYp"/>
+                            <constraint firstItem="JUZ-O3-vXM" firstAttribute="leading" secondItem="OfV-Sb-NWt" secondAttribute="leading" constant="18" id="Wav-8f-Aiz"/>
+                            <constraint firstItem="JUZ-O3-vXM" firstAttribute="top" secondItem="OfV-Sb-NWt" secondAttribute="top" constant="38" id="t23-M0-8g0"/>
                             <constraint firstItem="OfV-Sb-NWt" firstAttribute="trailing" secondItem="LLb-rI-RqS" secondAttribute="trailing" constant="43" id="wh5-iV-JG1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OfV-Sb-NWt"/>

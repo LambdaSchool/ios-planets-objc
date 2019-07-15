@@ -18,7 +18,6 @@
 
 @implementation CCCPlanetsCollectionViewController
 
-// Create an instance variable directly (not a property)
 CCCPlanetController *_planetController;
 
 static NSString * const reuseIdentifier = @"PlanetCell";
@@ -60,7 +59,7 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     
     CCCPlanetCollectionViewCell *cell = (CCCPlanetCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    CCCPlanet *planet = [[self currentPlanets] objectAtIndex:indexPath.row];
+    CCCPlanet *planet = [[self currentPlanets] objectAtIndex:indexPath.item];
     
     
     cell.imageView.image = planet.image;

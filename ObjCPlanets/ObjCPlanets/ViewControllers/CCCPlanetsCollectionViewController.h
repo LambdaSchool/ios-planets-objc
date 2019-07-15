@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CCCPlanetsCollectionViewController : UICollectionViewController
 
-// Reference to planetController
+
 @property CCCPlanetController *planetController;
 
 @property CCCSettingsViewController *settingsViewController;
