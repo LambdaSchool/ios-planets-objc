@@ -22,8 +22,6 @@
 					 [[LSIPlanets alloc] initWithPlanetName:@"Saturn" planetImage: [UIImage imageNamed:@"saturn"]],
 					 [[LSIPlanets alloc] initWithPlanetName:@"Uranus" planetImage: [UIImage imageNamed:@"uranus"]],
 					 [[LSIPlanets alloc] initWithPlanetName:@"Neptune" planetImage: [UIImage imageNamed:@"neptune"]]
-					 
-					 
 					 ];
 	}
 	return self;

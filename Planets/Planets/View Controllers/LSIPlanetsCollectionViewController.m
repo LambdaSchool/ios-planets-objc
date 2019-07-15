@@ -8,6 +8,8 @@
 
 #import "LSIPlanetsCollectionViewController.h"
 #import "LSIPlanetCollectionViewCell.h"
+#import "../Model Controller/LSIPlanetController.h"
+#import "../Model/LSIPlanets.h"
 
 @interface LSIPlanetsCollectionViewController ()
 
@@ -15,8 +17,14 @@
 
 @implementation LSIPlanetsCollectionViewController
 
-
-
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+	self = [super initWithCoder:aDecoder];
+	if (self) {
+		_planetController = [[LSIPlanetController alloc] init];
+	
+	}
+	return self;
+}
 
 
 - (void)viewDidLoad {
@@ -46,15 +54,18 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 10;
+    return self.planetController.planets.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LSIPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
 	
-	NSString *str = [[NSString alloc] initWithFormat: @"%ld", indexPath.row];
+//	NSString *str = [[NSString alloc] initWithFormat: @"%ld", indexPath.row];
 	
-	cell.planetLabel.text = str;
+	LSIPlanets *planet = [[[self planetController] planets] objectAtIndex:[indexPath row]];
+	
+	cell.planetLabel.text = planet.planetName;
+	cell.imageView.image = planet.planetImage;
     return cell;
 }
 

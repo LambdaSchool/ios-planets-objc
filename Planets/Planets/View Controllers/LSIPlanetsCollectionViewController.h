@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
+
+@class LSIPlanetController;
+
 @interface LSIPlanetsCollectionViewController : UICollectionViewController
+
+@property LSIPlanetController *planetController;
+
 
 @end
 
