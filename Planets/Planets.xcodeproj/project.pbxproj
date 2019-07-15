@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC634BBC22DD169800887401 /* KRCPlanets.m in Sources */ = {isa = PBXBuildFile; fileRef = EC634BBB22DD169800887401 /* KRCPlanets.m */; };
+		EC634BC022DD1A0900887401 /* KRCPlanetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC634BBF22DD1A0900887401 /* KRCPlanetsController.m */; };
 		ECE43AE822DD09A200565A16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECE43AE722DD09A200565A16 /* AppDelegate.m */; };
 		ECE43AEE22DD09A200565A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE43AEC22DD09A200565A16 /* Main.storyboard */; };
 		ECE43AF022DD09A300565A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECE43AEF22DD09A300565A16 /* Assets.xcassets */; };
@@ -21,6 +22,8 @@
 /* Begin PBXFileReference section */
 		EC634BBA22DD169800887401 /* KRCPlanets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRCPlanets.h; sourceTree = "<group>"; };
 		EC634BBB22DD169800887401 /* KRCPlanets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRCPlanets.m; sourceTree = "<group>"; };
+		EC634BBE22DD1A0900887401 /* KRCPlanetsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KRCPlanetsController.h; sourceTree = "<group>"; };
+		EC634BBF22DD1A0900887401 /* KRCPlanetsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KRCPlanetsController.m; sourceTree = "<group>"; };
 		ECE43AE322DD09A100565A16 /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE43AE622DD09A200565A16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECE43AE722DD09A200565A16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +60,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EC634BBD22DD19EC00887401 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC634BBE22DD1A0900887401 /* KRCPlanetsController.h */,
+				EC634BBF22DD1A0900887401 /* KRCPlanetsController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		ECE43ADA22DD09A100565A16 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +88,7 @@
 		ECE43AE522DD09A100565A16 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				EC634BBD22DD19EC00887401 /* Model Controller */,
 				EC634BB922DD168000887401 /* Model */,
 				ECE43B0222DD0F1100565A16 /* Views */,
 				ECE43AFE22DD0D1200565A16 /* View Contollers */,
@@ -198,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECE43AF622DD09A300565A16 /* main.m in Sources */,
+				EC634BC022DD1A0900887401 /* KRCPlanetsController.m in Sources */,
 				ECE43B0122DD0D2700565A16 /* KRCPlanetsCollectionViewController.m in Sources */,
 				ECE43AE822DD09A200565A16 /* AppDelegate.m in Sources */,
 				ECE43B0822DD13C600565A16 /* KRCSettingsViewController.m in Sources */,

@@ -35,6 +35,4 @@
 - (IBAction)doneButtonTapped:(UIButton *)sender {
 }
 
-- (IBAction)doneButtonTapped:(id)sender {
-}
 @end
