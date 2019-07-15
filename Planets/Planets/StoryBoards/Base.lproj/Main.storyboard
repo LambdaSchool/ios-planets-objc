@@ -96,20 +96,42 @@
             </objects>
             <point key="canvasLocation" x="1092.753623188406" y="137.94642857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="ZPr-9C-wdq">
             <objects>
-                <viewController id="CPW-f8-JFS" sceneMemberID="viewController">
+                <viewController id="CPW-f8-JFS" customClass="LSISettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aWs-OQ-Mdq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TGD-64-YcH">
+                                <rect key="frame" x="20" y="128" width="374" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Should Pluto be a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-Hh-C0p">
+                                        <rect key="frame" x="0.0" y="0.0" width="317" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OK9-HJ-r67">
+                                        <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TGD-64-YcH" firstAttribute="leading" secondItem="ked-KI-jqM" secondAttribute="leading" constant="20" id="4Lj-R1-Yz5"/>
+                            <constraint firstItem="ked-KI-jqM" firstAttribute="trailing" secondItem="TGD-64-YcH" secondAttribute="trailing" constant="20" id="Pne-ep-MF3"/>
+                            <constraint firstItem="TGD-64-YcH" firstAttribute="top" secondItem="ked-KI-jqM" secondAttribute="top" constant="40" id="UYd-Oe-Xqf"/>
+                            <constraint firstItem="TGD-64-YcH" firstAttribute="centerX" secondItem="aWs-OQ-Mdq" secondAttribute="centerX" id="foi-JN-sJV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ked-KI-jqM"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ed2-EK-i79" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1874" y="143"/>
+            <point key="canvasLocation" x="1873.913043478261" y="142.63392857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pq8-9P-xD8">
