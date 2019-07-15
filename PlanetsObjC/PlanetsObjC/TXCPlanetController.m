@@ -8,6 +8,7 @@
 
 #import "TXCPlanetController.h"
 #import "TXCPlanet.h"
+#import <UIKit/UIKit.h>
 
 @implementation TXCPlanetController
 
@@ -16,27 +17,27 @@
     self = [super init];
     if (self) {
         _planets = @[
-                     [[TXCPlanet alloc] initWithName:@"Mercury" imageName:@"mercury"],
-                     [[TXCPlanet alloc] initWithName:@"Venus" imageName:@"venus"],
-                     [[TXCPlanet alloc] initWithName:@"Earth" imageName:@"earth"],
-                     [[TXCPlanet alloc] initWithName:@"Mars" imageName:@"mars"],
-                     [[TXCPlanet alloc] initWithName:@"Jupiter" imageName:@"jupiter"],
-                     [[TXCPlanet alloc] initWithName:@"Saturn" imageName:@"saturn"],
-                     [[TXCPlanet alloc] initWithName:@"Uranus" imageName:@"uranus"],
-                     [[TXCPlanet alloc] initWithName:@"Neptune" imageName:@"neptune"]
+                     [[TXCPlanet alloc] initWithName:@"Mercury" imageNamed:@"mercury"],
+                     [[TXCPlanet alloc] initWithName:@"Venus" imageNamed:@"venus"],
+                     [[TXCPlanet alloc] initWithName:@"Earth" imageNamed:@"earth"],
+                     [[TXCPlanet alloc] initWithName:@"Mars" imageNamed:@"mars"],
+                     [[TXCPlanet alloc] initWithName:@"Jupiter" imageNamed:@"jupiter"],
+                     [[TXCPlanet alloc] initWithName:@"Saturn" imageNamed:@"saturn"],
+                     [[TXCPlanet alloc] initWithName:@"Uranus" imageNamed:@"uranus"],
+                     [[TXCPlanet alloc] initWithName:@"Neptune" imageNamed:@"neptune"]
 
                      ];
         
         _planetsWithPluto = @[
-                              [[TXCPlanet alloc] initWithName:@"Mercury" imageName:@"mercury"],
-                              [[TXCPlanet alloc] initWithName:@"Venus" imageName:@"venus"],
-                              [[TXCPlanet alloc] initWithName:@"Earth" imageName:@"earth"],
-                              [[TXCPlanet alloc] initWithName:@"Mars" imageName:@"mars"],
-                              [[TXCPlanet alloc] initWithName:@"Jupiter" imageName:@"jupiter"],
-                              [[TXCPlanet alloc] initWithName:@"Saturn" imageName:@"saturn"],
-                              [[TXCPlanet alloc] initWithName:@"Uranus" imageName:@"uranus"],
-                              [[TXCPlanet alloc] initWithName:@"Neptune" imageName:@"neptune"],
-                              [[TXCPlanet alloc] initWithName:@"Pluto" imageName:@"pluto"]
+                              [[TXCPlanet alloc] initWithName:@"Mercury" imageNamed:@"mercury"],
+                              [[TXCPlanet alloc] initWithName:@"Venus" imageNamed:@"venus"],
+                              [[TXCPlanet alloc] initWithName:@"Earth" imageNamed:@"earth"],
+                              [[TXCPlanet alloc] initWithName:@"Mars" imageNamed:@"mars"],
+                              [[TXCPlanet alloc] initWithName:@"Jupiter" imageNamed:@"jupiter"],
+                              [[TXCPlanet alloc] initWithName:@"Saturn" imageNamed:@"saturn"],
+                              [[TXCPlanet alloc] initWithName:@"Uranus" imageNamed:@"uranus"],
+                              [[TXCPlanet alloc] initWithName:@"Neptune" imageNamed:@"neptune"],
+                              [[TXCPlanet alloc] initWithName:@"Pluto" imageNamed:@"pluto"]
                               ];
     }
     return self;

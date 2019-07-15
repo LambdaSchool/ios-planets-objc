@@ -14,10 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TXCPlanet : NSObject
 
 @property NSString *name;
-@property NSString *imageName;
+@property UIImage *image;
 
 - (instancetype)initWithName:(NSString *)name
-                        imageName:(NSString *)imageName;
+                       imageNamed:(NSString *)imageName;
 
 @end
 

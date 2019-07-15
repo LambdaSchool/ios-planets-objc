@@ -7,15 +7,16 @@
 //
 
 #import "TXCPlanet.h"
+#import <UIKit/UIKit.h>
 
 @implementation TXCPlanet
 
 - (instancetype)initWithName:(NSString *)name
-                       imageName:(NSString *)imageName {
+                       imageNamed:(NSString *)imageName {
     self = [super init];
     if(self != nil) {
         _name = name;
-        _imageName = imageName;
+        _image = (UIImage *)imageName;
     }
     return self;
 }
