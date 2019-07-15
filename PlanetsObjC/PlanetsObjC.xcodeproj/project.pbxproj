@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3D34955B22DD13F600953A4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34955A22DD13F600953A4D /* AppDelegate.m */; };
-		3D34955E22DD13F600953A4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34955D22DD13F600953A4D /* ViewController.m */; };
 		3D34956122DD13F600953A4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D34955F22DD13F600953A4D /* Main.storyboard */; };
 		3D34956322DD13F700953A4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D34956222DD13F700953A4D /* Assets.xcassets */; };
 		3D34956622DD13F700953A4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D34956422DD13F700953A4D /* LaunchScreen.storyboard */; };
 		3D34956922DD13F700953A4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34956822DD13F700953A4D /* main.m */; };
+		3D34957122DD14A100953A4D /* MGBPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34957022DD14A100953A4D /* MGBPlanetsCollectionViewController.m */; };
+		3D34957422DD165100953A4D /* MGBPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34957322DD165100953A4D /* MGBPlanetCollectionViewCell.m */; };
+		3D34957722DD182A00953A4D /* MGBSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D34957622DD182A00953A4D /* MGBSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D34955622DD13F600953A4D /* PlanetsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D34955922DD13F600953A4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D34955A22DD13F600953A4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3D34955C22DD13F600953A4D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3D34955D22DD13F600953A4D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3D34956022DD13F600953A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D34956222DD13F700953A4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D34956522DD13F700953A4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D34956722DD13F700953A4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D34956822DD13F700953A4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D34956F22DD14A100953A4D /* MGBPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGBPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		3D34957022DD14A100953A4D /* MGBPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGBPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		3D34957222DD165100953A4D /* MGBPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGBPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		3D34957322DD165100953A4D /* MGBPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGBPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		3D34957522DD182A00953A4D /* MGBSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGBSettingsViewController.h; sourceTree = "<group>"; };
+		3D34957622DD182A00953A4D /* MGBSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGBSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +66,14 @@
 			children = (
 				3D34955922DD13F600953A4D /* AppDelegate.h */,
 				3D34955A22DD13F600953A4D /* AppDelegate.m */,
-				3D34955C22DD13F600953A4D /* ViewController.h */,
-				3D34955D22DD13F600953A4D /* ViewController.m */,
-				3D34955F22DD13F600953A4D /* Main.storyboard */,
+				3D34956F22DD14A100953A4D /* MGBPlanetsCollectionViewController.h */,
+				3D34957022DD14A100953A4D /* MGBPlanetsCollectionViewController.m */,
+				3D34957222DD165100953A4D /* MGBPlanetCollectionViewCell.h */,
+				3D34957322DD165100953A4D /* MGBPlanetCollectionViewCell.m */,
+				3D34957522DD182A00953A4D /* MGBSettingsViewController.h */,
+				3D34957622DD182A00953A4D /* MGBSettingsViewController.m */,
 				3D34956222DD13F700953A4D /* Assets.xcassets */,
+				3D34955F22DD13F600953A4D /* Main.storyboard */,
 				3D34956422DD13F700953A4D /* LaunchScreen.storyboard */,
 				3D34956722DD13F700953A4D /* Info.plist */,
 				3D34956822DD13F700953A4D /* main.m */,
@@ -97,6 +107,7 @@
 		3D34954E22DD13F600953A4D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MGB;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Mitchell Budge";
 				TargetAttributes = {
@@ -141,9 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D34955E22DD13F600953A4D /* ViewController.m in Sources */,
+				3D34957422DD165100953A4D /* MGBPlanetCollectionViewCell.m in Sources */,
 				3D34956922DD13F700953A4D /* main.m in Sources */,
 				3D34955B22DD13F600953A4D /* AppDelegate.m in Sources */,
+				3D34957122DD14A100953A4D /* MGBPlanetsCollectionViewController.m in Sources */,
+				3D34957722DD182A00953A4D /* MGBSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
