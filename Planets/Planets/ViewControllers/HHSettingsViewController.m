@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    _shouldShowPlutoSwitch.on = [userDefaults boolForKey:@"shouldShowPluto"];
 }
 
 /*
