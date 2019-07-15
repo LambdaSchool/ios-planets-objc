@@ -7,6 +7,7 @@
 //
 
 #import "LSIPlanetsCollectionViewController.h"
+#import "LSIPlanetCollectionViewCell.h"
 
 @interface LSIPlanetsCollectionViewController ()
 
@@ -23,9 +24,11 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"PlanetCell"];
+	
     // Do any additional setup after loading the view.
+	
+	[self.collectionView reloadData];
 }
 
 /*
@@ -47,7 +50,7 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    LSIPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     
     return cell;
 }

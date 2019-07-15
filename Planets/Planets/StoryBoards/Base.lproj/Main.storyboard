@@ -25,7 +25,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="tSM-aH-Ltj" customClass="LSICollectionViewCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="tSM-aH-Ltj" customClass="LSIPlanetCollectionViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="178" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -74,8 +74,8 @@
                                     <constraint firstAttribute="trailing" secondItem="Dxq-U4-ynK" secondAttribute="trailing" id="xM8-iD-qaf"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="imageView" destination="CGa-fx-rKC" id="Rh6-t7-jNC"/>
-                                    <outlet property="planetLabel" destination="9rw-k4-76l" id="gqi-vl-AS1"/>
+                                    <outlet property="imageView" destination="CGa-fx-rKC" id="f8J-YU-YZq"/>
+                                    <outlet property="planetLabel" destination="9rw-k4-76l" id="xLb-nk-Yhy"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

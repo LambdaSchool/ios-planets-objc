@@ -1,5 +1,5 @@
 //
-//  LSICollectionViewCell.h
+//  LSIPlanetCollectionViewCell.h
 //  Planets
 //
 //  Created by Hector Steven on 7/15/19.
@@ -10,8 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LSICollectionViewCell : UICollectionViewCell
-
+@interface LSIPlanetCollectionViewCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UILabel *planetLabel;
 
