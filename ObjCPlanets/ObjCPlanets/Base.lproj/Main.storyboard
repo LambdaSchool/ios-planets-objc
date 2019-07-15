@@ -39,11 +39,9 @@
                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="phq-F9-ic5">
                                                     <rect key="frame" x="0.0" y="0.0" width="212" height="237"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvT-8a-1fS">
-                                                            <rect key="frame" x="0.0" y="0.0" width="204" height="237"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" secondItem="vvT-8a-1fS" secondAttribute="height" multiplier="1:1" id="NpN-NL-lEz"/>
-                                                            </constraints>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vvT-8a-1fS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="204" height="208"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
