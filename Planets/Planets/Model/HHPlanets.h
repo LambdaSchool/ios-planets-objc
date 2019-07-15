@@ -7,10 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HHPlanets : NSObject
+
+@property NSString *name;
+@property UIImage *image;
+
+- (instancetype)initWithName:(NSString *)name
+                       image:(UIImage *)image;
 
 @end
 

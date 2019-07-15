@@ -10,6 +10,14 @@
 
 @implementation HHPlanets
 
-
+- (instancetype)initWithName:(NSString *)name
+                       image:(UIImage *)image {
+    self = [super init];
+    if (self != nil) {
+        _name = name;
+        _image = image;
+    }
+    return self;
+}
 
 @end
