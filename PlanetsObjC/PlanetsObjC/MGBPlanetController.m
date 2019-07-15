@@ -28,6 +28,18 @@
                       [[MGBPlanet alloc] initWithName:@"Neptune" image:@"Neptune"],
                       [[MGBPlanet alloc] initWithName:@"Pluto" image:@"Pluto"]
                       ];
+        
+        _planetsWithoutPluto =
+                    @[
+                      [[MGBPlanet alloc] initWithName:@"Mercury" image:@"Mercury"],
+                      [[MGBPlanet alloc] initWithName:@"Venus" image:@"Venus"],
+                      [[MGBPlanet alloc] initWithName:@"Earth" image:@"Earth"],
+                      [[MGBPlanet alloc] initWithName:@"Mars" image:@"Mars"],
+                      [[MGBPlanet alloc] initWithName:@"Jupiter" image:@"Jupiter"],
+                      [[MGBPlanet alloc] initWithName:@"Saturn" image:@"Saturn"],
+                      [[MGBPlanet alloc] initWithName:@"Uranus" image:@"Uranus"],
+                      [[MGBPlanet alloc] initWithName:@"Neptune" image:@"Neptune"]
+                      ];
     }
     return self;
 }

@@ -74,6 +74,12 @@
 				3D34958222DD21D900953A4D /* MGBPlanetController.m */,
 				3D34957D22DD1B0100953A4D /* MGBPlanet.h */,
 				3D34957E22DD1B0100953A4D /* MGBPlanet.m */,
+				3D34956F22DD14A100953A4D /* MGBPlanetsCollectionViewController.h */,
+				3D34957022DD14A100953A4D /* MGBPlanetsCollectionViewController.m */,
+				3D34957222DD165100953A4D /* MGBPlanetCollectionViewCell.h */,
+				3D34957322DD165100953A4D /* MGBPlanetCollectionViewCell.m */,
+				3D34957522DD182A00953A4D /* MGBSettingsViewController.h */,
+				3D34957622DD182A00953A4D /* MGBSettingsViewController.m */,
 				3D34958022DD213800953A4D /* Model */,
 				3D34957A22DD1A9700953A4D /* View Controllers */,
 				3D34957922DD1A7700953A4D /* Storyboards */,
@@ -106,12 +112,6 @@
 		3D34957A22DD1A9700953A4D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3D34956F22DD14A100953A4D /* MGBPlanetsCollectionViewController.h */,
-				3D34957022DD14A100953A4D /* MGBPlanetsCollectionViewController.m */,
-				3D34957222DD165100953A4D /* MGBPlanetCollectionViewCell.h */,
-				3D34957322DD165100953A4D /* MGBPlanetCollectionViewCell.m */,
-				3D34957522DD182A00953A4D /* MGBSettingsViewController.h */,
-				3D34957622DD182A00953A4D /* MGBSettingsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
