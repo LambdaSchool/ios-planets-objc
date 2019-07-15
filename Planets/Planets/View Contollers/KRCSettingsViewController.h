@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property KRCPlanetsController *planetsController;
 
+@property (weak, nonatomic) IBOutlet UISwitch *plutoSwitch;
+
 - (IBAction)switchValueChanged:(UISwitch *)sender;
 
 - (IBAction)doneButtonTapped:(UIButton *)sender;
