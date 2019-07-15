@@ -16,6 +16,7 @@
 		EF1A6BF522DD0DC000AB04E0 /* HHPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6BF422DD0DC000AB04E0 /* HHPlanetsCollectionViewCell.m */; };
 		EF1A6BF822DD107700AB04E0 /* HHSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6BF722DD107700AB04E0 /* HHSettingsViewController.m */; };
 		EF1A6BFB22DD121800AB04E0 /* HHPlanets.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6BFA22DD121800AB04E0 /* HHPlanets.m */; };
+		EF1A6BFE22DD15CA00AB04E0 /* HHPlanetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1A6BFD22DD15CA00AB04E0 /* HHPlanetsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		EF1A6BF722DD107700AB04E0 /* HHSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHSettingsViewController.m; sourceTree = "<group>"; };
 		EF1A6BF922DD121800AB04E0 /* HHPlanets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHPlanets.h; sourceTree = "<group>"; };
 		EF1A6BFA22DD121800AB04E0 /* HHPlanets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHPlanets.m; sourceTree = "<group>"; };
+		EF1A6BFC22DD15CA00AB04E0 /* HHPlanetsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHPlanetsController.h; sourceTree = "<group>"; };
+		EF1A6BFD22DD15CA00AB04E0 /* HHPlanetsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHPlanetsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 		EF1A6BEE22DD0CC300AB04E0 /* ModelController */ = {
 			isa = PBXGroup;
 			children = (
+				EF1A6BFC22DD15CA00AB04E0 /* HHPlanetsController.h */,
+				EF1A6BFD22DD15CA00AB04E0 /* HHPlanetsController.m */,
 			);
 			path = ModelController;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				EF1A6BF222DD0CFA00AB04E0 /* HHPlanetsCollectionViewController.m in Sources */,
 				EF1A6BF822DD107700AB04E0 /* HHSettingsViewController.m in Sources */,
 				EF1A6BFB22DD121800AB04E0 /* HHPlanets.m in Sources */,
+				EF1A6BFE22DD15CA00AB04E0 /* HHPlanetsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
