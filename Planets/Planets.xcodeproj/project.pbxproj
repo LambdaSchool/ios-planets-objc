@@ -13,6 +13,7 @@
 		E8ABE53B22DD1662008AC64B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8ABE53922DD1662008AC64B /* LaunchScreen.storyboard */; };
 		E8ABE53E22DD1662008AC64B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ABE53D22DD1662008AC64B /* main.m */; };
 		E8ABE54722DD1805008AC64B /* LSIPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ABE54622DD1805008AC64B /* LSIPlanetsCollectionViewController.m */; };
+		E8ABE54B22DD1AB5008AC64B /* LSICollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8ABE54A22DD1AB5008AC64B /* LSICollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		E8ABE53D22DD1662008AC64B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8ABE54522DD1805008AC64B /* LSIPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanetsCollectionViewController.h; sourceTree = "<group>"; };
 		E8ABE54622DD1805008AC64B /* LSIPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		E8ABE54922DD1AB5008AC64B /* LSICollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSICollectionViewCell.h; sourceTree = "<group>"; };
+		E8ABE54A22DD1AB5008AC64B /* LSICollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSICollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +61,13 @@
 		E8ABE52D22DD1660008AC64B /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				E8ABE52E22DD1660008AC64B /* AppDelegate.h */,
+				E8ABE52F22DD1660008AC64B /* AppDelegate.m */,
 				E8ABE54822DD180B008AC64B /* View Controllers */,
 				E8ABE54422DD17AE008AC64B /* StoryBoards */,
 				E8ABE53722DD1662008AC64B /* Assets.xcassets */,
 				E8ABE53C22DD1662008AC64B /* Info.plist */,
 				E8ABE53D22DD1662008AC64B /* main.m */,
-				E8ABE52E22DD1660008AC64B /* AppDelegate.h */,
-				E8ABE52F22DD1660008AC64B /* AppDelegate.m */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
@@ -83,6 +86,8 @@
 			children = (
 				E8ABE54522DD1805008AC64B /* LSIPlanetsCollectionViewController.h */,
 				E8ABE54622DD1805008AC64B /* LSIPlanetsCollectionViewController.m */,
+				E8ABE54922DD1AB5008AC64B /* LSICollectionViewCell.h */,
+				E8ABE54A22DD1AB5008AC64B /* LSICollectionViewCell.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8ABE53E22DD1662008AC64B /* main.m in Sources */,
+				E8ABE54B22DD1AB5008AC64B /* LSICollectionViewCell.m in Sources */,
 				E8ABE54722DD1805008AC64B /* LSIPlanetsCollectionViewController.m in Sources */,
 				E8ABE53022DD1660008AC64B /* AppDelegate.m in Sources */,
 			);
