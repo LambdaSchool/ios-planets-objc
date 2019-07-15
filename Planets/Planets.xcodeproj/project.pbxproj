@@ -63,6 +63,7 @@
 			children = (
 				E8ABE52E22DD1660008AC64B /* AppDelegate.h */,
 				E8ABE52F22DD1660008AC64B /* AppDelegate.m */,
+				E8ABE54C22DD1DE6008AC64B /* Cells */,
 				E8ABE54822DD180B008AC64B /* View Controllers */,
 				E8ABE54422DD17AE008AC64B /* StoryBoards */,
 				E8ABE53722DD1662008AC64B /* Assets.xcassets */,
@@ -86,10 +87,17 @@
 			children = (
 				E8ABE54522DD1805008AC64B /* LSIPlanetsCollectionViewController.h */,
 				E8ABE54622DD1805008AC64B /* LSIPlanetsCollectionViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E8ABE54C22DD1DE6008AC64B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				E8ABE54922DD1AB5008AC64B /* LSICollectionViewCell.h */,
 				E8ABE54A22DD1AB5008AC64B /* LSICollectionViewCell.m */,
 			);
-			path = "View Controllers";
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
