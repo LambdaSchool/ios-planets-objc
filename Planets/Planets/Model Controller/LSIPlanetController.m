@@ -21,8 +21,14 @@
 					 [[LSIPlanets alloc] initWithPlanetName:@"Jupiter" planetImage: [UIImage imageNamed:@"jupiter"]],
 					 [[LSIPlanets alloc] initWithPlanetName:@"Saturn" planetImage: [UIImage imageNamed:@"saturn"]],
 					 [[LSIPlanets alloc] initWithPlanetName:@"Uranus" planetImage: [UIImage imageNamed:@"uranus"]],
-					 [[LSIPlanets alloc] initWithPlanetName:@"Neptune" planetImage: [UIImage imageNamed:@"neptune"]]
+					 [[LSIPlanets alloc] initWithPlanetName:@"Neptune" planetImage: [UIImage imageNamed:@"neptune"]],
+					 [[LSIPlanets alloc] initWithPlanetName:@"Pluto" planetImage: [UIImage imageNamed:@"pluto"]]
 					 ];
+		
+	
+		
+		
+		
 	}
 	return self;
 }

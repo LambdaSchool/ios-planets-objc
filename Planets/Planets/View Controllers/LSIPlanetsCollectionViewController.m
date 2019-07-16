@@ -39,6 +39,21 @@
 	[self.collectionView reloadData];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	BOOL plutoIsPlanet = [defaults integerForKey:@"HighScore"];
+	
+	if (plutoIsPlanet) {
+		NSLog(@"plutoIsPlanet is %d \n", plutoIsPlanet);
+		
+		
+	}
+	
+}
+
+
 /*
 #pragma mark - Navigation
 
@@ -66,6 +81,7 @@
 	
 	cell.planetLabel.text = planet.planetName;
 	cell.imageView.image = planet.planetImage;
+	
     return cell;
 }
 

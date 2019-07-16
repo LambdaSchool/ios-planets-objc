@@ -22,6 +22,14 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)switchValueChanged:(id)sender {
+	NSLog(@"%@ \n", sender);
+
+}
+
+
+
+
 /*
 #pragma mark - Navigation
 
