@@ -10,7 +10,7 @@
 
 @implementation GLIPlanet
 
-- (instancetype)initWithName:(NSString *)name image:(UIImage *)image
+- (instancetype)initWithName:(NSString *)name image:(NSString *)image
 {
     self = [super init];
     if (self) {

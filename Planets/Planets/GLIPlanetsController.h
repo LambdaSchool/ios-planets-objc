@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface GLIPlanetsController : NSObject
 
-@property NSArray *planets;
+@property (nonatomic) NSArray *planets;
 @property NSArray *plantetsWithoutPluto;
 @property NSArray *planetsWithPluto;
 
