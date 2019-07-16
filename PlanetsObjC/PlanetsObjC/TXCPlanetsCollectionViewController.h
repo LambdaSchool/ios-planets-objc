@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TXCPlanetsCollectionViewController : UICollectionViewController
 
+@property (nonatomic, assign) BOOL *shouldShowPluto;
 @property TXCPlanetController *planetController;
 
 @end

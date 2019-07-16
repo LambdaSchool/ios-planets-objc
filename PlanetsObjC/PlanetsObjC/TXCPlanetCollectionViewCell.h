@@ -13,12 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TXCPlanetCollectionViewCell : UICollectionViewCell
 
 
-
-
-
-
-
-
 @property (weak, nonatomic) IBOutlet UIImageView *planetImageView;
 @property (weak, nonatomic) IBOutlet UILabel *planetNameLabel;
 

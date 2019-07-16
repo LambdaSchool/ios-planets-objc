@@ -55,32 +55,20 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    BOOL *shouldShowPluto = [defaults boolForKey:@"ShouldShowPlutoKey"];
-//    if (shouldShowPluto) {
-//        return self.planetController.planetsWithPluto.count;
-//    } else {
-//        return self.planetController.planets.count;
-//    }
-    return 0;
+
+    NSLog(@"%lu", (unsigned long)self.planetController.planets.count);
+    return self.planetController.planets.count;
 }
 
-//- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-//    UICollectionViewCell *cell = (TXCPlanetCollectionViewCell*)cell;
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    BOOL *shouldShowPluto = [defaults boolForKey:@"ShouldShowPlutoKey"];
-//    if (shouldShowPluto) {
-//        TXCPlanet *planet = self.planetController.planetsWithPluto[indexPath.row];
-//    //cell name label = planet name
-//    //cell image = planet image
-//    } else {
-//        TXCPlanet *planet = self.planetController.planets[indexPath.row];
-//        //cell name label = planet name
-//        //cell image = planet image
-//    }
-//    return cell;
-//}
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    TXCPlanetCollectionViewCell *cell = (TXCPlanetCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
+   
+    TXCPlanet *myPlanet = self.planetController.planets[indexPath.item];
+    cell.planetNameLabel.text = myPlanet.name;
+    cell.planetImageView.image = myPlanet.image;
+    
+    return cell;
+}
 
 #pragma mark <UICollectionViewDelegate>
 
