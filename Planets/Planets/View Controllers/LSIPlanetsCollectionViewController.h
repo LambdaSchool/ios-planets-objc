@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LSIPlanetsCollectionViewController : UICollectionViewController
 
 @property LSIPlanetController *planetController;
-
+@property BOOL plutoIsPlanet;
 
 @end
 

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LSISettingsViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UISwitch *plutoSwitch;
+@property BOOL plutoIsPlanet;
 
 
 @end

@@ -19,11 +19,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	[super viewWillAppear:animated];
+	
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	_plutoIsPlanet = [defaults integerForKey:@"plutoIsPlanet"];
+	
+	if (_plutoIsPlanet) {
+		[_plutoSwitch setOn: YES];
+	} else {
+		[_plutoSwitch setOn: NO];
+	}
+}
+
+
 - (IBAction)switchValueChanged:(id)sender {
-	NSLog(@"%@ \n", sender);
+//	NSLog(@"%@ \n", sender);
+	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	if (_plutoIsPlanet) {
+		[defaults setBool:NO forKey:@"plutoIsPlanet"];
+	} else {
+	
+		[defaults setBool:YES forKey:@"plutoIsPlanet"];
+	}
+	
+	
+	[defaults synchronize];
 
 }
 

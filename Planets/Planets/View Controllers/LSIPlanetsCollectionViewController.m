@@ -17,11 +17,13 @@
 
 @implementation LSIPlanetsCollectionViewController
 
+
+
 - (instancetype) initWithCoder:(NSCoder *)aDecoder {
 	self = [super initWithCoder:aDecoder];
 	if (self) {
 		_planetController = [[LSIPlanetController alloc] init];
-	
+		_plutoIsPlanet = NO;
 	}
 	return self;
 }
@@ -29,13 +31,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = NO;
-	
-	
     // Do any additional setup after loading the view.
-	
 	[self.collectionView reloadData];
 }
 
@@ -43,14 +41,9 @@
 	[super viewWillAppear:animated];
 	
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-	BOOL plutoIsPlanet = [defaults integerForKey:@"HighScore"];
+	_plutoIsPlanet = [defaults integerForKey:@"plutoIsPlanet"];
 	
-	if (plutoIsPlanet) {
-		NSLog(@"plutoIsPlanet is %d \n", plutoIsPlanet);
-		
-		
-	}
-	
+	[self.collectionView reloadData];
 }
 
 
@@ -69,8 +62,14 @@
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.planetController.planets.count;
+	
+	if (_plutoIsPlanet) {
+		return self.planetController.planets.count;
+	}
+	
+	return self.planetController.planets.count - 1;
 }
+
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LSIPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
