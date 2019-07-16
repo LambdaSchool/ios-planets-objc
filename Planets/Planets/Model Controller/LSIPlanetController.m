@@ -24,11 +24,6 @@
 					 [[LSIPlanets alloc] initWithPlanetName:@"Neptune" planetImage: [UIImage imageNamed:@"neptune"]],
 					 [[LSIPlanets alloc] initWithPlanetName:@"Pluto" planetImage: [UIImage imageNamed:@"pluto"]]
 					 ];
-		
-	
-		
-		
-		
 	}
 	return self;
 }

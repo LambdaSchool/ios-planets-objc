@@ -10,16 +10,12 @@
 
 @interface LSISettingsViewController ()
 
-
-
-
 @end
 
 @implementation LSISettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -37,8 +33,8 @@
 
 
 - (IBAction)switchValueChanged:(id)sender {
-//	NSLog(@"%@ \n", sender);
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+	
 	if (_plutoIsPlanet) {
 		[defaults setBool:NO forKey:@"plutoIsPlanet"];
 	} else {
@@ -46,22 +42,7 @@
 		[defaults setBool:YES forKey:@"plutoIsPlanet"];
 	}
 	
-	
 	[defaults synchronize];
-
 }
-
-
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
