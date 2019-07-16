@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 //indicate properties you want to use
 @property NSArray *planetsWOP;
 @property NSArray *planetsWP;
+
+@property (readonly) NSArray *planets;
+
 @end
 
 NS_ASSUME_NONNULL_END

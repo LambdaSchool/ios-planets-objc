@@ -30,7 +30,7 @@
                          imageName:@"earth"],
                         [[MRFPlanet alloc]
                          initWithPlanetName:@"Mars"
-                         imageName:@"Mars"],
+                         imageName:@"mars"],
                         [[MRFPlanet alloc]
                          initWithPlanetName:@"Jupiter"
                          imageName:@"jupiter"],
@@ -42,7 +42,8 @@
                          imageName:@"uranus"],
                         [[MRFPlanet alloc]
                          initWithPlanetName:@"Neptune"
-                         imageName:@"neptune"]
+                         imageName:@"neptune"],
+//                        nil;
                         ];
         
         _planetsWP = @[
@@ -57,7 +58,7 @@
                         imageName:@"earth"],
                        [[MRFPlanet alloc]
                         initWithPlanetName:@"Mars"
-                        imageName:@"Mars"],
+                        imageName:@"mars"],
                        [[MRFPlanet alloc]
                         initWithPlanetName:@"Jupiter"
                         imageName:@"jupiter"],
@@ -72,9 +73,19 @@
                         imageName:@"neptune"],
                        [[MRFPlanet alloc]
                         initWithPlanetName:@"Pluto"
-                        imageName:@"pluto"]
+                        imageName:@"pluto"],
+//                       nil
                        ];
     }
     return self;
+}
+
+-(NSArray *)planets {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    
+    if ([userDefaults boolForKey:@"ShouldShowPluto"]){
+        return _planetsWP;
+    }
+    return _planetsWOP;
 }
 @end

@@ -10,10 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class MRFPlanetController; //this is like a lazy var
 @interface MRFPlanetsCollectionViewController : UICollectionViewController
 
 - (IBAction)settingsButton:(UIBarButtonItem *)sender;
-
+@property MRFPlanetController *planetController; //make sure to implement @class
 @end
 
 NS_ASSUME_NONNULL_END

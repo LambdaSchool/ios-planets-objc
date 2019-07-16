@@ -7,6 +7,7 @@
 //
 
 #import "MRFViewController.h"
+#import "MRFPlanetController.h"
 
 @interface MRFViewController ()
 
@@ -16,22 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self updateViews];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)doneButtonPressed:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)switchValueChanged:(UISwitch *)sender {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:_switchValue.on forKey:@"ShouldShowPluto"];
 }
+
+- (void)updateViews
+{
+    [self.switchValue setOn: [[NSUserDefaults standardUserDefaults] boolForKey:@"ShouldShowPluto"]];
+}
+
 @end
