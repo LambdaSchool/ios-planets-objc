@@ -7,7 +7,31 @@
 //
 
 #import "GLIPlanetsController.h"
+#import "GLIPlanet.h"
 
 @implementation GLIPlanetsController
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _planets = @[
+                     [[GLIPlanet alloc]initWithName:<#(nonnull NSString *)#> image:<#(nonnull UIImage *)#>]
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     ];
+    }
+    return self;
+}
 
 @end
