@@ -21,6 +21,7 @@
 }
 - (void)togglePlutoSwitch:(id)sender {
     [[NSUserDefaults standardUserDefaults] setBool:[sender isOn] forKey:@"shouldShowPluto"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     [self sendPlutoHasChangedNotification];
 }
 
@@ -29,7 +30,7 @@
 }
 
 -(void)updateViews {
-    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"logged_in"]) {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"shouldShowPluto"]) {
         [_plutoSwitch setOn: YES];
     } else {
         [_plutoSwitch setOn: NO];
