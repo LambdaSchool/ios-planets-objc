@@ -14,8 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property UIImage *image;
 @property NSString *title;
+@property double radius;
+@property double sizeRelativeToJupiter;
 
-- (instancetype)initWithPlanet: (NSString*) planet;
+- (instancetype)initWithPlanet: (NSString*) planet radius: (double) radius;
 
 @end
 

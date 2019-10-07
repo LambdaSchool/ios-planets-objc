@@ -87,3 +87,5 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.gitignore.io/api/xcode,objective-c
+
+Planets ObjC/.DS_Store

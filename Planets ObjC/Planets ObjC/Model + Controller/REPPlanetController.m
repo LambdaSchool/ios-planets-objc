@@ -20,16 +20,16 @@
 - (instancetype)init {
 	if (self = [super init]) {
 		_allPlanets = [NSArray arrayWithObjects:
-					[[REPPlanet alloc] initWithPlanet:@"mercury"],
-					[[REPPlanet alloc] initWithPlanet:@"venus"],
-					[[REPPlanet alloc] initWithPlanet:@"earth"],
-					[[REPPlanet alloc] initWithPlanet:@"mars"],
-					[[REPPlanet alloc] initWithPlanet:@"jupiter"],
-					[[REPPlanet alloc] initWithPlanet:@"saturn"],
-					[[REPPlanet alloc] initWithPlanet:@"uranus"],
-					[[REPPlanet alloc] initWithPlanet:@"neptune"],
+					[[REPPlanet alloc] initWithPlanet:@"mercury" radius:2440],
+					[[REPPlanet alloc] initWithPlanet:@"venus" radius:6052],
+					[[REPPlanet alloc] initWithPlanet:@"earth" radius:6371],
+					[[REPPlanet alloc] initWithPlanet:@"mars" radius:3390],
+					[[REPPlanet alloc] initWithPlanet:@"jupiter" radius:69911],
+					[[REPPlanet alloc] initWithPlanet:@"saturn" radius:58232],
+					[[REPPlanet alloc] initWithPlanet:@"uranus" radius:25362],
+					[[REPPlanet alloc] initWithPlanet:@"neptune" radius:24622],
 					   nil];
-		_pluto = [[REPPlanet alloc] initWithPlanet:@"pluto"];
+		_pluto = [[REPPlanet alloc] initWithPlanet:@"pluto" radius:1188];
 
 	}
 	return self;

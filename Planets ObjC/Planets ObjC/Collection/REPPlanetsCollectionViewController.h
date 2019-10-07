@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface REPPlanetsCollectionViewController : UICollectionViewController
+@interface REPPlanetsCollectionViewController : UICollectionViewController <UICollectionViewDelegateFlowLayout>
 
 
 

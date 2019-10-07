@@ -9,6 +9,7 @@
 #import "REPPlanetsCollectionViewController.h"
 #import "REPPlanetController.h"
 #import "REPPlanetCollectionViewCell.h"
+#import "REPPlanet.h"
 
 @interface REPPlanetsCollectionViewController() {
 	REPPlanetController *_planetController;
@@ -22,6 +23,13 @@
 	[super viewDidLoad];
 	_planetController = [[REPPlanetController alloc] init];
 	// Do any additional setup after loading the view.
+
+	UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+	layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+	layout.minimumInteritemSpacing = 75;
+	layout.itemSize = CGSizeMake(125, 125);
+	layout.sectionInset = UIEdgeInsetsMake(20, 20, 0, 0);
+	self.collectionView.collectionViewLayout = layout;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -39,6 +47,12 @@
 	REPPlanet* planet = _planetController.planets[indexPath.item];
 	cell.planet = planet;
 	return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+	REPPlanet* planet = _planetController.planets[indexPath.item];
+	double size = CGRectGetWidth(collectionView.frame) * planet.sizeRelativeToJupiter;
+    return CGSizeMake(size, collectionView.frame.size.width);
 }
 
 @end
