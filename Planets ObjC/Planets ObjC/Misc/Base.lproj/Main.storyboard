@@ -3,6 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -91,11 +93,69 @@
                             <outlet property="delegate" destination="dMy-Y1-Yx6" id="JzF-DH-BfW"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="rFk-cI-lzt"/>
+                    <navigationItem key="navigationItem" id="rFk-cI-lzt">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="DJZ-4k-D9r">
+                            <connections>
+                                <segue destination="TSr-zW-qCv" kind="presentation" id="I0U-ju-PTv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwt-f4-32U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1060.8695652173915" y="137.94642857142856"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="xmZ-dV-BA2">
+            <objects>
+                <viewController id="TSr-zW-qCv" customClass="REPSettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KBd-O0-IlU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="hYo-mh-n7f">
+                                <rect key="frame" x="115.5" y="345.5" width="183" height="151"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f5c-wI-pbi">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pluto is a planet." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVO-C2-10K">
+                                                <rect key="frame" x="0.0" y="0.0" width="126" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1a-vX-mNU">
+                                                <rect key="frame" x="134" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTo-OM-ng4">
+                                        <rect key="frame" x="0.0" y="121" width="183" height="30"/>
+                                        <state key="normal" title="Done"/>
+                                        <connections>
+                                            <action selector="doneButtonPressed:" destination="TSr-zW-qCv" eventType="touchUpInside" id="cnm-WN-nqe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hYo-mh-n7f" firstAttribute="centerY" secondItem="KBd-O0-IlU" secondAttribute="centerY" id="C78-IX-k4I"/>
+                            <constraint firstItem="hYo-mh-n7f" firstAttribute="centerX" secondItem="KBd-O0-IlU" secondAttribute="centerX" id="j2f-9r-p4Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IZI-iU-9vl"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="omi-a3-xTA"/>
+                    <connections>
+                        <outlet property="doneButton" destination="yTo-OM-ng4" id="qQn-Rt-WEl"/>
+                        <outlet property="plutoSwitch" destination="X1a-vX-mNU" id="eJR-sY-3zM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5jt-TI-8dr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.8550724637682" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>

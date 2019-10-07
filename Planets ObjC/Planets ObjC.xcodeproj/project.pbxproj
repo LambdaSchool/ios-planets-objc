@@ -16,6 +16,7 @@
 		331B90A9234BD9050044F789 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 331B90A8234BD9050044F789 /* main.m */; };
 		331B90B3234BDB920044F789 /* REPPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 331B90B2234BDB920044F789 /* REPPlanetCollectionViewCell.m */; };
 		331B90B6234BDD160044F789 /* REPPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 331B90B5234BDD160044F789 /* REPPlanet.m */; };
+		331B90BC234BDFA40044F789 /* REPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331B90BB234BDFA40044F789 /* REPSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		331B90B2234BDB920044F789 /* REPPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REPPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 		331B90B4234BDD160044F789 /* REPPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REPPlanet.h; sourceTree = "<group>"; };
 		331B90B5234BDD160044F789 /* REPPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REPPlanet.m; sourceTree = "<group>"; };
+		331B90BA234BDFA40044F789 /* REPSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = REPSettingsViewController.h; sourceTree = "<group>"; };
+		331B90BB234BDFA40044F789 /* REPSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = REPSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 		331B9095234BD9040044F789 /* Planets ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				331B90BA234BDFA40044F789 /* REPSettingsViewController.h */,
+				331B90BB234BDFA40044F789 /* REPSettingsViewController.m */,
 				331B90B1234BDB920044F789 /* REPPlanetCollectionViewCell.h */,
 				331B90B2234BDB920044F789 /* REPPlanetCollectionViewCell.m */,
 				331B90B0234BD9D10044F789 /* REPPlanetsCollectionViewController.h */,
@@ -168,6 +173,7 @@
 				331B909E234BD9040044F789 /* REPPlanetsCollectionViewController.m in Sources */,
 				331B9098234BD9040044F789 /* AppDelegate.m in Sources */,
 				331B90B6234BDD160044F789 /* REPPlanet.m in Sources */,
+				331B90BC234BDFA40044F789 /* REPSettingsViewController.m in Sources */,
 				331B90A9234BD9050044F789 /* main.m in Sources */,
 				331B909B234BD9040044F789 /* SceneDelegate.m in Sources */,
 			);
