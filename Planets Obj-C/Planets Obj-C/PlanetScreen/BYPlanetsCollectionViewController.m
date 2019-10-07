@@ -9,9 +9,9 @@
 #import "BYPlanetsCollectionViewController.h"
 #import "BYPlanetController.h"
 #import "BYPlanet.h"
-#import "BYPlanetCollectionViewCell.m"
+#import "BYPlanetCollectionViewCell.h"
 
-@interface BYPlanetsCollectionViewController ()
+@interface BYPlanetsCollectionViewController()<UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 @end
 
@@ -34,6 +34,7 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.collectionView.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -46,6 +47,11 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (void) dealloc{
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    return CGSizeMake(100, 100);
+
 }
     
 

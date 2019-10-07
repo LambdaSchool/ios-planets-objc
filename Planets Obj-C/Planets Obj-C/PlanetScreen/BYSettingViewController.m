@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self updateViews];
     // Do any additional setup after loading the view.
 }
 - (void)togglePlutoSwitch:(id)sender {
