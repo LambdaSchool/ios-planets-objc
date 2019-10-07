@@ -100,7 +100,7 @@
                     <navigationItem key="navigationItem" id="rFk-cI-lzt">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="DJZ-4k-D9r">
                             <connections>
-                                <segue destination="TSr-zW-qCv" kind="presentation" id="I0U-ju-PTv"/>
+                                <segue destination="TSr-zW-qCv" kind="presentation" modalPresentationStyle="fullScreen" id="I0U-ju-PTv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -114,11 +114,11 @@
             <objects>
                 <viewController id="TSr-zW-qCv" customClass="REPSettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KBd-O0-IlU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="hYo-mh-n7f">
-                                <rect key="frame" x="115.5" y="345.5" width="183" height="151"/>
+                                <rect key="frame" x="115.5" y="372.5" width="183" height="151"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="f5c-wI-pbi">
                                         <rect key="frame" x="0.0" y="0.0" width="183" height="31"/>
@@ -131,6 +131,9 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1a-vX-mNU">
                                                 <rect key="frame" x="134" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="plutoSwitchChanged:" destination="TSr-zW-qCv" eventType="valueChanged" id="PiK-lN-kZb"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>

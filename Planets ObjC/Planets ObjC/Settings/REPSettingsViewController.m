@@ -21,6 +21,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+	[self updateViews];
+}
+
+- (void)updateViews {
+	NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+	BOOL isPlanet = [defaults boolForKey:@"plutoIsPlanet"];
+	[_plutoSwitch setOn:isPlanet];
+}
+
+- (IBAction)plutoSwitchChanged:(UISwitch *)sender {
+	NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+	[defaults setBool:sender.isOn forKey:@"plutoIsPlanet"];
 }
 
 - (IBAction)doneButtonPressed:(UIButton *)sender {
