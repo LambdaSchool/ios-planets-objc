@@ -26,6 +26,7 @@
 	[super awakeFromNib];
 
 	self.labelBackgroundView.layer.cornerRadius = 8;
+	self.labelBackgroundView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.6];
 }
 
 - (void)updateViews {
