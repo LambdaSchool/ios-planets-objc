@@ -1,18 +1,18 @@
 //
-//  PlanetsCollectionViewController.m
+//  REPPlanetsCollectionViewController.m
 //  Planets ObjC
 //
 //  Created by Michael Redig on 10/7/19.
 //  Copyright © 2019 Red_Egg Productions. All rights reserved.
 //
 
-#import "PlanetsCollectionViewController.h"
+#import "REPPlanetsCollectionViewController.h"
 
-@interface PlanetsCollectionViewController ()
+@interface REPPlanetsCollectionViewController ()
 
 @end
 
-@implementation PlanetsCollectionViewController
+@implementation REPPlanetsCollectionViewController
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
