@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface REPPlanetCollectionViewCell : UICollectionViewCell
 
-@property REPPlanet *planet;
+@property (nonatomic) REPPlanet *planet;
 
 @end
 

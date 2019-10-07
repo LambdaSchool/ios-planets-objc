@@ -35,4 +35,9 @@
 	}
 }
 
+- (void)setPlanet:(REPPlanet *)planet {
+	_planet = planet;
+	[self updateViews];
+}
+
 @end

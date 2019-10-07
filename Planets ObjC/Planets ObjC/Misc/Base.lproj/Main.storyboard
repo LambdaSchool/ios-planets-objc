@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Planets Collection View Controller-->
         <scene sceneID="7XX-Yl-uyD">
             <objects>
-                <collectionViewController id="dMy-Y1-Yx6" sceneMemberID="viewController">
+                <collectionViewController id="dMy-Y1-Yx6" customClass="REPPlanetsCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7xe-7G-Ztx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
