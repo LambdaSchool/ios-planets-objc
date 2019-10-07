@@ -10,7 +10,7 @@
 
 
 @interface BYPlanetController : NSObject
-@property NSArray *planets;
+@property (nonatomic) NSArray *planets;
 
 @end
 
