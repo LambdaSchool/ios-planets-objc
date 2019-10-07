@@ -16,6 +16,7 @@
 		75BCC31A234BE202001CA01A /* BYPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC319234BE202001CA01A /* BYPlanetsCollectionViewController.m */; };
 		75BCC31D234BE25C001CA01A /* BYPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC31C234BE25C001CA01A /* BYPlanetCollectionViewCell.m */; };
 		75BCC326234BE49B001CA01A /* BYPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC325234BE49B001CA01A /* BYPlanet.m */; };
+		75BCC329234BE74F001CA01A /* BYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC328234BE74F001CA01A /* BYSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		75BCC31C234BE25C001CA01A /* BYPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 		75BCC324234BE49B001CA01A /* BYPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYPlanet.h; sourceTree = "<group>"; };
 		75BCC325234BE49B001CA01A /* BYPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYPlanet.m; sourceTree = "<group>"; };
+		75BCC327234BE74F001CA01A /* BYSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYSettingViewController.h; sourceTree = "<group>"; };
+		75BCC328234BE74F001CA01A /* BYSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYSettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				75BCC31C234BE25C001CA01A /* BYPlanetCollectionViewCell.m */,
 				75BCC324234BE49B001CA01A /* BYPlanet.h */,
 				75BCC325234BE49B001CA01A /* BYPlanet.m */,
+				75BCC327234BE74F001CA01A /* BYSettingViewController.h */,
+				75BCC328234BE74F001CA01A /* BYSettingViewController.m */,
 			);
 			path = PlanetScreen;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 				75BCC301234BE12F001CA01A /* AppDelegate.m in Sources */,
 				75BCC312234BE132001CA01A /* main.m in Sources */,
 				75BCC304234BE12F001CA01A /* SceneDelegate.m in Sources */,
+				75BCC329234BE74F001CA01A /* BYSettingViewController.m in Sources */,
 				75BCC31A234BE202001CA01A /* BYPlanetsCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

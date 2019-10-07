@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BYPlanetsCollectionViewController : UICollectionViewController
 
+@property IBOutlet UIBarButtonItem *settingButton;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END
