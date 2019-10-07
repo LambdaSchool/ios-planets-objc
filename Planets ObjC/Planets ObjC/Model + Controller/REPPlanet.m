@@ -10,4 +10,12 @@
 
 @implementation REPPlanet
 
+- (instancetype)initWithPlanet: (NSString*) planet {
+	if (self = [super init]) {
+		_image = [UIImage imageNamed:planet];
+		_title = planet;
+	}
+	return self;
+}
+
 @end

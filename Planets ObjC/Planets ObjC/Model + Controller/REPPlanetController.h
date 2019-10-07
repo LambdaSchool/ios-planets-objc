@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface REPPlanetController : NSObject
 
+@property (nonatomic) NSArray *planets;
+
 @end
 
 NS_ASSUME_NONNULL_END

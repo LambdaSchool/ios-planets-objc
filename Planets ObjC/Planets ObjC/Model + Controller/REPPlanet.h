@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property UIImage *image;
 @property NSString *title;
 
+- (instancetype)initWithPlanet: (NSString*) planet;
+
 @end
 
 NS_ASSUME_NONNULL_END
