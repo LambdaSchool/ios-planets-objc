@@ -20,10 +20,23 @@
 }
 - (void)togglePlutoSwitch:(id)sender {
     [[NSUserDefaults standardUserDefaults] setBool:[sender isOn] forKey:@"shouldShowPluto"];
+    [self sendPlutoHasChangedNotification];
 }
 
 - (void)done:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)updateViews {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"logged_in"]) {
+        [_plutoSwitch setOn: YES];
+    } else {
+        [_plutoSwitch setOn: NO];
+    }
+}
+-(void) sendPlutoHasChangedNotification {
+    NSNotification *notification = [NSNotification notificationWithName:@"shouldShowPlutoChanged" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotification:notification];
 }
 
 @end

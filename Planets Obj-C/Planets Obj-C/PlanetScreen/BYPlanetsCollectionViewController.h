@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+
+@class BYPlanetController;
 
 @interface BYPlanetsCollectionViewController : UICollectionViewController
 
 @property IBOutlet UIBarButtonItem *settingButton;
 
+@property BYPlanetController *planetController;
 
 
 @end
 
-NS_ASSUME_NONNULL_END

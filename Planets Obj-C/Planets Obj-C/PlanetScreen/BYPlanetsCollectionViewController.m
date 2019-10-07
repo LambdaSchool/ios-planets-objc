@@ -7,6 +7,9 @@
 //
 
 #import "BYPlanetsCollectionViewController.h"
+#import "BYPlanetController.h"
+#import "BYPlanet.h"
+#import "BYPlanetCollectionViewCell.m"
 
 @interface BYPlanetsCollectionViewController ()
 
@@ -14,45 +17,53 @@
 
 @implementation BYPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"PlanetCell";
 
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+
+    if (self) {
+        _planetController = [[BYPlanetController alloc] init];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+        selector:@selector(refreshView)
+        name:@"shouldShowPlutoChanged"
+        object:nil];
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[self collectionView] reloadData];
 }
-*/
+- (void)refreshView {
+    [[self collectionView] reloadData];
+}
+
+- (void) dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+    
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+
+    return [[_planetController planets] count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    BYPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    BYPlanet *planet = [_planetController planets][indexPath.item];
+    cell.imageView.image = [planet image];
+    cell.label.text = [planet name];
+    
     
     // Configure the cell
     
