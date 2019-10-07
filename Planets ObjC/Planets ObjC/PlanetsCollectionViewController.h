@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlanetsCollectionViewController.h
 //  Planets ObjC
 //
 //  Created by Michael Redig on 10/7/19.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PlanetsCollectionViewController : UICollectionViewController
 
 
 @end
