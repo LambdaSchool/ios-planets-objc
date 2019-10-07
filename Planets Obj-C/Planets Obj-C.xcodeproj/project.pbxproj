@@ -17,6 +17,7 @@
 		75BCC31D234BE25C001CA01A /* BYPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC31C234BE25C001CA01A /* BYPlanetCollectionViewCell.m */; };
 		75BCC326234BE49B001CA01A /* BYPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC325234BE49B001CA01A /* BYPlanet.m */; };
 		75BCC329234BE74F001CA01A /* BYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC328234BE74F001CA01A /* BYSettingViewController.m */; };
+		75BCC32C234BE9B0001CA01A /* BYPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BCC32B234BE9B0001CA01A /* BYPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		75BCC325234BE49B001CA01A /* BYPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYPlanet.m; sourceTree = "<group>"; };
 		75BCC327234BE74F001CA01A /* BYSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYSettingViewController.h; sourceTree = "<group>"; };
 		75BCC328234BE74F001CA01A /* BYSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYSettingViewController.m; sourceTree = "<group>"; };
+		75BCC32A234BE9B0001CA01A /* BYPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BYPlanetController.h; sourceTree = "<group>"; };
+		75BCC32B234BE9B0001CA01A /* BYPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BYPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				75BCC325234BE49B001CA01A /* BYPlanet.m */,
 				75BCC327234BE74F001CA01A /* BYSettingViewController.h */,
 				75BCC328234BE74F001CA01A /* BYSettingViewController.m */,
+				75BCC32A234BE9B0001CA01A /* BYPlanetController.h */,
+				75BCC32B234BE9B0001CA01A /* BYPlanetController.m */,
 			);
 			path = PlanetScreen;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			files = (
 				75BCC326234BE49B001CA01A /* BYPlanet.m in Sources */,
 				75BCC31D234BE25C001CA01A /* BYPlanetCollectionViewCell.m in Sources */,
+				75BCC32C234BE9B0001CA01A /* BYPlanetController.m in Sources */,
 				75BCC301234BE12F001CA01A /* AppDelegate.m in Sources */,
 				75BCC312234BE132001CA01A /* main.m in Sources */,
 				75BCC304234BE12F001CA01A /* SceneDelegate.m in Sources */,
