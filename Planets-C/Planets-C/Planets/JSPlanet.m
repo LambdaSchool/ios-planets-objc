@@ -7,7 +7,17 @@
 //
 
 #import "JSPlanet.h"
+#import <UIKit/UIKit.h>
 
 @implementation JSPlanet
+
+- (instancetype)initWithName:(NSString *)name {
+	self = [super init];
+	if (self != nil) {
+		_name = name.capitalizedString;
+		_image = [UIImage imageNamed:name];
+	}
+	return self;
+}
 
 @end
