@@ -41,22 +41,22 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1IN-SY-liU" customClass="JSPlanetCell">
-                                <rect key="frame" x="0.0" y="0.0" width="135" height="146"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="PlanetCell" id="1IN-SY-liU" customClass="JSPlanetCell">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nEb-SU-twZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="135" height="146"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="d2R-n3-iJj">
-                                            <rect key="frame" x="0.0" y="0.0" width="135" height="146"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="135" height="135"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gxa-nj-SCc">
-                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="125.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="114.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKi-uF-vtb">
-                                                    <rect key="frame" x="0.0" y="125.5" width="135" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="752" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKi-uF-vtb">
+                                                    <rect key="frame" x="0.0" y="114.5" width="135" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -71,9 +71,9 @@
                                         <constraint firstAttribute="trailing" secondItem="d2R-n3-iJj" secondAttribute="trailing" id="qaG-TA-fHu"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="135" height="146"/>
+                                <size key="customSize" width="135" height="135"/>
                                 <connections>
-                                    <outlet property="imageView" destination="gxa-nj-SCc" id="wZM-5k-Smt"/>
+                                    <outlet property="imageView" destination="gxa-nj-SCc" id="I36-Zm-dja"/>
                                     <outlet property="nameLbl" destination="hKi-uF-vtb" id="Lfs-UN-ZDz"/>
                                 </connections>
                             </collectionViewCell>

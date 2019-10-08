@@ -13,6 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface JSSettingsVC : UIViewController
 
 @property (weak, nonatomic) IBOutlet UISwitch *plutoSwitch;
+
+@property NSUserDefaults *defaults;
+@property (assign, nonatomic) BOOL isPlutoAPlanet;
+
 - (IBAction)doneBtnTapped:(id)sender;
 
 @end

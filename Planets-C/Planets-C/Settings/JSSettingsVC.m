@@ -8,6 +8,8 @@
 
 #import "JSSettingsVC.h"
 
+#define IncludePlutoKey @"IncludePluto"
+
 @interface JSSettingsVC ()
 
 @end
@@ -16,19 +18,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.defaults = [NSUserDefaults standardUserDefaults];
+	self.plutoSwitch.on = [self.defaults objectForKey:IncludePlutoKey];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)doneBtnTapped:(id)sender {
+    [self.defaults setBool:self.plutoSwitch.isOn forKey:IncludePlutoKey];
+	
+	[self.navigationController popViewControllerAnimated:YES];
 }
 @end
