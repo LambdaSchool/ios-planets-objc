@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JSPlanetsController : NSObject
 
-@property
+@property (assign, nonatomic) NSArray *planets;
+@property (assign, nonatomic) bool isPlutoAPlanet;
 
 @end
 

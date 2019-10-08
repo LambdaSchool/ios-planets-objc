@@ -7,7 +7,13 @@
 //
 
 #import "JSPlanetCell.h"
+#import "JSPlanet.h"
 
 @implementation JSPlanetCell
+
+- (void)configCell:(JSPlanet *)planet {
+	self.imageView.image = planet.image;
+	self.nameLbl.text = planet.name;
+}
 
 @end

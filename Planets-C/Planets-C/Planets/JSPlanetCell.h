@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class JSPlanet;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JSPlanetCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *nameLbl;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UILabel *nameLbl;
+
+-(void)configCell:(JSPlanet *)planet;
 
 @end
 
