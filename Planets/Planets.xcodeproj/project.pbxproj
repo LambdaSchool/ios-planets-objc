@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D667E446236A6AE100BA73EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E445236A6AE100BA73EA /* AppDelegate.m */; };
+		D667E449236A6AE100BA73EA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E448236A6AE100BA73EA /* SceneDelegate.m */; };
+		D667E44F236A6AE100BA73EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D667E44D236A6AE100BA73EA /* Main.storyboard */; };
+		D667E451236A6AE200BA73EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D667E450236A6AE200BA73EA /* Assets.xcassets */; };
+		D667E454236A6AE200BA73EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D667E452236A6AE200BA73EA /* LaunchScreen.storyboard */; };
+		D667E457236A6AE200BA73EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E456236A6AE200BA73EA /* main.m */; };
+		D667E45F236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E45E236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m */; };
+		D667E462236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E461236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m */; };
+		D667E46A236A6FA400BA73EA /* MJSPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E469236A6FA400BA73EA /* MJSPlanet.m */; };
+		D667E46D236A6FBA00BA73EA /* MJSPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E46C236A6FBA00BA73EA /* MJSPlanetController.m */; };
+		D6DB102D236A92910033C126 /* MJSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DB102C236A92910033C126 /* MJSSettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D667E441236A6AE100BA73EA /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D667E444236A6AE100BA73EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D667E445236A6AE100BA73EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D667E447236A6AE100BA73EA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D667E448236A6AE100BA73EA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D667E44E236A6AE100BA73EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D667E450236A6AE200BA73EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D667E453236A6AE200BA73EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D667E455236A6AE200BA73EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D667E456236A6AE200BA73EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D667E45D236A6C6400BA73EA /* MJSPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		D667E45E236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		D667E460236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSPlanetsCollectionViewCell.h; sourceTree = "<group>"; };
+		D667E461236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSPlanetsCollectionViewCell.m; sourceTree = "<group>"; };
+		D667E468236A6FA400BA73EA /* MJSPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSPlanet.h; sourceTree = "<group>"; };
+		D667E469236A6FA400BA73EA /* MJSPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSPlanet.m; sourceTree = "<group>"; };
+		D667E46B236A6FBA00BA73EA /* MJSPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSPlanetController.h; sourceTree = "<group>"; };
+		D667E46C236A6FBA00BA73EA /* MJSPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSPlanetController.m; sourceTree = "<group>"; };
+		D6DB102B236A92910033C126 /* MJSSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSSettingsViewController.h; sourceTree = "<group>"; };
+		D6DB102C236A92910033C126 /* MJSSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSSettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D667E43E236A6AE100BA73EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D667E438236A6AE100BA73EA = {
+			isa = PBXGroup;
+			children = (
+				D667E443236A6AE100BA73EA /* Planets */,
+				D667E442236A6AE100BA73EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D667E442236A6AE100BA73EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D667E441236A6AE100BA73EA /* Planets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D667E443236A6AE100BA73EA /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				D667E444236A6AE100BA73EA /* AppDelegate.h */,
+				D667E445236A6AE100BA73EA /* AppDelegate.m */,
+				D667E447236A6AE100BA73EA /* SceneDelegate.h */,
+				D667E448236A6AE100BA73EA /* SceneDelegate.m */,
+				D667E463236A6EC600BA73EA /* Models */,
+				D667E464236A6ED300BA73EA /* Model Controllers */,
+				D667E466236A6EE700BA73EA /* Views */,
+				D667E465236A6EDB00BA73EA /* View Controllers */,
+				D667E467236A6EEC00BA73EA /* Storyboards */,
+				D667E450236A6AE200BA73EA /* Assets.xcassets */,
+				D667E455236A6AE200BA73EA /* Info.plist */,
+				D667E456236A6AE200BA73EA /* main.m */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		D667E463236A6EC600BA73EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D667E468236A6FA400BA73EA /* MJSPlanet.h */,
+				D667E469236A6FA400BA73EA /* MJSPlanet.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D667E464236A6ED300BA73EA /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D667E46B236A6FBA00BA73EA /* MJSPlanetController.h */,
+				D667E46C236A6FBA00BA73EA /* MJSPlanetController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		D667E465236A6EDB00BA73EA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D667E45D236A6C6400BA73EA /* MJSPlanetsCollectionViewController.h */,
+				D667E45E236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m */,
+				D6DB102B236A92910033C126 /* MJSSettingsViewController.h */,
+				D6DB102C236A92910033C126 /* MJSSettingsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D667E466236A6EE700BA73EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D667E460236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.h */,
+				D667E461236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D667E467236A6EEC00BA73EA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D667E44D236A6AE100BA73EA /* Main.storyboard */,
+				D667E452236A6AE200BA73EA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D667E440236A6AE100BA73EA /* Planets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D667E45A236A6AE200BA73EA /* Build configuration list for PBXNativeTarget "Planets" */;
+			buildPhases = (
+				D667E43D236A6AE100BA73EA /* Sources */,
+				D667E43E236A6AE100BA73EA /* Frameworks */,
+				D667E43F236A6AE100BA73EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Planets;
+			productName = Planets;
+			productReference = D667E441236A6AE100BA73EA /* Planets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D667E439236A6AE100BA73EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MJS;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Michael Stoffer";
+				TargetAttributes = {
+					D667E440236A6AE100BA73EA = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = D667E43C236A6AE100BA73EA /* Build configuration list for PBXProject "Planets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D667E438236A6AE100BA73EA;
+			productRefGroup = D667E442236A6AE100BA73EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D667E440236A6AE100BA73EA /* Planets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D667E43F236A6AE100BA73EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D667E454236A6AE200BA73EA /* LaunchScreen.storyboard in Resources */,
+				D667E451236A6AE200BA73EA /* Assets.xcassets in Resources */,
+				D667E44F236A6AE100BA73EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D667E43D236A6AE100BA73EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6DB102D236A92910033C126 /* MJSSettingsViewController.m in Sources */,
+				D667E446236A6AE100BA73EA /* AppDelegate.m in Sources */,
+				D667E46D236A6FBA00BA73EA /* MJSPlanetController.m in Sources */,
+				D667E457236A6AE200BA73EA /* main.m in Sources */,
+				D667E46A236A6FA400BA73EA /* MJSPlanet.m in Sources */,
+				D667E449236A6AE100BA73EA /* SceneDelegate.m in Sources */,
+				D667E462236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m in Sources */,
+				D667E45F236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D667E44D236A6AE100BA73EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D667E44E236A6AE100BA73EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D667E452236A6AE200BA73EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D667E453236A6AE200BA73EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D667E458236A6AE200BA73EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D667E459236A6AE200BA73EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D667E45B236A6AE200BA73EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XVDLP5XYQ;
+				INFOPLIST_FILE = Planets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelstoffer.Planets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D667E45C236A6AE200BA73EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XVDLP5XYQ;
+				INFOPLIST_FILE = Planets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.michaelstoffer.Planets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D667E43C236A6AE100BA73EA /* Build configuration list for PBXProject "Planets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D667E458236A6AE200BA73EA /* Debug */,
+				D667E459236A6AE200BA73EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D667E45A236A6AE200BA73EA /* Build configuration list for PBXNativeTarget "Planets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D667E45B236A6AE200BA73EA /* Debug */,
+				D667E45C236A6AE200BA73EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D667E439236A6AE100BA73EA /* Project object */;
+}
