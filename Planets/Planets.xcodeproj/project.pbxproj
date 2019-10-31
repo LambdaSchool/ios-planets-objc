@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		D667E446236A6AE100BA73EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E445236A6AE100BA73EA /* AppDelegate.m */; };
 		D667E449236A6AE100BA73EA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E448236A6AE100BA73EA /* SceneDelegate.m */; };
-		D667E44C236A6AE100BA73EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E44B236A6AE100BA73EA /* ViewController.m */; };
 		D667E44F236A6AE100BA73EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D667E44D236A6AE100BA73EA /* Main.storyboard */; };
 		D667E451236A6AE200BA73EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D667E450236A6AE200BA73EA /* Assets.xcassets */; };
 		D667E454236A6AE200BA73EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D667E452236A6AE200BA73EA /* LaunchScreen.storyboard */; };
 		D667E457236A6AE200BA73EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E456236A6AE200BA73EA /* main.m */; };
+		D667E45F236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E45E236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m */; };
+		D667E462236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E461236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m */; };
+		D667E46A236A6FA400BA73EA /* MJSPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E469236A6FA400BA73EA /* MJSPlanet.m */; };
+		D667E46D236A6FBA00BA73EA /* MJSPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = D667E46C236A6FBA00BA73EA /* MJSPlanetController.m */; };
+		D6DB102D236A92910033C126 /* MJSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DB102C236A92910033C126 /* MJSSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +26,21 @@
 		D667E445236A6AE100BA73EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D667E447236A6AE100BA73EA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		D667E448236A6AE100BA73EA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		D667E44A236A6AE100BA73EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D667E44B236A6AE100BA73EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D667E44E236A6AE100BA73EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D667E450236A6AE200BA73EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D667E453236A6AE200BA73EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D667E455236A6AE200BA73EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D667E456236A6AE200BA73EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D667E45D236A6C6400BA73EA /* MJSPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		D667E45E236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		D667E460236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSPlanetsCollectionViewCell.h; sourceTree = "<group>"; };
+		D667E461236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSPlanetsCollectionViewCell.m; sourceTree = "<group>"; };
+		D667E468236A6FA400BA73EA /* MJSPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSPlanet.h; sourceTree = "<group>"; };
+		D667E469236A6FA400BA73EA /* MJSPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSPlanet.m; sourceTree = "<group>"; };
+		D667E46B236A6FBA00BA73EA /* MJSPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSPlanetController.h; sourceTree = "<group>"; };
+		D667E46C236A6FBA00BA73EA /* MJSPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSPlanetController.m; sourceTree = "<group>"; };
+		D6DB102B236A92910033C126 /* MJSSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJSSettingsViewController.h; sourceTree = "<group>"; };
+		D6DB102C236A92910033C126 /* MJSSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJSSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +77,63 @@
 				D667E445236A6AE100BA73EA /* AppDelegate.m */,
 				D667E447236A6AE100BA73EA /* SceneDelegate.h */,
 				D667E448236A6AE100BA73EA /* SceneDelegate.m */,
-				D667E44A236A6AE100BA73EA /* ViewController.h */,
-				D667E44B236A6AE100BA73EA /* ViewController.m */,
-				D667E44D236A6AE100BA73EA /* Main.storyboard */,
+				D667E463236A6EC600BA73EA /* Models */,
+				D667E464236A6ED300BA73EA /* Model Controllers */,
+				D667E466236A6EE700BA73EA /* Views */,
+				D667E465236A6EDB00BA73EA /* View Controllers */,
+				D667E467236A6EEC00BA73EA /* Storyboards */,
 				D667E450236A6AE200BA73EA /* Assets.xcassets */,
-				D667E452236A6AE200BA73EA /* LaunchScreen.storyboard */,
 				D667E455236A6AE200BA73EA /* Info.plist */,
 				D667E456236A6AE200BA73EA /* main.m */,
 			);
 			path = Planets;
+			sourceTree = "<group>";
+		};
+		D667E463236A6EC600BA73EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D667E468236A6FA400BA73EA /* MJSPlanet.h */,
+				D667E469236A6FA400BA73EA /* MJSPlanet.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D667E464236A6ED300BA73EA /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D667E46B236A6FBA00BA73EA /* MJSPlanetController.h */,
+				D667E46C236A6FBA00BA73EA /* MJSPlanetController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		D667E465236A6EDB00BA73EA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D667E45D236A6C6400BA73EA /* MJSPlanetsCollectionViewController.h */,
+				D667E45E236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m */,
+				D6DB102B236A92910033C126 /* MJSSettingsViewController.h */,
+				D6DB102C236A92910033C126 /* MJSSettingsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D667E466236A6EE700BA73EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D667E460236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.h */,
+				D667E461236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D667E467236A6EEC00BA73EA /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D667E44D236A6AE100BA73EA /* Main.storyboard */,
+				D667E452236A6AE200BA73EA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +162,7 @@
 		D667E439236A6AE100BA73EA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MJS;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Michael Stoffer";
 				TargetAttributes = {
@@ -146,10 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D667E44C236A6AE100BA73EA /* ViewController.m in Sources */,
+				D6DB102D236A92910033C126 /* MJSSettingsViewController.m in Sources */,
 				D667E446236A6AE100BA73EA /* AppDelegate.m in Sources */,
+				D667E46D236A6FBA00BA73EA /* MJSPlanetController.m in Sources */,
 				D667E457236A6AE200BA73EA /* main.m in Sources */,
+				D667E46A236A6FA400BA73EA /* MJSPlanet.m in Sources */,
 				D667E449236A6AE100BA73EA /* SceneDelegate.m in Sources */,
+				D667E462236A6EBA00BA73EA /* MJSPlanetsCollectionViewCell.m in Sources */,
+				D667E45F236A6C6400BA73EA /* MJSPlanetsCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

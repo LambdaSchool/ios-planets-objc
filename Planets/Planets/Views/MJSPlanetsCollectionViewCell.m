@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  MJSPlanetsCollectionViewCell.m
 //  Planets
 //
 //  Created by Michael Stoffer on 10/30/19.
 //  Copyright © 2019 Michael Stoffer. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MJSPlanetsCollectionViewCell.h"
 
-@interface ViewController : UIViewController
-
+@implementation MJSPlanetsCollectionViewCell
 
 @end
-
