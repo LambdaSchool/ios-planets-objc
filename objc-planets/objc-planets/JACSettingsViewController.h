@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface JACSettingsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISwitch *isPlutoPlanetSwitch;
 
 @end

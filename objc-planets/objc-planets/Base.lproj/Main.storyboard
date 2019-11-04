@@ -99,7 +99,7 @@
         <!--Settings-->
         <scene sceneID="F0u-Bb-917">
             <objects>
-                <viewController id="kUT-kE-HXA" sceneMemberID="viewController">
+                <viewController id="kUT-kE-HXA" customClass="JACSettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d6p-mj-Ewj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ult-pB-HGM"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="VWb-6r-as6"/>
+                    <navigationItem key="navigationItem" title="Settings" id="VWb-6r-as6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="H5W-PN-X2M">
+                            <connections>
+                                <action selector="saveTapped:" destination="kUT-kE-HXA" id="KhM-ZT-XSb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="isPlutoPlanetSwitch" destination="5y8-ML-sTw" id="WoI-C4-b0r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vxc-nG-rHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

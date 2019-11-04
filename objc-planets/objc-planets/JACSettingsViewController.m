@@ -19,6 +19,20 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)saveTapped:(id)sender {
+    NSNumber *isPlutoPlanet;
+    if ([_isPlutoPlanetSwitch isOn]) {
+        isPlutoPlanet = [NSNumber numberWithInt:1];
+    } else {
+        isPlutoPlanet = [NSNumber numberWithInt:0];
+    }
+    
+    NSMutableDictionary *appDefaults = [NSMutableDictionary dictionary];
+    [appDefaults setObject:isPlutoPlanet forKey:@"isPlutoPlanet"];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+    [self.navigationController popViewControllerAnimated:true];
+}
+
 /*
 #pragma mark - Navigation
 

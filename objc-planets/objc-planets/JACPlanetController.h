@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "JACPlanet.h"
-@interface JACPlanetController : NSObject
+@interface JACPlanetController : NSObject {
+    bool isPlutoPlanet;
+}
 @property NSArray *planets;
-@property NSArray *planetsWithPluto;
+@property (nonatomic) bool isPlutoPlanet;
 
 @end
