@@ -73,27 +73,67 @@
 		0E1446B22370B427001036EC /* objc-planets */ = {
 			isa = PBXGroup;
 			children = (
+				0E1446DE2370DB59001036EC /* Resources */,
+				0E1446DF2370DB70001036EC /* View Controllers */,
+				0E1446E02370DB7C001036EC /* Models */,
+				0E1446E12370DB86001036EC /* Model Controllers */,
+				0E1446E22370DB90001036EC /* Views */,
+			);
+			path = "objc-planets";
+			sourceTree = "<group>";
+		};
+		0E1446DE2370DB59001036EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				0E1446B32370B427001036EC /* AppDelegate.h */,
 				0E1446B42370B427001036EC /* AppDelegate.m */,
 				0E1446B62370B427001036EC /* SceneDelegate.h */,
 				0E1446B72370B427001036EC /* SceneDelegate.m */,
-				0E1446DB2370C720001036EC /* JACSettingsViewController.h */,
-				0E1446DC2370C720001036EC /* JACSettingsViewController.m */,
-				0E1446CF2370BD09001036EC /* JACPlanetsCollectionViewController.h */,
-				0E1446D02370BD09001036EC /* JACPlanetsCollectionViewController.m */,
-				0E1446D22370BD29001036EC /* JACPlanet.h */,
-				0E1446D32370BD29001036EC /* JACPlanet.m */,
-				0E1446D82370BFFD001036EC /* JACPlanetController.h */,
-				0E1446D92370BFFD001036EC /* JACPlanetController.m */,
-				0E1446D52370BF5C001036EC /* JACPlanetCollectionViewCell.h */,
-				0E1446D62370BF5D001036EC /* JACPlanetCollectionViewCell.m */,
 				0E1446BC2370B427001036EC /* Main.storyboard */,
 				0E1446BF2370B42A001036EC /* Assets.xcassets */,
 				0E1446C12370B42A001036EC /* LaunchScreen.storyboard */,
 				0E1446C42370B42A001036EC /* Info.plist */,
 				0E1446C52370B42A001036EC /* main.m */,
 			);
-			path = "objc-planets";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E1446DF2370DB70001036EC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E1446DB2370C720001036EC /* JACSettingsViewController.h */,
+				0E1446DC2370C720001036EC /* JACSettingsViewController.m */,
+				0E1446CF2370BD09001036EC /* JACPlanetsCollectionViewController.h */,
+				0E1446D02370BD09001036EC /* JACPlanetsCollectionViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0E1446E02370DB7C001036EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E1446D22370BD29001036EC /* JACPlanet.h */,
+				0E1446D32370BD29001036EC /* JACPlanet.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0E1446E12370DB86001036EC /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E1446D82370BFFD001036EC /* JACPlanetController.h */,
+				0E1446D92370BFFD001036EC /* JACPlanetController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		0E1446E22370DB90001036EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E1446D52370BF5C001036EC /* JACPlanetCollectionViewCell.h */,
+				0E1446D62370BF5D001036EC /* JACPlanetCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
