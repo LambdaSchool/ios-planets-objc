@@ -17,7 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _isPlutoPlanetSwitch.selected = YES;
+    NSNumber *isPlanet = [[NSUserDefaults standardUserDefaults] objectForKey:@"isPlutoPlanet"];
+    if (isPlanet == [NSNumber numberWithInt:1]) {
+        [_isPlutoPlanetSwitch setOn:YES animated:YES];
+    } else {
+        [_isPlutoPlanetSwitch setOn:false animated:YES];
+    }
 }
 
 - (IBAction)saveTapped:(id)sender {

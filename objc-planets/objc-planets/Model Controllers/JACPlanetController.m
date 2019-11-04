@@ -12,7 +12,7 @@
 @implementation JACPlanetController
 
 @synthesize isPlutoPlanet;
--(bool)isPlutoPlanet {
+- (bool)isPlutoPlanet  {
     NSNumber *isPlanet = [[NSUserDefaults standardUserDefaults] objectForKey:@"isPlutoPlanet"];
     if (isPlanet == [NSNumber numberWithInt:1]) {
         return YES;
