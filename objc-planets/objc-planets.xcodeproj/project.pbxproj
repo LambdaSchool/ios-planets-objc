@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		0E1446B52370B427001036EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1446B42370B427001036EC /* AppDelegate.m */; };
 		0E1446B82370B427001036EC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1446B72370B427001036EC /* SceneDelegate.m */; };
-		0E1446BB2370B427001036EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1446BA2370B427001036EC /* ViewController.m */; };
 		0E1446BE2370B427001036EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1446BC2370B427001036EC /* Main.storyboard */; };
 		0E1446C02370B42A001036EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E1446BF2370B42A001036EC /* Assets.xcassets */; };
 		0E1446C32370B42A001036EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E1446C12370B42A001036EC /* LaunchScreen.storyboard */; };
 		0E1446C62370B42A001036EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1446C52370B42A001036EC /* main.m */; };
+		0E1446D12370BD09001036EC /* JACPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1446D02370BD09001036EC /* JACPlanetsCollectionViewController.m */; };
+		0E1446D42370BD29001036EC /* JACPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1446D32370BD29001036EC /* JACPlanet.m */; };
+		0E1446D72370BF5D001036EC /* JACPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1446D62370BF5D001036EC /* JACPlanetCollectionViewCell.m */; };
+		0E1446DA2370BFFD001036EC /* JACPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1446D92370BFFD001036EC /* JACPlanetController.m */; };
+		0E1446DD2370C720001036EC /* JACSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1446DC2370C720001036EC /* JACSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +26,21 @@
 		0E1446B42370B427001036EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0E1446B62370B427001036EC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		0E1446B72370B427001036EC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		0E1446B92370B427001036EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0E1446BA2370B427001036EC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0E1446BD2370B427001036EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E1446BF2370B42A001036EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E1446C22370B42A001036EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E1446C42370B42A001036EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E1446C52370B42A001036EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E1446CF2370BD09001036EC /* JACPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		0E1446D02370BD09001036EC /* JACPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		0E1446D22370BD29001036EC /* JACPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACPlanet.h; sourceTree = "<group>"; };
+		0E1446D32370BD29001036EC /* JACPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACPlanet.m; sourceTree = "<group>"; };
+		0E1446D52370BF5C001036EC /* JACPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		0E1446D62370BF5D001036EC /* JACPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		0E1446D82370BFFD001036EC /* JACPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACPlanetController.h; sourceTree = "<group>"; };
+		0E1446D92370BFFD001036EC /* JACPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACPlanetController.m; sourceTree = "<group>"; };
+		0E1446DB2370C720001036EC /* JACSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACSettingsViewController.h; sourceTree = "<group>"; };
+		0E1446DC2370C720001036EC /* JACSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +77,16 @@
 				0E1446B42370B427001036EC /* AppDelegate.m */,
 				0E1446B62370B427001036EC /* SceneDelegate.h */,
 				0E1446B72370B427001036EC /* SceneDelegate.m */,
-				0E1446B92370B427001036EC /* ViewController.h */,
-				0E1446BA2370B427001036EC /* ViewController.m */,
+				0E1446DB2370C720001036EC /* JACSettingsViewController.h */,
+				0E1446DC2370C720001036EC /* JACSettingsViewController.m */,
+				0E1446CF2370BD09001036EC /* JACPlanetsCollectionViewController.h */,
+				0E1446D02370BD09001036EC /* JACPlanetsCollectionViewController.m */,
+				0E1446D22370BD29001036EC /* JACPlanet.h */,
+				0E1446D32370BD29001036EC /* JACPlanet.m */,
+				0E1446D82370BFFD001036EC /* JACPlanetController.h */,
+				0E1446D92370BFFD001036EC /* JACPlanetController.m */,
+				0E1446D52370BF5C001036EC /* JACPlanetCollectionViewCell.h */,
+				0E1446D62370BF5D001036EC /* JACPlanetCollectionViewCell.m */,
 				0E1446BC2370B427001036EC /* Main.storyboard */,
 				0E1446BF2370B42A001036EC /* Assets.xcassets */,
 				0E1446C12370B42A001036EC /* LaunchScreen.storyboard */,
@@ -146,10 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1446BB2370B427001036EC /* ViewController.m in Sources */,
 				0E1446B52370B427001036EC /* AppDelegate.m in Sources */,
 				0E1446C62370B42A001036EC /* main.m in Sources */,
+				0E1446DA2370BFFD001036EC /* JACPlanetController.m in Sources */,
 				0E1446B82370B427001036EC /* SceneDelegate.m in Sources */,
+				0E1446DD2370C720001036EC /* JACSettingsViewController.m in Sources */,
+				0E1446D72370BF5D001036EC /* JACPlanetCollectionViewCell.m in Sources */,
+				0E1446D42370BD29001036EC /* JACPlanet.m in Sources */,
+				0E1446D12370BD09001036EC /* JACPlanetsCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

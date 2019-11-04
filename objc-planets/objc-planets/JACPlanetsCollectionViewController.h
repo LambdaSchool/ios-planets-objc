@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  JACPlanetsCollectionViewController.h
 //  objc-planets
 //
 //  Created by Jordan Christensen on 11/5/19.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface JACPlanetsCollectionViewController : UICollectionViewController
 
 @end
-
