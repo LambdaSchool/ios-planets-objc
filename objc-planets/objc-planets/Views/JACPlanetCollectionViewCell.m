@@ -13,4 +13,5 @@
     [_planetName setText:[planet.name capitalizedString]];
     [_planetImageView setImage:[UIImage imageNamed:planet.name]];
 }
+
 @end

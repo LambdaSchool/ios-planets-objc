@@ -15,7 +15,7 @@
 
 @implementation JACPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"PanetCell";
+static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -28,8 +28,6 @@ static NSString * const reuseIdentifier = @"PanetCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self.collectionView registerClass:[JACPlanetCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
