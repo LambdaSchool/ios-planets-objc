@@ -12,6 +12,6 @@
 @property NSArray *planets;
 @property (nonatomic) bool isPlutoPlanet;
 
-- (bool)isPlutoPlanet;
+-(void)updateViews;
 
 @end

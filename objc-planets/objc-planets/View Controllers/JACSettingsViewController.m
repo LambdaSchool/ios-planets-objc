@@ -17,8 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSNumber *isPlanet = [[NSUserDefaults standardUserDefaults] objectForKey:@"isPlutoPlanet"];
-    if (isPlanet == [NSNumber numberWithInt:1]) {
+    if([[NSUserDefaults standardUserDefaults] boolForKey:@"isPlutoPlanet"]) {
         [_isPlutoPlanetSwitch setOn:YES animated:YES];
     } else {
         [_isPlutoPlanetSwitch setOn:false animated:YES];
@@ -26,27 +25,13 @@
 }
 
 - (IBAction)saveTapped:(id)sender {
-    NSNumber *isPlutoPlanet;
     if ([_isPlutoPlanetSwitch isOn]) {
-        isPlutoPlanet = [NSNumber numberWithInt:1];
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"isPlutoPlanet"];
     } else {
-        isPlutoPlanet = [NSNumber numberWithInt:0];
+        [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"isPlutoPlanet"];
     }
     
-    NSMutableDictionary *appDefaults = [NSMutableDictionary dictionary];
-    [appDefaults setObject:isPlutoPlanet forKey:@"isPlutoPlanet"];
-    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
     [self.navigationController popViewControllerAnimated:true];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

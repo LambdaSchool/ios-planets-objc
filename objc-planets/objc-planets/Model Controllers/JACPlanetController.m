@@ -12,42 +12,37 @@
 @implementation JACPlanetController
 
 @synthesize isPlutoPlanet;
-- (bool)isPlutoPlanet  {
-    NSNumber *isPlanet = [[NSUserDefaults standardUserDefaults] objectForKey:@"isPlutoPlanet"];
-    if (isPlanet == [NSNumber numberWithInt:1]) {
-        return YES;
+-(void) updateViews {
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:@"isPlutoPlanet"]) {
+        _planets = [[NSArray alloc] initWithObjects:
+        [[JACPlanet alloc] initWithName:@"earth"],
+        [[JACPlanet alloc] initWithName:@"jupiter"],
+        [[JACPlanet alloc] initWithName:@"mars"],
+        [[JACPlanet alloc] initWithName:@"mercury"],
+        [[JACPlanet alloc] initWithName:@"neptune"],
+        [[JACPlanet alloc] initWithName:@"saturn"],
+        [[JACPlanet alloc] initWithName:@"uranus"],
+        [[JACPlanet alloc] initWithName:@"venus"],
+        [[JACPlanet alloc] initWithName:@"pluto"],
+        nil];
     } else {
-        return false;
+        _planets = [[NSArray alloc] initWithObjects:
+        [[JACPlanet alloc] initWithName:@"earth"],
+        [[JACPlanet alloc] initWithName:@"jupiter"],
+        [[JACPlanet alloc] initWithName:@"mars"],
+        [[JACPlanet alloc] initWithName:@"mercury"],
+        [[JACPlanet alloc] initWithName:@"neptune"],
+        [[JACPlanet alloc] initWithName:@"saturn"],
+        [[JACPlanet alloc] initWithName:@"uranus"],
+        [[JACPlanet alloc] initWithName:@"venus"],
+        nil];
     }
 }
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-        if (isPlutoPlanet) {
-        _planets = [[NSArray alloc] initWithObjects:
-                    [[JACPlanet alloc] initWithName:@"earth"],
-                    [[JACPlanet alloc] initWithName:@"jupiter"],
-                    [[JACPlanet alloc] initWithName:@"mars"],
-                    [[JACPlanet alloc] initWithName:@"mercury"],
-                    [[JACPlanet alloc] initWithName:@"neptune"],
-                    [[JACPlanet alloc] initWithName:@"saturn"],
-                    [[JACPlanet alloc] initWithName:@"uranus"],
-                    [[JACPlanet alloc] initWithName:@"venus"],
-                    [[JACPlanet alloc] initWithName:@"pluto"],
-                    nil];
-        } else {
-        _planets = [[NSArray alloc] initWithObjects:
-                    [[JACPlanet alloc] initWithName:@"earth"],
-                    [[JACPlanet alloc] initWithName:@"jupiter"],
-                    [[JACPlanet alloc] initWithName:@"mars"],
-                    [[JACPlanet alloc] initWithName:@"mercury"],
-                    [[JACPlanet alloc] initWithName:@"neptune"],
-                    [[JACPlanet alloc] initWithName:@"saturn"],
-                    [[JACPlanet alloc] initWithName:@"uranus"],
-                    [[JACPlanet alloc] initWithName:@"venus"],
-                    nil];
-        }
+        [self updateViews];
     }
     return self;
 }

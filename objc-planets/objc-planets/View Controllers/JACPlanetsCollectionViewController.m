@@ -34,6 +34,7 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     [super viewWillAppear:animated];
     
     [self.collectionView reloadData];
+    _controller = [[JACPlanetController alloc] init];
 }
 
 #pragma mark <UICollectionViewDataSource>
