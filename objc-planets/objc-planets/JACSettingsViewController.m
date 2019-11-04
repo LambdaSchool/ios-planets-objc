@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    _isPlutoPlanetSwitch.selected = YES;
 }
 
 - (IBAction)saveTapped:(id)sender {

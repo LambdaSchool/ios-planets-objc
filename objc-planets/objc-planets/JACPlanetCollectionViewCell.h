@@ -10,7 +10,7 @@
 #import "JACPlanet.h"
 
 @interface JACPlanetCollectionViewCell : UICollectionViewCell
-@property JACPlanet *planet;
+-(void)updateViews:(JACPlanet *)planet;
 
 @property (weak, nonatomic) IBOutlet UIImageView *planetImageView;
 @property (weak, nonatomic) IBOutlet UILabel *planetName;

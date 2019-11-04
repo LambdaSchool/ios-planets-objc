@@ -29,7 +29,7 @@ static NSString * const reuseIdentifier = @"PanetCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    [self.collectionView registerClass:[JACPlanetCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -52,7 +52,7 @@ static NSString * const reuseIdentifier = @"PanetCell";
         cell = [nib objectAtIndex:0];
     }
     
-    cell.planet = [self.controller.planets objectAtIndex:[indexPath row]];
+    [cell updateViews:[self.controller.planets objectAtIndex:[indexPath row]]];
     
     return cell;
 }
