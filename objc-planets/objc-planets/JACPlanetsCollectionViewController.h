@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JACPlanetController.h"
 
 @interface JACPlanetsCollectionViewController : UICollectionViewController
+@property JACPlanetController *controller;
 
 @end
