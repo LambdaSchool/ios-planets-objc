@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		77B27A142370F0D300A9B68F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A132370F0D300A9B68F /* AppDelegate.m */; };
 		77B27A172370F0D300A9B68F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A162370F0D300A9B68F /* SceneDelegate.m */; };
-		77B27A1A2370F0D300A9B68F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A192370F0D300A9B68F /* ViewController.m */; };
 		77B27A1D2370F0D300A9B68F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B27A1B2370F0D300A9B68F /* Main.storyboard */; };
 		77B27A1F2370F0D400A9B68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77B27A1E2370F0D400A9B68F /* Assets.xcassets */; };
 		77B27A222370F0D400A9B68F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77B27A202370F0D400A9B68F /* LaunchScreen.storyboard */; };
 		77B27A252370F0D400A9B68F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A242370F0D400A9B68F /* main.m */; };
+		77B27A302371C3B100A9B68F /* cdbPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A2F2371C3B100A9B68F /* cdbPlanetsCollectionViewController.m */; };
+		77B27A342371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A332371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.m */; };
+		77B27A3B2371C66B00A9B68F /* cdbPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A3A2371C66B00A9B68F /* cdbPlanetController.m */; };
+		77B27A3E2371C68900A9B68F /* cdbPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A3D2371C68900A9B68F /* cdbPlanet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +25,19 @@
 		77B27A132370F0D300A9B68F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		77B27A152370F0D300A9B68F /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		77B27A162370F0D300A9B68F /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		77B27A182370F0D300A9B68F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77B27A192370F0D300A9B68F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77B27A1C2370F0D300A9B68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77B27A1E2370F0D400A9B68F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77B27A212370F0D400A9B68F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77B27A232370F0D400A9B68F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77B27A242370F0D400A9B68F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77B27A2E2371C3B100A9B68F /* cdbPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdbPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		77B27A2F2371C3B100A9B68F /* cdbPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdbPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		77B27A322371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdbPlanetsCollectionViewCell.h; sourceTree = "<group>"; };
+		77B27A332371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdbPlanetsCollectionViewCell.m; sourceTree = "<group>"; };
+		77B27A392371C65900A9B68F /* cdbPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdbPlanetController.h; sourceTree = "<group>"; };
+		77B27A3A2371C66B00A9B68F /* cdbPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdbPlanetController.m; sourceTree = "<group>"; };
+		77B27A3C2371C67B00A9B68F /* cdbPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdbPlanet.h; sourceTree = "<group>"; };
+		77B27A3D2371C68900A9B68F /* cdbPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdbPlanet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +70,73 @@
 		77B27A112370F0D300A9B68F /* Planets-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				77B27A2C2371C21600A9B68F /* Storyboards */,
+				77B27A2D2371C22400A9B68F /* View Controllers */,
+				77B27A312371C3C400A9B68F /* Custom Views */,
+				77B27A362371C5E500A9B68F /* Model Controllers */,
+				77B27A352371C5DF00A9B68F /* Models */,
+				77B27A2B2371C20300A9B68F /* Resources */,
+			);
+			path = "Planets-ObjC";
+			sourceTree = "<group>";
+		};
+		77B27A2B2371C20300A9B68F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				77B27A242370F0D400A9B68F /* main.m */,
 				77B27A122370F0D300A9B68F /* AppDelegate.h */,
 				77B27A132370F0D300A9B68F /* AppDelegate.m */,
 				77B27A152370F0D300A9B68F /* SceneDelegate.h */,
 				77B27A162370F0D300A9B68F /* SceneDelegate.m */,
-				77B27A182370F0D300A9B68F /* ViewController.h */,
-				77B27A192370F0D300A9B68F /* ViewController.m */,
-				77B27A1B2370F0D300A9B68F /* Main.storyboard */,
 				77B27A1E2370F0D400A9B68F /* Assets.xcassets */,
-				77B27A202370F0D400A9B68F /* LaunchScreen.storyboard */,
 				77B27A232370F0D400A9B68F /* Info.plist */,
-				77B27A242370F0D400A9B68F /* main.m */,
 			);
-			path = "Planets-ObjC";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		77B27A2C2371C21600A9B68F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				77B27A1B2370F0D300A9B68F /* Main.storyboard */,
+				77B27A202370F0D400A9B68F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		77B27A2D2371C22400A9B68F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77B27A2E2371C3B100A9B68F /* cdbPlanetsCollectionViewController.h */,
+				77B27A2F2371C3B100A9B68F /* cdbPlanetsCollectionViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		77B27A312371C3C400A9B68F /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				77B27A322371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.h */,
+				77B27A332371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.m */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		77B27A352371C5DF00A9B68F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77B27A3C2371C67B00A9B68F /* cdbPlanet.h */,
+				77B27A3D2371C68900A9B68F /* cdbPlanet.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		77B27A362371C5E500A9B68F /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77B27A392371C65900A9B68F /* cdbPlanetController.h */,
+				77B27A3A2371C66B00A9B68F /* cdbPlanetController.m */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77B27A1A2370F0D300A9B68F /* ViewController.m in Sources */,
 				77B27A142370F0D300A9B68F /* AppDelegate.m in Sources */,
+				77B27A3B2371C66B00A9B68F /* cdbPlanetController.m in Sources */,
 				77B27A252370F0D400A9B68F /* main.m in Sources */,
+				77B27A3E2371C68900A9B68F /* cdbPlanet.m in Sources */,
+				77B27A302371C3B100A9B68F /* cdbPlanetsCollectionViewController.m in Sources */,
+				77B27A342371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.m in Sources */,
 				77B27A172370F0D300A9B68F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eja-vu-xrP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cdb Planets Collection View Controller-->
+        <scene sceneID="ZuZ-gn-FHL">
+            <objects>
+                <collectionViewController id="1Zu-83-23k" customClass="cdbPlanetsCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ufp-zb-02I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uUF-et-RZh">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="iAj-WS-mZd" customClass="cdbPlanetsCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="kCa-F7-dz3">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="125"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="puf-61-VMC">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="puf-61-VMC" secondAttribute="height" multiplier="1:1" id="NbF-2i-LsP"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6x-23-eEK">
+                                            <rect key="frame" x="4" y="104" width="92" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="e6x-23-eEK" firstAttribute="top" secondItem="puf-61-VMC" secondAttribute="bottom" constant="4" id="Exb-sj-cKM"/>
+                                        <constraint firstAttribute="trailing" secondItem="e6x-23-eEK" secondAttribute="trailing" constant="4" id="QQ6-fh-ZBd"/>
+                                        <constraint firstItem="puf-61-VMC" firstAttribute="leading" secondItem="kCa-F7-dz3" secondAttribute="leading" id="RvF-PP-1Bp"/>
+                                        <constraint firstAttribute="trailing" secondItem="puf-61-VMC" secondAttribute="trailing" id="Ts5-W7-CxJ"/>
+                                        <constraint firstItem="puf-61-VMC" firstAttribute="top" secondItem="kCa-F7-dz3" secondAttribute="top" id="XZe-Hn-lqz"/>
+                                        <constraint firstItem="e6x-23-eEK" firstAttribute="leading" secondItem="kCa-F7-dz3" secondAttribute="leading" constant="4" id="lpQ-iw-7pf"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="100" height="125"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="1Zu-83-23k" id="xyA-oU-Dtd"/>
+                            <outlet property="delegate" destination="1Zu-83-23k" id="2Oe-VY-ONZ"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Ca6-lM-4ro"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6vd-sV-xoo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1134.7826086956522" y="4.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0UD-cz-M8v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eja-vu-xrP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="khS-Nc-zod">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1Zu-83-23k" kind="relationship" relationship="rootViewController" id="oos-KP-5Nk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vI5-Jj-H5p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224.63768115942031" y="4.6875"/>
+        </scene>
+    </scenes>
+</document>
