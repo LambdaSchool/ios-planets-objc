@@ -6,8 +6,16 @@
 //  Copyright © 2019 Ciara Beitel. All rights reserved.
 //
 
-#ifndef cdbPlanet_h
-#define cdbPlanet_h
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@interface cdbPlanet : NSObject
+
+@property NSString *name;
+@property NSString *image;
+
+- (instancetype)initWithName:(NSString*)name image:(NSString*)image;
+
+@end
 
 
-#endif /* cdbPlanet_h */

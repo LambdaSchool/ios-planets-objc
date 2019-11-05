@@ -17,6 +17,7 @@
 		77B27A342371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A332371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.m */; };
 		77B27A3B2371C66B00A9B68F /* cdbPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A3A2371C66B00A9B68F /* cdbPlanetController.m */; };
 		77B27A3E2371C68900A9B68F /* cdbPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A3D2371C68900A9B68F /* cdbPlanet.m */; };
+		77B27A4A2372268C00A9B68F /* cdbSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B27A492372268C00A9B68F /* cdbSettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		77B27A3A2371C66B00A9B68F /* cdbPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdbPlanetController.m; sourceTree = "<group>"; };
 		77B27A3C2371C67B00A9B68F /* cdbPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdbPlanet.h; sourceTree = "<group>"; };
 		77B27A3D2371C68900A9B68F /* cdbPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdbPlanet.m; sourceTree = "<group>"; };
+		77B27A482372268C00A9B68F /* cdbSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cdbSettingsViewController.h; sourceTree = "<group>"; };
+		77B27A492372268C00A9B68F /* cdbSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cdbSettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 			children = (
 				77B27A2E2371C3B100A9B68F /* cdbPlanetsCollectionViewController.h */,
 				77B27A2F2371C3B100A9B68F /* cdbPlanetsCollectionViewController.m */,
+				77B27A482372268C00A9B68F /* cdbSettingsViewController.h */,
+				77B27A492372268C00A9B68F /* cdbSettingsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				77B27A302371C3B100A9B68F /* cdbPlanetsCollectionViewController.m in Sources */,
 				77B27A342371C3EB00A9B68F /* cdbPlanetsCollectionViewCell.m in Sources */,
 				77B27A172370F0D300A9B68F /* SceneDelegate.m in Sources */,
+				77B27A4A2372268C00A9B68F /* cdbSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
