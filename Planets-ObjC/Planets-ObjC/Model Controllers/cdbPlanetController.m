@@ -15,7 +15,8 @@
     self = [super init];
     if (self) {
         
-        _planets = @[[[cdbPlanet alloc] initWithName:@"Mercury" image:@"mercury"],
+        _planets = @[
+        [[cdbPlanet alloc] initWithName:@"Mercury" image:@"mercury"],
         [[cdbPlanet alloc] initWithName:@"Venus" image:@"venus"],
         [[cdbPlanet alloc] initWithName:@"Earth" image:@"earth"],
         [[cdbPlanet alloc] initWithName:@"Mars" image:@"mars"],

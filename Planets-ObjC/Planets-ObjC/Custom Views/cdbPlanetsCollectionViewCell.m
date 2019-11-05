@@ -10,9 +10,11 @@
 
 @implementation cdbPlanetsCollectionViewCell
 
-- (void)updateViews:(cdbPlanet *)planet {
-    [_planetImageView setImage:[UIImage imageNamed:planet.name]];
-    [_planetNameLabel setText:[planet.name capitalizedString]];
+- (void)updateViews {
+    if (self.planet != nil) {
+        self.planetImageView.image = self.planet.image;
+        self.planetNameLabel.text = self.planet.name;
+    }
 }
 
 @end

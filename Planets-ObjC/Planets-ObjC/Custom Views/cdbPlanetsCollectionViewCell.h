@@ -11,10 +11,11 @@
 
 @interface cdbPlanetsCollectionViewCell : UICollectionViewCell
 
+@property cdbPlanet *planet;
 @property (weak, nonatomic) IBOutlet UIImageView *planetImageView;
 @property (weak, nonatomic) IBOutlet UILabel *planetNameLabel;
 
-- (void)updateViews:(cdbPlanet *)planet;
+- (void)updateViews;
 
 @end
 

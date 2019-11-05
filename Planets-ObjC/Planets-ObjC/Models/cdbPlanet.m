@@ -6,16 +6,16 @@
 //  Copyright © 2019 Ciara Beitel. All rights reserved.
 //
 
-#import "cdbPlanet.h"
 #import <UIKit/UIKit.h>
+#import "cdbPlanet.h"
 
 @implementation cdbPlanet
 
-- (instancetype)initWithName:(NSString *)name image:(NSString *)image; {
+- (instancetype)initWithName:(NSString *)name image:(NSString *)image {
     self = [super init];
     if (self) {
         _name = name;
-        _image = image;
+        _image = [UIImage imageNamed:image];
     }
     return self;
 }

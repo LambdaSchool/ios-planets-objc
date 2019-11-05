@@ -12,7 +12,7 @@
 @interface cdbPlanet : NSObject
 
 @property NSString *name;
-@property NSString *image;
+@property UIImage *image;
 
 - (instancetype)initWithName:(NSString*)name image:(NSString*)image;
 

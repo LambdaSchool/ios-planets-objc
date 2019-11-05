@@ -9,6 +9,7 @@
 #import "cdbPlanetsCollectionViewController.h"
 #import "cdbPlanetController.h"
 #import "cdbPlanet.h"
+#import "cdbPlanetsCollectionViewCell.h"
 
 @interface cdbPlanetsCollectionViewController ()
 
@@ -16,7 +17,7 @@
 
 @implementation cdbPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+//static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
@@ -29,7 +30,12 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+//    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.collectionView reloadData];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -39,8 +45,10 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
+    cdbPlanetsCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PlanetCell" forIndexPath:indexPath];
     cdbPlanet *planet = [self.planetController.planets objectAtIndex:indexPath.row];
+    cell.planet = planet;
+    [cell updateViews];
     return cell;
 }
 
