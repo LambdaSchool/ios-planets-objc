@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "cdbPlanet.h"
 
 @interface cdbPlanetsCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *planetImageView;
+@property (weak, nonatomic) IBOutlet UILabel *planetNameLabel;
+
+- (void)updateViews:(cdbPlanet *)planet;
 
 @end
 
