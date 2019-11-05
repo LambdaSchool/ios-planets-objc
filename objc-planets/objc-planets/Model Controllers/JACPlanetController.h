@@ -10,7 +10,6 @@
 #import "JACPlanet.h"
 @interface JACPlanetController : NSObject
 @property NSArray *planets;
-@property (nonatomic) bool isPlutoPlanet;
 
 -(void)updateViews;
 

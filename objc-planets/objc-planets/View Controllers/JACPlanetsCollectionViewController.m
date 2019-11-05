@@ -9,10 +9,6 @@
 #import "JACPlanetsCollectionViewController.h"
 #import "JACPlanetCollectionViewCell.h"
 
-@interface JACPlanetsCollectionViewController ()
-
-@end
-
 @implementation JACPlanetsCollectionViewController
 
 static NSString * const reuseIdentifier = @"PlanetCell";
@@ -34,7 +30,7 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     [super viewWillAppear:animated];
     
     [self.collectionView reloadData];
-    _controller = [[JACPlanetController alloc] init];
+    [_controller updateViews];
 }
 
 #pragma mark <UICollectionViewDataSource>

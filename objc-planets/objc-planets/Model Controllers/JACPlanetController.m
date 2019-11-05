@@ -11,7 +11,6 @@
 
 @implementation JACPlanetController
 
-@synthesize isPlutoPlanet;
 -(void) updateViews {
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"isPlutoPlanet"]) {
         _planets = [[NSArray alloc] initWithObjects:
