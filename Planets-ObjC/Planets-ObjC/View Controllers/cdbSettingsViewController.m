@@ -29,7 +29,7 @@
     } else {
         [[NSUserDefaults standardUserDefaults] setBool:false forKey:@"isPlutoPlanet"];
     }
-    [self.navigationController popViewControllerAnimated:true];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
