@@ -6,8 +6,10 @@
 //  Copyright © 2019 Ciara Beitel. All rights reserved.
 //
 
-#ifndef cdbPlanetController_h
-#define cdbPlanetController_h
+#import <Foundation/Foundation.h>
 
+@interface cdbPlanetController : NSObject
 
-#endif /* cdbPlanetController_h */
+@property NSArray *planets;
+
+@end

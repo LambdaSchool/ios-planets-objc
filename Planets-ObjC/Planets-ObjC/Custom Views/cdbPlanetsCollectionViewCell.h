@@ -10,7 +10,6 @@
 
 @interface cdbPlanetsCollectionViewCell : UICollectionViewCell
 
-@property 
 
 @end
 

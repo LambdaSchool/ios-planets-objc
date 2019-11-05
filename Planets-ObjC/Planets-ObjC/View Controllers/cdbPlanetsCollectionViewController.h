@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class cdbPlanetController;
 
 @interface cdbPlanetsCollectionViewController : UICollectionViewController
 
-@end
+@property cdbPlanetController *planetController;
 
-NS_ASSUME_NONNULL_END
+@end

@@ -7,6 +7,8 @@
 //
 
 #import "cdbPlanetsCollectionViewController.h"
+#import "cdbPlanetController.h"
+#import "cdbPlanet.h"
 
 @interface cdbPlanetsCollectionViewController ()
 
