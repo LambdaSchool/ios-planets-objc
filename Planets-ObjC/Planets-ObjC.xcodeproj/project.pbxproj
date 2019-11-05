@@ -76,6 +76,7 @@
 				77B27A362371C5E500A9B68F /* Model Controllers */,
 				77B27A352371C5DF00A9B68F /* Models */,
 				77B27A2B2371C20300A9B68F /* Resources */,
+				77B27A232370F0D400A9B68F /* Info.plist */,
 			);
 			path = "Planets-ObjC";
 			sourceTree = "<group>";
@@ -89,7 +90,6 @@
 				77B27A152370F0D300A9B68F /* SceneDelegate.h */,
 				77B27A162370F0D300A9B68F /* SceneDelegate.m */,
 				77B27A1E2370F0D400A9B68F /* Assets.xcassets */,
-				77B27A232370F0D400A9B68F /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";

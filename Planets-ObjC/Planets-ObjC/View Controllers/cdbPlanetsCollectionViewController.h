@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class cdbPlanetController;
+@class cdbPlanetController; // IOU or Placeholder
 
 @interface cdbPlanetsCollectionViewController : UICollectionViewController
 
