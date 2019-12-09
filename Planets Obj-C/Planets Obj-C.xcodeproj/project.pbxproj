@@ -16,6 +16,7 @@
 		5962BD8B239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD8A239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m */; };
 		5962BD8E239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD8D239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m */; };
 		5962BD91239EE29500EF7C4B /* LSISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */; };
+		5962BD94239EE38D00EF7C4B /* LSIPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD93239EE38D00EF7C4B /* LSIPlanet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		5962BD8D239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetCollectionViewCell.m; sourceTree = "<group>"; };
 		5962BD8F239EE29500EF7C4B /* LSISettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSISettingsViewController.h; sourceTree = "<group>"; };
 		5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSISettingsViewController.m; sourceTree = "<group>"; };
+		5962BD92239EE38D00EF7C4B /* LSIPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanet.h; sourceTree = "<group>"; };
+		5962BD93239EE38D00EF7C4B /* LSIPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				5962BD8D239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m */,
 				5962BD8F239EE29500EF7C4B /* LSISettingsViewController.h */,
 				5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */,
+				5962BD92239EE38D00EF7C4B /* LSIPlanet.h */,
+				5962BD93239EE38D00EF7C4B /* LSIPlanet.m */,
 				5962BD79239EDD9700EF7C4B /* Main.storyboard */,
 				5962BD7C239EDD9A00EF7C4B /* Assets.xcassets */,
 				5962BD7E239EDD9A00EF7C4B /* LaunchScreen.storyboard */,
@@ -162,6 +167,7 @@
 				5962BD8B239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m in Sources */,
 				5962BD8E239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m in Sources */,
 				5962BD75239EDD9700EF7C4B /* SceneDelegate.m in Sources */,
+				5962BD94239EE38D00EF7C4B /* LSIPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
