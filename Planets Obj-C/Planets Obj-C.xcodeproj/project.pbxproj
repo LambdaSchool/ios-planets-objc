@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5962BD72239EDD9700EF7C4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD71239EDD9700EF7C4B /* AppDelegate.m */; };
+		5962BD75239EDD9700EF7C4B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD74239EDD9700EF7C4B /* SceneDelegate.m */; };
+		5962BD7B239EDD9700EF7C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5962BD79239EDD9700EF7C4B /* Main.storyboard */; };
+		5962BD7D239EDD9A00EF7C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5962BD7C239EDD9A00EF7C4B /* Assets.xcassets */; };
+		5962BD80239EDD9A00EF7C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5962BD7E239EDD9A00EF7C4B /* LaunchScreen.storyboard */; };
+		5962BD83239EDD9B00EF7C4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD82239EDD9B00EF7C4B /* main.m */; };
+		5962BD8E239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD8D239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m */; };
+		5962BD91239EE29500EF7C4B /* LSISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */; };
+		5962BD94239EE38D00EF7C4B /* LSIPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD93239EE38D00EF7C4B /* LSIPlanet.m */; };
+		5962BD9A239EE4F300EF7C4B /* LSIPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD99239EE4F300EF7C4B /* LSIPlanetController.m */; };
+		5982FB8D239EEF3A005C224A /* LSIPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD8A239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m */; };
+		5982FB8E239EEF4A005C224A /* LSIPlanetsCollectionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD89239EDED400EF7C4B /* LSIPlanetsCollectionViewController.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5962BD6D239EDD9700EF7C4B /* Planets Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5962BD70239EDD9700EF7C4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5962BD71239EDD9700EF7C4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5962BD73239EDD9700EF7C4B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		5962BD74239EDD9700EF7C4B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		5962BD7A239EDD9700EF7C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5962BD7C239EDD9A00EF7C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5962BD7F239EDD9A00EF7C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5962BD81239EDD9B00EF7C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5962BD82239EDD9B00EF7C4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5962BD89239EDED400EF7C4B /* LSIPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		5962BD8A239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		5962BD8C239EE06800EF7C4B /* LSIPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		5962BD8D239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		5962BD8F239EE29500EF7C4B /* LSISettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSISettingsViewController.h; sourceTree = "<group>"; };
+		5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSISettingsViewController.m; sourceTree = "<group>"; };
+		5962BD92239EE38D00EF7C4B /* LSIPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanet.h; sourceTree = "<group>"; };
+		5962BD93239EE38D00EF7C4B /* LSIPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanet.m; sourceTree = "<group>"; };
+		5962BD98239EE4F300EF7C4B /* LSIPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanetController.h; sourceTree = "<group>"; };
+		5962BD99239EE4F300EF7C4B /* LSIPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5962BD6A239EDD9700EF7C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5962BD64239EDD9700EF7C4B = {
+			isa = PBXGroup;
+			children = (
+				5962BD6F239EDD9700EF7C4B /* Planets Obj-C */,
+				5962BD6E239EDD9700EF7C4B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5962BD6E239EDD9700EF7C4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5962BD6D239EDD9700EF7C4B /* Planets Obj-C.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5962BD6F239EDD9700EF7C4B /* Planets Obj-C */ = {
+			isa = PBXGroup;
+			children = (
+				5962BD70239EDD9700EF7C4B /* AppDelegate.h */,
+				5962BD71239EDD9700EF7C4B /* AppDelegate.m */,
+				5962BD73239EDD9700EF7C4B /* SceneDelegate.h */,
+				5962BD74239EDD9700EF7C4B /* SceneDelegate.m */,
+				5962BD89239EDED400EF7C4B /* LSIPlanetsCollectionViewController.h */,
+				5962BD8A239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m */,
+				5962BD8C239EE06800EF7C4B /* LSIPlanetCollectionViewCell.h */,
+				5962BD8D239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m */,
+				5962BD8F239EE29500EF7C4B /* LSISettingsViewController.h */,
+				5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */,
+				5962BD92239EE38D00EF7C4B /* LSIPlanet.h */,
+				5962BD93239EE38D00EF7C4B /* LSIPlanet.m */,
+				5962BD98239EE4F300EF7C4B /* LSIPlanetController.h */,
+				5962BD99239EE4F300EF7C4B /* LSIPlanetController.m */,
+				5962BD79239EDD9700EF7C4B /* Main.storyboard */,
+				5962BD7C239EDD9A00EF7C4B /* Assets.xcassets */,
+				5962BD7E239EDD9A00EF7C4B /* LaunchScreen.storyboard */,
+				5962BD81239EDD9B00EF7C4B /* Info.plist */,
+				5962BD82239EDD9B00EF7C4B /* main.m */,
+			);
+			path = "Planets Obj-C";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5962BD6C239EDD9700EF7C4B /* Planets Obj-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5962BD86239EDD9B00EF7C4B /* Build configuration list for PBXNativeTarget "Planets Obj-C" */;
+			buildPhases = (
+				5962BD69239EDD9700EF7C4B /* Sources */,
+				5962BD6A239EDD9700EF7C4B /* Frameworks */,
+				5962BD6B239EDD9700EF7C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Planets Obj-C";
+			productName = "Planets Obj-C";
+			productReference = 5962BD6D239EDD9700EF7C4B /* Planets Obj-C.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5962BD65239EDD9700EF7C4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Lambda School";
+				TargetAttributes = {
+					5962BD6C239EDD9700EF7C4B = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 5962BD68239EDD9700EF7C4B /* Build configuration list for PBXProject "Planets Obj-C" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5962BD64239EDD9700EF7C4B;
+			productRefGroup = 5962BD6E239EDD9700EF7C4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5962BD6C239EDD9700EF7C4B /* Planets Obj-C */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5962BD6B239EDD9700EF7C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5962BD80239EDD9A00EF7C4B /* LaunchScreen.storyboard in Resources */,
+				5962BD7D239EDD9A00EF7C4B /* Assets.xcassets in Resources */,
+				5962BD7B239EDD9700EF7C4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5962BD69239EDD9700EF7C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5982FB8E239EEF4A005C224A /* LSIPlanetsCollectionViewController.h in Sources */,
+				5962BD9A239EE4F300EF7C4B /* LSIPlanetController.m in Sources */,
+				5962BD72239EDD9700EF7C4B /* AppDelegate.m in Sources */,
+				5962BD83239EDD9B00EF7C4B /* main.m in Sources */,
+				5962BD91239EE29500EF7C4B /* LSISettingsViewController.m in Sources */,
+				5962BD8E239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m in Sources */,
+				5962BD75239EDD9700EF7C4B /* SceneDelegate.m in Sources */,
+				5982FB8D239EEF3A005C224A /* LSIPlanetsCollectionViewController.m in Sources */,
+				5962BD94239EE38D00EF7C4B /* LSIPlanet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5962BD79239EDD9700EF7C4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5962BD7A239EDD9700EF7C4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5962BD7E239EDD9A00EF7C4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5962BD7F239EDD9A00EF7C4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5962BD84239EDD9B00EF7C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5962BD85239EDD9B00EF7C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5962BD87239EDD9B00EF7C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4525544Q4;
+				INFOPLIST_FILE = "Planets Obj-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Planets-Obj-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5962BD88239EDD9B00EF7C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A4525544Q4;
+				INFOPLIST_FILE = "Planets Obj-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lambdaschool.Planets-Obj-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5962BD68239EDD9700EF7C4B /* Build configuration list for PBXProject "Planets Obj-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5962BD84239EDD9B00EF7C4B /* Debug */,
+				5962BD85239EDD9B00EF7C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5962BD86239EDD9B00EF7C4B /* Build configuration list for PBXNativeTarget "Planets Obj-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5962BD87239EDD9B00EF7C4B /* Debug */,
+				5962BD88239EDD9B00EF7C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5962BD65239EDD9700EF7C4B /* Project object */;
+}
