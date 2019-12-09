@@ -23,10 +23,18 @@
                     [[LSIPlanet alloc] initWithName:@"Saturn" imageName:@"saturn"],
                     [[LSIPlanet alloc] initWithName:@"Uranus" imageName:@"uranus"],
                     [[LSIPlanet alloc] initWithName:@"Neptune" imageName:@"neptune"],
-                    [[LSIPlanet alloc] initWithName:@"Pluto" imageName:@"pluto"],
                     nil];
     }
     return self;
+}
+
+- (NSArray *)planetsWithPlutoSetting {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults boolForKey:@"pluto"]) {
+        return [self.planets arrayByAddingObject:[[LSIPlanet alloc] initWithName:@"Pluto" imageName:@"pluto"]];
+    }
+    
+    return self.planets;
 }
 
 @end

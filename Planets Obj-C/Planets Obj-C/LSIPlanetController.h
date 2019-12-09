@@ -11,5 +11,6 @@
 @interface LSIPlanetController : NSObject
 
 @property NSArray *planets;
+@property (strong, readonly) NSArray *planetsWithPlutoSetting;
 
 @end
