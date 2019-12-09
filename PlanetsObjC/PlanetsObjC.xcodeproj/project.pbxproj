@@ -82,18 +82,50 @@
 				A6B4388E239EE1F0004375F8 /* LaunchScreen.storyboard */,
 				A6B43891239EE1F0004375F8 /* Info.plist */,
 				A6B43892239EE1F0004375F8 /* main.m */,
-				A6B43899239EE63A004375F8 /* GIPPlanetsCollectionViewController.h */,
-				A6B4389A239EE63A004375F8 /* GIPPlanetsCollectionViewController.m */,
-				A6B4389C239EE6C1004375F8 /* GIPPlanetCollectionViewCell.h */,
-				A6B4389D239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m */,
-				A6B4389F239EEA5C004375F8 /* GIPSettingsViewController.h */,
-				A6B438A0239EEA5C004375F8 /* GIPSettingsViewController.m */,
+				A6B438AA239EFCCD004375F8 /* View Controllers */,
+				A6B438AB239EFCD5004375F8 /* Views */,
+				A6B438A8239EFCB9004375F8 /* Models */,
+				A6B438A9239EFCC0004375F8 /* Model Controllers */,
+			);
+			path = PlanetsObjC;
+			sourceTree = "<group>";
+		};
+		A6B438A8239EFCB9004375F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				A6B438A2239EECA0004375F8 /* GIPPlanet.h */,
 				A6B438A3239EECA0004375F8 /* GIPPlanet.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6B438A9239EFCC0004375F8 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				A6B438A5239EEF06004375F8 /* GIPPlanetController.h */,
 				A6B438A6239EEF06004375F8 /* GIPPlanetController.m */,
 			);
-			path = PlanetsObjC;
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		A6B438AA239EFCCD004375F8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6B43899239EE63A004375F8 /* GIPPlanetsCollectionViewController.h */,
+				A6B4389A239EE63A004375F8 /* GIPPlanetsCollectionViewController.m */,
+				A6B4389F239EEA5C004375F8 /* GIPSettingsViewController.h */,
+				A6B438A0239EEA5C004375F8 /* GIPSettingsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A6B438AB239EFCD5004375F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4389C239EE6C1004375F8 /* GIPPlanetCollectionViewCell.h */,
+				A6B4389D239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

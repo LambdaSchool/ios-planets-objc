@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@class GIPPlanetController;
 
 @interface GIPPlanetsCollectionViewController : UICollectionViewController
+
+@property GIPPlanetController *controller;
+@property NSUserDefaults *userDefaults;
+@property (nonatomic) NSArray *planetsToShow;
 
 @end
 

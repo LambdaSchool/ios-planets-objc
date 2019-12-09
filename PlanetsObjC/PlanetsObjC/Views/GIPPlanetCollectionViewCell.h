@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class GIPPlanet;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GIPPlanetCollectionViewCell : UICollectionViewCell
+
 @property (weak, nonatomic) IBOutlet UIImageView *planetImageView;
 @property (weak, nonatomic) IBOutlet UILabel *planetNameLabel;
 

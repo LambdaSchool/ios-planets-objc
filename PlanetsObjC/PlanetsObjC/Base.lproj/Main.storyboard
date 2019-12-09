@@ -23,7 +23,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GEP-hL-ZVe" customClass="GIPPlanetCollectionViewCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="GEP-hL-ZVe" customClass="GIPPlanetCollectionViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jW8-hT-fka">
@@ -68,7 +68,7 @@
                     <navigationItem key="navigationItem" id="uoK-RY-g8d">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="8VX-YA-5hj">
                             <connections>
-                                <segue destination="sOb-vf-kpT" kind="presentation" id="Jc4-5T-Z1K"/>
+                                <segue destination="sOb-vf-kpT" kind="presentation" identifier="SettingSegue" id="Jc4-5T-Z1K"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
