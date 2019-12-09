@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class LSIPlanetController;
+
 @interface PlanetsCollectionViewController : UICollectionViewController
+
+@property LSIPlanetController *controller;
 
 @end

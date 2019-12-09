@@ -17,7 +17,8 @@
 		5962BD91239EE29500EF7C4B /* LSISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */; };
 		5962BD94239EE38D00EF7C4B /* LSIPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD93239EE38D00EF7C4B /* LSIPlanet.m */; };
 		5962BD9A239EE4F300EF7C4B /* LSIPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD99239EE4F300EF7C4B /* LSIPlanetController.m */; };
-		5962BD9B239EE5C400EF7C4B /* LSIPlanetsCollectionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD89239EDED400EF7C4B /* LSIPlanetsCollectionViewController.h */; };
+		5982FB8D239EEF3A005C224A /* LSIPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD8A239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m */; };
+		5982FB8E239EEF4A005C224A /* LSIPlanetsCollectionViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD89239EDED400EF7C4B /* LSIPlanetsCollectionViewController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,13 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5962BD9B239EE5C400EF7C4B /* LSIPlanetsCollectionViewController.h in Sources */,
+				5982FB8E239EEF4A005C224A /* LSIPlanetsCollectionViewController.h in Sources */,
 				5962BD9A239EE4F300EF7C4B /* LSIPlanetController.m in Sources */,
 				5962BD72239EDD9700EF7C4B /* AppDelegate.m in Sources */,
 				5962BD83239EDD9B00EF7C4B /* main.m in Sources */,
 				5962BD91239EE29500EF7C4B /* LSISettingsViewController.m in Sources */,
 				5962BD8E239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m in Sources */,
 				5962BD75239EDD9700EF7C4B /* SceneDelegate.m in Sources */,
+				5982FB8D239EEF3A005C224A /* LSIPlanetsCollectionViewController.m in Sources */,
 				5962BD94239EE38D00EF7C4B /* LSIPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

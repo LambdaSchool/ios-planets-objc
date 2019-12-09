@@ -10,4 +10,7 @@
 
 @implementation LSIPlanetCollectionViewCell
 
+@synthesize nameLabel = _nameLabel;
+@synthesize imageView = _imageView;
+
 @end
