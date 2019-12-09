@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cJw-e5-Vup">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cJw-e5-Vup">
                             <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -26,7 +26,7 @@
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="GEP-hL-ZVe" customClass="GIPPlanetCollectionViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jW8-hT-fka">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="dmk-tc-bgr">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -47,16 +47,16 @@
                                         <constraint firstAttribute="trailing" secondItem="pKh-Ks-KyP" secondAttribute="trailing" constant="8" id="0Wf-B2-77a"/>
                                         <constraint firstItem="pKh-Ks-KyP" firstAttribute="top" secondItem="fiN-x2-Dlg" secondAttribute="bottom" constant="8" id="Dw8-14-jXv"/>
                                         <constraint firstAttribute="trailing" secondItem="fiN-x2-Dlg" secondAttribute="trailing" id="Qlo-cn-Vfw"/>
-                                        <constraint firstItem="pKh-Ks-KyP" firstAttribute="leading" secondItem="jW8-hT-fka" secondAttribute="leading" constant="8" id="YLC-Ns-p6G"/>
+                                        <constraint firstItem="pKh-Ks-KyP" firstAttribute="leading" secondItem="dmk-tc-bgr" secondAttribute="leading" constant="8" id="YLC-Ns-p6G"/>
                                         <constraint firstAttribute="bottom" secondItem="pKh-Ks-KyP" secondAttribute="bottom" constant="8" id="ZQf-ca-NcP"/>
-                                        <constraint firstItem="fiN-x2-Dlg" firstAttribute="top" secondItem="jW8-hT-fka" secondAttribute="top" id="gng-Vo-xvO"/>
-                                        <constraint firstItem="fiN-x2-Dlg" firstAttribute="leading" secondItem="jW8-hT-fka" secondAttribute="leading" id="lIV-g5-dRg"/>
+                                        <constraint firstItem="fiN-x2-Dlg" firstAttribute="top" secondItem="dmk-tc-bgr" secondAttribute="top" id="gng-Vo-xvO"/>
+                                        <constraint firstItem="fiN-x2-Dlg" firstAttribute="leading" secondItem="dmk-tc-bgr" secondAttribute="leading" id="lIV-g5-dRg"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="200" height="200"/>
                                 <connections>
                                     <outlet property="planetImageView" destination="fiN-x2-Dlg" id="l4j-e1-EK1"/>
-                                    <outlet property="planetNameLabel" destination="pKh-Ks-KyP" id="CNW-Wo-Rkf"/>
+                                    <outlet property="planetNameLabel" destination="pKh-Ks-KyP" id="JRJ-J6-ncL"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -68,7 +68,7 @@
                     <navigationItem key="navigationItem" id="uoK-RY-g8d">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="8VX-YA-5hj">
                             <connections>
-                                <segue destination="sOb-vf-kpT" kind="presentation" identifier="SettingSegue" id="Jc4-5T-Z1K"/>
+                                <segue destination="sOb-vf-kpT" kind="show" id="0wb-7i-ROY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -82,29 +82,29 @@
             <objects>
                 <viewController id="sOb-vf-kpT" customClass="GIPSettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PLG-eI-Mge">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1w-jH-Ilp">
+                                <rect key="frame" x="40" y="168" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTI-xb-76a">
+                                <rect key="frame" x="325" y="163" width="51" height="31"/>
+                                <connections>
+                                    <action selector="isPlutoPlanetSwitchChanged:" destination="sOb-vf-kpT" eventType="valueChanged" id="oAb-WF-jxa"/>
+                                </connections>
+                            </switch>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JdP-xH-KFB">
-                                <rect key="frame" x="357" y="0.0" width="47" height="36"/>
+                                <rect key="frame" x="357" y="88" width="47" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneButtonPressed:" destination="sOb-vf-kpT" eventType="touchUpInside" id="iLv-d0-yn8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1w-jH-Ilp">
-                                <rect key="frame" x="40" y="80" width="130" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTI-xb-76a">
-                                <rect key="frame" x="325" y="75" width="51" height="31"/>
-                                <connections>
-                                    <action selector="isPlutoPlanetSwitchChanged:" destination="sOb-vf-kpT" eventType="valueChanged" id="oAb-WF-jxa"/>
-                                </connections>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -117,14 +117,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lte-jd-NFy"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vRZ-NT-WAY"/>
                     <connections>
-                        <outlet property="isPlutoPlanetLabel" destination="W1w-jH-Ilp" id="zl2-lu-RYS"/>
                         <outlet property="isPlutoPlanetSwitch" destination="ZTI-xb-76a" id="BCv-v4-NRW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YB-9l-PJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2677" y="133"/>
+            <point key="canvasLocation" x="2672" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ypn-Ux-Jbn">

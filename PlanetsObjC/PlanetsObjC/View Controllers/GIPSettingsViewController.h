@@ -11,7 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface GIPSettingsViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *isPlutoPlanetLabel;
 @property (weak, nonatomic) IBOutlet UISwitch *isPlutoPlanetSwitch;
 @property NSUserDefaults *userDefaults;
 

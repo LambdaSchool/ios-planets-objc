@@ -16,25 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-        _userDefaults = [NSUserDefaults standardUserDefaults];
+    _userDefaults = [NSUserDefaults standardUserDefaults];
+    self.isPlutoPlanetSwitch.on = [self.userDefaults boolForKey:@"IsPlutoPlanet"];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)doneButtonPressed:(id)sender {
-    [self.navigationController dismissViewControllerAnimated:true completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:true];
 }
 
 - (IBAction)isPlutoPlanetSwitchChanged:(id)sender {
-    [self.userDefaults setBool:self.isPlutoPlanetSwitch.on forKey:@"IsPlutoPlanet"];
+    [self.userDefaults setBool:self.isPlutoPlanetSwitch.isOn forKey:@"IsPlutoPlanet"];
 }
 
 
