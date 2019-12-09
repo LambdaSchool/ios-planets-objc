@@ -13,6 +13,9 @@
 		5962BD7D239EDD9A00EF7C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5962BD7C239EDD9A00EF7C4B /* Assets.xcassets */; };
 		5962BD80239EDD9A00EF7C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5962BD7E239EDD9A00EF7C4B /* LaunchScreen.storyboard */; };
 		5962BD83239EDD9B00EF7C4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD82239EDD9B00EF7C4B /* main.m */; };
+		5962BD8B239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD8A239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m */; };
+		5962BD8E239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD8D239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m */; };
+		5962BD91239EE29500EF7C4B /* LSISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		5962BD7F239EDD9A00EF7C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5962BD81239EDD9B00EF7C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5962BD82239EDD9B00EF7C4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5962BD89239EDED400EF7C4B /* LSIPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		5962BD8A239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		5962BD8C239EE06800EF7C4B /* LSIPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		5962BD8D239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		5962BD8F239EE29500EF7C4B /* LSISettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSISettingsViewController.h; sourceTree = "<group>"; };
+		5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSISettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				5962BD71239EDD9700EF7C4B /* AppDelegate.m */,
 				5962BD73239EDD9700EF7C4B /* SceneDelegate.h */,
 				5962BD74239EDD9700EF7C4B /* SceneDelegate.m */,
+				5962BD89239EDED400EF7C4B /* LSIPlanetsCollectionViewController.h */,
+				5962BD8A239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m */,
+				5962BD8C239EE06800EF7C4B /* LSIPlanetCollectionViewCell.h */,
+				5962BD8D239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m */,
+				5962BD8F239EE29500EF7C4B /* LSISettingsViewController.h */,
+				5962BD90239EE29500EF7C4B /* LSISettingsViewController.m */,
 				5962BD79239EDD9700EF7C4B /* Main.storyboard */,
 				5962BD7C239EDD9A00EF7C4B /* Assets.xcassets */,
 				5962BD7E239EDD9A00EF7C4B /* LaunchScreen.storyboard */,
@@ -143,6 +158,9 @@
 			files = (
 				5962BD72239EDD9700EF7C4B /* AppDelegate.m in Sources */,
 				5962BD83239EDD9B00EF7C4B /* main.m in Sources */,
+				5962BD91239EE29500EF7C4B /* LSISettingsViewController.m in Sources */,
+				5962BD8B239EDED400EF7C4B /* LSIPlanetsCollectionViewController.m in Sources */,
+				5962BD8E239EE06800EF7C4B /* LSIPlanetCollectionViewCell.m in Sources */,
 				5962BD75239EDD9700EF7C4B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
