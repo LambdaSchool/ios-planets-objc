@@ -101,6 +101,9 @@
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTI-xb-76a">
                                 <rect key="frame" x="325" y="75" width="51" height="31"/>
+                                <connections>
+                                    <action selector="isPlutoPlanetSwitchChanged:" destination="sOb-vf-kpT" eventType="valueChanged" id="oAb-WF-jxa"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

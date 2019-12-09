@@ -17,6 +17,7 @@
 		A6B4389E239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4389D239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m */; };
 		A6B438A1239EEA5C004375F8 /* GIPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B438A0239EEA5C004375F8 /* GIPSettingsViewController.m */; };
 		A6B438A4239EECA0004375F8 /* GIPPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B438A3239EECA0004375F8 /* GIPPlanet.m */; };
+		A6B438A7239EEF06004375F8 /* GIPPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B438A6239EEF06004375F8 /* GIPPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		A6B438A0239EEA5C004375F8 /* GIPSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPSettingsViewController.m; sourceTree = "<group>"; };
 		A6B438A2239EECA0004375F8 /* GIPPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPPlanet.h; sourceTree = "<group>"; };
 		A6B438A3239EECA0004375F8 /* GIPPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPPlanet.m; sourceTree = "<group>"; };
+		A6B438A5239EEF06004375F8 /* GIPPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPPlanetController.h; sourceTree = "<group>"; };
+		A6B438A6239EEF06004375F8 /* GIPPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				A6B438A0239EEA5C004375F8 /* GIPSettingsViewController.m */,
 				A6B438A2239EECA0004375F8 /* GIPPlanet.h */,
 				A6B438A3239EECA0004375F8 /* GIPPlanet.m */,
+				A6B438A5239EEF06004375F8 /* GIPPlanetController.h */,
+				A6B438A6239EEF06004375F8 /* GIPPlanetController.m */,
 			);
 			path = PlanetsObjC;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B438A7239EEF06004375F8 /* GIPPlanetController.m in Sources */,
 				A6B43882239EE1EF004375F8 /* AppDelegate.m in Sources */,
 				A6B4389E239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m in Sources */,
 				A6B438A1239EEA5C004375F8 /* GIPSettingsViewController.m in Sources */,

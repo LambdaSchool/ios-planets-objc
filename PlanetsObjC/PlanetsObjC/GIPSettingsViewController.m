@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+        _userDefaults = [NSUserDefaults standardUserDefaults];
 }
 
 /*
@@ -29,7 +29,13 @@
 }
 */
 
-
 - (IBAction)doneButtonPressed:(id)sender {
+    [self.navigationController dismissViewControllerAnimated:true completion:nil];
 }
+
+- (IBAction)isPlutoPlanetSwitchChanged:(id)sender {
+    [self.userDefaults setBool:self.isPlutoPlanetSwitch.on forKey:@"IsPlutoPlanet"];
+}
+
+
 @end
