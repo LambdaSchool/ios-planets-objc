@@ -34,6 +34,12 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 //    [self.collectionView registerClass:[LSIPlanetCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.collectionView reloadData];
+}
+
 /*
 #pragma mark - Navigation
 
@@ -48,13 +54,13 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 //    return self.controller.planets.count;
-    return [[[self controller] planets] count];
+    return [[[self controller] planetsWithPlutoSetting] count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LSIPlanetCollectionViewCell *cell = (LSIPlanetCollectionViewCell *) [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    LSIPlanet *planet = [self.controller.planets objectAtIndex:indexPath.item];
+    LSIPlanet *planet = [self.controller.planetsWithPlutoSetting objectAtIndex:indexPath.item];
     
     [[cell nameLabel] setText:[planet name]];
     //cell.nameLabel.text = planet.name;
