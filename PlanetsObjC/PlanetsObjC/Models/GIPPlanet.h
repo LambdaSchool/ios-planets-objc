@@ -15,8 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString* name;
 @property UIImage* image;
+@property double size;
 
-- (instancetype)initWithName:(NSString*)name image:(UIImage*)image;
+- (instancetype)initWithName:(NSString*)name image:(UIImage*)image size:(double)size;
 
 @end
 

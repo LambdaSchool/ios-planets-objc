@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIImageView *planetImageView;
 @property (weak, nonatomic) IBOutlet UILabel *planetNameLabel;
+@property GIPPlanet *planet;
 
 @end
 

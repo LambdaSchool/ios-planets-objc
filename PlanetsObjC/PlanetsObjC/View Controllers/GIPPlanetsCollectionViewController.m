@@ -25,7 +25,6 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     if (self) {
         _controller = [[GIPPlanetController alloc] init];
         _userDefaults = [NSUserDefaults standardUserDefaults];
-
     }
     return self;
 }
@@ -42,12 +41,14 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     [super viewDidLoad];
 
     [self.collectionView reloadData];
+    [self.collectionView layoutIfNeeded];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     [self.collectionView reloadData];
+    [self.collectionView layoutIfNeeded];
 }
 
 #pragma mark <UICollectionViewDataSource>
@@ -63,10 +64,22 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     
     cell.planetNameLabel.text = planet.name;
     cell.planetImageView.image = planet.image;
+    cell.planet = planet;
     
     return cell;
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+   {
+       GIPPlanetCollectionViewCell *cell =  (GIPPlanetCollectionViewCell *) [collectionView cellForItemAtIndexPath:indexPath];
+       // cell returns nil
+       
+       CGFloat height = collectionView.safeAreaLayoutGuide.layoutFrame.size.height;
+       CGFloat width = collectionView.safeAreaLayoutGuide.layoutFrame.size.width;
+
+       //return CGSizeMake(height * cell.planet.size, width * cell.planet.size);
+       return CGSizeMake(height, width);
+   }
 
 
 #pragma mark <UICollectionViewDelegate>

@@ -10,11 +10,12 @@
 
 @implementation GIPPlanet
 
-- (instancetype)initWithName:(NSString *)name image:(UIImage *)image {
+- (instancetype)initWithName:(NSString *)name image:(UIImage *)image size:(double)size {
     self = [super init];
     if (self) {
         _name = name;
         _image = image;
+        _size = size;
     }
     return self;
 }
