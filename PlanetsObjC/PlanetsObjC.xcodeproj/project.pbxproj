@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6B43882239EE1EF004375F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B43881239EE1EF004375F8 /* AppDelegate.m */; };
+		A6B43885239EE1EF004375F8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B43884239EE1EF004375F8 /* SceneDelegate.m */; };
+		A6B4388B239EE1EF004375F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B43889239EE1EF004375F8 /* Main.storyboard */; };
+		A6B4388D239EE1F0004375F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6B4388C239EE1F0004375F8 /* Assets.xcassets */; };
+		A6B43890239EE1F0004375F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6B4388E239EE1F0004375F8 /* LaunchScreen.storyboard */; };
+		A6B43893239EE1F0004375F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B43892239EE1F0004375F8 /* main.m */; };
+		A6B4389B239EE63A004375F8 /* GIPPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4389A239EE63A004375F8 /* GIPPlanetsCollectionViewController.m */; };
+		A6B4389E239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B4389D239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m */; };
+		A6B438A1239EEA5C004375F8 /* GIPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B438A0239EEA5C004375F8 /* GIPSettingsViewController.m */; };
+		A6B438A4239EECA0004375F8 /* GIPPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B438A3239EECA0004375F8 /* GIPPlanet.m */; };
+		A6B438A7239EEF06004375F8 /* GIPPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B438A6239EEF06004375F8 /* GIPPlanetController.m */; };
+		A6B438AE239F158F004375F8 /* GIPCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B438AD239F158F004375F8 /* GIPCollectionViewFlowLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A6B4387D239EE1EF004375F8 /* PlanetsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6B43880239EE1EF004375F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6B43881239EE1EF004375F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6B43883239EE1EF004375F8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		A6B43884239EE1EF004375F8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		A6B4388A239EE1EF004375F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6B4388C239EE1F0004375F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6B4388F239EE1F0004375F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6B43891239EE1F0004375F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B43892239EE1F0004375F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6B43899239EE63A004375F8 /* GIPPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		A6B4389A239EE63A004375F8 /* GIPPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		A6B4389C239EE6C1004375F8 /* GIPPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		A6B4389D239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		A6B4389F239EEA5C004375F8 /* GIPSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPSettingsViewController.h; sourceTree = "<group>"; };
+		A6B438A0239EEA5C004375F8 /* GIPSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPSettingsViewController.m; sourceTree = "<group>"; };
+		A6B438A2239EECA0004375F8 /* GIPPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPPlanet.h; sourceTree = "<group>"; };
+		A6B438A3239EECA0004375F8 /* GIPPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPPlanet.m; sourceTree = "<group>"; };
+		A6B438A5239EEF06004375F8 /* GIPPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPPlanetController.h; sourceTree = "<group>"; };
+		A6B438A6239EEF06004375F8 /* GIPPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPPlanetController.m; sourceTree = "<group>"; };
+		A6B438AC239F158F004375F8 /* GIPCollectionViewFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GIPCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		A6B438AD239F158F004375F8 /* GIPCollectionViewFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GIPCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6B4387A239EE1EF004375F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6B43874239EE1EF004375F8 = {
+			isa = PBXGroup;
+			children = (
+				A6B4387F239EE1EF004375F8 /* PlanetsObjC */,
+				A6B4387E239EE1EF004375F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6B4387E239EE1EF004375F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4387D239EE1EF004375F8 /* PlanetsObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6B4387F239EE1EF004375F8 /* PlanetsObjC */ = {
+			isa = PBXGroup;
+			children = (
+				A6B43880239EE1EF004375F8 /* AppDelegate.h */,
+				A6B43881239EE1EF004375F8 /* AppDelegate.m */,
+				A6B43883239EE1EF004375F8 /* SceneDelegate.h */,
+				A6B43884239EE1EF004375F8 /* SceneDelegate.m */,
+				A6B43889239EE1EF004375F8 /* Main.storyboard */,
+				A6B4388C239EE1F0004375F8 /* Assets.xcassets */,
+				A6B4388E239EE1F0004375F8 /* LaunchScreen.storyboard */,
+				A6B43891239EE1F0004375F8 /* Info.plist */,
+				A6B43892239EE1F0004375F8 /* main.m */,
+				A6B438AA239EFCCD004375F8 /* View Controllers */,
+				A6B438AB239EFCD5004375F8 /* Views */,
+				A6B438A8239EFCB9004375F8 /* Models */,
+				A6B438A9239EFCC0004375F8 /* Model Controllers */,
+			);
+			path = PlanetsObjC;
+			sourceTree = "<group>";
+		};
+		A6B438A8239EFCB9004375F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6B438A2239EECA0004375F8 /* GIPPlanet.h */,
+				A6B438A3239EECA0004375F8 /* GIPPlanet.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6B438A9239EFCC0004375F8 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6B438A5239EEF06004375F8 /* GIPPlanetController.h */,
+				A6B438A6239EEF06004375F8 /* GIPPlanetController.m */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		A6B438AA239EFCCD004375F8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6B43899239EE63A004375F8 /* GIPPlanetsCollectionViewController.h */,
+				A6B4389A239EE63A004375F8 /* GIPPlanetsCollectionViewController.m */,
+				A6B4389F239EEA5C004375F8 /* GIPSettingsViewController.h */,
+				A6B438A0239EEA5C004375F8 /* GIPSettingsViewController.m */,
+				A6B438AC239F158F004375F8 /* GIPCollectionViewFlowLayout.h */,
+				A6B438AD239F158F004375F8 /* GIPCollectionViewFlowLayout.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A6B438AB239EFCD5004375F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6B4389C239EE6C1004375F8 /* GIPPlanetCollectionViewCell.h */,
+				A6B4389D239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6B4387C239EE1EF004375F8 /* PlanetsObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6B43896239EE1F0004375F8 /* Build configuration list for PBXNativeTarget "PlanetsObjC" */;
+			buildPhases = (
+				A6B43879239EE1EF004375F8 /* Sources */,
+				A6B4387A239EE1EF004375F8 /* Frameworks */,
+				A6B4387B239EE1EF004375F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanetsObjC;
+			productName = PlanetsObjC;
+			productReference = A6B4387D239EE1EF004375F8 /* PlanetsObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6B43875239EE1EF004375F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "GIPGIP Studio";
+				TargetAttributes = {
+					A6B4387C239EE1EF004375F8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A6B43878239EE1EF004375F8 /* Build configuration list for PBXProject "PlanetsObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6B43874239EE1EF004375F8;
+			productRefGroup = A6B4387E239EE1EF004375F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6B4387C239EE1EF004375F8 /* PlanetsObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6B4387B239EE1EF004375F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B43890239EE1F0004375F8 /* LaunchScreen.storyboard in Resources */,
+				A6B4388D239EE1F0004375F8 /* Assets.xcassets in Resources */,
+				A6B4388B239EE1EF004375F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6B43879239EE1EF004375F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B438A7239EEF06004375F8 /* GIPPlanetController.m in Sources */,
+				A6B438AE239F158F004375F8 /* GIPCollectionViewFlowLayout.m in Sources */,
+				A6B43882239EE1EF004375F8 /* AppDelegate.m in Sources */,
+				A6B4389E239EE6C1004375F8 /* GIPPlanetCollectionViewCell.m in Sources */,
+				A6B438A1239EEA5C004375F8 /* GIPSettingsViewController.m in Sources */,
+				A6B4389B239EE63A004375F8 /* GIPPlanetsCollectionViewController.m in Sources */,
+				A6B438A4239EECA0004375F8 /* GIPPlanet.m in Sources */,
+				A6B43893239EE1F0004375F8 /* main.m in Sources */,
+				A6B43885239EE1EF004375F8 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A6B43889239EE1EF004375F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6B4388A239EE1EF004375F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6B4388E239EE1F0004375F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6B4388F239EE1F0004375F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6B43894239EE1F0004375F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6B43895239EE1F0004375F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6B43897239EE1F0004375F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLZ8CLXX64;
+				INFOPLIST_FILE = PlanetsObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GIPGIP.PlanetsObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6B43898239EE1F0004375F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FLZ8CLXX64;
+				INFOPLIST_FILE = PlanetsObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.GIPGIP.PlanetsObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6B43878239EE1EF004375F8 /* Build configuration list for PBXProject "PlanetsObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B43894239EE1F0004375F8 /* Debug */,
+				A6B43895239EE1F0004375F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6B43896239EE1F0004375F8 /* Build configuration list for PBXNativeTarget "PlanetsObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6B43897239EE1F0004375F8 /* Debug */,
+				A6B43898239EE1F0004375F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6B43875239EE1EF004375F8 /* Project object */;
+}
