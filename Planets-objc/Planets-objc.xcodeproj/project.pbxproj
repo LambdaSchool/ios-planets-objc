@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		BBBCEB9223D53AB900506CAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEB9123D53AB900506CAF /* AppDelegate.m */; };
 		BBBCEB9523D53AB900506CAF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEB9423D53AB900506CAF /* SceneDelegate.m */; };
-		BBBCEB9823D53AB900506CAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEB9723D53AB900506CAF /* ViewController.m */; };
 		BBBCEB9B23D53AB900506CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEB9923D53AB900506CAF /* Main.storyboard */; };
 		BBBCEB9D23D53ABC00506CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEB9C23D53ABC00506CAF /* Assets.xcassets */; };
 		BBBCEBA023D53ABC00506CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEB9E23D53ABC00506CAF /* LaunchScreen.storyboard */; };
 		BBBCEBA323D53ABC00506CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBA223D53ABC00506CAF /* main.m */; };
+		BBBCEBAE23D53CFE00506CAF /* PlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBAD23D53CFE00506CAF /* PlanetsCollectionViewController.m */; };
+		BBBCEBB123D53FC300506CAF /* PlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBB023D53FC300506CAF /* PlanetCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,15 @@
 		BBBCEB9123D53AB900506CAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BBBCEB9323D53AB900506CAF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BBBCEB9423D53AB900506CAF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		BBBCEB9623D53AB900506CAF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BBBCEB9723D53AB900506CAF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BBBCEB9A23D53AB900506CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBBCEB9C23D53ABC00506CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBBCEB9F23D53ABC00506CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBBCEBA123D53ABC00506CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBBCEBA223D53ABC00506CAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBBCEBAC23D53CFE00506CAF /* PlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		BBBCEBAD23D53CFE00506CAF /* PlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		BBBCEBAF23D53FC300506CAF /* PlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		BBBCEBB023D53FC300506CAF /* PlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +68,15 @@
 				BBBCEB9123D53AB900506CAF /* AppDelegate.m */,
 				BBBCEB9323D53AB900506CAF /* SceneDelegate.h */,
 				BBBCEB9423D53AB900506CAF /* SceneDelegate.m */,
-				BBBCEB9623D53AB900506CAF /* ViewController.h */,
-				BBBCEB9723D53AB900506CAF /* ViewController.m */,
 				BBBCEB9923D53AB900506CAF /* Main.storyboard */,
 				BBBCEB9C23D53ABC00506CAF /* Assets.xcassets */,
 				BBBCEB9E23D53ABC00506CAF /* LaunchScreen.storyboard */,
 				BBBCEBA123D53ABC00506CAF /* Info.plist */,
 				BBBCEBA223D53ABC00506CAF /* main.m */,
+				BBBCEBAC23D53CFE00506CAF /* PlanetsCollectionViewController.h */,
+				BBBCEBAD23D53CFE00506CAF /* PlanetsCollectionViewController.m */,
+				BBBCEBAF23D53FC300506CAF /* PlanetCollectionViewCell.h */,
+				BBBCEBB023D53FC300506CAF /* PlanetCollectionViewCell.m */,
 			);
 			path = "Planets-objc";
 			sourceTree = "<group>";
@@ -146,9 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBBCEB9823D53AB900506CAF /* ViewController.m in Sources */,
 				BBBCEB9223D53AB900506CAF /* AppDelegate.m in Sources */,
 				BBBCEBA323D53ABC00506CAF /* main.m in Sources */,
+				BBBCEBB123D53FC300506CAF /* PlanetCollectionViewCell.m in Sources */,
+				BBBCEBAE23D53CFE00506CAF /* PlanetsCollectionViewController.m in Sources */,
 				BBBCEB9523D53AB900506CAF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

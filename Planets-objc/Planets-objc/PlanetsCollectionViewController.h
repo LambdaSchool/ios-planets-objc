@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PlanetsCollectionViewController.h
 //  Planets-objc
 //
 //  Created by Lambda_School_Loaner_204 on 1/19/20.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface PlanetsCollectionViewController : UICollectionViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
