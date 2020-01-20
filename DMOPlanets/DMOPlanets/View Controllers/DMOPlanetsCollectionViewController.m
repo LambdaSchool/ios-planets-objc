@@ -1,20 +1,35 @@
 //
-//  PlanetsCollectionViewController.m
+//  DMOPlanetsCollectionViewController.m
 //  DMOPlanets
 //
 //  Created by morse on 1/19/20.
 //  Copyright © 2020 morse. All rights reserved.
 //
 
-#import "PlanetsCollectionViewController.h"
+#import "DMOPlanetsCollectionViewController.h"
+#import "DMOPlanetsController.h"
+#import "DMOPlanet.h"
+#import "DMOPlanetCollectionViewCell.h"
 
-@interface PlanetsCollectionViewController ()
+@interface DMOPlanetsCollectionViewController ()
 
 @end
 
-@implementation PlanetsCollectionViewController
+@implementation DMOPlanetsCollectionViewController
 
-static NSString * const reuseIdentifier = @"Cell";
+static NSString * const reuseIdentifier = @"PlanetCell";
+static NSString * const settingsSegue = @"ShowSettingsSegue";
+
+// ShowSettingsSegue
+// PlanetCell
+
+- (instancetype)initWithCoder:(NSCoder *)coder {
+    self = [super initWithCoder:coder];
+    if (self) {
+        _controller = [[DMOPlanetsController alloc] init];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,21 +55,17 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark <UICollectionViewDataSource>
 
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of items
-    return 0;
+    return self.controller.planets.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
+    DMOPlanet *planet = [self.controller.planets objectAtIndex:indexPath.item];
+    
+    NSLog(@"%@", planet.name);
     
     return cell;
 }
