@@ -10,12 +10,12 @@
 
 @implementation LSIPlanet
 
-- (instancetype)initWithName:(NSString *)name image:(UIImage *)image
+- (instancetype)initWithName:(NSString *)name image:(NSString *)imageName
 {
     self = [super init];
     if (self) {
         _name = name;
-        _image = image;
+        _imageName = imageName;
     }
     return self;
 }

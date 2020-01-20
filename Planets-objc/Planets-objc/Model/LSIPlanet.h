@@ -13,10 +13,10 @@
 
 @interface LSIPlanet : NSObject
 
-@property NSString *name;
-@property UIImage *image;
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *imageName;
 
-- (instancetype)initWithName:(NSString *)name image:(UIImage*)image;
+- (instancetype)initWithName:(NSString *)name image:(NSString *)imageName;
 
 @end
 

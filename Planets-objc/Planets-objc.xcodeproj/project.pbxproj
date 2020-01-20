@@ -17,6 +17,7 @@
 		BBBCEBB123D53FC300506CAF /* LSIPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBB023D53FC300506CAF /* LSIPlanetCollectionViewCell.m */; };
 		BBBCEBB523D625E700506CAF /* LSISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBB423D625E700506CAF /* LSISettingsViewController.m */; };
 		BBBCEBB923D629F800506CAF /* LSIPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBB823D629F800506CAF /* LSIPlanet.m */; };
+		BBBCEBBE23D630D800506CAF /* LSIPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBBD23D630D800506CAF /* LSIPlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		BBBCEBB423D625E700506CAF /* LSISettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSISettingsViewController.m; sourceTree = "<group>"; };
 		BBBCEBB723D628F600506CAF /* LSIPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanet.h; sourceTree = "<group>"; };
 		BBBCEBB823D629F800506CAF /* LSIPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanet.m; sourceTree = "<group>"; };
+		BBBCEBBC23D630CC00506CAF /* LSIPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanetController.h; sourceTree = "<group>"; };
+		BBBCEBBD23D630D800506CAF /* LSIPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 				BBBCEBB223D625D100506CAF /* View Controllers */,
 				BBBCEBB623D6268900506CAF /* Views */,
 				BBBCEBBA23D62B3600506CAF /* Model */,
+				BBBCEBBF23D630DB00506CAF /* Model Controller */,
 				BBBCEB9023D53AB900506CAF /* AppDelegate.h */,
 				BBBCEB9123D53AB900506CAF /* AppDelegate.m */,
 				BBBCEB9323D53AB900506CAF /* SceneDelegate.h */,
@@ -113,6 +117,15 @@
 				BBBCEBB823D629F800506CAF /* LSIPlanet.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BBBCEBBF23D630DB00506CAF /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBBCEBBC23D630CC00506CAF /* LSIPlanetController.h */,
+				BBBCEBBD23D630D800506CAF /* LSIPlanetController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBCEBBE23D630D800506CAF /* LSIPlanetController.m in Sources */,
 				BBBCEB9223D53AB900506CAF /* AppDelegate.m in Sources */,
 				BBBCEBA323D53ABC00506CAF /* main.m in Sources */,
 				BBBCEBB123D53FC300506CAF /* LSIPlanetCollectionViewCell.m in Sources */,
