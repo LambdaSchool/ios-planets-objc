@@ -1,5 +1,5 @@
 //
-//  PlanetCollectionViewCell.h
+//  PlanetsCollectionViewController.h
 //  Planets-objc
 //
 //  Created by Lambda_School_Loaner_204 on 1/19/20.
@@ -10,10 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PlanetCollectionViewCell : UICollectionViewCell
-
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *planetLabel;
+@interface LSIPlanetsCollectionViewController : UICollectionViewController
 
 @end
 

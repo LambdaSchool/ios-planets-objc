@@ -27,7 +27,7 @@
         <!--Planets-->
         <scene sceneID="AXY-l4-mAd">
             <objects>
-                <collectionViewController id="nu2-gd-eRm" customClass="PlanetsCollectionViewController" sceneMemberID="viewController">
+                <collectionViewController id="nu2-gd-eRm" customClass="LSIPlanetsCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jiW-Ce-bfo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="qAA-rx-MfS" customClass="PlanetCollectionViewCell">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="qAA-rx-MfS" customClass="LSIPlanetCollectionViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pH0-Go-avh">
@@ -94,7 +94,7 @@
         <!--Settings View Controller-->
         <scene sceneID="JLb-3J-cm0">
             <objects>
-                <viewController id="aVh-nC-6rg" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="aVh-nC-6rg" customClass="LSISettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jzJ-Ub-A2A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

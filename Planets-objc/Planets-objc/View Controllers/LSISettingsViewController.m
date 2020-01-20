@@ -6,13 +6,13 @@
 //  Copyright © 2020 Lambda School. All rights reserved.
 //
 
-#import "SettingsViewController.h"
+#import "LSISettingsViewController.h"
 
-@interface SettingsViewController ()
+@interface LSISettingsViewController ()
 
 @end
 
-@implementation SettingsViewController
+@implementation LSISettingsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

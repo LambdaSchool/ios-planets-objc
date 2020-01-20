@@ -13,9 +13,9 @@
 		BBBCEB9D23D53ABC00506CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEB9C23D53ABC00506CAF /* Assets.xcassets */; };
 		BBBCEBA023D53ABC00506CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBBCEB9E23D53ABC00506CAF /* LaunchScreen.storyboard */; };
 		BBBCEBA323D53ABC00506CAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBA223D53ABC00506CAF /* main.m */; };
-		BBBCEBAE23D53CFE00506CAF /* PlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBAD23D53CFE00506CAF /* PlanetsCollectionViewController.m */; };
-		BBBCEBB123D53FC300506CAF /* PlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBB023D53FC300506CAF /* PlanetCollectionViewCell.m */; };
-		BBBCEBB523D625E700506CAF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBB423D625E700506CAF /* SettingsViewController.m */; };
+		BBBCEBAE23D53CFE00506CAF /* LSIPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBAD23D53CFE00506CAF /* LSIPlanetsCollectionViewController.m */; };
+		BBBCEBB123D53FC300506CAF /* LSIPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBB023D53FC300506CAF /* LSIPlanetCollectionViewCell.m */; };
+		BBBCEBB523D625E700506CAF /* LSISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBBCEBB423D625E700506CAF /* LSISettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,12 @@
 		BBBCEB9F23D53ABC00506CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBBCEBA123D53ABC00506CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBBCEBA223D53ABC00506CAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BBBCEBAC23D53CFE00506CAF /* PlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetsCollectionViewController.h; sourceTree = "<group>"; };
-		BBBCEBAD23D53CFE00506CAF /* PlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsCollectionViewController.m; sourceTree = "<group>"; };
-		BBBCEBAF23D53FC300506CAF /* PlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetCollectionViewCell.h; sourceTree = "<group>"; };
-		BBBCEBB023D53FC300506CAF /* PlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetCollectionViewCell.m; sourceTree = "<group>"; };
-		BBBCEBB323D625E700506CAF /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		BBBCEBB423D625E700506CAF /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BBBCEBAC23D53CFE00506CAF /* LSIPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		BBBCEBAD23D53CFE00506CAF /* LSIPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		BBBCEBAF23D53FC300506CAF /* LSIPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		BBBCEBB023D53FC300506CAF /* LSIPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		BBBCEBB323D625E700506CAF /* LSISettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSISettingsViewController.h; sourceTree = "<group>"; };
+		BBBCEBB423D625E700506CAF /* LSISettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSISettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +85,10 @@
 		BBBCEBB223D625D100506CAF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BBBCEBAC23D53CFE00506CAF /* PlanetsCollectionViewController.h */,
-				BBBCEBAD23D53CFE00506CAF /* PlanetsCollectionViewController.m */,
-				BBBCEBB323D625E700506CAF /* SettingsViewController.h */,
-				BBBCEBB423D625E700506CAF /* SettingsViewController.m */,
+				BBBCEBAC23D53CFE00506CAF /* LSIPlanetsCollectionViewController.h */,
+				BBBCEBAD23D53CFE00506CAF /* LSIPlanetsCollectionViewController.m */,
+				BBBCEBB323D625E700506CAF /* LSISettingsViewController.h */,
+				BBBCEBB423D625E700506CAF /* LSISettingsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -96,8 +96,8 @@
 		BBBCEBB623D6268900506CAF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BBBCEBAF23D53FC300506CAF /* PlanetCollectionViewCell.h */,
-				BBBCEBB023D53FC300506CAF /* PlanetCollectionViewCell.m */,
+				BBBCEBAF23D53FC300506CAF /* LSIPlanetCollectionViewCell.h */,
+				BBBCEBB023D53FC300506CAF /* LSIPlanetCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -174,9 +174,9 @@
 			files = (
 				BBBCEB9223D53AB900506CAF /* AppDelegate.m in Sources */,
 				BBBCEBA323D53ABC00506CAF /* main.m in Sources */,
-				BBBCEBB123D53FC300506CAF /* PlanetCollectionViewCell.m in Sources */,
-				BBBCEBB523D625E700506CAF /* SettingsViewController.m in Sources */,
-				BBBCEBAE23D53CFE00506CAF /* PlanetsCollectionViewController.m in Sources */,
+				BBBCEBB123D53FC300506CAF /* LSIPlanetCollectionViewCell.m in Sources */,
+				BBBCEBB523D625E700506CAF /* LSISettingsViewController.m in Sources */,
+				BBBCEBAE23D53CFE00506CAF /* LSIPlanetsCollectionViewController.m in Sources */,
 				BBBCEB9523D53AB900506CAF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

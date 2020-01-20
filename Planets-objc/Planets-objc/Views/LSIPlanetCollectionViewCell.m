@@ -6,8 +6,8 @@
 //  Copyright © 2020 Lambda School. All rights reserved.
 //
 
-#import "PlanetCollectionViewCell.h"
+#import "LSIPlanetCollectionViewCell.h"
 
-@implementation PlanetCollectionViewCell
+@implementation LSIPlanetCollectionViewCell
 
 @end

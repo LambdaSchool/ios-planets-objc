@@ -6,13 +6,13 @@
 //  Copyright © 2020 Lambda School. All rights reserved.
 //
 
-#import "PlanetsCollectionViewController.h"
+#import "LSIPlanetsCollectionViewController.h"
 
-@interface PlanetsCollectionViewController ()
+@interface LSIPlanetsCollectionViewController ()
 
 @end
 
-@implementation PlanetsCollectionViewController
+@implementation LSIPlanetsCollectionViewController
 
 static NSString * const reuseIdentifier = @"Cell";
 
