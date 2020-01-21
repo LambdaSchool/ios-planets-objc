@@ -11,6 +11,7 @@
 
 @interface LSIPlanetController : NSObject
 
+- (NSArray*)getPlanets;
 
 @end
 

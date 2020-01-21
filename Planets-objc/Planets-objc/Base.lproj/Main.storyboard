@@ -40,34 +40,47 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="qAA-rx-MfS" customClass="LSIPlanetCollectionViewCell">
-                                <rect key="frame" x="0.0" y="0.0" width="200" height="210"/>
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pH0-Go-avh">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="210"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZX8-tD-GJV">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="180"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te8-Ct-JGw">
-                                            <rect key="frame" x="0.0" y="180" width="200" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBK-gk-ir5">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KlX-g6-NX3">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZX8-tD-GJV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="119.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="119.5" id="Q0h-bB-bqR"/>
+                                                        <constraint firstAttribute="width" constant="120" id="kTt-3h-5Iv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te8-Ct-JGw">
+                                                    <rect key="frame" x="0.0" y="119.5" width="120" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="ZX8-tD-GJV" firstAttribute="leading" secondItem="pH0-Go-avh" secondAttribute="leading" id="Czf-mi-P4g"/>
-                                        <constraint firstAttribute="bottom" secondItem="ZX8-tD-GJV" secondAttribute="bottom" constant="30" id="RXb-M2-O9d"/>
-                                        <constraint firstAttribute="bottom" secondItem="te8-Ct-JGw" secondAttribute="bottom" id="RXv-GX-AEW"/>
-                                        <constraint firstAttribute="trailing" secondItem="te8-Ct-JGw" secondAttribute="trailing" id="V7S-Df-q5D"/>
-                                        <constraint firstAttribute="trailing" secondItem="ZX8-tD-GJV" secondAttribute="trailing" id="YSD-4D-Q2m"/>
-                                        <constraint firstItem="ZX8-tD-GJV" firstAttribute="top" secondItem="pH0-Go-avh" secondAttribute="top" id="acq-GZ-M0v"/>
-                                        <constraint firstItem="te8-Ct-JGw" firstAttribute="leading" secondItem="pH0-Go-avh" secondAttribute="leading" id="qaT-Pw-2og"/>
-                                        <constraint firstItem="te8-Ct-JGw" firstAttribute="top" secondItem="ZX8-tD-GJV" secondAttribute="bottom" id="qhk-1A-aYO"/>
+                                        <constraint firstAttribute="trailing" secondItem="dBK-gk-ir5" secondAttribute="trailing" id="0v0-PL-Zla"/>
+                                        <constraint firstItem="dBK-gk-ir5" firstAttribute="leading" secondItem="pH0-Go-avh" secondAttribute="leading" id="FVQ-By-BQB"/>
+                                        <constraint firstItem="KlX-g6-NX3" firstAttribute="leading" secondItem="pH0-Go-avh" secondAttribute="leading" id="Ldi-5N-Y73"/>
+                                        <constraint firstAttribute="trailing" secondItem="KlX-g6-NX3" secondAttribute="trailing" id="Vil-b2-prW"/>
+                                        <constraint firstAttribute="bottom" secondItem="KlX-g6-NX3" secondAttribute="bottom" id="cJy-Wv-VJQ"/>
+                                        <constraint firstItem="KlX-g6-NX3" firstAttribute="top" secondItem="pH0-Go-avh" secondAttribute="top" id="g5b-gf-Ltu"/>
+                                        <constraint firstAttribute="bottom" secondItem="dBK-gk-ir5" secondAttribute="bottom" id="mx4-Ti-Ne3"/>
+                                        <constraint firstItem="dBK-gk-ir5" firstAttribute="top" secondItem="pH0-Go-avh" secondAttribute="top" id="nlh-QX-Ihg"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="200" height="210"/>
+                                <size key="customSize" width="120" height="140"/>
                                 <connections>
                                     <outlet property="imageView" destination="ZX8-tD-GJV" id="LRY-0y-x51"/>
                                     <outlet property="planetLabel" destination="te8-Ct-JGw" id="xVc-k2-Fnd"/>
@@ -89,7 +102,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7r-Fh-BRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="367" y="98"/>
+            <point key="canvasLocation" x="381" y="98"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="JLb-3J-cm0">

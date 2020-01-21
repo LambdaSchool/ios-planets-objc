@@ -37,5 +37,10 @@
     return self;
 }
 
+- (NSArray*)getPlanets
+{
+    return _planets;
+}
+
 
 @end

@@ -7,7 +7,15 @@
 //
 
 #import "LSIPlanetCollectionViewCell.h"
+#import "LSIPlanet.h"
 
 @implementation LSIPlanetCollectionViewCell
+
+- (void)setPlanet:(LSIPlanet *)planet
+{
+    _planet = planet;
+    _planetLabel.text = planet.name;
+    _imageView.image = [UIImage imageNamed:planet.imageName];
+}
 
 @end

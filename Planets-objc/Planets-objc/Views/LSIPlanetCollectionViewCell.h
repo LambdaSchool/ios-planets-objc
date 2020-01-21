@@ -10,10 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class LSIPlanet;
+
 @interface LSIPlanetCollectionViewCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *planetLabel;
+@property (nonatomic) LSIPlanet *planet;
+
+- (void)setPlanet:(LSIPlanet *)planet;
 
 @end
 
