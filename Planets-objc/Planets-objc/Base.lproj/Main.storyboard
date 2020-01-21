@@ -115,6 +115,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6I-O6-bUa">
                                 <rect key="frame" x="357" y="20" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButtonTapped:" destination="aVh-nC-6rg" eventType="touchUpInside" id="gww-lP-APd"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="9gB-bn-DIH">
                                 <rect key="frame" x="20" y="80" width="374" height="31"/>
@@ -127,6 +130,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybd-9t-DQx">
                                         <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="shouldShowPlutoSwitch:" destination="aVh-nC-6rg" eventType="valueChanged" id="b4V-u4-KD9"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>

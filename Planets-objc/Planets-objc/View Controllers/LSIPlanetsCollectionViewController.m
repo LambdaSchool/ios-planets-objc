@@ -40,15 +40,16 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     // Do any additional setup after loading the view.
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+
 }
-*/
+
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -58,7 +59,6 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    NSLog(@"Planet count: %lu", (unsigned long)[self.planetController getPlanets].count);
     return [self.planetController getPlanets].count;
 }
 
@@ -66,8 +66,7 @@ static NSString * const reuseIdentifier = @"PlanetCell";
     LSIPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
 
     LSIPlanet *planet = [[self.planetController getPlanets] objectAtIndex:indexPath.item];
-
-    // Configure the cell
+    
     [cell setPlanet:planet];
     
     return cell;

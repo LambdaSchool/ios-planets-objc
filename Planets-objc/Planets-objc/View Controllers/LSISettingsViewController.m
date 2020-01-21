@@ -17,16 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self updateViews];
+
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)doneButtonTapped:(id)sender {
+    [self dismissViewControllerAnimated:TRUE completion:nil];
 }
-*/
+
+- (IBAction)shouldShowPlutoSwitch:(id)sender {
+    [NSUserDefaults.standardUserDefaults setBool:_plutoSwitch.isOn forKey:@"ShouldShowPluto"];
+}
+
+- (void)updateViews {
+    [_plutoSwitch setOn:[NSUserDefaults.standardUserDefaults boolForKey:@"ShouldShowPluto"]];
+}
 
 @end
