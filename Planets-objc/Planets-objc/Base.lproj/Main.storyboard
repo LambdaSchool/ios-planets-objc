@@ -46,10 +46,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBK-gk-ir5">
-                                            <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        </view>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KlX-g6-NX3">
                                             <rect key="frame" x="0.0" y="0.0" width="120" height="140"/>
                                             <subviews>
@@ -60,7 +56,7 @@
                                                         <constraint firstAttribute="width" constant="120" id="kTt-3h-5Iv"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te8-Ct-JGw">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Planet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te8-Ct-JGw">
                                                     <rect key="frame" x="0.0" y="119.5" width="120" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -70,14 +66,10 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="dBK-gk-ir5" secondAttribute="trailing" id="0v0-PL-Zla"/>
-                                        <constraint firstItem="dBK-gk-ir5" firstAttribute="leading" secondItem="pH0-Go-avh" secondAttribute="leading" id="FVQ-By-BQB"/>
                                         <constraint firstItem="KlX-g6-NX3" firstAttribute="leading" secondItem="pH0-Go-avh" secondAttribute="leading" id="Ldi-5N-Y73"/>
                                         <constraint firstAttribute="trailing" secondItem="KlX-g6-NX3" secondAttribute="trailing" id="Vil-b2-prW"/>
                                         <constraint firstAttribute="bottom" secondItem="KlX-g6-NX3" secondAttribute="bottom" id="cJy-Wv-VJQ"/>
                                         <constraint firstItem="KlX-g6-NX3" firstAttribute="top" secondItem="pH0-Go-avh" secondAttribute="top" id="g5b-gf-Ltu"/>
-                                        <constraint firstAttribute="bottom" secondItem="dBK-gk-ir5" secondAttribute="bottom" id="mx4-Ti-Ne3"/>
-                                        <constraint firstItem="dBK-gk-ir5" firstAttribute="top" secondItem="pH0-Go-avh" secondAttribute="top" id="nlh-QX-Ihg"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="120" height="140"/>

@@ -27,6 +27,7 @@
 
 - (IBAction)shouldShowPlutoSwitch:(id)sender {
     [NSUserDefaults.standardUserDefaults setBool:_plutoSwitch.isOn forKey:@"ShouldShowPluto"];
+    [NSNotificationCenter.defaultCenter postNotificationName:@"plutoSwitchWasFlipped" object:self];
 }
 
 - (void)updateViews {

@@ -13,6 +13,7 @@
 
 @interface LSIPlanetsCollectionViewController ()
 
+
 @end
 
 @implementation LSIPlanetsCollectionViewController
@@ -30,14 +31,14 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Register cell classes
-//    [self.collectionView registerClass:[LSIPlanetCollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
+
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(updateViews) name:@"plutoSwitchWasFlipped" object:nil];
+
+    [self updateViews];
+}
+
+- (void) updateViews {
+    [[self collectionView] reloadData];
 }
 
 
