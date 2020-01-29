@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PLASettingsViewController.h
 //  PlanetsObjC
 //
 //  Created by Bobby Keffury on 1/29/20.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface PLASettingsViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
