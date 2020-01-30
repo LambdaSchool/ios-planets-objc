@@ -11,12 +11,15 @@
 
 @implementation Planet
 
-- (instancetype)initWithName:(NSString *)name imageName:(NSString*)imageName
-{
+- (UIImage *)image {
+    return [UIImage imageNamed:self.imageName];
+}
+
+- (instancetype)initWithName:(NSString *)name {
     self = [super init];
-    if (self) {
-        _name = name;
-        _image = [UIImage imageNamed:@"imageName"];
+    if (self != nil) {
+        self.name = name;
+        self.imageName = [name lowercaseString];
     }
     return self;
 }

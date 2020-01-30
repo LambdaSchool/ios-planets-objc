@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-655" y="94"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Planets Collection View Controller-->
         <scene sceneID="npU-Sr-g0E">
             <objects>
-                <collectionViewController id="aus-Ou-vGj" sceneMemberID="viewController">
+                <collectionViewController id="aus-Ou-vGj" customClass="PlanetsCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="0tW-0r-O5j">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TNH-so-lLL">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="TNH-so-lLL" customClass="PlanetCollectionViewCell">
                                 <rect key="frame" x="0.0" y="0.0" width="132" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xun-39-Mhd">
@@ -69,6 +69,10 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="132" height="152"/>
+                                <connections>
+                                    <outlet property="imageView" destination="K8R-Vu-T9F" id="jkQ-De-l4b"/>
+                                    <outlet property="nameLabel" destination="Qr6-P8-wgN" id="JMr-OW-cPr"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -104,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="848" y="94"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="dMn-1Z-Qwy">
             <objects>
-                <viewController id="sml-0Z-oNr" sceneMemberID="viewController">
+                <viewController id="sml-0Z-oNr" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2DN-i2-gJf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,6 +127,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vey-O8-We5">
                                         <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="showPlutoSwitched:" destination="sml-0Z-oNr" eventType="valueChanged" id="hmP-dt-vrv"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -146,6 +153,9 @@
                         <viewLayoutGuide key="safeArea" id="KKb-d9-AI0"/>
                     </view>
                     <navigationItem key="navigationItem" id="XqC-60-TCm"/>
+                    <connections>
+                        <outlet property="plutoSwitch" destination="vey-O8-We5" id="yK2-HD-DAR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ss-CS-Xzn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,8 +11,10 @@
 
 @interface Planet : NSObject
 
-@property (nonatomic, readonly, copy) NSString *name;
-@property (nonatomic, readonly) UIImage *image;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *imageName;
+@property (nonatomic) UIImage *image;
 
+- (instancetype)initWithName:(NSString *)name;
 
 @end

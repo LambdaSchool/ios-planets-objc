@@ -15,6 +15,9 @@
 		29B5645523E270A20041340D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B5645423E270A20041340D /* main.m */; };
 		29B5646023E275AC0041340D /* PlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B5645F23E275AC0041340D /* PlanetsCollectionViewController.m */; };
 		29B5646323E276200041340D /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B5646223E276200041340D /* Planet.m */; };
+		29B5646723E27AFA0041340D /* PlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B5646623E27AFA0041340D /* PlanetController.m */; };
+		29B5646B23E280E20041340D /* PlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B5646A23E280E20041340D /* PlanetCollectionViewCell.m */; };
+		29B5646E23E282210041340D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B5646D23E282210041340D /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		29B5645F23E275AC0041340D /* PlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsCollectionViewController.m; sourceTree = "<group>"; };
 		29B5646123E275FA0041340D /* Planet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
 		29B5646223E276200041340D /* Planet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Planet.m; sourceTree = "<group>"; };
+		29B5646523E27AE80041340D /* PlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetController.h; sourceTree = "<group>"; };
+		29B5646623E27AFA0041340D /* PlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetController.m; sourceTree = "<group>"; };
+		29B5646923E280AF0041340D /* PlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		29B5646A23E280E20041340D /* PlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		29B5646C23E281CF0041340D /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		29B5646D23E282210041340D /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				29B5645D23E275790041340D /* App Lifecycle */,
+				29B5646823E2808F0041340D /* Views */,
+				29B5646423E27A6C0041340D /* Model Controller */,
 				29B5645C23E275750041340D /* Model */,
 				29B5645B23E275640041340D /* View Controllers */,
 				29B5644B23E270A10041340D /* Main.storyboard */,
@@ -80,6 +91,8 @@
 			children = (
 				29B5645E23E275AC0041340D /* PlanetsCollectionViewController.h */,
 				29B5645F23E275AC0041340D /* PlanetsCollectionViewController.m */,
+				29B5646C23E281CF0041340D /* SettingsViewController.h */,
+				29B5646D23E282210041340D /* SettingsViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -103,6 +116,24 @@
 				29B5644623E270A10041340D /* SceneDelegate.m */,
 			);
 			path = "App Lifecycle";
+			sourceTree = "<group>";
+		};
+		29B5646423E27A6C0041340D /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				29B5646523E27AE80041340D /* PlanetController.h */,
+				29B5646623E27AFA0041340D /* PlanetController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		29B5646823E2808F0041340D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29B5646923E280AF0041340D /* PlanetCollectionViewCell.h */,
+				29B5646A23E280E20041340D /* PlanetCollectionViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +209,11 @@
 				29B5646323E276200041340D /* Planet.m in Sources */,
 				29B5644423E270A10041340D /* AppDelegate.m in Sources */,
 				29B5645523E270A20041340D /* main.m in Sources */,
+				29B5646E23E282210041340D /* SettingsViewController.m in Sources */,
 				29B5646023E275AC0041340D /* PlanetsCollectionViewController.m in Sources */,
 				29B5644723E270A10041340D /* SceneDelegate.m in Sources */,
+				29B5646B23E280E20041340D /* PlanetCollectionViewCell.m in Sources */,
+				29B5646723E27AFA0041340D /* PlanetController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
