@@ -1,5 +1,5 @@
 //
-//  Planet.h
+//  PLAPlanet.h
 //  PlanetsObjC
 //
 //  Created by Bobby Keffury on 1/30/20.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Planet : NSObject
+@interface PLAPlanet : NSObject
 
 //MARK: - Properties
 

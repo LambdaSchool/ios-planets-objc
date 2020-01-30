@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		375A776A23E33817007D8D86 /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A776923E33817007D8D86 /* Planet.m */; };
+		375A776D23E33E91007D8D86 /* PLAPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A776C23E33E91007D8D86 /* PLAPlanetController.m */; };
+		375A777023E33EB9007D8D86 /* PLAPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A776F23E33EB9007D8D86 /* PLAPlanet.m */; };
 		37D26BE123E2099500D49067 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D26BE023E2099500D49067 /* AppDelegate.m */; };
 		37D26BE423E2099500D49067 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D26BE323E2099500D49067 /* SceneDelegate.m */; };
 		37D26BEA23E2099500D49067 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D26BE823E2099500D49067 /* Main.storyboard */; };
@@ -19,8 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		375A776823E33817007D8D86 /* Planet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
-		375A776923E33817007D8D86 /* Planet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Planet.m; sourceTree = "<group>"; };
+		375A776B23E33E90007D8D86 /* PLAPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAPlanetController.h; sourceTree = "<group>"; };
+		375A776C23E33E91007D8D86 /* PLAPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAPlanetController.m; sourceTree = "<group>"; };
+		375A776E23E33EB9007D8D86 /* PLAPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAPlanet.h; sourceTree = "<group>"; };
+		375A776F23E33EB9007D8D86 /* PLAPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAPlanet.m; sourceTree = "<group>"; };
 		37D26BDC23E2099500D49067 /* PlanetsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D26BDF23E2099500D49067 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37D26BE023E2099500D49067 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,8 +108,8 @@
 		37D26BFA23E2191B00D49067 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				375A776823E33817007D8D86 /* Planet.h */,
-				375A776923E33817007D8D86 /* Planet.m */,
+				375A776E23E33EB9007D8D86 /* PLAPlanet.h */,
+				375A776F23E33EB9007D8D86 /* PLAPlanet.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -114,6 +117,8 @@
 		37D26BFB23E2192100D49067 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				375A776B23E33E90007D8D86 /* PLAPlanetController.h */,
+				375A776C23E33E91007D8D86 /* PLAPlanetController.m */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -193,7 +198,8 @@
 				37D26BFE23E2195A00D49067 /* PLAPlanetsCollectionViewController.m in Sources */,
 				37D26BE423E2099500D49067 /* SceneDelegate.m in Sources */,
 				37D26C0123E21C6900D49067 /* PLASettingsViewController.m in Sources */,
-				375A776A23E33817007D8D86 /* Planet.m in Sources */,
+				375A776D23E33E91007D8D86 /* PLAPlanetController.m in Sources */,
+				375A777023E33EB9007D8D86 /* PLAPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
