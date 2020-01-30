@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class PlanetController;
+@class SettingsViewController;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PlanetsCollectionViewController : UICollectionViewController
+
+@property PlanetController *planetController;
+@property SettingsViewController *settingsViewController;
 
 @end
 
