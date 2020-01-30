@@ -10,6 +10,18 @@
 
 @implementation Planet
 
-
+//{
+//     self = [super init];
+//    
+//    if (self) {
+//        // Setup the object
+//        
+//        // self.name = name // Side effects in Objective-C (property setter)
+//        _name = name;
+//        _imageName = imageName;
+//        _image = image;
+//    }
+//    return self;
+//}
 
 @end

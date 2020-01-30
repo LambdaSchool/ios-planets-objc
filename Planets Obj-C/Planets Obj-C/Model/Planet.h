@@ -14,6 +14,9 @@
 
 @property (nonatomic, readonly, copy) NSString *name;
 @property (nonatomic, readonly, copy) NSString *imageName;
+@property (nonatomic, readonly) UIImage *image;
+
+-(instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName image:(UIImage *)image;
 
 @end
 
