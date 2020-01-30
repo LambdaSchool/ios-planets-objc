@@ -19,6 +19,12 @@
     // Do any additional setup after loading the view.
 }
 
+- (IBAction)changeShouldShowPluto:(id)sender {
+}
+
+- (IBAction)donePressed:(id)sender {
+}
+
 /*
 #pragma mark - Navigation
 

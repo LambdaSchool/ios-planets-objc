@@ -95,6 +95,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C4h-BG-7fh">
                                         <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeShouldShowPluto:" destination="fLM-Lz-jDc" eventType="valueChanged" id="mKa-DC-HIG"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -108,8 +111,15 @@
                         <viewLayoutGuide key="safeArea" id="lNK-wg-D3v"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gkn-xd-BZT">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hdg-qH-4qx"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hdg-qH-4qx">
+                            <connections>
+                                <action selector="donePressed:" destination="fLM-Lz-jDc" id="hpM-Lb-i1G"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="shouldShowPlutoSwitch" destination="C4h-BG-7fh" id="g2e-zW-eAB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eiU-oy-9B7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface VSSettingsViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UISwitch *shouldShowPlutoSwitch;
+
 
 @end
 
-NS_ASSUME_NONNULL_END
