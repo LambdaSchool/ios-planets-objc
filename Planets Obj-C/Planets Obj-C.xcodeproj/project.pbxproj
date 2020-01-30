@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E315BFAA23E27DB900285951 /* VSPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = E315BFA923E27DB900285951 /* VSPlanet.m */; };
+		E315BFAD23E2819100285951 /* VSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E315BFAC23E2819100285951 /* VSSettingsViewController.m */; };
+		E315BFB123E288B600285951 /* VSPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = E315BFB023E288B600285951 /* VSPlanetController.m */; };
+		E35F3A5A23E2326800F005C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E35F3A5923E2326800F005C0 /* AppDelegate.m */; };
+		E35F3A5D23E2326800F005C0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E35F3A5C23E2326800F005C0 /* SceneDelegate.m */; };
+		E35F3A6323E2326800F005C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35F3A6123E2326800F005C0 /* Main.storyboard */; };
+		E35F3A6523E2326900F005C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35F3A6423E2326900F005C0 /* Assets.xcassets */; };
+		E35F3A6823E2326900F005C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35F3A6623E2326900F005C0 /* LaunchScreen.storyboard */; };
+		E35F3A6B23E2326900F005C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E35F3A6A23E2326900F005C0 /* main.m */; };
+		E35F3A7323E2362400F005C0 /* VSPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E35F3A7223E2362400F005C0 /* VSPlanetsCollectionViewController.m */; };
+		E35F3A7823E26E5700F005C0 /* VSPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E35F3A7723E26E5700F005C0 /* VSPlanetCollectionViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E315BFA823E27DB900285951 /* VSPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSPlanet.h; sourceTree = "<group>"; };
+		E315BFA923E27DB900285951 /* VSPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSPlanet.m; sourceTree = "<group>"; };
+		E315BFAB23E2819100285951 /* VSSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSSettingsViewController.h; sourceTree = "<group>"; };
+		E315BFAC23E2819100285951 /* VSSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSSettingsViewController.m; sourceTree = "<group>"; };
+		E315BFAF23E288B600285951 /* VSPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSPlanetController.h; sourceTree = "<group>"; };
+		E315BFB023E288B600285951 /* VSPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSPlanetController.m; sourceTree = "<group>"; };
+		E315BFB223E2909600285951 /* VSSettingsKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSSettingsKeys.h; sourceTree = "<group>"; };
+		E315BFB423E2931500285951 /* Notifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		E35F3A5523E2326800F005C0 /* Planets Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E35F3A5823E2326800F005C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E35F3A5923E2326800F005C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E35F3A5B23E2326800F005C0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		E35F3A5C23E2326800F005C0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		E35F3A6223E2326800F005C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E35F3A6423E2326900F005C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E35F3A6723E2326900F005C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E35F3A6923E2326900F005C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E35F3A6A23E2326900F005C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E35F3A7123E2362400F005C0 /* VSPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		E35F3A7223E2362400F005C0 /* VSPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		E35F3A7623E26E5700F005C0 /* VSPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		E35F3A7723E26E5700F005C0 /* VSPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E35F3A5223E2326800F005C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E315BFA723E27DA500285951 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E315BFA823E27DB900285951 /* VSPlanet.h */,
+				E315BFA923E27DB900285951 /* VSPlanet.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E315BFAE23E2884E00285951 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E315BFAF23E288B600285951 /* VSPlanetController.h */,
+				E315BFB023E288B600285951 /* VSPlanetController.m */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		E35F3A4C23E2326800F005C0 = {
+			isa = PBXGroup;
+			children = (
+				E35F3A5723E2326800F005C0 /* Planets Obj-C */,
+				E35F3A5623E2326800F005C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E35F3A5623E2326800F005C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E35F3A5523E2326800F005C0 /* Planets Obj-C.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E35F3A5723E2326800F005C0 /* Planets Obj-C */ = {
+			isa = PBXGroup;
+			children = (
+				E315BFA723E27DA500285951 /* Model */,
+				E315BFAE23E2884E00285951 /* Model Controller */,
+				E35F3A5823E2326800F005C0 /* AppDelegate.h */,
+				E35F3A5923E2326800F005C0 /* AppDelegate.m */,
+				E315BFB223E2909600285951 /* VSSettingsKeys.h */,
+				E315BFB423E2931500285951 /* Notifications.h */,
+				E35F3A5B23E2326800F005C0 /* SceneDelegate.h */,
+				E35F3A5C23E2326800F005C0 /* SceneDelegate.m */,
+				E35F3A6123E2326800F005C0 /* Main.storyboard */,
+				E35F3A7523E26E2300F005C0 /* Views */,
+				E35F3A7423E26E0000F005C0 /* View Controllers */,
+				E35F3A6423E2326900F005C0 /* Assets.xcassets */,
+				E35F3A6623E2326900F005C0 /* LaunchScreen.storyboard */,
+				E35F3A6923E2326900F005C0 /* Info.plist */,
+				E35F3A6A23E2326900F005C0 /* main.m */,
+			);
+			path = "Planets Obj-C";
+			sourceTree = "<group>";
+		};
+		E35F3A7423E26E0000F005C0 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E35F3A7123E2362400F005C0 /* VSPlanetsCollectionViewController.h */,
+				E35F3A7223E2362400F005C0 /* VSPlanetsCollectionViewController.m */,
+				E315BFAB23E2819100285951 /* VSSettingsViewController.h */,
+				E315BFAC23E2819100285951 /* VSSettingsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E35F3A7523E26E2300F005C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E35F3A7623E26E5700F005C0 /* VSPlanetCollectionViewCell.h */,
+				E35F3A7723E26E5700F005C0 /* VSPlanetCollectionViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E35F3A5423E2326800F005C0 /* Planets Obj-C */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E35F3A6E23E2326900F005C0 /* Build configuration list for PBXNativeTarget "Planets Obj-C" */;
+			buildPhases = (
+				E35F3A5123E2326800F005C0 /* Sources */,
+				E35F3A5223E2326800F005C0 /* Frameworks */,
+				E35F3A5323E2326800F005C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Planets Obj-C";
+			productName = "Planets Obj-C";
+			productReference = E35F3A5523E2326800F005C0 /* Planets Obj-C.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E35F3A4D23E2326800F005C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Vici Shaweddy";
+				TargetAttributes = {
+					E35F3A5423E2326800F005C0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E35F3A5023E2326800F005C0 /* Build configuration list for PBXProject "Planets Obj-C" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E35F3A4C23E2326800F005C0;
+			productRefGroup = E35F3A5623E2326800F005C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E35F3A5423E2326800F005C0 /* Planets Obj-C */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E35F3A5323E2326800F005C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E35F3A6823E2326900F005C0 /* LaunchScreen.storyboard in Resources */,
+				E35F3A6523E2326900F005C0 /* Assets.xcassets in Resources */,
+				E35F3A6323E2326800F005C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E35F3A5123E2326800F005C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E35F3A7323E2362400F005C0 /* VSPlanetsCollectionViewController.m in Sources */,
+				E35F3A5A23E2326800F005C0 /* AppDelegate.m in Sources */,
+				E35F3A6B23E2326900F005C0 /* main.m in Sources */,
+				E35F3A5D23E2326800F005C0 /* SceneDelegate.m in Sources */,
+				E35F3A7823E26E5700F005C0 /* VSPlanetCollectionViewCell.m in Sources */,
+				E315BFB123E288B600285951 /* VSPlanetController.m in Sources */,
+				E315BFAD23E2819100285951 /* VSSettingsViewController.m in Sources */,
+				E315BFAA23E27DB900285951 /* VSPlanet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E35F3A6123E2326800F005C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E35F3A6223E2326800F005C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E35F3A6623E2326900F005C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E35F3A6723E2326900F005C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E35F3A6C23E2326900F005C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E35F3A6D23E2326900F005C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E35F3A6F23E2326900F005C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPH2NW7MY;
+				INFOPLIST_FILE = "Planets Obj-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vicishaweddy.Planets-Obj-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E35F3A7023E2326900F005C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZYPH2NW7MY;
+				INFOPLIST_FILE = "Planets Obj-C/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vicishaweddy.Planets-Obj-C";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E35F3A5023E2326800F005C0 /* Build configuration list for PBXProject "Planets Obj-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E35F3A6C23E2326900F005C0 /* Debug */,
+				E35F3A6D23E2326900F005C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E35F3A6E23E2326900F005C0 /* Build configuration list for PBXNativeTarget "Planets Obj-C" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E35F3A6F23E2326900F005C0 /* Debug */,
+				E35F3A7023E2326900F005C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E35F3A4D23E2326800F005C0 /* Project object */;
+}
