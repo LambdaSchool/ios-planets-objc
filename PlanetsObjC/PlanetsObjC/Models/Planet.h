@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, copy) NSString *name;
 @property (nonatomic, readonly) NSData *image;
 
+- (instancetype)initWithName: (NSString *)name image: (NSData *)image;
+
 @end
 
 NS_ASSUME_NONNULL_END
