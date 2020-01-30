@@ -54,11 +54,9 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    
     PlanetCollectionViewCell *cell = (PlanetCollectionViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
     Planet *planet = [[self currentPlanets] objectAtIndex:indexPath.item];
-    
     
     cell.imageView.image = planet.image;
     cell.nameLabel.text = planet.name;
