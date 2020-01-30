@@ -1,14 +1,14 @@
 //
-//  Planet.m
-//  Planets Obj-C
+//  VSPlanet.m
+//  VSPlanets Obj-C
 //
 //  Created by Vici Shaweddy on 1/29/20.
 //  Copyright © 2020 Vici Shaweddy. All rights reserved.
 //
 
-#import "Planet.h"
+#import "VSPlanet.h"
 
-@implementation Planet
+@implementation VSPlanet
 
 - (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName
 {

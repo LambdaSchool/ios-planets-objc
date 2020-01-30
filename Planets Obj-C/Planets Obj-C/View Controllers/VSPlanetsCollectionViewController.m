@@ -8,16 +8,19 @@
 
 #import "VSPlanetsCollectionViewController.h"
 #import "VSPlanetCollectionViewCell.h"
+#import "VSPlanetController.h"
+#import "VSPlanet.h"
+#import "VSSettingsViewController.h"
+#import "VSSettingsKeys.h"
+#import "Notifications.h"
 
 
 @interface VSPlanetsCollectionViewController ()
 
-//@property (nonatomic, copy) NSArray<Planet *> *planets;
+@property (nonatomic, copy) NSArray<VSPlanet *> *planets;
+@property (nonatomic, strong) VSPlanetController *planetController;
 
 @end
-
-
-
 
 @implementation VSPlanetsCollectionViewController
 
@@ -26,13 +29,27 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.planetController = [[VSPlanetController alloc] init];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updatePlanets:) name:kplutoPlanetStatusChanged object:nil];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.collectionView reloadData];
+}
+
+- (void)updatePlanets:(NSNotification *)notification {
+    [self.collectionView reloadData];
+}
+
+- (NSArray *)planets {
+    BOOL shouldShowPluto = [[NSUserDefaults standardUserDefaults] boolForKey: kShouldShowPlutoKey];
     
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
-    
-    // Do any additional setup after loading the view.
+    if (shouldShowPluto == YES) {
+        return self.planetController.planetsWithPluto;
+    } else {
+        return self.planetController.planetsWithoutPluto;
+    }
 }
 
 /*
@@ -48,20 +65,20 @@ static NSString * const reuseIdentifier = @"PlanetCell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    return self.planets.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    VSPlanetCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
+    VSPlanet *planet = [[self planets] objectAtIndex:indexPath.item];
+    cell.imageView.image = planet.image;
+    cell.titleLabel.text = planet.name;
     
     return cell;
 }

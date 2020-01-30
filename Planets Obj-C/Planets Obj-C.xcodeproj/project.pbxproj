@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E315BFAA23E27DB900285951 /* Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = E315BFA923E27DB900285951 /* Planet.m */; };
+		E315BFAA23E27DB900285951 /* VSPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = E315BFA923E27DB900285951 /* VSPlanet.m */; };
 		E315BFAD23E2819100285951 /* VSSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E315BFAC23E2819100285951 /* VSSettingsViewController.m */; };
-		E315BFB123E288B600285951 /* PlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = E315BFB023E288B600285951 /* PlanetController.m */; };
+		E315BFB123E288B600285951 /* VSPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = E315BFB023E288B600285951 /* VSPlanetController.m */; };
 		E35F3A5A23E2326800F005C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E35F3A5923E2326800F005C0 /* AppDelegate.m */; };
 		E35F3A5D23E2326800F005C0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E35F3A5C23E2326800F005C0 /* SceneDelegate.m */; };
 		E35F3A6323E2326800F005C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35F3A6123E2326800F005C0 /* Main.storyboard */; };
@@ -21,12 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E315BFA823E27DB900285951 /* Planet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Planet.h; sourceTree = "<group>"; };
-		E315BFA923E27DB900285951 /* Planet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Planet.m; sourceTree = "<group>"; };
+		E315BFA823E27DB900285951 /* VSPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSPlanet.h; sourceTree = "<group>"; };
+		E315BFA923E27DB900285951 /* VSPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSPlanet.m; sourceTree = "<group>"; };
 		E315BFAB23E2819100285951 /* VSSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSSettingsViewController.h; sourceTree = "<group>"; };
 		E315BFAC23E2819100285951 /* VSSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSSettingsViewController.m; sourceTree = "<group>"; };
-		E315BFAF23E288B600285951 /* PlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetController.h; sourceTree = "<group>"; };
-		E315BFB023E288B600285951 /* PlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetController.m; sourceTree = "<group>"; };
+		E315BFAF23E288B600285951 /* VSPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSPlanetController.h; sourceTree = "<group>"; };
+		E315BFB023E288B600285951 /* VSPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSPlanetController.m; sourceTree = "<group>"; };
 		E315BFB223E2909600285951 /* VSSettingsKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSSettingsKeys.h; sourceTree = "<group>"; };
 		E315BFB423E2931500285951 /* Notifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
 		E35F3A5523E2326800F005C0 /* Planets Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,8 +59,8 @@
 		E315BFA723E27DA500285951 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E315BFA823E27DB900285951 /* Planet.h */,
-				E315BFA923E27DB900285951 /* Planet.m */,
+				E315BFA823E27DB900285951 /* VSPlanet.h */,
+				E315BFA923E27DB900285951 /* VSPlanet.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -68,8 +68,8 @@
 		E315BFAE23E2884E00285951 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E315BFAF23E288B600285951 /* PlanetController.h */,
-				E315BFB023E288B600285951 /* PlanetController.m */,
+				E315BFAF23E288B600285951 /* VSPlanetController.h */,
+				E315BFB023E288B600285951 /* VSPlanetController.m */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -207,9 +207,9 @@
 				E35F3A6B23E2326900F005C0 /* main.m in Sources */,
 				E35F3A5D23E2326800F005C0 /* SceneDelegate.m in Sources */,
 				E35F3A7823E26E5700F005C0 /* VSPlanetCollectionViewCell.m in Sources */,
-				E315BFB123E288B600285951 /* PlanetController.m in Sources */,
+				E315BFB123E288B600285951 /* VSPlanetController.m in Sources */,
 				E315BFAD23E2819100285951 /* VSSettingsViewController.m in Sources */,
-				E315BFAA23E27DB900285951 /* Planet.m in Sources */,
+				E315BFAA23E27DB900285951 /* VSPlanet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

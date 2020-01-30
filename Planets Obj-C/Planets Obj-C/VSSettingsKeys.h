@@ -9,6 +9,6 @@
 #ifndef SettingsKeys_h
 #define SettingsKeys_h
 
-static NSString * const kShouldShowPlutoKey = @"ShouldShowPluto";
+static NSString * const kShouldShowPlutoKey = @"shouldShowPluto";
 
 #endif /* SettingsKeys_h */

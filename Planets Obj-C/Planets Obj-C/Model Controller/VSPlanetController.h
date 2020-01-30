@@ -1,6 +1,6 @@
 //
-//  PlanetController.h
-//  Planets Obj-C
+//  VSPlanetController.h
+//  VSPlanets Obj-C
 //
 //  Created by Vici Shaweddy on 1/29/20.
 //  Copyright © 2020 Vici Shaweddy. All rights reserved.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PlanetController : NSObject
+@interface VSPlanetController : NSObject
 
 @property (nonatomic, strong) NSArray *planetsWithoutPluto;
 @property (nonatomic, strong) NSArray *planetsWithPluto;

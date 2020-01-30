@@ -8,6 +8,7 @@
 
 #import "VSSettingsViewController.h"
 #import "VSSettingsKeys.h"
+#import "Notifications.h"
 
 @interface VSSettingsViewController ()
 
@@ -17,7 +18,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
+    [self updateViews];
 }
 
 - (void)updateViews {
@@ -28,14 +29,14 @@
 
 - (IBAction)changeShouldShowPluto:(id)sender {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [self.shouldShowPlutoSwitch setOn:[userDefaults boolForKey:kShouldShowPlutoKey]];
+    BOOL isOn = self.shouldShowPlutoSwitch.isOn;
+    [userDefaults setBool:isOn forKey:kShouldShowPlutoKey];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"plutoPlanetStatsChanged" object:nil];
+    [userDefaults synchronize];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kplutoPlanetStatusChanged object:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-
-- (IBAction)donePressed:(id)sender {
-}
-
 /*
 #pragma mark - Navigation
 
