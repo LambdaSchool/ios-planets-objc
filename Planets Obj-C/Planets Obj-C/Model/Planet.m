@@ -10,18 +10,17 @@
 
 @implementation Planet
 
-//{
-//     self = [super init];
-//    
-//    if (self) {
-//        // Setup the object
-//        
-//        // self.name = name // Side effects in Objective-C (property setter)
-//        _name = name;
-//        _imageName = imageName;
-//        _image = image;
-//    }
-//    return self;
-//}
+- (instancetype)initWithName:(NSString *)name imageName:(NSString *)imageName
+{
+    if (self = [super init]) {
+        _name = name;
+        _imageName = imageName;
+    }
+    return self;
+}
+
+- (UIImage *)image {
+    return [UIImage imageNamed:self.imageName];
+}
 
 @end
