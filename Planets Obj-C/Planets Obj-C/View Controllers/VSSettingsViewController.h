@@ -12,6 +12,5 @@
 
 @property (weak, nonatomic) IBOutlet UISwitch *shouldShowPlutoSwitch;
 
-
 @end
 

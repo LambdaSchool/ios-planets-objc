@@ -7,6 +7,7 @@
 //
 
 #import "VSSettingsViewController.h"
+#import "VSSettingsKeys.h"
 
 @interface VSSettingsViewController ()
 
@@ -14,12 +15,22 @@
 
 @implementation VSSettingsViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+}
+
+- (void)updateViews {
+    // let userDefaults: UserDefaults = UserDefaults.standard
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [self.shouldShowPlutoSwitch setOn:[userDefaults boolForKey:kShouldShowPlutoKey]];
 }
 
 - (IBAction)changeShouldShowPluto:(id)sender {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [self.shouldShowPlutoSwitch setOn:[userDefaults boolForKey:kShouldShowPlutoKey]];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"plutoPlanetStatsChanged" object:nil];
 }
 
 - (IBAction)donePressed:(id)sender {

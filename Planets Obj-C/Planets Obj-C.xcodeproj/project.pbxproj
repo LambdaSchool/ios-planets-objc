@@ -27,6 +27,8 @@
 		E315BFAC23E2819100285951 /* VSSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSSettingsViewController.m; sourceTree = "<group>"; };
 		E315BFAF23E288B600285951 /* PlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetController.h; sourceTree = "<group>"; };
 		E315BFB023E288B600285951 /* PlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetController.m; sourceTree = "<group>"; };
+		E315BFB223E2909600285951 /* VSSettingsKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSSettingsKeys.h; sourceTree = "<group>"; };
+		E315BFB423E2931500285951 /* Notifications.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
 		E35F3A5523E2326800F005C0 /* Planets Obj-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Planets Obj-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35F3A5823E2326800F005C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E35F3A5923E2326800F005C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,6 +97,8 @@
 				E315BFAE23E2884E00285951 /* Model Controller */,
 				E35F3A5823E2326800F005C0 /* AppDelegate.h */,
 				E35F3A5923E2326800F005C0 /* AppDelegate.m */,
+				E315BFB223E2909600285951 /* VSSettingsKeys.h */,
+				E315BFB423E2931500285951 /* Notifications.h */,
 				E35F3A5B23E2326800F005C0 /* SceneDelegate.h */,
 				E35F3A5C23E2326800F005C0 /* SceneDelegate.m */,
 				E35F3A6123E2326800F005C0 /* Main.storyboard */,
