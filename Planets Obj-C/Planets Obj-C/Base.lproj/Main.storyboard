@@ -67,7 +67,7 @@
                     <navigationItem key="navigationItem" id="ILd-Rb-zFL">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="Opd-e3-lGv">
                             <connections>
-                                <segue destination="fLM-Lz-jDc" kind="show" identifier="SettingsSegue" id="eyS-Ry-VPD"/>
+                                <segue destination="fLM-Lz-jDc" kind="presentation" identifier="SettingsSegue" id="eyS-Ry-VPD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -81,11 +81,11 @@
             <objects>
                 <viewController id="fLM-Lz-jDc" customClass="VSSettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DjY-Lv-S4A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="195" translatesAutoresizingMaskIntoConstraints="NO" id="ljg-zb-wQI">
-                                <rect key="frame" x="20" y="128" width="374" height="31"/>
+                                <rect key="frame" x="20" y="40" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Pluto a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QA-2t-hPx">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="31"/>
