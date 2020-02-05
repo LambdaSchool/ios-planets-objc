@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3718DD1923EA95D800A10756 /* PlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3718DD1823EA95D800A10756 /* PlanetsCollectionViewCell.m */; };
 		375A776D23E33E91007D8D86 /* PLAPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A776C23E33E91007D8D86 /* PLAPlanetController.m */; };
 		375A777023E33EB9007D8D86 /* PLAPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 375A776F23E33EB9007D8D86 /* PLAPlanet.m */; };
 		37D26BE123E2099500D49067 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D26BE023E2099500D49067 /* AppDelegate.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3718DD1723EA95D800A10756 /* PlanetsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetsCollectionViewCell.h; sourceTree = "<group>"; };
+		3718DD1823EA95D800A10756 /* PlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetsCollectionViewCell.m; sourceTree = "<group>"; };
 		375A776B23E33E90007D8D86 /* PLAPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAPlanetController.h; sourceTree = "<group>"; };
 		375A776C23E33E91007D8D86 /* PLAPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLAPlanetController.m; sourceTree = "<group>"; };
 		375A776E23E33EB9007D8D86 /* PLAPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLAPlanet.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 		37D26BF923E2191600D49067 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3718DD1723EA95D800A10756 /* PlanetsCollectionViewCell.h */,
+				3718DD1823EA95D800A10756 /* PlanetsCollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 				37D26BF223E2099700D49067 /* main.m in Sources */,
 				37D26BFE23E2195A00D49067 /* PLAPlanetsCollectionViewController.m in Sources */,
 				37D26BE423E2099500D49067 /* SceneDelegate.m in Sources */,
+				3718DD1923EA95D800A10756 /* PlanetsCollectionViewCell.m in Sources */,
 				37D26C0123E21C6900D49067 /* PLASettingsViewController.m in Sources */,
 				375A776D23E33E91007D8D86 /* PLAPlanetController.m in Sources */,
 				375A777023E33EB9007D8D86 /* PLAPlanet.m in Sources */,
