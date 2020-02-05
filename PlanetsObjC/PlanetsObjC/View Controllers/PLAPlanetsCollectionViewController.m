@@ -7,18 +7,18 @@
 //
 
 #import "PLAPlanetsCollectionViewController.h"
+#import "PLAPlanetController.h"
+#import "PLAPlanet.h"
 
 @interface PLAPlanetsCollectionViewController ()
+
+@property (nonatomic, readonly)  PLAPlanetController *planetsController;
 
 @end
 
 @implementation PLAPlanetsCollectionViewController
 
 static NSString * const reuseIdentifier = @"Cell";
-
-//MARK: - Properties
-
-//MARK: - Outlets
 
 //MARK: - Views
 
