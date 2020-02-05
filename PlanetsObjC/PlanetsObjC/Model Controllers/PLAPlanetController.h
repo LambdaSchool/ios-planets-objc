@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PLAPlanetController : NSObject
 
+@property (nonatomic, readonly, copy) NSArray<PLAPlanet *> *planets;
+
 @end
 
 NS_ASSUME_NONNULL_END
