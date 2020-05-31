@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A57CB43322249627004F0927 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB43222249627004F0927 /* AppDelegate.m */; };
+		A57CB43922249627004F0927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57CB43722249627004F0927 /* Main.storyboard */; };
+		A57CB43B22249628004F0927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57CB43A22249628004F0927 /* Assets.xcassets */; };
+		A57CB43E22249628004F0927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A57CB43C22249628004F0927 /* LaunchScreen.storyboard */; };
+		A57CB44122249628004F0927 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB44022249628004F0927 /* main.m */; };
+		A57CB449222497B3004F0927 /* OSIPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB448222497B3004F0927 /* OSIPlanetsCollectionViewController.m */; };
+		A57CB44D2224980A004F0927 /* OSIPlanetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB44C2224980A004F0927 /* OSIPlanetsCollectionViewCell.m */; };
+		A57CB4542224AABD004F0927 /* OSIPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB4532224AABD004F0927 /* OSIPlanet.m */; };
+		A57CB4582224BC93004F0927 /* OSIPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB4572224BC93004F0927 /* OSIPlanetController.m */; };
+		A57CB45E2225172D004F0927 /* OSISettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB45D2225172D004F0927 /* OSISettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A57CB42E22249627004F0927 /* Objc-Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Objc-Planets.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57CB43122249627004F0927 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A57CB43222249627004F0927 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A57CB43822249627004F0927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A57CB43A22249628004F0927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A57CB43D22249628004F0927 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A57CB43F22249628004F0927 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57CB44022249628004F0927 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A57CB447222497B3004F0927 /* OSIPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSIPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		A57CB448222497B3004F0927 /* OSIPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSIPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		A57CB44B2224980A004F0927 /* OSIPlanetsCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSIPlanetsCollectionViewCell.h; sourceTree = "<group>"; };
+		A57CB44C2224980A004F0927 /* OSIPlanetsCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSIPlanetsCollectionViewCell.m; sourceTree = "<group>"; };
+		A57CB4522224AABD004F0927 /* OSIPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSIPlanet.h; sourceTree = "<group>"; };
+		A57CB4532224AABD004F0927 /* OSIPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSIPlanet.m; sourceTree = "<group>"; };
+		A57CB4562224BC93004F0927 /* OSIPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSIPlanetController.h; sourceTree = "<group>"; };
+		A57CB4572224BC93004F0927 /* OSIPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSIPlanetController.m; sourceTree = "<group>"; };
+		A57CB45C2225172D004F0927 /* OSISettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSISettingsViewController.h; sourceTree = "<group>"; };
+		A57CB45D2225172D004F0927 /* OSISettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSISettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A57CB42B22249627004F0927 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A57CB42522249627004F0927 = {
+			isa = PBXGroup;
+			children = (
+				A57CB43022249627004F0927 /* Objc-Planets */,
+				A57CB42F22249627004F0927 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A57CB42F22249627004F0927 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A57CB42E22249627004F0927 /* Objc-Planets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A57CB43022249627004F0927 /* Objc-Planets */ = {
+			isa = PBXGroup;
+			children = (
+				A57CB43122249627004F0927 /* AppDelegate.h */,
+				A57CB43222249627004F0927 /* AppDelegate.m */,
+				A57CB43722249627004F0927 /* Main.storyboard */,
+				A57CB4552224AAEC004F0927 /* Model */,
+				A57CB44A222497BC004F0927 /* View Controllers */,
+				A57CB44E22249814004F0927 /* View Cell */,
+				A57CB43A22249628004F0927 /* Assets.xcassets */,
+				A57CB43C22249628004F0927 /* LaunchScreen.storyboard */,
+				A57CB43F22249628004F0927 /* Info.plist */,
+				A57CB44022249628004F0927 /* main.m */,
+			);
+			path = "Objc-Planets";
+			sourceTree = "<group>";
+		};
+		A57CB44A222497BC004F0927 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A57CB447222497B3004F0927 /* OSIPlanetsCollectionViewController.h */,
+				A57CB448222497B3004F0927 /* OSIPlanetsCollectionViewController.m */,
+				A57CB45C2225172D004F0927 /* OSISettingsViewController.h */,
+				A57CB45D2225172D004F0927 /* OSISettingsViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A57CB44E22249814004F0927 /* View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A57CB44B2224980A004F0927 /* OSIPlanetsCollectionViewCell.h */,
+				A57CB44C2224980A004F0927 /* OSIPlanetsCollectionViewCell.m */,
+			);
+			path = "View Cell";
+			sourceTree = "<group>";
+		};
+		A57CB4552224AAEC004F0927 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A57CB4522224AABD004F0927 /* OSIPlanet.h */,
+				A57CB4532224AABD004F0927 /* OSIPlanet.m */,
+				A57CB4562224BC93004F0927 /* OSIPlanetController.h */,
+				A57CB4572224BC93004F0927 /* OSIPlanetController.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A57CB42D22249627004F0927 /* Objc-Planets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A57CB44422249628004F0927 /* Build configuration list for PBXNativeTarget "Objc-Planets" */;
+			buildPhases = (
+				A57CB42A22249627004F0927 /* Sources */,
+				A57CB42B22249627004F0927 /* Frameworks */,
+				A57CB42C22249627004F0927 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Objc-Planets";
+			productName = "Objc-Planets";
+			productReference = A57CB42E22249627004F0927 /* Objc-Planets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A57CB42622249627004F0927 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OSI;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Sergey Osipyan";
+				TargetAttributes = {
+					A57CB42D22249627004F0927 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A57CB42922249627004F0927 /* Build configuration list for PBXProject "Objc-Planets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A57CB42522249627004F0927;
+			productRefGroup = A57CB42F22249627004F0927 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A57CB42D22249627004F0927 /* Objc-Planets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A57CB42C22249627004F0927 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57CB43E22249628004F0927 /* LaunchScreen.storyboard in Resources */,
+				A57CB43B22249628004F0927 /* Assets.xcassets in Resources */,
+				A57CB43922249627004F0927 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A57CB42A22249627004F0927 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57CB44122249628004F0927 /* main.m in Sources */,
+				A57CB43322249627004F0927 /* AppDelegate.m in Sources */,
+				A57CB44D2224980A004F0927 /* OSIPlanetsCollectionViewCell.m in Sources */,
+				A57CB4582224BC93004F0927 /* OSIPlanetController.m in Sources */,
+				A57CB449222497B3004F0927 /* OSIPlanetsCollectionViewController.m in Sources */,
+				A57CB45E2225172D004F0927 /* OSISettingsViewController.m in Sources */,
+				A57CB4542224AABD004F0927 /* OSIPlanet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A57CB43722249627004F0927 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A57CB43822249627004F0927 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A57CB43C22249628004F0927 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A57CB43D22249628004F0927 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A57CB44222249628004F0927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A57CB44322249628004F0927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A57CB44522249628004F0927 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KF4QEGAU36;
+				INFOPLIST_FILE = "Objc-Planets/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey.Objc-Planets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A57CB44622249628004F0927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KF4QEGAU36;
+				INFOPLIST_FILE = "Objc-Planets/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Sergey.Objc-Planets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A57CB42922249627004F0927 /* Build configuration list for PBXProject "Objc-Planets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57CB44222249628004F0927 /* Debug */,
+				A57CB44322249628004F0927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A57CB44422249628004F0927 /* Build configuration list for PBXNativeTarget "Objc-Planets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57CB44522249628004F0927 /* Debug */,
+				A57CB44622249628004F0927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A57CB42622249627004F0927 /* Project object */;
+}
