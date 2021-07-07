@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BF751082197199400DBCD73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF751072197199400DBCD73 /* AppDelegate.m */; };
+		7BF7510E2197199400DBCD73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF7510C2197199400DBCD73 /* Main.storyboard */; };
+		7BF751102197199F00DBCD73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BF7510F2197199F00DBCD73 /* Assets.xcassets */; };
+		7BF751132197199F00DBCD73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF751112197199F00DBCD73 /* LaunchScreen.storyboard */; };
+		7BF751162197199F00DBCD73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF751152197199F00DBCD73 /* main.m */; };
+		7BF7511E21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7511D21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.m */; };
+		7BF7512D21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7512C21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.m */; };
+		7BF751302197202600DBCD73 /* DYPSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF7512F2197202600DBCD73 /* DYPSettingsViewController.m */; };
+		7BF75134219720E500DBCD73 /* DYPPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF75133219720E500DBCD73 /* DYPPlanet.m */; };
+		7BF751372197223000DBCD73 /* DYPPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BF751362197223000DBCD73 /* DYPPlanetController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7BF751032197199400DBCD73 /* PlanetsObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetsObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BF751062197199400DBCD73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BF751072197199400DBCD73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7BF7510D2197199400DBCD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BF7510F2197199F00DBCD73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BF751122197199F00DBCD73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BF751142197199F00DBCD73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BF751152197199F00DBCD73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BF7511C21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYPPlanetsCollectionViewController.h; sourceTree = "<group>"; };
+		7BF7511D21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPPlanetsCollectionViewController.m; sourceTree = "<group>"; };
+		7BF7512B21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYPPlanetCollectionViewCell.h; sourceTree = "<group>"; };
+		7BF7512C21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPPlanetCollectionViewCell.m; sourceTree = "<group>"; };
+		7BF7512E2197202600DBCD73 /* DYPSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYPSettingsViewController.h; sourceTree = "<group>"; };
+		7BF7512F2197202600DBCD73 /* DYPSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPSettingsViewController.m; sourceTree = "<group>"; };
+		7BF75132219720E500DBCD73 /* DYPPlanet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYPPlanet.h; sourceTree = "<group>"; };
+		7BF75133219720E500DBCD73 /* DYPPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPPlanet.m; sourceTree = "<group>"; };
+		7BF751352197223000DBCD73 /* DYPPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYPPlanetController.h; sourceTree = "<group>"; };
+		7BF751362197223000DBCD73 /* DYPPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPPlanetController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BF751002197199400DBCD73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BF750FA2197199400DBCD73 = {
+			isa = PBXGroup;
+			children = (
+				7BF751052197199400DBCD73 /* PlanetsObjC */,
+				7BF751042197199400DBCD73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BF751042197199400DBCD73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BF751032197199400DBCD73 /* PlanetsObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BF751052197199400DBCD73 /* PlanetsObjC */ = {
+			isa = PBXGroup;
+			children = (
+				7BF75132219720E500DBCD73 /* DYPPlanet.h */,
+				7BF75133219720E500DBCD73 /* DYPPlanet.m */,
+				7BF751352197223000DBCD73 /* DYPPlanetController.h */,
+				7BF751362197223000DBCD73 /* DYPPlanetController.m */,
+				7BF751062197199400DBCD73 /* AppDelegate.h */,
+				7BF751072197199400DBCD73 /* AppDelegate.m */,
+				7BF7512E2197202600DBCD73 /* DYPSettingsViewController.h */,
+				7BF7512F2197202600DBCD73 /* DYPSettingsViewController.m */,
+				7BF7512B21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.h */,
+				7BF7512C21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.m */,
+				7BF7511C21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.h */,
+				7BF7511D21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.m */,
+				7BF7510C2197199400DBCD73 /* Main.storyboard */,
+				7BF75131219720B800DBCD73 /* View Controllers */,
+				7BF7510F2197199F00DBCD73 /* Assets.xcassets */,
+				7BF751112197199F00DBCD73 /* LaunchScreen.storyboard */,
+				7BF751142197199F00DBCD73 /* Info.plist */,
+				7BF751152197199F00DBCD73 /* main.m */,
+			);
+			path = PlanetsObjC;
+			sourceTree = "<group>";
+		};
+		7BF75131219720B800DBCD73 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BF751022197199400DBCD73 /* PlanetsObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BF751192197199F00DBCD73 /* Build configuration list for PBXNativeTarget "PlanetsObjC" */;
+			buildPhases = (
+				7BF750FF2197199400DBCD73 /* Sources */,
+				7BF751002197199400DBCD73 /* Frameworks */,
+				7BF751012197199400DBCD73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanetsObjC;
+			productName = PlanetsObjC;
+			productReference = 7BF751032197199400DBCD73 /* PlanetsObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BF750FB2197199400DBCD73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Daniela Parra";
+				TargetAttributes = {
+					7BF751022197199400DBCD73 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 7BF750FE2197199400DBCD73 /* Build configuration list for PBXProject "PlanetsObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BF750FA2197199400DBCD73;
+			productRefGroup = 7BF751042197199400DBCD73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BF751022197199400DBCD73 /* PlanetsObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BF751012197199400DBCD73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF751132197199F00DBCD73 /* LaunchScreen.storyboard in Resources */,
+				7BF751102197199F00DBCD73 /* Assets.xcassets in Resources */,
+				7BF7510E2197199400DBCD73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BF750FF2197199400DBCD73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF7512D21971D9D00DBCD73 /* DYPPlanetCollectionViewCell.m in Sources */,
+				7BF751162197199F00DBCD73 /* main.m in Sources */,
+				7BF751302197202600DBCD73 /* DYPSettingsViewController.m in Sources */,
+				7BF751372197223000DBCD73 /* DYPPlanetController.m in Sources */,
+				7BF751082197199400DBCD73 /* AppDelegate.m in Sources */,
+				7BF7511E21971A6A00DBCD73 /* DYPPlanetsCollectionViewController.m in Sources */,
+				7BF75134219720E500DBCD73 /* DYPPlanet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7BF7510C2197199400DBCD73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BF7510D2197199400DBCD73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BF751112197199F00DBCD73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BF751122197199F00DBCD73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BF751172197199F00DBCD73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7BF751182197199F00DBCD73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BF7511A2197199F00DBCD73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlanetsObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Daniela.PlanetsObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BF7511B2197199F00DBCD73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PlanetsObjC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Daniela.PlanetsObjC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BF750FE2197199400DBCD73 /* Build configuration list for PBXProject "PlanetsObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BF751172197199F00DBCD73 /* Debug */,
+				7BF751182197199F00DBCD73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BF751192197199F00DBCD73 /* Build configuration list for PBXNativeTarget "PlanetsObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BF7511A2197199F00DBCD73 /* Debug */,
+				7BF7511B2197199F00DBCD73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BF750FB2197199400DBCD73 /* Project object */;
+}
