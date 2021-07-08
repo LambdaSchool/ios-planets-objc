@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vhD-SQ-gTt">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Planets Collection View Controller-->
+        <scene sceneID="Vzh-Mz-VJe">
+            <objects>
+                <collectionViewController id="Lrd-hi-qOT" customClass="LSIPlanetsCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Kei-B2-IgO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mg8-Vl-W9e">
+                            <size key="itemSize" width="178" height="161"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlanetCell" id="tSM-aH-Ltj" customClass="LSIPlanetCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="178" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="178" height="161"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxq-U4-ynK">
+                                            <rect key="frame" x="0.0" y="0.0" width="178" height="161"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth" translatesAutoresizingMaskIntoConstraints="NO" id="CGa-fx-rKC">
+                                                    <rect key="frame" x="8" y="8" width="162" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="CGa-fx-rKC" secondAttribute="height" multiplier="27:20" id="A78-MI-WdI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rw-k4-76l">
+                                                    <rect key="frame" x="8" y="132" width="162" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="sow-ZE-2dd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="9rw-k4-76l" secondAttribute="trailing" constant="8" id="4Sy-iM-Bv4"/>
+                                                <constraint firstItem="CGa-fx-rKC" firstAttribute="top" secondItem="Dxq-U4-ynK" secondAttribute="top" constant="8" id="CHE-0B-UTE"/>
+                                                <constraint firstItem="9rw-k4-76l" firstAttribute="leading" secondItem="Dxq-U4-ynK" secondAttribute="leading" constant="8" id="Z9O-LS-RsL"/>
+                                                <constraint firstItem="CGa-fx-rKC" firstAttribute="centerX" secondItem="Dxq-U4-ynK" secondAttribute="centerX" id="byz-tc-bfo"/>
+                                                <constraint firstItem="CGa-fx-rKC" firstAttribute="leading" secondItem="Dxq-U4-ynK" secondAttribute="leading" constant="8" id="hZO-E7-tt0"/>
+                                                <constraint firstAttribute="width" secondItem="Dxq-U4-ynK" secondAttribute="height" multiplier="178:161" id="lpZ-TV-NxJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="9rw-k4-76l" secondAttribute="bottom" constant="8" id="mYM-rM-baK"/>
+                                                <constraint firstAttribute="trailing" secondItem="CGa-fx-rKC" secondAttribute="trailing" constant="8" id="xs8-ei-2wn"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Dxq-U4-ynK" firstAttribute="leading" secondItem="tSM-aH-Ltj" secondAttribute="leading" id="DAU-d3-LWU"/>
+                                    <constraint firstItem="Dxq-U4-ynK" firstAttribute="centerY" secondItem="tSM-aH-Ltj" secondAttribute="centerY" id="I8d-Cc-VEz"/>
+                                    <constraint firstItem="Dxq-U4-ynK" firstAttribute="centerX" secondItem="tSM-aH-Ltj" secondAttribute="centerX" id="WGw-ED-CCv"/>
+                                    <constraint firstItem="Dxq-U4-ynK" firstAttribute="top" secondItem="tSM-aH-Ltj" secondAttribute="top" id="saC-wM-co5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dxq-U4-ynK" secondAttribute="bottom" id="srI-Yg-H0u"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dxq-U4-ynK" secondAttribute="trailing" id="xM8-iD-qaf"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="CGa-fx-rKC" id="f8J-YU-YZq"/>
+                                    <outlet property="planetLabel" destination="9rw-k4-76l" id="xLb-nk-Yhy"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Lrd-hi-qOT" id="F7E-lj-gjq"/>
+                            <outlet property="delegate" destination="Lrd-hi-qOT" id="OFd-AI-Tp3"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="cu4-HA-0vp">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="4e9-k9-0v3">
+                            <connections>
+                                <segue destination="CPW-f8-JFS" kind="show" id="Mz3-B8-1Rb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXi-K5-6Ld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092.753623188406" y="137.94642857142856"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="ZPr-9C-wdq">
+            <objects>
+                <viewController id="CPW-f8-JFS" customClass="LSISettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aWs-OQ-Mdq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TGD-64-YcH">
+                                <rect key="frame" x="20" y="128" width="374" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Should Pluto be a planet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-Hh-C0p">
+                                        <rect key="frame" x="0.0" y="0.0" width="317" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OK9-HJ-r67">
+                                        <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="switchValueChanged:" destination="CPW-f8-JFS" eventType="valueChanged" id="qcN-es-cUu"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TGD-64-YcH" firstAttribute="leading" secondItem="ked-KI-jqM" secondAttribute="leading" constant="20" id="4Lj-R1-Yz5"/>
+                            <constraint firstItem="ked-KI-jqM" firstAttribute="trailing" secondItem="TGD-64-YcH" secondAttribute="trailing" constant="20" id="Pne-ep-MF3"/>
+                            <constraint firstItem="TGD-64-YcH" firstAttribute="top" secondItem="ked-KI-jqM" secondAttribute="top" constant="40" id="UYd-Oe-Xqf"/>
+                            <constraint firstItem="TGD-64-YcH" firstAttribute="centerX" secondItem="aWs-OQ-Mdq" secondAttribute="centerX" id="foi-JN-sJV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ked-KI-jqM"/>
+                    </view>
+                    <connections>
+                        <outlet property="plutoSwitch" destination="OK9-HJ-r67" id="bfZ-hw-6mh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ed2-EK-i79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873.913043478261" y="142.63392857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pq8-9P-xD8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vhD-SQ-gTt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HRN-16-kgr">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lrd-hi-qOT" kind="relationship" relationship="rootViewController" id="LpD-oG-jIt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbE-QP-JBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182.60869565217394" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="earth" width="1600" height="1600"/>
+    </resources>
+</document>
